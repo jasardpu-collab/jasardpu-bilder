@@ -132,8 +132,8 @@
     var thema=m.th?'<a class="wthema" href="'+m.th[0]+'"><img src="'+esc(m.th[2])+'" alt="" loading="lazy"><span><span class="k">Themenseite</span><b>Zur Themenseite '+esc(m.th[1])+' →</b></span></a>':'';
     var sec=document.createElement('section');
     sec.className='wfeld'; sec.id=m.id||('w-'+key); sec.style.background=m.f;
-    sec.innerHTML='<div class="xkopf"><div><span class="k">Welt · Redbubble</span><h2 class="h2">'+esc(w.t)+' <span lang="ko" style="font-weight:700">'+m.ko+'</span></h2><p>'+esc(m.x)+'</p></div>'
-      +'<a class="knopf" href="'+COL+w.col+'" target="_blank" rel="noopener">Ganze Kollektion →</a></div>'
+    sec.innerHTML='<div class="xkopf"><div><span class="k">Welt · Redbubble</span><h2 class="h2">'+esc(w.t)+' <span lang="ko" style="font-weight:700">'+m.ko+'</span></h2></div>'
+      +'<div class="xr"><p>'+esc(m.x)+'</p><a class="knopf" href="'+COL+w.col+'" target="_blank" rel="noopener">Ganze Kollektion →</a></div></div>'
       +'<div class="wreihe'+(m.th?'':' ohne')+'">'+karten+thema+'</div>'
       +'<details class="alle"><summary>Alle Redbubble-Designs aus '+esc(w.t)+' ansehen</summary><div class="raster"></div><button class="mehrladen" type="button" hidden>Mehr anzeigen</button></details>';
     ziel.appendChild(sec);

@@ -204,6 +204,10 @@ html body #jfs .hero-r{flex:0 1 520px;min-width:0}
 html body #jfs .hero-r .shopq{margin-top:0;grid-template-columns:repeat(3,minmax(0,1fr))}
 html body #jfs .hero-r .lead{text-align:right;margin:20px 0 0;max-width:none}
 @media (max-width:760px){html body #jfs .hero-r .lead{text-align:left}}
+html body #jfs .xkopf{align-items:flex-start}
+html body #jfs .xkopf .xr{display:flex;flex-direction:column;align-items:flex-end;gap:12px;max-width:440px;text-align:right}
+html body #jfs .xkopf .xr p{margin:0;max-width:none}
+@media (max-width:760px){html body #jfs .xkopf .xr{align-items:flex-start;text-align:left}}
 html body #jfs .bsatz{margin:0;font-size:17px;color:var(--bl)}
 html body #jfs .bsatz a{color:var(--br);font-weight:800}
 html body #jfs .taschen{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px}
@@ -302,9 +306,8 @@ html body #jfs #ein-motiv>p:last-child{text-align:center}
         <div>
           <span class="k">Weihnachtskollektion 2026 · 14 Designs</span>
           <h2 class="h2">Lebkuchen, Hanok &amp;<br>Kimchi im Schnee.</h2>
-          <p>Weihnachten auf meine Art: ein Lebkuchen-Architekt, ein verschneites Hanok und koreanisches Essen mit Weihnachtsmützen. Mit Honig-Pfannkuchen, Meerschweinchen und K-Drama.</p>
         </div>
-        <a class="knopf" href="https://www.redbubble.com/de/people/Jasardpu/shop?collections=4601769&amp;sortOrder=recent" target="_blank" rel="noopener">Ganze Kollektion →</a>
+        <div class="xr"><p>Weihnachten auf meine Art: ein Lebkuchen-Architekt, ein verschneites Hanok und koreanisches Essen mit Weihnachtsmützen. Mit Honig-Pfannkuchen, Meerschweinchen und K-Drama.</p><a class="knopf" href="https://www.redbubble.com/de/people/Jasardpu/shop?collections=4601769&amp;sortOrder=recent" target="_blank" rel="noopener">Ganze Kollektion →</a></div>
       </div>
       <div class="xraster">
         <a class="xk" href="https://www.redbubble.com/de/i/gru%C3%9Fkarte/Auf-das-neue-Jahr-Silvester-Motiv-von-Jasardpu/36088316/qjsu" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.716331442.8316/papergc,300x,w,f8f8f8-pad,600x600,f8f8f8.u2.jpg" alt="Auf das neue Jahr – Silvester Motiv, Grußkarte" loading="lazy"><span class="xn">Auf das neue Jahr</span><span class="xp">Grußkarte →</span></a>
@@ -370,9 +373,8 @@ html body #jfs #ein-motiv>p:last-child{text-align:center}
         <div>
           <span class="k">Beileids- und Gedenkkarten · Klappkarte mit Umschlag</span>
           <h2 class="h2">Wenn Worte fehlen.</h2>
-          <p>Stille Blumen und warmes Kerzenlicht für Momente, in denen man Anteilnahme zeigen möchte. Calla, Chrysantheme und Vergissmeinnicht, innen frei für deine eigenen Worte. Auch einzeln bestellbar.</p>
         </div>
-        <a class="knopf" href="https://www.redbubble.com/de/people/Jasardpu/shop?collections=4601771&amp;sortOrder=recent" target="_blank" rel="noopener">Ganze Kollektion →</a>
+        <div class="xr"><p>Stille Blumen und warmes Kerzenlicht für Momente, in denen man Anteilnahme zeigen möchte. Calla, Chrysantheme und Vergissmeinnicht, innen frei für deine eigenen Worte. Auch einzeln bestellbar.</p><a class="knopf" href="https://www.redbubble.com/de/people/Jasardpu/shop?collections=4601771&amp;sortOrder=recent" target="_blank" rel="noopener">Ganze Kollektion →</a></div>
       </div>
       <div class="xraster">
         <a class="xk" href="https://www.redbubble.com/de/i/gru%C3%9Fkarte/Calla-Blumen-Illustration-von-Jasardpu/172025659/qjsu" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5875196657.5659/papergc,300x,w,f8f8f8-pad,600x600,f8f8f8.jpg" alt="Calla – Blumen Illustration, Grußkarte" loading="lazy"><span class="xn">Calla</span><span class="xp">Grußkarte →</span></a>
