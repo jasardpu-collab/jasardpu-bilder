@@ -1,0 +1,368 @@
+<!--
+  ============================================================
+  THEMENSEITE TEPPICHMUSTER & WOHNEN · Seite /teppich.html auf jasminfreiner.de
+  Stand 12.11.2026, von Claude erstellt (gleiche Vorlage wie Lipödem und Meerschweinchen).
+  ============================================================
+  Wohin: Weebly → neue Seite „Teppichmuster & Wohnen“ (Adresse teppich) → ein Element
+         „Code einbetten“ → diesen ganzen Code einfügen. Seite im Menü ausblenden.
+  Texte ändern: einfach zwischen den Zeichen > und < tippen.
+  Neues Motiv: Block von „<!-- Motiv“ bis „</article>“ kopieren und anpassen.
+  Kollektion auf Redbubble: Teppich und Orient 4601758
+  ============================================================
+-->
+<style>
+#jfw{--iv:#F2E6C8;--br:#4A3F36;--gr:#6B5E52;--ne:#E8E1DA;--bl:#F6D5D0;--ak:#B0705A;--sd:#B59A7E;--lav:#F1E8DC;
+  --sans:'Inter Tight','Inter','Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+  --script:'Pinyon Script','Snell Roundhand','Segoe Script',cursive}
+html body #jfw,html body #jfw :where(*:not(svg,svg *)){all:revert;box-sizing:border-box}
+html body #jfw{display:block;position:relative;overflow:hidden;background:var(--iv);color:var(--br);font-family:var(--sans);font-size:16px;line-height:1.55;padding:0 clamp(16px,3vw,40px);margin:0;-webkit-font-smoothing:antialiased}
+body:has(#jfw){background:#F2E6C8}
+body:has(#jfw) #jf-seite{background:#F2E6C8}
+body:has(#jfw) #jf-weebly-kopf{display:none}
+html body #jfw a{color:var(--br)}
+html body #jfw a:focus-visible{outline:2px solid var(--ak);outline-offset:3px;border-radius:6px}
+html body #jfw img{display:block;max-width:100%}
+html body #jfw .in{position:relative;z-index:1;max-width:1180px;margin:0 auto}
+html body #jfw .deko{position:absolute;border-radius:50%;pointer-events:none;z-index:0}
+html body #jfw .k{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+html body #jfw .lbl{display:block;margin:0 0 22px;padding-bottom:8px;border-bottom:2px solid var(--br);font-family:var(--mono);font-size:11px;letter-spacing:.1em}
+html body #jfw .h2{display:block;margin:0 0 20px;font-weight:900;font-size:clamp(30px,4.5vw,46px);line-height:1;letter-spacing:-.04em}
+html body #jfw .sec{display:block;margin-top:80px}
+html body #jfw .knopf{display:inline-block;background:var(--br);color:var(--iv);text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:800;font-size:15px;line-height:1.2}
+html body #jfw .knopf:hover{background:var(--ak);color:#fff}
+html body #jfw .knopf.hell{background:var(--iv);color:var(--br);border:1.5px solid var(--br)}
+html body #jfw .knopf.hell:hover{background:#fff;color:var(--ak)}
+html body #jfw .skopf{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;padding:22px 0 12px;border-bottom:1px solid var(--br)}
+html body #jfw .slogo{font-family:var(--mono);font-weight:800;font-size:13px;letter-spacing:.14em;text-decoration:none;color:var(--br)}
+html body #jfw .ssub{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--gr)}
+html body #jfw .snav{display:flex;flex-wrap:wrap;gap:8px 18px;padding:14px 0;border-bottom:1px solid var(--br);font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+html body #jfw .snav a{text-decoration:none;color:var(--br)}
+html body #jfw .snav a:hover{text-decoration:underline}
+html body #jfw .snav a[aria-current]{font-weight:800;text-decoration:underline;text-underline-offset:4px}
+@media (max-width:600px){html body #jfw .snav{gap:6px 14px;font-size:11px}}
+html body #jfw .zurueck{display:flex;flex-wrap:wrap;gap:6px 18px;padding-top:22px;font-family:var(--mono);font-size:12px}
+html body #jfw .zurueck a{text-decoration:none}
+html body #jfw .zurueck a:hover{color:var(--ak)}
+/* Hero */
+html body #jfw .hero{display:flex;flex-wrap:wrap;align-items:center;gap:32px;padding-top:28px}
+html body #jfw .hero-t{flex:1 1 460px;min-width:0}
+html body #jfw .h1{display:block;margin:12px 0 0;font-weight:900;font-size:clamp(50px,9vw,100px);line-height:.92;letter-spacing:-.05em}
+html body #jfw .script{display:block;font-family:var(--script);font-size:clamp(34px,5vw,56px);line-height:1;color:var(--sd);margin-top:8px}
+html body #jfw .lead{display:block;margin:24px 0 0;max-width:580px;font-size:clamp(17px,1.6vw,19px);font-weight:500}
+html body #jfw .hero-k{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+html body #jfw .stapel{flex:0 1 380px;position:relative;height:340px;min-width:260px}
+html body #jfw .stapel a{position:absolute;display:block;width:190px;background:#fff;padding:8px 8px 26px;border-radius:3px;box-shadow:0 14px 26px rgba(74,63,54,.16);transition:transform .3s}
+html body #jfw .stapel a:hover{transform:rotate(0) scale(1.05)!important;z-index:5}
+html body #jfw .stapel img{width:100%;aspect-ratio:1;object-fit:cover;background:#F8F8F8}
+html body #jfw .stapel a:nth-child(1){left:0;top:30px;transform:rotate(-7deg)}
+html body #jfw .stapel a:nth-child(2){left:150px;top:0;transform:rotate(5deg)}
+html body #jfw .stapel a:nth-child(3){left:80px;top:140px;transform:rotate(-2deg)}
+html body #jfw .vort{display:flex;flex-wrap:wrap;gap:10px 34px;margin-top:44px;padding:14px 0;border-top:1px solid var(--br);border-bottom:1px solid var(--br);font-family:var(--mono);font-size:12px;letter-spacing:.03em}
+html body #jfw .vort span::before{content:'✿ ';color:var(--ak)}
+/* Motive */
+html body #jfw .motive{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+html body #jfw .mk{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:18px;padding:16px;border-radius:26px;background:#fff;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jfw .mk:nth-child(4n+1),html body #jfw .mk:nth-child(4n+4){background:#F8EDE8}
+html body #jfw .mk-bild{position:relative;display:block;align-self:start;border-radius:18px;overflow:hidden;background:#F8F8F8}
+html body #jfw .mk-bild img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .3s}
+html body #jfw .mk-bild:hover img{transform:scale(1.04)}
+html body #jfw .mk-nr{position:absolute;left:10px;top:10px;background:var(--br);color:var(--iv);font-family:var(--mono);font-size:11px;padding:2px 9px;border-radius:999px}
+html body #jfw .mk-t{display:flex;flex-direction:column;gap:10px;min-width:0}
+html body #jfw .mk h3{display:block;margin:0;font-weight:900;font-size:24px;line-height:1.05;letter-spacing:-.02em}
+html body #jfw .mk p{display:block;margin:0;font-size:15px;line-height:1.5}
+html body #jfw .mk-mini{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+html body #jfw .mk-mini a{display:flex;flex-direction:column;gap:3px;text-decoration:none}
+html body #jfw .mk-mini img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;background:#F8F8F8;transition:transform .2s}
+html body #jfw .mk-mini a:hover img{transform:scale(1.05)}
+html body #jfw .mk-mini span{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--gr)}
+html body #jfw .slink{align-self:flex-start;margin-top:auto;font-family:var(--mono);font-weight:600;font-size:12px;text-underline-offset:3px}
+html body #jfw .slink:hover{color:var(--ak)}
+/* Bald neu */
+html body #jfw .bald{display:flex;flex-wrap:wrap;align-items:center;gap:22px 34px;padding:clamp(22px,4vw,40px);border-radius:28px;background:var(--lav)}
+html body #jfw .bald .bt{flex:1 1 360px;min-width:0}
+html body #jfw .bald p{display:block;margin:10px 0 0;font-size:16px;max-width:600px}
+html body #jfw .chips{display:flex;flex-wrap:wrap;gap:8px;flex:1 1 280px}
+html body #jfw .chips span{display:inline-block;background:#fff;border-radius:999px;padding:6px 14px;font-family:var(--mono);font-size:12px}
+/* Info */
+html body #jfw .info{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+html body #jfw .card{display:block;background:#fff;border-radius:20px;padding:22px;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jfw .card .ct{display:block;font-weight:800;font-size:19px;margin:6px 0 8px}
+html body #jfw .card p{display:block;margin:0;font-size:15px;line-height:1.55}
+html body #jfw .folgen{display:flex;flex-wrap:wrap;align-items:center;gap:20px 30px;padding:clamp(22px,4vw,36px);border-radius:28px;background:#A9B8A2;color:#2F3A2C}
+html body #jfw .folgen .bh{display:block;font-weight:900;font-size:clamp(30px,4vw,44px);line-height:.95;letter-spacing:-.04em;margin-top:6px}
+html body #jfw .folgen p{display:block;margin:10px 0 0;font-size:16px;max-width:520px}
+html body #jfw .folgen .kn{display:flex;flex-wrap:wrap;gap:10px}
+html body #jfw .hinweis{display:block;margin:18px 0 0;font-size:13px;color:var(--gr);max-width:720px}
+html body #jfw .fuss{display:flex;flex-wrap:wrap;gap:8px 26px;align-items:center;margin-top:72px;padding:12px 0 26px;border-top:1px solid var(--br);font-family:var(--mono);font-size:11px;letter-spacing:.04em}
+html body #jfw .fuss a{text-decoration:none}
+html body #jfw .fuss .re{margin-left:auto;display:flex;flex-wrap:wrap;gap:18px}
+@media (max-width:980px){html body #jfw .motive{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){
+  html body #jfw .mk{grid-template-columns:minmax(0,1fr)}
+  html body #jfw .stapel{height:250px;flex-basis:100%}
+  html body #jfw .stapel a{width:140px;padding:6px 6px 18px}
+  html body #jfw .stapel a:nth-child(2){left:120px}
+  html body #jfw .stapel a:nth-child(3){left:55px;top:95px}
+  html body #jfw .fuss .re{margin-left:0}
+  html body #jfw .deko{display:none}
+}
+@media (prefers-reduced-motion:reduce){html body #jfw *{transition:none!important}}
+</style>
+<style>
+html body #jfw .foto{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+html body #jfw .foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px;background:var(--ne)}
+html body #jfw .etsy{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:16px}
+html body #jfw .etsy a{display:flex;flex-direction:column;gap:6px;padding:12px 12px 16px;border-radius:20px;background:#fff;text-decoration:none;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jfw .etsy img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px}
+html body #jfw .etsy b{font-weight:800;font-size:16px}
+html body #jfw .etsy small{font-family:var(--mono);font-size:11px;text-transform:uppercase;color:var(--gr)}
+</style>
+<div id="jfw" lang="de">
+<span class="deko" aria-hidden="true" style="right:-90px;top:60px;width:clamp(220px,30vw,420px);height:clamp(220px,30vw,420px);background:#F1E8DC"></span>
+<span class="deko" aria-hidden="true" style="left:-120px;top:640px;width:240px;height:240px;background:#F6D5D0;opacity:.6"></span>
+<div class="in">
+  <!-- ===== KOPFZEILE: nur Shop-Links (Themenseiten) ===== -->
+  <header class="skopf"><a class="slogo" href="/jasardpu.html">← JASARDPU</a><span class="ssub">Shop von Jasmin Freiner · Themenseiten · <span lang="ko">테마</span></span></header>
+  <nav class="snav" aria-label="Themenseiten"><a href="/korea-shop.html">Korea</a><a href="/architektur-kaffee.html">Architektur &amp; Kaffee</a><a href="/meerschweinchen-shop.html">Meerschweinchen</a><a href="/teppich.html" aria-current="page">Teppich &amp; Muster</a><a href="/lipoedem.html">Lipödem &amp; Lymphe</a><a href="/glutenfrei-vegan-shop.html">Glutenfrei &amp; vegan</a><a href="/naehen.html">Nähen</a></nav>
+<!-- ===== HERO ===== -->
+<div class="hero">
+<div class="hero-t">
+<span class="k">Themenseite · Jasardpu · Wohnen</span>
+<h1 class="h1">Teppich&shy;muster &amp; Wohnen.</h1>
+<span class="script">Orient fürs Sofa</span>
+<p class="lead">Mein meistverkauftes Design ist ein persisches Teppichmuster. Hier findest du es zusammen mit allen anderen Teppich- und Ornamentmustern: als Kissen, Kuscheldecke, Wandtuch, Tasse und Kleid. Für ein Zuhause mit Geschichte, ganz ohne echten Teppich zum Saugen.</p>
+<div class="hero-k">
+<a class="knopf" href="#motive">Zu den Mustern ↓</a>
+<a class="knopf hell" href="https://www.redbubble.com/de/people/Jasardpu/shop?collections=4601758" target="_blank" rel="noopener">Ganze Kollektion bei Redbubble →</a>
+</div>
+</div>
+<div class="stapel" aria-hidden="true">
+<a href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/32481907/xwxm" target="_blank" rel="noopener" tabindex="-1"><img src="https://ih1.redbubble.net/image.1432031886.1907/ur,throw_pillow_couch_small,square,600x600.u1.jpg" alt="" loading="lazy"></a>
+<a href="https://www.redbubble.com/de/i/fleecedecke/Jasardpu/53400659/vzy2" target="_blank" rel="noopener" tabindex="-1"><img src="https://ih1.redbubble.net/image.1460027330.0659/ur,blanket_medium_bed,square,x600.1.jpg" alt="" loading="lazy"></a>
+<a href="https://www.redbubble.com/de/i/kleid/Jasardpu/45013129/3yb7" target="_blank" rel="noopener" tabindex="-1"><img src="https://ih1.redbubble.net/image.1244606443.3129/ssrco,a_line_dress,flatlay_01,white,front,product_square,x600.jpg" alt="" loading="lazy"></a>
+</div>
+</div>
+<div class="vort">
+<span>★ Mein Bestseller: das persische Kissen</span>
+<span>11 Teppich- und Ornamentmuster</span>
+<span>Kissen, Decken, Wandtücher &amp; mehr</span>
+<span>Gedruckt erst bei Bestellung</span>
+</div>
+<!-- ===== MUSTER ===== -->
+<section class="sec" id="motive">
+<p class="lbl">(A) DIE MUSTER · 10 DESIGNS</p>
+<h2 class="h2">Ornamente mit Geschichte.</h2>
+<div class="motive">
+<!-- Motiv 1: Persischer Teppich -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/32481907/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1432031886.1907/ur,throw_pillow_couch_small,square,600x600.u1.jpg" alt="Persischer Teppich, Kissen" loading="lazy"><span class="mk-nr">01</span></a>
+<div class="mk-t">
+<h3>Persischer Teppich</h3>
+<p>Mein Bestseller. Antike Ornamente in Rot und Gold, als Kissen auf dem Sofa fast wie ein echtes Erbstück.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/fleecedecke/Jasardpu/32481907/vzy2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.3852687864.1907/ur,blanket_medium_bed,square,x600.1u3.jpg" alt="Persischer Teppich, Decke" loading="lazy"><span>Decke</span></a>
+<a href="https://www.redbubble.com/de/i/wandtuch/Jasardpu/32481907/g6gv" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.3852687864.1907/ur,tapestry_flatlay_dorm_medium,square,600x600.u3.jpg" alt="Persischer Teppich, Wandtuch" loading="lazy"><span>Wandtuch</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/32481907/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1767173604.1907/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Persischer Teppich, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/kleid/Jasardpu/32481907/3yb7" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1432032022.1907/ssrco,a_line_dress,flatlay_01,white,front,product_square,x600.jpg" alt="Persischer Teppich, Kleid" loading="lazy"><span>Kleid</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/32481907/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1432031770.1907/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="Persischer Teppich, Tasse" loading="lazy"><span>Tasse</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/32481907/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 2: Teppichliebe -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/45013129/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1244606262.3129/ur,throw_pillow_couch_small,square,600x600.webp" alt="Teppichliebe, Kissen" loading="lazy"><span class="mk-nr">02</span></a>
+<div class="mk-t">
+<h3>Teppichliebe</h3>
+<p>Ein zweiter Perser mit warmen Farben. Passt gut neben das Original oder als Decke über den Sessel.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/fleecedecke/Jasardpu/45013129/vzy2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1244606533.3129/ur,blanket_medium_bed,square,x600.1.jpg" alt="Teppichliebe, Decke" loading="lazy"><span>Decke</span></a>
+<a href="https://www.redbubble.com/de/i/wandtuch/Jasardpu/45013129/g6gv" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1244606533.3129/ur,tapestry_flatlay_dorm_medium,square,600x600.jpg" alt="Teppichliebe, Wandtuch" loading="lazy"><span>Wandtuch</span></a>
+<a href="https://www.redbubble.com/de/i/untersetzer/Jasardpu/45013129/43wr" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1072272484.3129/ur,coaster_pack_4_flatlay,square,600x600.2.jpg" alt="Teppichliebe, Untersetzer" loading="lazy"><span>Untersetzer</span></a>
+<a href="https://www.redbubble.com/de/i/kleid/Jasardpu/45013129/3yb7" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1244606443.3129/ssrco,a_line_dress,flatlay_01,white,front,product_square,x600.jpg" alt="Teppichliebe, Kleid" loading="lazy"><span>Kleid</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/45013129/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1244606271.3129/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="Teppichliebe, Tasse" loading="lazy"><span>Tasse</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/45013129/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 3: Omas Vintage-Teppichmuster I -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/53400659/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1460049104.0659/ur,throw_pillow_couch_small,square,600x600.webp" alt="Omas Vintage-Teppichmuster I, Kissen" loading="lazy"><span class="mk-nr">03</span></a>
+<div class="mk-t">
+<h3>Omas Vintage-Teppichmuster I</h3>
+<p>Wie der Teppich bei Oma im Wohnzimmer. Gemütlich, ein bisschen nostalgisch und zeitlos.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/fleecedecke/Jasardpu/53400659/vzy2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1460027330.0659/ur,blanket_medium_bed,square,x600.1.jpg" alt="Omas Vintage-Teppichmuster I, Decke" loading="lazy"><span>Decke</span></a>
+<a href="https://www.redbubble.com/de/i/wandtuch/Jasardpu/53400659/g6gv" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1460027330.0659/ur,tapestry_flatlay_dorm_medium,square,600x600.jpg" alt="Omas Vintage-Teppichmuster I, Wandtuch" loading="lazy"><span>Wandtuch</span></a>
+<a href="https://www.redbubble.com/de/i/untersetzer/Jasardpu/53400659/43wr" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1460049061.0659/ur,coaster_pack_4_flatlay,square,600x600.2.jpg" alt="Omas Vintage-Teppichmuster I, Untersetzer" loading="lazy"><span>Untersetzer</span></a>
+<a href="https://www.redbubble.com/de/i/kleid/Jasardpu/53400659/3yb7" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1460027220.0659/ssrco,a_line_dress,flatlay_01,white,front,product_square,x600.jpg" alt="Omas Vintage-Teppichmuster I, Kleid" loading="lazy"><span>Kleid</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/53400659/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1460027144.0659/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="Omas Vintage-Teppichmuster I, Tasse" loading="lazy"><span>Tasse</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/53400659/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 4: Omas Vintage-Teppichmuster II -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/53400899/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1460039814.0899/ur,throw_pillow_couch_small,square,600x600.webp" alt="Omas Vintage-Teppichmuster II, Kissen" loading="lazy"><span class="mk-nr">04</span></a>
+<div class="mk-t">
+<h3>Omas Vintage-Teppichmuster II</h3>
+<p>Die zweite Variante aus Omas Wohnzimmer, mit anderen Farben und genauso viel Gemütlichkeit.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/fleecedecke/Jasardpu/53400899/vzy2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1768361628.0899/ur,blanket_medium_bed,square,x600.1.jpg" alt="Omas Vintage-Teppichmuster II, Decke" loading="lazy"><span>Decke</span></a>
+<a href="https://www.redbubble.com/de/i/wandtuch/Jasardpu/53400899/g6gv" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1768361628.0899/ur,tapestry_flatlay_dorm_medium,square,600x600.jpg" alt="Omas Vintage-Teppichmuster II, Wandtuch" loading="lazy"><span>Wandtuch</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/53400899/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1768361552.0899/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Omas Vintage-Teppichmuster II, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/kleid/Jasardpu/53400899/3yb7" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1460040005.0899/ssrco,a_line_dress,flatlay_01,white,front,product_square,x600.jpg" alt="Omas Vintage-Teppichmuster II, Kleid" loading="lazy"><span>Kleid</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/53400899/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1460039637.0899/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="Omas Vintage-Teppichmuster II, Tasse" loading="lazy"><span>Tasse</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/53400899/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 5: Mehr Teppichliebe -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/53401058/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1768360927.1058/ur,throw_pillow_couch_small,square,600x600.webp" alt="Mehr Teppichliebe, Kissen" loading="lazy"><span class="mk-nr">05</span></a>
+<div class="mk-t">
+<h3>Mehr Teppichliebe</h3>
+<p>Für alle, die von Teppichmustern nicht genug bekommen. Schön auch als Wandtuch.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/fleecedecke/Jasardpu/53401058/vzy2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1768361135.1058/ur,blanket_medium_bed,square,x600.1.jpg" alt="Mehr Teppichliebe, Decke" loading="lazy"><span>Decke</span></a>
+<a href="https://www.redbubble.com/de/i/wandtuch/Jasardpu/53401058/g6gv" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1768361135.1058/ur,tapestry_flatlay_dorm_medium,square,600x600.jpg" alt="Mehr Teppichliebe, Wandtuch" loading="lazy"><span>Wandtuch</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/53401058/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1768361072.1058/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Mehr Teppichliebe, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/kleid/Jasardpu/53401058/3yb7" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1768361008.1058/ssrco,a_line_dress,flatlay_01,white,front,product_square,x600.jpg" alt="Mehr Teppichliebe, Kleid" loading="lazy"><span>Kleid</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/53401058/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1768360918.1058/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="Mehr Teppichliebe, Tasse" loading="lazy"><span>Tasse</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/53401058/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 6: Teppich reloaded -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/147892401/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5080394282.2401/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Teppich reloaded, Kissen" loading="lazy"><span class="mk-nr">06</span></a>
+<div class="mk-t">
+<h3>Teppich reloaded</h3>
+<p>Das klassische Teppichmuster, neu gemischt. Etwas frischer und moderner im Look.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/fleecedecke/Jasardpu/147892401/vzy2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5080394393.2401/ur,blanket_medium_bed,square,x600.1.jpg" alt="Teppich reloaded, Decke" loading="lazy"><span>Decke</span></a>
+<a href="https://www.redbubble.com/de/i/wandtuch/Jasardpu/147892401/g6gv" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5080394393.2401/ur,tapestry_flatlay_dorm_medium,square,600x600.jpg" alt="Teppich reloaded, Wandtuch" loading="lazy"><span>Wandtuch</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/147892401/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5080394369.2401/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Teppich reloaded, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/kleid/Jasardpu/147892401/3yb7" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5080394343.2401/ssrco,a_line_dress,flatlay_01,white,front,product_square,x600.jpg" alt="Teppich reloaded, Kleid" loading="lazy"><span>Kleid</span></a>
+<a href="https://www.redbubble.com/de/i/untersetzer/Jasardpu/147892401/43wr" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5080394301.2401/ur,coaster_pack_4_flatlay,square,600x600.2.jpg" alt="Teppich reloaded, Untersetzer" loading="lazy"><span>Untersetzer</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/147892401/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 7: Ein neuer Teppich -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/147892649/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5080403089.2649/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Ein neuer Teppich, Kissen" loading="lazy"><span class="mk-nr">07</span></a>
+<div class="mk-t">
+<h3>Ein neuer Teppich</h3>
+<p>Noch ein Teppich, weil es nie genug sein können. Ornamente für Sofa, Bett und Schreibtisch.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/fleecedecke/Jasardpu/147892649/vzy2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5080403233.2649/ur,blanket_medium_bed,square,x600.1.jpg" alt="Ein neuer Teppich, Decke" loading="lazy"><span>Decke</span></a>
+<a href="https://www.redbubble.com/de/i/wandtuch/Jasardpu/147892649/g6gv" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5080403233.2649/ur,tapestry_flatlay_dorm_medium,square,600x600.jpg" alt="Ein neuer Teppich, Wandtuch" loading="lazy"><span>Wandtuch</span></a>
+<a href="https://www.redbubble.com/de/i/mauspad/Jasardpu/147892649/2mh5" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5080403133.2649/ur,mouse_pad_small_flatlay,square,600x600.jpg" alt="Ein neuer Teppich, Mauspad" loading="lazy"><span>Mauspad</span></a>
+<a href="https://www.redbubble.com/de/i/kleid/Jasardpu/147892649/3yb7" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5080403211.2649/ssrco,a_line_dress,flatlay_01,white,front,product_square,x600.jpg" alt="Ein neuer Teppich, Kleid" loading="lazy"><span>Kleid</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/147892649/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5080403114.2649/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="Ein neuer Teppich, Tasse" loading="lazy"><span>Tasse</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/147892649/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 8: Orientalische Abendstimmung -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/148029060/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5085046797.9060/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Orientalische Abendstimmung, Kissen" loading="lazy"><span class="mk-nr">08</span></a>
+<div class="mk-t">
+<h3>Orientalische Abendstimmung</h3>
+<p>Tiefe Farben wie ein Abend auf dem Basar. Ruhig, warm und edel.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/148029060/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5085046846.9060/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Orientalische Abendstimmung, T-Shirt" loading="lazy"><span>T-Shirt</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/148029060/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5085046884.9060/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Orientalische Abendstimmung, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/untersetzer/Jasardpu/148029060/43wr" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5085046764.9060/ur,coaster_pack_4_flatlay,square,600x600.2.jpg" alt="Orientalische Abendstimmung, Untersetzer" loading="lazy"><span>Untersetzer</span></a>
+<a href="https://www.redbubble.com/de/i/mauspad/Jasardpu/148029060/2mh5" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5085046792.9060/ur,mouse_pad_small_flatlay,square,600x600.jpg" alt="Orientalische Abendstimmung, Mauspad" loading="lazy"><span>Mauspad</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/148029060/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5085046758.9060/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="Orientalische Abendstimmung, Tasse" loading="lazy"><span>Tasse</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/148029060/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 9: Geschmückt -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/155472486/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5350435619.2486/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Geschmückt, Kissen" loading="lazy"><span class="mk-nr">09</span></a>
+<div class="mk-t">
+<h3>Geschmückt</h3>
+<p>Feine Ornamente, fast wie Schmuck. Schön auf hellen Stoffen und als Decke.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/fleecedecke/Jasardpu/155472486/vzy2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5350435669.2486/ur,blanket_medium_bed,square,x600.1.jpg" alt="Geschmückt, Decke" loading="lazy"><span>Decke</span></a>
+<a href="https://www.redbubble.com/de/i/wandtuch/Jasardpu/155472486/g6gv" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5350435669.2486/ur,tapestry_flatlay_dorm_medium,square,600x600.jpg" alt="Geschmückt, Wandtuch" loading="lazy"><span>Wandtuch</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/155472486/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5350435751.2486/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Geschmückt, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/kleid/Jasardpu/155472486/3yb7" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5350435636.2486/ssrco,a_line_dress,flatlay_01,white,front,product_square,x600.jpg" alt="Geschmückt, Kleid" loading="lazy"><span>Kleid</span></a>
+<a href="https://www.redbubble.com/de/i/untersetzer/Jasardpu/155472486/43wr" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5350435597.2486/ur,coaster_pack_4_flatlay,square,600x600.2.jpg" alt="Geschmückt, Untersetzer" loading="lazy"><span>Untersetzer</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/155472486/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 10: Spitze -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/32715606/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.4701068021.5606/ur,throw_pillow_couch_small,square,600x600.u1.webp" alt="Spitze, Kissen" loading="lazy"><span class="mk-nr">10</span></a>
+<div class="mk-t">
+<h3>Spitze</h3>
+<p>Ein zartes Spitzenmuster wie auf Omas Tischdecke. Leicht und hell für Kissen und Kleid.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/fleecedecke/Jasardpu/32715606/vzy2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.4721962276.5606/ur,blanket_medium_bed,square,x600.1u1.jpg" alt="Spitze, Decke" loading="lazy"><span>Decke</span></a>
+<a href="https://www.redbubble.com/de/i/wandtuch/Jasardpu/32715606/g6gv" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.4721962276.5606/ur,tapestry_flatlay_dorm_medium,square,600x600.u1.jpg" alt="Spitze, Wandtuch" loading="lazy"><span>Wandtuch</span></a>
+<a href="https://www.redbubble.com/de/i/kleid/Jasardpu/32715606/3yb7" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.4721962404.5606/ssrco,a_line_dress,flatlay_01,white,front,product_square,x600.u2.jpg" alt="Spitze, Kleid" loading="lazy"><span>Kleid</span></a>
+<a href="https://www.redbubble.com/de/i/untersetzer/Jasardpu/32715606/43wr" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.599848077.5606/ur,coaster_pack_4_flatlay,square,600x600.2.jpg" alt="Spitze, Untersetzer" loading="lazy"><span>Untersetzer</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/32715606/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.4701068022.5606/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="Spitze, Tasse" loading="lazy"><span>Tasse</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/32715606/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+</div>
+</section>
+<!-- ===== ECHT FOTOGRAFIERT ===== -->
+<section class="sec">
+<p class="lbl">(B) ECHT FOTOGRAFIERT</p>
+<h2 class="h2">So sieht’s auf dem Sofa aus.</h2>
+<div class="foto">
+<img src="/files/theme/jasardpu-echt-kissen-persisch-1.png" alt="Zwei Kissen mit persischem Teppichmuster auf dem Sofa" loading="lazy">
+<img src="/files/theme/jasardpu-echt-kissen-persisch-2.png" alt="Kissen mit Orient-Muster" loading="lazy">
+</div>
+</section>
+<!-- ===== AUCH BEI ETSY UND SPOONFLOWER ===== -->
+<section class="sec">
+<p class="lbl">(C) AUCH BEI ETSY &amp; SPOONFLOWER</p>
+<div class="etsy">
+<a href="https://www.etsy.com/de/listing/4611954067" target="_blank" rel="noopener"><img src="https://i.etsystatic.com/22304935/r/il/0067ab/8814493530/il_800x800.8814493530_5c0h.jpg" alt="Kleid mit Allover-Muster" loading="lazy"><b>Kleid mit Allover-Muster</b><small>Kleid bei Etsy →</small></a>
+<a href="https://www.etsy.com/de/shop/Jasardpu" target="_blank" rel="noopener"><img src="/files/theme/jasardpu-echt-kissen-persisch-2.png" alt="Kissenbezüge bei Etsy" loading="lazy"><b>Kissenbezüge</b><small>Im Etsy-Shop →</small></a>
+<a href="https://www.spoonflower.com/profiles/jasardpu" target="_blank" rel="noopener"><img src="https://garden.spoonflower.com/c/15463036/p/f/m/MLxuIHgt7KacqtfzFrbor98ZDUWvv2NOmWtAjLvocweBfEx-8W4K/pfau.jpg" alt="Stoffmuster bei Spoonflower" loading="lazy"><b>Stoffe &amp; Tapeten</b><small>Bei Spoonflower →</small></a>
+</div>
+</section>
+<!-- ===== SO FUNKTIONIERT'S ===== -->
+<section class="sec">
+<p class="lbl">(D) SO FUNKTIONIERT’S</p>
+<div class="info">
+<div class="card"><span class="k" style="color:var(--ak)">01</span><span class="ct">Muster aussuchen</span><p>Klick auf ein Produkt. Bei Redbubble siehst du das Muster auf allen Produkten, vom Kissen bis zur Kuscheldecke, in vielen Größen.</p></div>
+<div class="card"><span class="k" style="color:var(--ak)">02</span><span class="ct">Bestellen beim Shop</span><p>Bezahlung, Versand und Rückgabe laufen sicher über Redbubble, Etsy oder Spoonflower. Jedes Stück wird erst gedruckt, wenn du es bestellst.</p></div>
+<div class="card"><span class="k" style="color:var(--ak)">03</span><span class="ct">Von mir gestaltet</span><p>Alte Teppiche, Fliesen und Ornamente sind meine Inspiration. Daraus entstehen meine Muster, alle selbst entworfen.</p></div>
+</div>
+</section>
+<!-- ===== FOLGEN ===== -->
+<section class="sec">
+<div class="folgen">
+<div>
+<span class="k">Neue Muster zuerst sehen</span>
+<span class="bh">Folge Jasardpu.</span>
+<p>Neuheiten auf Instagram und Pinterest. Gern teilen, wenn du jemanden kennst, der gerade einrichtet.</p>
+</div>
+<div class="kn">
+<a class="knopf" href="https://www.instagram.com/jasardpu/" target="_blank" rel="noopener">Instagram →</a>
+<a class="knopf hell" href="https://www.pinterest.de/jasminfreiner/jasardpu-shop/" target="_blank" rel="noopener">Pinterest →</a>
+</div>
+</div>
+<p class="hinweis">Mehr Muster von mir findest du im <a href="/jasardpu.html">Shop Jasardpu</a> in der Welt „Muster &amp; Klassiker“.</p>
+</section>
+<footer class="fuss">
+<img src="/files/theme/jasardpu-logo.webp" alt="Logo: made by jasardpu" width="44" height="44" style="border-radius:8px;background:#fff">
+<span style="font-weight:600">© 2026 JASARDPU · JASMIN FREINER</span>
+<span class="re"><a href="/jasardpu.html">Shop Jasardpu</a><a href="/">jasminfreiner.de</a><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></span>
+</footer>
+</div>
+</div>
+<script>(function(){function m(){var b=document.getElementById('jfb'),v=document.querySelector('#jfw .vort');if(b&&v&&v.nextSibling!==b){v.parentNode.insertBefore(b,v.nextSibling);b.style.width='auto';b.style.maxWidth='none';b.style.margin='40px 0 0';b.style.borderRadius='22px'}}if(document.readyState!=='loading')m();document.addEventListener('DOMContentLoaded',m);window.addEventListener('load',m)})();</script>

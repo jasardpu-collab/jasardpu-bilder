@@ -1,0 +1,256 @@
+<!--
+  ============================================================
+  THEMENSEITE LIPÖDEM & LYMPHE · Seite /lipoedem.html auf jasminfreiner.de
+  Stand 12.11.2026, von Claude erstellt. Vorlage für alle weiteren Themenseiten.
+  ============================================================
+  Wohin: Weebly → neue Seite „Lipödem & Lymphe“ (Adresse lipoedem) → ein Element
+         „Code einbetten“ → diesen ganzen Code einfügen. Seite im Menü ausblenden,
+         sie wird über Pinterest, Instagram und die Jasardpu-Seite verlinkt.
+  Texte ändern: einfach zwischen den Zeichen > und < tippen.
+  Neues Motiv: einen Block von „<!-- Motiv“ bis „</article>“ kopieren und
+         Name, Text, Links und Bilder austauschen. Bilder kommen direkt von Redbubble.
+  Kollektion auf Redbubble: Lymph und Support 4601762
+  ============================================================
+-->
+<style>
+#jft{--iv:#F2E6C8;--br:#4A3F36;--gr:#6B5E52;--ne:#E8E1DA;--bl:#F6D5D0;--ak:#B0705A;--sd:#B59A7E;--lav:#E6E0F0;
+  --sans:'Inter Tight','Inter','Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+  --script:'Pinyon Script','Snell Roundhand','Segoe Script',cursive}
+html body #jft,html body #jft :where(*:not(svg,svg *)){all:revert;box-sizing:border-box}
+html body #jft{display:block;position:relative;overflow:hidden;background:var(--iv);color:var(--br);font-family:var(--sans);font-size:16px;line-height:1.55;padding:0 clamp(16px,3vw,40px);margin:0;-webkit-font-smoothing:antialiased}
+body:has(#jft){background:#F2E6C8}
+body:has(#jft) #jf-seite{background:#F2E6C8}
+body:has(#jft) #jf-weebly-kopf{display:none}
+html body #jft a{color:var(--br)}
+html body #jft a:focus-visible{outline:2px solid var(--ak);outline-offset:3px;border-radius:6px}
+html body #jft img{display:block;max-width:100%}
+html body #jft .in{position:relative;z-index:1;max-width:1180px;margin:0 auto}
+html body #jft .deko{position:absolute;border-radius:50%;pointer-events:none;z-index:0}
+html body #jft .k{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+html body #jft .lbl{display:block;margin:0 0 22px;padding-bottom:8px;border-bottom:2px solid var(--br);font-family:var(--mono);font-size:11px;letter-spacing:.1em}
+html body #jft .h2{display:block;margin:0 0 20px;font-weight:900;font-size:clamp(30px,4.5vw,46px);line-height:1;letter-spacing:-.04em}
+html body #jft .sec{display:block;margin-top:80px}
+html body #jft .knopf{display:inline-block;background:var(--br);color:var(--iv);text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:800;font-size:15px;line-height:1.2}
+html body #jft .knopf:hover{background:var(--ak);color:#fff}
+html body #jft .knopf.hell{background:var(--iv);color:var(--br);border:1.5px solid var(--br)}
+html body #jft .knopf.hell:hover{background:#fff;color:var(--ak)}
+html body #jft .skopf{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;padding:22px 0 12px;border-bottom:1px solid var(--br)}
+html body #jft .slogo{font-family:var(--mono);font-weight:800;font-size:13px;letter-spacing:.14em;text-decoration:none;color:var(--br)}
+html body #jft .ssub{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--gr)}
+html body #jft .snav{display:flex;flex-wrap:wrap;gap:8px 18px;padding:14px 0;border-bottom:1px solid var(--br);font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+html body #jft .snav a{text-decoration:none;color:var(--br)}
+html body #jft .snav a:hover{text-decoration:underline}
+html body #jft .snav a[aria-current]{font-weight:800;text-decoration:underline;text-underline-offset:4px}
+@media (max-width:600px){html body #jft .snav{gap:6px 14px;font-size:11px}}
+html body #jft .zurueck{display:flex;flex-wrap:wrap;gap:6px 18px;padding-top:22px;font-family:var(--mono);font-size:12px}
+html body #jft .zurueck a{text-decoration:none}
+html body #jft .zurueck a:hover{color:var(--ak)}
+/* Hero */
+html body #jft .hero{display:flex;flex-wrap:wrap;align-items:center;gap:32px;padding-top:28px}
+html body #jft .hero-t{flex:1 1 460px;min-width:0}
+html body #jft .h1{display:block;margin:12px 0 0;font-weight:900;font-size:clamp(50px,9vw,100px);line-height:.92;letter-spacing:-.05em}
+html body #jft .script{display:block;font-family:var(--script);font-size:clamp(34px,5vw,56px);line-height:1;color:var(--sd);margin-top:8px}
+html body #jft .lead{display:block;margin:24px 0 0;max-width:580px;font-size:clamp(17px,1.6vw,19px);font-weight:500}
+html body #jft .hero-k{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+html body #jft .stapel{flex:0 1 380px;position:relative;height:340px;min-width:260px}
+html body #jft .stapel a{position:absolute;display:block;width:190px;background:#fff;padding:8px 8px 26px;border-radius:3px;box-shadow:0 14px 26px rgba(74,63,54,.16);transition:transform .3s}
+html body #jft .stapel a:hover{transform:rotate(0) scale(1.05)!important;z-index:5}
+html body #jft .stapel img{width:100%;aspect-ratio:1;object-fit:cover;background:#F8F8F8}
+html body #jft .stapel a:nth-child(1){left:0;top:30px;transform:rotate(-7deg)}
+html body #jft .stapel a:nth-child(2){left:150px;top:0;transform:rotate(5deg)}
+html body #jft .stapel a:nth-child(3){left:80px;top:140px;transform:rotate(-2deg)}
+html body #jft .vort{display:flex;flex-wrap:wrap;gap:10px 34px;margin-top:44px;padding:14px 0;border-top:1px solid var(--br);border-bottom:1px solid var(--br);font-family:var(--mono);font-size:12px;letter-spacing:.03em}
+html body #jft .vort span::before{content:'✿ ';color:var(--ak)}
+/* Motive */
+html body #jft .motive{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+html body #jft .mk{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:18px;padding:16px;border-radius:26px;background:#fff;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jft .mk:nth-child(4n+1),html body #jft .mk:nth-child(4n+4){background:#F8EDE8}
+html body #jft .mk-bild{position:relative;display:block;align-self:start;border-radius:18px;overflow:hidden;background:#F8F8F8}
+html body #jft .mk-bild img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .3s}
+html body #jft .mk-bild:hover img{transform:scale(1.04)}
+html body #jft .mk-nr{position:absolute;left:10px;top:10px;background:var(--br);color:var(--iv);font-family:var(--mono);font-size:11px;padding:2px 9px;border-radius:999px}
+html body #jft .mk-t{display:flex;flex-direction:column;gap:10px;min-width:0}
+html body #jft .mk h3{display:block;margin:0;font-weight:900;font-size:24px;line-height:1.05;letter-spacing:-.02em}
+html body #jft .mk p{display:block;margin:0;font-size:15px;line-height:1.5}
+html body #jft .mk-mini{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+html body #jft .mk-mini a{display:flex;flex-direction:column;gap:3px;text-decoration:none}
+html body #jft .mk-mini img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;background:#F8F8F8;transition:transform .2s}
+html body #jft .mk-mini a:hover img{transform:scale(1.05)}
+html body #jft .mk-mini span{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--gr)}
+html body #jft .slink{align-self:flex-start;margin-top:auto;font-family:var(--mono);font-weight:600;font-size:12px;text-underline-offset:3px}
+html body #jft .slink:hover{color:var(--ak)}
+/* Bald neu */
+html body #jft .bald{display:flex;flex-wrap:wrap;align-items:center;gap:22px 34px;padding:clamp(22px,4vw,40px);border-radius:28px;background:var(--lav)}
+html body #jft .bald .bt{flex:1 1 360px;min-width:0}
+html body #jft .bald p{display:block;margin:10px 0 0;font-size:16px;max-width:600px}
+html body #jft .chips{display:flex;flex-wrap:wrap;gap:8px;flex:1 1 280px}
+html body #jft .chips span{display:inline-block;background:#fff;border-radius:999px;padding:6px 14px;font-family:var(--mono);font-size:12px}
+/* Info */
+html body #jft .info{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+html body #jft .card{display:block;background:#fff;border-radius:20px;padding:22px;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jft .card .ct{display:block;font-weight:800;font-size:19px;margin:6px 0 8px}
+html body #jft .card p{display:block;margin:0;font-size:15px;line-height:1.55}
+html body #jft .folgen{display:flex;flex-wrap:wrap;align-items:center;gap:20px 30px;padding:clamp(22px,4vw,36px);border-radius:28px;background:#A9B8A2;color:#2F3A2C}
+html body #jft .folgen .bh{display:block;font-weight:900;font-size:clamp(30px,4vw,44px);line-height:.95;letter-spacing:-.04em;margin-top:6px}
+html body #jft .folgen p{display:block;margin:10px 0 0;font-size:16px;max-width:520px}
+html body #jft .folgen .kn{display:flex;flex-wrap:wrap;gap:10px}
+html body #jft .hinweis{display:block;margin:18px 0 0;font-size:13px;color:var(--gr);max-width:720px}
+html body #jft .fuss{display:flex;flex-wrap:wrap;gap:8px 26px;align-items:center;margin-top:72px;padding:12px 0 26px;border-top:1px solid var(--br);font-family:var(--mono);font-size:11px;letter-spacing:.04em}
+html body #jft .fuss a{text-decoration:none}
+html body #jft .fuss .re{margin-left:auto;display:flex;flex-wrap:wrap;gap:18px}
+@media (max-width:980px){html body #jft .motive{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){
+  html body #jft .mk{grid-template-columns:minmax(0,1fr)}
+  html body #jft .stapel{height:250px;flex-basis:100%}
+  html body #jft .stapel a{width:140px;padding:6px 6px 18px}
+  html body #jft .stapel a:nth-child(2){left:120px}
+  html body #jft .stapel a:nth-child(3){left:55px;top:95px}
+  html body #jft .fuss .re{margin-left:0}
+  html body #jft .deko{display:none}
+}
+@media (prefers-reduced-motion:reduce){html body #jft *{transition:none!important}}
+</style>
+
+<div id="jft" lang="de">
+<span class="deko" aria-hidden="true" style="right:-90px;top:60px;width:clamp(220px,30vw,420px);height:clamp(220px,30vw,420px);background:#EEE8F3"></span>
+<span class="deko" aria-hidden="true" style="left:-120px;top:640px;width:240px;height:240px;background:#F6D5D0;opacity:.6"></span>
+<div class="in">
+
+  <!-- ===== KOPFZEILE: nur Shop-Links (Themenseiten) ===== -->
+  <header class="skopf"><a class="slogo" href="/jasardpu.html">← JASARDPU</a><span class="ssub">Shop von Jasmin Freiner · Themenseiten · <span lang="ko">테마</span></span></header>
+  <nav class="snav" aria-label="Themenseiten"><a href="/korea-shop.html">Korea</a><a href="/architektur-kaffee.html">Architektur &amp; Kaffee</a><a href="/meerschweinchen-shop.html">Meerschweinchen</a><a href="/teppich.html">Teppich &amp; Muster</a><a href="/lipoedem.html" aria-current="page">Lipödem &amp; Lymphe</a><a href="/glutenfrei-vegan-shop.html">Glutenfrei &amp; vegan</a><a href="/naehen.html">Nähen</a></nav>
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <div class="hero-t">
+      <span class="k">Themenseite · Jasardpu · Lymph und Support</span>
+      <h1 class="h1">Lipödem &amp;<br>Lymphe.</h1>
+      <span class="script">Mutmacher zum Anziehen</span>
+      <p class="lead">Für alle, die jeden Morgen in die Kompression steigen, zur Lymphdrainage gehen oder eine OP hinter sich haben. Und für alle, die schon zu oft gehört haben: „Mach doch einfach mehr Sport.“ Hier gibt es Motive mit Humor, Stärke und ganz viel Herz.</p>
+      <div class="hero-k">
+        <a class="knopf" href="#motive">Zu den Motiven ↓</a>
+        <a class="knopf hell" href="https://www.redbubble.com/de/people/Jasardpu/shop?collections=4601762" target="_blank" rel="noopener">Ganze Kollektion bei Redbubble →</a>
+      </div>
+    </div>
+    <div class="stapel" aria-hidden="true">
+      <a href="https://www.redbubble.com/de/i/dekokissen/G%C3%B6ttin-Lymphia-Mythologie-Illustration-von-Jasardpu/172003586/xwxm" target="_blank" rel="noopener" tabindex="-1"><img src="https://ih1.redbubble.net/image.5874527114.3586/ur,throw_pillow_couch_small,square,600x600.jpg" alt="" loading="lazy"></a>
+      <a href="https://www.redbubble.com/de/i/sticker/Kompression-mit-Leidenschaft-Humor-Motiv-von-Jasardpu/172116593/7sgk" target="_blank" rel="noopener" tabindex="-1"><img src="https://ih1.redbubble.net/image.5877948925.6593/st,small,507x507-pad,600x600,f8f8f8.webp" alt="" loading="lazy"></a>
+    </div>
+  </div>
+
+  <div class="vort">
+    <span>Eigene Designs, keine Massenware</span>
+    <span>Shirts, Taschen, Tassen, Sticker &amp; mehr</span>
+    <span>Gedruckt erst bei Bestellung</span>
+    <span>Schönes Geschenk für deine Lip-Schwestern</span>
+  </div>
+
+  <!-- ===== MOTIVE ===== -->
+  <section class="sec" id="motive">
+    <p class="lbl">(A) DIE MOTIVE · 3 DESIGNS</p>
+    <h2 class="h2">Stark, rund &amp; ein bisschen frech.</h2>
+    <div class="motive">
+    <!-- Motiv 1: Göttin Lymphia -->
+    <article class="mk">
+      <a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/G%C3%B6ttin-Lymphia-Mythologie-Illustration-von-Jasardpu/172003586/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874527114.3586/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Göttin Lymphia, Kissen" loading="lazy"><span class="mk-nr">01</span></a>
+      <div class="mk-t">
+        <h3>Göttin Lymphia</h3>
+        <p>Die Schutzgöttin der Lymphe. Für alle, die ihren Körper mit Kompression, Geduld und Humor durch den Alltag tragen.</p>
+        <div class="mk-mini">
+          <a href="https://www.redbubble.com/de/i/t-shirt/G%C3%B6ttin-Lymphia-Mythologie-Illustration-von-Jasardpu/172003586/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874527153.3586/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Göttin Lymphia, T-Shirt" loading="lazy"><span>T-Shirt</span></a>
+          <a href="https://www.redbubble.com/de/i/t-shirt/G%C3%B6ttin-Lymphia-Mythologie-Illustration-von-Jasardpu/172003586/rh5j" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874527153.3586/ssrco,oversize_tee,flatlay,ffffff:affd82b53f,front,product_square,x600.jpg" alt="Göttin Lymphia, Oversized" loading="lazy"><span>Oversized</span></a>
+          <a href="https://www.redbubble.com/de/i/stofftasche/G%C3%B6ttin-Lymphia-Mythologie-Illustration-von-Jasardpu/172003586/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874527134.3586/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Göttin Lymphia, Tasche" loading="lazy"><span>Tasche</span></a>
+          <a href="https://www.redbubble.com/de/i/tasse/G%C3%B6ttin-Lymphia-Mythologie-Illustration-von-Jasardpu/172003586/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874527105.3586/ur,classic_mug_right,full,600x600.jpg" alt="Göttin Lymphia, Tasse" loading="lazy"><span>Tasse</span></a>
+          <a href="https://www.redbubble.com/de/i/sticker/G%C3%B6ttin-Lymphia-Mythologie-Illustration-von-Jasardpu/172003586/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874527171.3586/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Göttin Lymphia, Sticker" loading="lazy"><span>Sticker</span></a>
+          <a href="https://www.redbubble.com/de/i/notizbuch/G%C3%B6ttin-Lymphia-Mythologie-Illustration-von-Jasardpu/172003586/qhru" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874527112.3586/ur,spiral_notebook_front,full,600x600.jpg" alt="Göttin Lymphia, Spiralblock" loading="lazy"><span>Spiralblock</span></a>
+        </div>
+        <a class="slink" href="https://www.redbubble.com/de/i/dekokissen/G%C3%B6ttin-Lymphia-Mythologie-Illustration-von-Jasardpu/172003586/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+      </div>
+    </article>
+    <!-- Motiv 2: Kompression mit Leidenschaft -->
+    <article class="mk">
+      <a class="mk-bild" href="https://www.redbubble.com/de/i/sticker/Kompression-mit-Leidenschaft-Humor-Motiv-von-Jasardpu/172116593/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5877948925.6593/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Kompression mit Leidenschaft, Sticker" loading="lazy"><span class="mk-nr">02</span></a>
+      <div class="mk-t">
+        <h3>Kompression mit Leidenschaft</h3>
+        <p>Für alle, die ihre Strümpfe jeden Morgen anziehen, auch im Hochsommer. Mit einem Augenzwinkern.</p>
+        <div class="mk-mini">
+          <a href="https://www.redbubble.com/de/i/t-shirt/Kompression-mit-Leidenschaft-Humor-Motiv-von-Jasardpu/172116593/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5877948902.6593/ssrco,classic_tee,flatlay_01,heather_light_grey,front,product_square,x600.1.jpg" alt="Kompression mit Leidenschaft, T-Shirt" loading="lazy"><span>T-Shirt</span></a>
+          <a href="https://www.redbubble.com/de/i/t-shirt/Kompression-mit-Leidenschaft-Humor-Motiv-von-Jasardpu/172116593/rh5j" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5877948902.6593/ssrco,oversize_tee,flatlay,c9ab81:b45db13379,front,product_square,x600.jpg" alt="Kompression mit Leidenschaft, Oversized" loading="lazy"><span>Oversized</span></a>
+          <a href="https://www.redbubble.com/de/i/stofftasche/Kompression-mit-Leidenschaft-Humor-Motiv-von-Jasardpu/172116593/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5877948861.6593/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Kompression mit Leidenschaft, Tasche" loading="lazy"><span>Tasche</span></a>
+          <a href="https://www.redbubble.com/de/i/tasse/Kompression-mit-Leidenschaft-Humor-Motiv-von-Jasardpu/172116593/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5877948833.6593/ur,classic_mug_right,full,600x600.jpg" alt="Kompression mit Leidenschaft, Tasse" loading="lazy"><span>Tasse</span></a>
+          <a href="https://www.redbubble.com/de/i/notizbuch/Kompression-mit-Leidenschaft-Humor-Motiv-von-Jasardpu/172116593/qhru" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5877948858.6593/ur,spiral_notebook_front,full,600x600.jpg" alt="Kompression mit Leidenschaft, Spiralblock" loading="lazy"><span>Spiralblock</span></a>
+          <a href="https://www.redbubble.com/de/i/dekokissen/Kompression-mit-Leidenschaft-Humor-Motiv-von-Jasardpu/172116593/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5877948864.6593/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Kompression mit Leidenschaft, Kissen" loading="lazy"><span>Kissen</span></a>
+        </div>
+        <a class="slink" href="https://www.redbubble.com/de/i/sticker/Kompression-mit-Leidenschaft-Humor-Motiv-von-Jasardpu/172116593/7sgk" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+      </div>
+    </article>
+    <!-- Motiv 4: Von der Natur geformt -->
+    <article class="mk">
+      <a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Von-der-Natur-geformt-Naturmotiv-von-Jasardpu/172003767/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874532837.3767/ssrco,classic_tee,flatlay_01,4a4440:cc103efb7a,front,product_square,x600.1.jpg" alt="Von der Natur geformt, T-Shirt" loading="lazy"><span class="mk-nr">03</span></a>
+      <div class="mk-t">
+        <h3>Von der Natur geformt</h3>
+        <p>Kurven wie Hügel und Flüsse. Jeder Körper ist von der Natur geformt, deiner auch.</p>
+        <div class="mk-mini">
+          <a href="https://www.redbubble.com/de/i/t-shirt/Von-der-Natur-geformt-Naturmotiv-von-Jasardpu/172003767/rh5j" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874532837.3767/ssrco,oversize_tee,flatlay,000000:44f0b734a5,front,product_square,x600.jpg" alt="Von der Natur geformt, Oversized" loading="lazy"><span>Oversized</span></a>
+          <a href="https://www.redbubble.com/de/i/tank-top/Von-der-Natur-geformt-Naturmotiv-von-Jasardpu/172003767/5xql" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874532837.3767/ssrco,tank_top,flatlay,101010:01c5ca27c6,front,square_product,x600.jpg" alt="Von der Natur geformt, Tank Top" loading="lazy"><span>Tank Top</span></a>
+          <a href="https://www.redbubble.com/de/i/stofftasche/Von-der-Natur-geformt-Naturmotiv-von-Jasardpu/172003767/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874532831.3767/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Von der Natur geformt, Tasche" loading="lazy"><span>Tasche</span></a>
+          <a href="https://www.redbubble.com/de/i/tasse/Von-der-Natur-geformt-Naturmotiv-von-Jasardpu/172003767/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874532807.3767/ur,classic_mug_right,full,600x600.jpg" alt="Von der Natur geformt, Tasse" loading="lazy"><span>Tasse</span></a>
+          <a href="https://www.redbubble.com/de/i/sticker/Von-der-Natur-geformt-Naturmotiv-von-Jasardpu/172003767/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874532838.3767/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Von der Natur geformt, Sticker" loading="lazy"><span>Sticker</span></a>
+          <a href="https://www.redbubble.com/de/i/dekokissen/Von-der-Natur-geformt-Naturmotiv-von-Jasardpu/172003767/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874532808.3767/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Von der Natur geformt, Kissen" loading="lazy"><span>Kissen</span></a>
+        </div>
+        <a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Von-der-Natur-geformt-Naturmotiv-von-Jasardpu/172003767/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+      </div>
+    </article>
+    </div>
+  </section>
+
+  <!-- ===== BALD NEU (Chips austauschen oder Abschnitt löschen, sobald die neuen Motive online sind) ===== -->
+  <section class="sec">
+    <p class="lbl">(B) BALD NEU</p>
+    <div class="bald">
+      <div class="bt">
+        <span class="k">In Arbeit · Winter 2026</span>
+        <h2 class="h2" style="margin:6px 0 0">Neue Sprüche sind unterwegs.</h2>
+        <p>Für alle, die schon alles probiert haben, für die Kompression im Alltag und für die Zeit nach der OP. Folge Jasardpu, dann siehst du sie zuerst.</p>
+      </div>
+      <div class="chips" aria-label="Themen der neuen Motive">
+        <span>Kompression</span><span>Lymphdrainage</span><span>Nach der OP</span><span>Ungefragte Tipps</span><span>Göttin Lymphia Reihe</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SO FUNKTIONIERT'S ===== -->
+  <section class="sec">
+    <p class="lbl">(C) SO FUNKTIONIERT’S</p>
+    <div class="info">
+      <div class="card"><span class="k" style="color:var(--ak)">01</span><span class="ct">Motiv aussuchen</span><p>Klick auf ein Produkt. Bei Redbubble siehst du das Motiv auf allen Produkten, von der Tasse bis zum Hoodie, in vielen Farben und Größen.</p></div>
+      <div class="card"><span class="k" style="color:var(--ak)">02</span><span class="ct">Bestellen bei Redbubble</span><p>Bezahlung, Versand und Rückgabe laufen sicher über Redbubble. Jedes Stück wird erst gedruckt, wenn du es bestellst.</p></div>
+      <div class="card"><span class="k" style="color:var(--ak)">03</span><span class="ct">Von mir gestaltet</span><p>Ich bin selbst betroffen und kenne Kompression, Lymphdrainage und gut gemeinte Ratschläge aus eigener Erfahrung. Alle Motive entwerfe ich selbst, mit viel Liebe für Frauen, die jeden Tag mehr leisten, als man von außen sieht.</p></div>
+    </div>
+  </section>
+
+  <!-- ===== FOLGEN ===== -->
+  <section class="sec">
+    <div class="folgen">
+      <div>
+        <span class="k">Neue Motive zuerst sehen</span>
+        <span class="bh">Folge Jasardpu.</span>
+        <p>Neuheiten auf Instagram und Pinterest. Gern teilen, wenn du jemanden kennst, der sich darüber freut.</p>
+      </div>
+      <div class="kn">
+        <a class="knopf" href="https://www.instagram.com/jasardpu/" target="_blank" rel="noopener">Instagram →</a>
+        <a class="knopf hell" href="https://www.pinterest.de/jasminfreiner/jasardpu-shop/" target="_blank" rel="noopener">Pinterest →</a>
+      </div>
+    </div>
+    <p class="hinweis">Die Motive sollen Mut machen und ersetzen keine ärztliche Beratung oder Behandlung. Mehr Designs von mir findest du im <a href="/jasardpu.html">Shop Jasardpu</a> in der Welt „Haltung &amp; Herz“.</p>
+  </section>
+
+  <footer class="fuss">
+    <img src="/files/theme/jasardpu-logo.webp" alt="Logo: made by jasardpu" width="44" height="44" style="border-radius:8px;background:#fff">
+    <span style="font-weight:600">© 2026 JASARDPU · JASMIN FREINER</span>
+    <span class="re"><a href="/jasardpu.html">Shop Jasardpu</a><a href="/">jasminfreiner.de</a><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></span>
+  </footer>
+</div>
+</div>
+<script>(function(){function m(){var b=document.getElementById('jfb'),v=document.querySelector('#jft .vort');if(b&&v&&v.nextSibling!==b){v.parentNode.insertBefore(b,v.nextSibling);b.style.width='auto';b.style.maxWidth='none';b.style.margin='40px 0 0';b.style.borderRadius='22px'}}if(document.readyState!=='loading')m();document.addEventListener('DOMContentLoaded',m);window.addEventListener('load',m)})();</script>
