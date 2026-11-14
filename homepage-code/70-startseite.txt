@@ -68,12 +68,12 @@
         <img src="/files/theme/jf-rolle-vegan.png" alt="" data-foto="3">
         <img src="/files/theme/jf-rolle-architektin.png" alt="" data-foto="4">
         <img src="/files/theme/jf-rolle-podcast.png" alt="" data-foto="5">
-        <div class="jf-sticker" aria-hidden="true">1 Kopf.<br>Zu viele<br>Ideen.</div>
         </div>
         <div class="jf-rollen jf-rollen-r" role="group" aria-label="Noch mehr Jasmins">
         <div class="jf-rolle"><span class="jf-punkt" aria-hidden="true"></span><span class="jf-strich" aria-hidden="true" style="width:16px"></span><button type="button" data-rolle="1" data-figur="k5b" aria-pressed="false"><span class="jf-rn"><i style="background:#F2C4B0"></i>Designerin</span><span class="jf-rs">Designer · <span lang="ko">디자이너</span> · Diseñadora</span></button></div>
         <div class="jf-rolle"><span class="jf-punkt" aria-hidden="true"></span><span class="jf-strich" aria-hidden="true" style="width:16px"></span><button type="button" data-rolle="3" data-figur="k4" aria-pressed="false"><span class="jf-rn"><i style="background:#A9B8A2"></i>Vegan &amp; glutenfrei</span><span class="jf-rs">Vegan &amp; gluten-free · <span lang="ko">비건 &amp; 글루텐프리</span> · Vegana y sin gluten</span></button></div>
         <div class="jf-rolle"><span class="jf-punkt" aria-hidden="true"></span><span class="jf-strich" aria-hidden="true" style="width:16px"></span><button type="button" data-rolle="5" data-figur="k3" aria-pressed="false"><span class="jf-rn"><i style="background:#F6D5D0"></i>Tandem-Podcast</span><span class="jf-rs">Language exchange podcast · <span lang="ko">언어 교환 팟캐스트</span> · Pódcast de intercambio</span></button></div>
+        <div class="jf-sticker" aria-hidden="true">1 Kopf.<br>Zu viele<br>Ideen.</div>
         </div>
       </div>
 
@@ -159,8 +159,8 @@ html body #jf.jf .jf-shopblock .jf-shopkopf{margin-top:0}
 html body #jf.jf .jf-start.jf-start-neu{grid-template-columns:auto minmax(0,1fr)}
 html body #jf.jf .jf-start-neu .jf-wer{justify-self:end;text-align:right;align-items:flex-end}
 html body #jf.jf .jf-fotos{position:relative}
-html body #jf.jf .jf-fotos .jf-sticker{position:absolute;top:28px;right:-92px;left:auto;bottom:auto;z-index:4;width:124px;height:124px;font-size:12px;transform:rotate(8deg)}
-@media (max-width:760px){html body #jf.jf .jf-fotos .jf-sticker{width:110px;height:110px;right:-20px;top:-20px}html body #jf.jf .jf-start-neu .jf-wer{text-align:left;align-items:flex-start;justify-self:start}}
+html body #jf.jf .jf-rollen-r .jf-sticker{position:relative;top:auto;right:auto;left:auto;bottom:auto;z-index:2;width:124px;height:124px;font-size:12px;margin:14px 0 0 60px;transform:rotate(8deg)}
+@media (max-width:760px){html body #jf.jf .jf-rollen-r .jf-sticker{display:none}html body #jf.jf .jf-start-neu .jf-wer{text-align:left;align-items:flex-start;justify-self:start}}
 /* Neue Titelzeile: Gruss klein links, Wer in der Mitte, Sticker rechts, darunter die Rollen mittig */
 html body #jf.jf .jf-start.jf-start-neu{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:28px 40px;min-height:0;margin-top:28px}
 html body #jf.jf .jf-start-neu .jf-gruss{min-height:0;height:auto;padding:0;gap:0}
@@ -174,8 +174,8 @@ html body #jf.jf .jf-start-neu .jf-g-en{font-size:46px}
 html body #jf.jf .jf-start-neu .jf-g-es{font-size:44px}
 html body #jf.jf .jf-start-neu .jf-kreis:first-of-type{width:120px!important;height:120px!important;left:52px!important;top:-4px!important}
 html body #jf.jf .jf-start-neu .jf-kreis:nth-of-type(2){width:56px!important;height:56px!important;left:-10px!important;top:80px!important}
-html body #jf.jf .jf-start-neu .jf-wer{width:auto;max-width:620px;justify-self:center}
-html body #jf.jf > .jf-inhalt > .jf-buehne{margin:36px auto 0;max-width:860px}
+html body #jf.jf .jf-start-neu .jf-wer{width:auto;max-width:620px;justify-self:end;text-align:right;align-items:flex-end}
+html body #jf.jf > .jf-inhalt > .jf-buehne{margin:-70px auto 0;max-width:860px}
 html body #jf.jf a.jf-schwein{display:flex;width:max-content;margin-left:auto;margin-right:4%}
 @media (max-width:900px){html body #jf.jf .jf-start.jf-start-neu{grid-template-columns:auto minmax(0,1fr)}}
 @media (max-width:600px){html body #jf.jf .jf-start.jf-start-neu{grid-template-columns:minmax(0,1fr)}}
