@@ -3,6 +3,7 @@
   (05) SHOP & DESIGN · Seitenadresse: /shop-design.html
   Stand 11.11.2026: Zeile 02 Etsy mit den neuen Produkten. Davor 09.11.2026: Übersicht in 7 Zeilen. Links steht, was es ist,
   rechts ein paar Vorschaubilder. Alle Produkte einzeln gibt es auf der Seite Jasardpu.
+  14.11.2026 (Runde 4): Menüzeile, ohne Nummern, Sprungmarken, Bildchen neben den Namen, Nach-oben-Knopf.
   ============================================================
   Wohin: Weebly → Seite öffnen → alten Inhalt löschen →
          Element „Code einbetten“ hineinziehen → diesen ganzen Text einfügen
@@ -41,7 +42,8 @@ html body #jf.jf .sd-haupt{grid-template-columns:150px minmax(0,4fr) minmax(0,6f
 html body #jf.jf a.sd-logo{display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px;border:1.5px solid #4A3F36;border-radius:20px;background:#FFFFFF;text-decoration:none;color:#4A3F36;font-weight:800;font-size:14px;transition:transform .2s}
 html body #jf.jf a.sd-logo:hover{transform:translateY(-3px)}
 html body #jf.jf a.sd-logo img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:12px}
-html body #jf.jf .sd-etsy{grid-template-columns:repeat(4,minmax(0,1fr))}
+html body #jf.jf .sd-etsy{grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+@media (max-width:760px){html body #jf.jf .sd-etsy{grid-template-columns:repeat(3,minmax(0,1fr))}}
 html body #jf.jf a.sd-xk{display:flex;flex-direction:column;gap:3px;padding:8px 8px 10px;border-radius:16px;background:#FFFFFF;text-decoration:none;color:#4A3F36;box-shadow:0 6px 16px rgba(74,63,54,.08)}
 html body #jf.jf a.sd-xk .xb{position:relative;display:block}
 html body #jf.jf a.sd-xk img{border-radius:10px}
@@ -74,6 +76,10 @@ html body #jf.jf a.sd-welt small{display:block;margin-top:3px;font-family:var(--
   html body #jf.jf .sd-feld small{font-size:8px}
   html body #jf.jf .sd-kopf img{width:56px;height:56px}
 }
+/* Bildchen neben dem Namen */
+html body #jf.jf .sd-ecke{display:inline-block;width:46px;height:46px;margin:-8px 0 -8px 12px;vertical-align:middle;transform:rotate(6deg);filter:drop-shadow(0 4px 8px rgba(74,63,54,.15))}
+html body #jf.jf .sd-ecke svg{display:block;width:100%;height:100%}
+html body #jf.jf .sd-zeile:hover .sd-ecke,html body #jf.jf .sd-themen:hover .sd-ecke{transform:rotate(-4deg) scale(1.08);transition:transform .2s}
 </style>
 <div id="jf" class="jf" lang="de">
 <span class="jf-deko jf-kreis" aria-hidden="true" style="right:-80px;top:110px;width:clamp(220px,32vw,460px);height:clamp(220px,32vw,460px);background:#EDE7E0"></span>
@@ -87,15 +93,29 @@ html body #jf.jf a.sd-welt small{display:block;margin-top:3px;font-family:var(--
     <nav class="jf-sprachen" aria-label="Sprache"><span class="jf-aktiv">DE</span></nav>
   </header>
 
-  <!-- ===== SEITEN-LEISTE: zu den anderen Unterseiten ===== -->
-  <nav class="jf-stats" aria-label="Weitere Seiten" style="margin-top:0;border-top:0;gap:8px 18px">
-    <a href="/korea-vegan-glutenfrei.html">Korea vegan &amp; glutenfrei</a><a href="/buecher.html">Alle Bücher</a><a href="/podcast-youtube.html">Podcast &amp; YouTube</a><a href="/glutenfrei-vegan.html">Glutenfrei &amp; vegan</a><a href="/folge-mir.html">Folge mir</a>
+  <!-- ===== MENÜ: auf allen Seiten gleich, immer gleiche Reihenfolge =====
+       Ein Punkt = <div class="jf-mp"> mit Hauptlink und Liste der Kapitel.
+       Auf der Seite, auf der man gerade ist, wird der Hauptlink zu <span class="jf-hier">.
+       Kapitel ohne Link (noch nicht fertig): <span class="jf-bald">Name</span> -->
+  <nav class="jf-menue" aria-label="Seiten">
+    <div class="jf-mp"><a class="jf-mh" href="/korea-vegan-glutenfrei.html">Korea vegan &amp; glutenfrei</span>
+      <div class="jf-mk"><a href="/korea-vegan-glutenfrei.html#mehr">Buch &amp; Videos</a><a href="/korea-vegan-glutenfrei.html#vorbereitung">Vorbereitung</a><a href="/korea-vegan-glutenfrei.html#orte">Lieblingsorte</a><a href="/korea-vegan-glutenfrei.html#saetze">Sätze</a><a href="/korea-vegan-glutenfrei.html#zutaten">Zutaten</a><a href="/korea-vegan-glutenfrei.html#fallen">Fallen</a><a href="/korea-vegan-glutenfrei.html#einkaufen">Einkaufen</a></div></div>
+    <div class="jf-mp"><a class="jf-mh" href="/buecher.html">Bücher</a>
+      <div class="jf-mk"><a href="/buecher.html#suedkorea">Südkorea-Reihe</a><a href="/buecher.html#malbuecher">Malbücher</a><a href="/buecher.html#notizbuecher">Notizbücher</a><a href="/buecher.html#english">English</a><a href="/buecher.html#hinter">Hinter den Büchern</a></div></div>
+    <div class="jf-mp"><a class="jf-mh" href="/podcast-youtube.html">Podcast &amp; YouTube</a>
+      <div class="jf-mk"><a href="/podcast-youtube.html#neu">Neuestes Video</a><a href="/podcast-youtube.html#podcast">Podcast</a><a href="/podcast-youtube.html#travel">Travel-Videos</a><a href="/podcast-youtube.html#playlists">Playlists</a><a href="/podcast-youtube.html#bald">Bald</a></div></div>
+    <div class="jf-mp"><a class="jf-mh" href="/glutenfrei-vegan.html">Glutenfrei &amp; vegan</a>
+      <div class="jf-mk"><a href="/glutenfrei-vegan.html#instagram">Instagram</a><a href="/glutenfrei-vegan.html#unterwegs">Glutenfrei unterwegs</a><a href="/glutenfrei-vegan.html#mehr">Mehr</a></div></div>
+    <div class="jf-mp"><span class="jf-hier" aria-current="page">Shop &amp; Design</a>
+      <div class="jf-mk"><a class="jf-mk-fett" href="/jasardpu.html">Shop Jasardpu</a><a href="https://www.redbubble.com/de/people/Jasardpu/shop" target="_blank" rel="noopener">Redbubble</a><a href="/shop-design.html#themen">Themenwelten</a><a href="/shop-design.html#etsy">Etsy</a><a href="/shop-design.html#spoonflower">Spoonflower</a><a href="/shop-design.html#buecher">Bücher</a><a href="/shop-design.html#fotos">Fotografie</a><a href="/shop-design.html#travel">Travelling Architect</a><a href="/shop-design.html#gumroad">Gumroad</a></div></div>
+    <div class="jf-mp"><a class="jf-mh" href="/folge-mir.html">Folge mir</a>
+      <div class="jf-mk"><a href="/folge-mir.html#instagram">Instagram</a><a href="/folge-mir.html#youtube">YouTube</a><a href="/folge-mir.html#weitere">LinkedIn &amp; Flickr</a><a href="/folge-mir.html#kaffee">Kaffee spendieren</a><a href="/folge-mir.html#kontakt">Kontakt</a></div></div>
   </nav>
 
-  <a class="jf-zurueck" href="/">← Zurück zu Hallo. <span lang="ko">안녕</span></a>
+
   <div class="jf-hero">
     <div class="jf-hero-text">
-      <span class="jf-eyebrow">(05) SHOP · DESIGN · <span lang="ko">숍 · 디자인</span></span>
+      <span class="jf-eyebrow">SHOP · DESIGN · <span lang="ko">숍 · 디자인</span></span>
       <h1 class="jf-h1 jf-gross">Shop<br>&amp; Design.</h1>
       <p class="jf-lead">Alles, was ich gestalte, an einem Ort: Designs auf Shirts und Kissen, Stoffe, Bücher und Fotos. Such dir aus, wonach dir ist.</p>
     </div>
@@ -107,10 +127,10 @@ html body #jf.jf a.sd-welt small{display:block;margin-top:3px;font-family:var(--
     <div class="sd-liste">
 
       <!-- ZEILE 01: JASARDPU (Hauptshop) -->
-      <div class="sd-zeile sd-haupt" style="--sd-farbe:#F8E5DC">
+      <div class="sd-zeile sd-haupt" id="jasardpu" style="--sd-farbe:#F8E5DC">
         <a class="sd-logo" href="/jasardpu.html"><img src="/files/theme/jasardpu-logo.webp" alt="Logo: made by jasardpu" width="140" height="140"><span>Zum Shop →</span></a>
         <div class="sd-links">
-          <span class="sd-nr">(01) HAUPTSHOP</span>
+          <span class="sd-nr">HAUPTSHOP</span>
           <span class="sd-kopf"><span><span class="sd-name">Jasardpu</span><span class="sd-wo">Redbubble · Etsy · Spoonflower</span></span></span>
           <p class="sd-text">Über 580 Designs in acht Welten, von Korea bis Meerschweinchen. Auf Shirts, Kissen, Stickern, Taschen und mehr, sortiert nach Thema.</p>
           <a class="sd-hinweis" href="/jasardpu.html#weihnachten">❄ Neu: die Weihnachtskollektion →</a>
@@ -123,11 +143,11 @@ html body #jf.jf a.sd-welt small{display:block;margin-top:3px;font-family:var(--
         </div>
       </div>
 
-      <!-- (02) Themenwelten: eigene Themenseiten -->
-      <div class="sd-themen">
+      <!-- Themenwelten: eigene Themenseiten -->
+      <div class="sd-themen" id="themen">
         <div class="sd-links">
-          <span class="sd-nr">(02) THEMENWELTEN · <span lang="ko">테마</span></span>
-          <span class="sd-name">Such dir dein Thema aus.</span>
+          <span class="sd-nr">THEMENWELTEN · <span lang="ko">테마</span></span>
+          <span class="sd-name">Such dir dein Thema aus.<span class="sd-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><circle cx="30" cy="30" r="22" fill="#B8CCE0" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M14 22 Q22 26 20 34 Q26 38 22 46 M36 10 Q34 20 42 22 Q50 26 46 38" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2.4"/><path d="M30 24 C27 20 22 24 25 27 L30 32 L35 27 C38 24 33 20 30 24 Z" fill="#E58C74" stroke="#4A3F36" stroke-width="2"/></svg></span></span>
           <span class="sd-text">Zu jedem Thema gibt es eine eigene Seite mit meinen Lieblingsmotiven und allen Produkten.</span>
         </div>
         <div class="sd-welten">
@@ -142,31 +162,28 @@ html body #jf.jf a.sd-welt small{display:block;margin-top:3px;font-family:var(--
       </div>
 
       <!-- ZEILE 02: ETSY (Printful und Gelato) -->
-      <div class="sd-zeile" style="--sd-farbe:#DCE6F0">
+      <div class="sd-zeile" id="etsy" style="--sd-farbe:#DCE6F0">
         <div class="sd-links">
-          <span class="sd-nr">(03) MODE · KISSEN · KARTEN</span>
-          <span class="sd-kopf"><span><span class="sd-name">Etsy</span><span class="sd-wo">Kleider, Kissen, Tassen, Karten</span></span></span>
+          <span class="sd-nr">MODE · KISSEN · KARTEN</span>
+          <span class="sd-kopf"><span><span class="sd-name">Etsy<span class="sd-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><path d="M22 20 V15 Q22 8 30 8 Q38 8 38 15 V20" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/><path d="M10 20 H50 L47 52 H13 Z" fill="#F2A877" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="25" cy="33" r="2.6" fill="#4A3F36"/><circle cx="35" cy="33" r="2.6" fill="#4A3F36"/><path d="M27 39 Q30 42 33 39" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2.2"/></svg></span></span><span class="sd-wo">Kleider, Kissen, Tassen, Karten</span></span></span>
           <p class="sd-text">Meine Muster auf Kleidern, Kissenbezügen, Tassen und Weihnachtskarten. Gedruckt von Printful und Gelato, erst wenn du bestellst.</p>
           <span class="sd-hinweis">✦ Neu: Tassen, Karten &amp; Kleider</span>
           <span class="sd-knoepfe"><a class="jf-knopf" href="https://www.etsy.com/de/shop/Jasardpu" target="_blank" rel="noopener">Zu Etsy →</a></span>
         </div>
         <div class="sd-bilder sd-etsy">
           <a class="sd-xk" href="https://www.etsy.com/de/listing/4611991441" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/7953e0/8830955980/il_800x800.8830955980_an16.jpg" alt="Weihnachtstasse, Tasse bei Etsy" loading="lazy"><span class="xe">ETSY</span></span><span class="xn">Weihnachtstasse</span><span class="xm">9 Motive</span><span class="xp">Tasse →</span></a>
+          <a class="sd-xk" href="https://www.etsy.com/de/listing/4611954067" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/0067ab/8814493530/il_800x800.8814493530_5c0h.jpg" alt="Kleid mit Allover-Muster, Kleid bei Etsy" loading="lazy"><span class="xe">ETSY</span></span><span class="xn">Kleid mit Allover-Muster</span><span class="xm">5 Muster</span><span class="xp">Kleid →</span></a>
           <a class="sd-xk" href="https://www.etsy.com/de/listing/4612016126" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/2d5b24/8862674733/il_800x800.8862674733_o2ab.jpg" alt="Weihnachtskarten Korea, Klappkarten 10er-Set bei Etsy" loading="lazy"><span class="xe">ETSY</span></span><span class="xn">Weihnachtskarten Korea</span><span class="xm">17 Motive</span><span class="xp">Klappkarten 10er-Set →</span></a>
           <a class="sd-xk" href="https://www.etsy.com/de/listing/1399788383" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/a94186/8831647204/il_800x800.8831647204_kzb0.jpg" alt="Weihnachtspostkarten, Postkarten 10er-Set bei Etsy" loading="lazy"><span class="xe">ETSY</span></span><span class="xn">Weihnachtspostkarten</span><span class="xm">Motive zur Wahl</span><span class="xp">Postkarten 10er-Set →</span></a>
-          <a class="sd-xk" href="https://www.etsy.com/de/listing/823980832" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/598e61/8827930154/il_800x800.8827930154_q29j.jpg" alt="Frohe Schweinachten, Kissenbezug bei Etsy" loading="lazy"><span class="xe">ETSY</span></span><span class="xn">Frohe Schweinachten</span><span class="xm">9 Motive</span><span class="xp">Kissenbezug →</span></a>
-          <a class="sd-xk" href="https://www.etsy.com/de/listing/4611954067" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/0067ab/8814493530/il_800x800.8814493530_5c0h.jpg" alt="Kleid mit Allover-Muster, Kleid bei Etsy" loading="lazy"><span class="xe">ETSY</span></span><span class="xn">Kleid mit Allover-Muster</span><span class="xm">5 Muster</span><span class="xp">Kleid →</span></a>
           <a class="sd-xk" href="https://www.etsy.com/de/listing/823994980" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/4a7b98/8879143901/il_800x800.8879143901_9jcp.jpg" alt="Kissenbezug Korea, Kissenbezug bei Etsy" loading="lazy"><span class="xe">ETSY</span></span><span class="xn">Kissenbezug Korea</span><span class="xm">9 Motive</span><span class="xp">Kissenbezug →</span></a>
-          <a class="sd-xk" href="https://www.etsy.com/de/listing/1379438804" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/40f680/8878910953/il_800x800.8878910953_sglq.jpg" alt="Kissenbezug Tiere, Kissenbezug bei Etsy" loading="lazy"><span class="xe">ETSY</span></span><span class="xn">Kissenbezug Tiere</span><span class="xm">9 Motive</span><span class="xp">Kissenbezug →</span></a>
-          <a class="sd-xk" href="https://www.etsy.com/de/listing/823982718" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/06547c/8821019294/il_800x800.8821019294_mzzg.jpg" alt="Kissenbezug Architektur, Kissenbezug bei Etsy" loading="lazy"><span class="xe">ETSY</span></span><span class="xn">Kissenbezug Architektur</span><span class="xm">3 Motive</span><span class="xp">Kissenbezug →</span></a>
         </div>
       </div>
 
       <!-- ZEILE 03: SPOONFLOWER -->
-      <div class="sd-zeile" style="--sd-farbe:#F1E8DC">
+      <div class="sd-zeile" id="spoonflower" style="--sd-farbe:#F1E8DC">
         <div class="sd-links">
-          <span class="sd-nr">(04) STOFFE &amp; TAPETEN</span>
-          <span class="sd-kopf"><span><span class="sd-name">Spoonflower</span><span class="sd-wo">Meterware, Tapete, Deko</span></span></span>
+          <span class="sd-nr">STOFFE &amp; TAPETEN</span>
+          <span class="sd-kopf"><span><span class="sd-name">Spoonflower<span class="sd-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><rect x="14" y="6" width="32" height="8" rx="3" fill="#D8C6AE" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="14" y="46" width="32" height="8" rx="3" fill="#D8C6AE" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="18" y="14" width="24" height="32" fill="#E58C74" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 20 L42 24 M18 27 L42 31 M18 34 L42 38 M18 41 L42 45" stroke="#B5543F" stroke-width="2" stroke-linecap="round"/><path d="M42 34 Q52 38 50 48 Q48 56 56 56" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke="#E58C74" stroke-width="2.6"/></svg></span></span><span class="sd-wo">Meterware, Tapete, Deko</span></span></span>
           <p class="sd-text">Meine Muster als Stoff zum Nähen, als Tapete und für Wohntextilien.</p>
           <span class="sd-knoepfe"><a class="jf-knopf" href="https://www.spoonflower.com/profiles/jasardpu" target="_blank" rel="noopener">Zu Spoonflower →</a></span>
         </div>
@@ -179,12 +196,12 @@ html body #jf.jf a.sd-welt small{display:block;margin-top:3px;font-family:var(--
       </div>
 
       <!-- ZEILE 04: BÜCHER (Amazon) -->
-      <div class="sd-zeile" style="--sd-farbe:#EDE7E0">
+      <div class="sd-zeile" id="buecher" style="--sd-farbe:#EDE7E0">
         <div class="sd-links">
-          <span class="sd-nr">(05) BÜCHER</span>
-          <span class="sd-kopf"><span><span class="sd-name">Bücher</span><span class="sd-wo">bei Amazon</span></span></span>
+          <span class="sd-nr">BÜCHER</span>
+          <span class="sd-kopf"><span><span class="sd-name">Bücher<span class="sd-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><rect x="12" y="8" width="36" height="44" rx="4" fill="#F2C4B0" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 8 V52" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/><path d="M48 46 H18" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/><circle cx="29" cy="26" r="2.6" fill="#4A3F36"/><circle cx="39" cy="26" r="2.6" fill="#4A3F36"/><path d="M31 31 Q34 34 37 31" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2.2"/></svg></span></span><span class="sd-wo">bei Amazon</span></span></span>
           <p class="sd-text">Reiseführer für Korea, glutenfrei und vegan, Malbücher und ein Notizbuch für Bauherrinnen.</p>
-          <span class="sd-knoepfe"><a class="jf-knopf" href="/buecher.html">Alle Bücher →</a></span>
+          <span class="sd-knoepfe"><a class="jf-knopf" href="/buecher.html">Bücher →</a></span>
         </div>
         <div class="sd-bilder">
           <a href="/buecher.html"><img class="sd-ganz" src="/files/theme/jf-buch-vegan-guide.jpg" alt="Cover: Korea Vegan Travel Guide" loading="lazy"></a>
@@ -195,10 +212,10 @@ html body #jf.jf a.sd-welt small{display:block;margin-top:3px;font-family:var(--
       </div>
 
       <!-- ZEILE 05: FOTOGRAFIE -->
-      <div class="sd-zeile" style="--sd-farbe:#E9EEE6">
+      <div class="sd-zeile" id="fotos" style="--sd-farbe:#E9EEE6">
         <div class="sd-links">
-          <span class="sd-nr">(06) FOTOGRAFIE</span>
-          <span class="sd-kopf"><span><span class="sd-name">Fotos</span><span class="sd-wo">zum Lizenzieren und Anschauen</span></span></span>
+          <span class="sd-nr">FOTOGRAFIE</span>
+          <span class="sd-kopf"><span><span class="sd-name">Fotos<span class="sd-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><path d="M22 16 L25 10 H35 L38 16" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="#D8C6AE"/><rect x="6" y="16" width="48" height="34" rx="7" fill="#D8C6AE" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="30" cy="33" r="10" fill="#B8CCE0" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="27" cy="30" r="2.5" fill="#FFFFFF"/><circle cx="46" cy="23" r="2" fill="#4A3F36"/></svg></span></span><span class="sd-wo">zum Lizenzieren und Anschauen</span></span></span>
           <p class="sd-text">Reisen, Natur und Architektur durch meine Linse. Als Stockfoto zum Kaufen oder einfach zum Stöbern.</p>
           <span class="sd-knoepfe"><a class="jf-knopf" href="https://stock.adobe.com/de/contributor/207822855/Jasmin" target="_blank" rel="noopener">Adobe Stock →</a><a class="sd-klein" href="https://www.istockphoto.com/de/portfolio/jasardpu" target="_blank" rel="noopener">iStock</a><a class="sd-klein" href="https://www.flickr.com/photos/161068629@N03/" target="_blank" rel="noopener">Flickr</a><a class="sd-klein" href="https://www.viewbug.com/member/jasminfreiner" target="_blank" rel="noopener">Viewbug</a></span>
         </div>
@@ -211,10 +228,10 @@ html body #jf.jf a.sd-welt small{display:block;margin-top:3px;font-family:var(--
       </div>
 
       <!-- ZEILE 06: TRAVELLING ARCHITECT -->
-      <div class="sd-zeile" style="--sd-farbe:#E4ECF4">
+      <div class="sd-zeile" id="travel" style="--sd-farbe:#E4ECF4">
         <div class="sd-links">
-          <span class="sd-nr">(07) ARCHITEKTUR · REISEN · <span lang="ko">건축 · 여행</span></span>
-          <span class="sd-kopf"><span><span class="sd-name">Travelling Architect</span><span class="sd-wo">Reisen, Videos, Architektur</span></span></span>
+          <span class="sd-nr">ARCHITEKTUR · REISEN · <span lang="ko">건축 · 여행</span></span>
+          <span class="sd-kopf"><span><span class="sd-name">Travelling Architect<span class="sd-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><path d="M10 28 L30 10 L50 28 V52 H10 Z" fill="#FFFFFF" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 18 Q30 2 42 18" fill="#F2C4B0" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="24" cy="34" r="2.6" fill="#4A3F36"/><circle cx="36" cy="34" r="2.6" fill="#4A3F36"/><path d="M27 40 Q30 43 33 40" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2.2"/></svg></span></span><span class="sd-wo">Reisen, Videos, Architektur</span></span></span>
           <p class="sd-text">Gebäude und Städte, die mich unterwegs begeistert haben. Mit Reisevideos auf YouTube und Architektur zum Anziehen.</p>
           <span class="sd-knoepfe"><a class="jf-knopf" href="/travelling-architect.html">Ansehen →</a><a class="sd-klein" href="https://www.youtube.com/watch?v=1zgSfIZXh-c&amp;list=PLIa1PqeCDvBr-GGZRGFkPtUQ8yf2batHM" target="_blank" rel="noopener">YouTube-Playlist</a><a class="sd-klein" href="https://www.redbubble.com/de/people/Jasardpu/shop?collections=4601752" target="_blank" rel="noopener">Architektur-Designs</a></span>
         </div>
@@ -227,16 +244,16 @@ html body #jf.jf a.sd-welt small{display:block;margin-top:3px;font-family:var(--
       </div>
 
       <!-- ZEILE 07: GUMROAD (digitale Karten) -->
-      <div class="sd-zeile" style="--sd-farbe:#F6D5D0">
+      <div class="sd-zeile" id="gumroad" style="--sd-farbe:#F6D5D0">
         <div class="sd-links">
-          <span class="sd-nr">(08) DIGITALE KARTEN</span>
-          <span class="sd-kopf"><span><span class="sd-name">Gumroad</span><span class="sd-wo">zum Herunterladen</span></span></span>
+          <span class="sd-nr">DIGITALE KARTEN</span>
+          <span class="sd-kopf"><span><span class="sd-name">Gumroad<span class="sd-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><path d="M6 14 L20 9 L40 15 L54 10 V46 L40 51 L20 45 L6 50 Z" fill="#B8CCE0" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M20 9 V45 M40 15 V51" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/><path d="M30 18 C24 18 22 23 24 27 L30 36 L36 27 C38 23 36 18 30 18 Z" fill="#E58C74" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4"/><circle cx="30" cy="24.5" r="2.4" fill="#FFFFFF"/></svg></span></span><span class="sd-wo">zum Herunterladen</span></span></span>
           <p class="sd-text">Meine E-Books und Karten für Südkorea, glutenfrei und vegan. Direkt aufs Handy, für Google Maps und Naver.</p>
           <span class="sd-knoepfe"><a class="jf-knopf" href="https://jasard.gumroad.com/" target="_blank" rel="noopener">Zu Gumroad →</a></span>
         </div>
         <div class="sd-bilder sd-gum">
-          <a class="sd-gfeld" href="https://jasard.gumroad.com/" target="_blank" rel="noopener" style="background:#FBF8F2"><img src="/files/theme/jf-fig-namsan.png" alt="" loading="lazy"><span><small>KARTEN · KML/KMZ</small><b>Karten für Google Maps &amp; Naver</b><em>Südkorea glutenfrei &amp; vegan, Top 100 Cafés →</em></span></a>
-          <a class="sd-gfeld" href="https://jasard.gumroad.com/" target="_blank" rel="noopener" style="background:#E4ECF4"><img src="/files/theme/jf-soy-sally.png" alt="" loading="lazy"><span><small>E-BOOKS</small><b>Reiseführer als E-Book</b><em>Glutenfrei und vegan durch Südkorea →</em></span></a>
+          <a class="sd-gfeld" href="https://jasard.gumroad.com/?section=Z03aGd3LbJw5INKw7KFCvw%3D%3D" target="_blank" rel="noopener" style="background:#FBF8F2"><img src="/files/theme/jf-fig-namsan.png" alt="" loading="lazy"><span><small>KARTEN · KML/KMZ</small><b>Karten für Google Maps &amp; Naver</b><em>Südkorea glutenfrei &amp; vegan, Top 100 Cafés →</em></span></a>
+          <a class="sd-gfeld" href="https://jasard.gumroad.com/?section=ZlEGK9JoyHFsR2Cbfgxv8Q%3D%3D" target="_blank" rel="noopener" style="background:#E4ECF4"><img src="/files/theme/jf-soy-sally.png" alt="" loading="lazy"><span><small>E-BOOKS</small><b>Reiseführer als E-Book</b><em>Glutenfrei und vegan durch Südkorea →</em></span></a>
         </div>
       </div>
 
@@ -251,4 +268,38 @@ html body #jf.jf a.sd-welt small{display:block;margin-top:3px;font-family:var(--
     <span class="jf-links"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></span>
   </footer>
 </div>
+  <!-- ===== NACH-OBEN-KNOPF (rechts unten) ===== -->
+  <a class="jf-hoch" href="#" aria-label="Nach oben">↑</a>
 </div>
+
+<style>
+/* Menüzeile mit Ausklapp-Menüs */
+html body #jf.jf .jf-menue{position:relative;z-index:20;display:flex;flex-wrap:wrap;gap:0 4px;padding:6px 0;border-bottom:1px solid #4A3F36;font-family:var(--jf-mono);font-size:12px;letter-spacing:.04em}
+html body #jf.jf .jf-mp{position:relative;display:block}
+html body #jf.jf .jf-mh,html body #jf.jf .jf-hier{display:block;padding:8px 10px;border-radius:10px;text-decoration:none;color:#4A3F36}
+html body #jf.jf .jf-mp:first-child .jf-mh,html body #jf.jf .jf-mp:first-child .jf-hier{padding-left:0}
+html body #jf.jf .jf-mh::after{content:" ▾";font-size:10px;opacity:.55}
+html body #jf.jf .jf-hier{font-weight:600;cursor:default}
+html body #jf.jf .jf-mp:hover .jf-mh,html body #jf.jf .jf-mp:focus-within .jf-mh{color:#B0705A}
+html body #jf.jf .jf-mk{position:absolute;left:0;top:100%;display:none;flex-direction:column;min-width:210px;padding:8px;border-radius:16px;background:#FFFFFF;box-shadow:0 14px 30px rgba(74,63,54,.18);font-family:var(--jf-sans);font-size:14px;letter-spacing:0}
+html body #jf.jf .jf-mp:hover .jf-mk,html body #jf.jf .jf-mp:focus-within .jf-mk{display:flex}
+html body #jf.jf .jf-mk a,html body #jf.jf .jf-mk .jf-bald{display:block;padding:7px 12px;border-radius:10px;text-decoration:none;color:#4A3F36;white-space:nowrap}
+html body #jf.jf .jf-mk a:hover{background:#F8E5DC;color:#4A3F36}
+html body #jf.jf .jf-mk .jf-bald{color:#8A7F76}
+html body #jf.jf .jf-mk .jf-mk-fett{font-weight:800}
+html body #jf.jf .jf-mp:last-child .jf-mk{left:auto;right:0}
+@media (hover:none),(max-width:760px){html body #jf.jf .jf-mh::after{content:""}html body #jf.jf .jf-mp:hover .jf-mk{display:none}}
+/* Nach-oben-Knopf */
+html body #jf.jf a.jf-hoch{position:fixed;right:20px;bottom:20px;z-index:50;display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#4A3F36;color:#FBF8F2;text-decoration:none;font-size:22px;font-weight:700;box-shadow:0 8px 20px rgba(74,63,54,.25);opacity:0;pointer-events:none;transition:opacity .3s,transform .2s}
+html body #jf.jf a.jf-hoch.jf-zeigen{opacity:1;pointer-events:auto}
+html body #jf.jf a.jf-hoch:hover{background:#B0705A;color:#FFFFFF;transform:translateY(-3px)}
+</style>
+<script>
+/* Nach-oben-Knopf: erscheint nach etwas Scrollen, scrollt ganz nach oben */
+(function(){
+  var h=document.querySelector('#jf.jf .jf-hoch');if(!h)return;
+  function pruefe(){h.classList.toggle('jf-zeigen',window.scrollY>400)}
+  window.addEventListener('scroll',pruefe,{passive:true});pruefe();
+  h.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})});
+})();
+</script>
