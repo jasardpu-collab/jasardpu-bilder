@@ -1,6 +1,7 @@
 <!--
   ============================================================
   STARTSEITE · Seitenadresse: / (Startseite / Home)
+  14.11.2026: Seiten-Leiste unter der Kopfzeile, Shop-Feld (07) mit Welten und Themenseiten.
   Stand 09.11.2026 (abends): Jasardpu-Logo auf der Oberkante von Kachel (05) mit Offset,
   ragt nicht mehr in die Fotos, verdeckt keine Schrift,
   zittert am Computer zweimal, am Handy ruhig.
@@ -23,6 +24,9 @@
     <span lang="ko">야스민 프라이너</span>
     <nav class="jf-sprachen" aria-label="Sprache"><span class="jf-aktiv">DE</span></nav>
   </header>
+
+  <!-- ===== SEITEN-LEISTE: zu den Unterseiten ===== -->
+  <nav class="jf-unter" aria-label="Unterseiten"><a href="/korea-vegan-glutenfrei.html">Korea vegan &amp; glutenfrei</a><a href="/buecher.html">Alle Bücher</a><a href="/podcast-youtube.html">Podcast &amp; YouTube</a><a href="/glutenfrei-vegan.html">Glutenfrei &amp; vegan</a><a href="/shop-design.html">Shop &amp; Design</a><a href="/jasardpu.html">Shop Jasardpu</a><a href="/folge-mir.html">Folge mir</a></nav>
 
 
   <!-- ===== BEGRÜSSUNG + WER ===== -->
@@ -135,6 +139,18 @@
     </a>
   </nav>
 
+  <!-- ===== (07) SHOP JASARDPU: Welten und Themenseiten ===== -->
+  <section class="jf-shopblock" aria-label="Shop Jasardpu">
+    <a class="jf-shoplogo" href="/jasardpu.html"><img src="/files/theme/jasardpu-logo.webp" alt="Logo: made by jasardpu" width="160" height="160"><span>Zum Shop →</span></a>
+    <div class="jf-shoprechts">
+      <span class="jf-seclabel" style="margin:0">(07) SHOP JASARDPU · <span lang="ko">디자인 샵</span></span>
+      <span class="jf-shopkopf">Meine Welten</span>
+      <div class="jf-shopwelten"><a href="/jasardpu.html#weihnachten"><img src="https://ih1.redbubble.net/image.6270367446.7891/ur,throw_pillow_couch_small,square,600x600.jpg" alt="" loading="lazy"><span>Weihnachten <i lang="ko">크리스마스</i></span></a><a href="/jasardpu.html#w-korea"><img src="https://ih1.redbubble.net/image.6265595295.3184/flat,550x550,075,f.jpg" alt="" loading="lazy"><span>Korea <i lang="ko">한국</i></span></a><a href="/jasardpu.html#w-travel"><img src="https://ih1.redbubble.net/image.440247834.2334/flat,550x550,075,f.jpg" alt="" loading="lazy"><span>Travel &amp; Architektur <i lang="ko">여행</i></span></a><a href="/jasardpu.html#w-tiere"><img src="https://ih0.redbubble.net/image.1072256767.2735/flat,550x550,075,f.jpg" alt="" loading="lazy"><span>Tiere &amp; Natur <i lang="ko">동물</i></span></a><a href="/jasardpu.html#w-muster"><img src="https://ih1.redbubble.net/image.591284672.1907/flat,550x550,075,f.jpg" alt="" loading="lazy"><span>Teppich &amp; Muster <i lang="ko">패턴</i></span></a><a href="/jasardpu.html#w-haltung"><img src="https://ih1.redbubble.net/image.5483739849.9231/flat,550x550,075,f.jpg" alt="" loading="lazy"><span>Haltung &amp; Herz <i lang="ko">마음</i></span></a><a href="/jasardpu.html#w-vegan"><img src="https://ih0.redbubble.net/image.6169088582.8025/flat,550x550,075,f.jpg" alt="" loading="lazy"><span>Glutenfrei &amp; vegan <i lang="ko">비건</i></span></a><a href="/jasardpu.html#w-spass"><img src="https://ih1.redbubble.net/image.6242761669.1115/flat,550x550,075,f.jpg" alt="" loading="lazy"><span>Spaß &amp; Alltag <i lang="ko">일상</i></span></a><a href="/jasardpu.html#w-anlaesse"><img src="https://ih1.redbubble.net/image.6270056230.8175/aps,504x498,small,transparent-pad,600x600,f8f8f8.jpg" alt="" loading="lazy"><span>Anlässe &amp; Karten <i lang="ko">카드</i></span></a><a href="/jasardpu.html#bestseller"><img src="https://ih1.redbubble.net/image.1432031886.1907/ur,throw_pillow_couch_small,square,600x600.u1.jpg" alt="" loading="lazy"><span>Bestseller <i lang="ko">인기</i></span></a></div>
+      <span class="jf-shopkopf">Themenseiten</span>
+      <div class="jf-shopthemen"><a href="/lipoedem.html" style="--wf:#8E6FA8"><img src="https://ih1.redbubble.net/image.5874527114.3586/ur,throw_pillow_couch_small,square,600x600.jpg" alt="" loading="lazy"><span>Lipödem &amp; Lymphe</span></a><a href="/meerschweinchen-shop.html" style="--wf:#E8A68C"><img src="https://ih1.redbubble.net/image.5080388156.2217/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="" loading="lazy"><span>Meerschweinchen</span></a><a href="/teppich.html" style="--wf:#8B3A35"><img src="https://ih1.redbubble.net/image.1432031886.1907/ur,throw_pillow_couch_small,square,600x600.u1.jpg" alt="" loading="lazy"><span>Teppich &amp; Muster</span></a><a href="/architektur-kaffee.html" style="--wf:#5B7DA8"><img src="https://ih1.redbubble.net/image.6171029473.9339/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="" loading="lazy"><span>Architektur &amp; Kaffee</span></a><a href="/korea-shop.html" style="--wf:#2F5D50"><img src="https://ih1.redbubble.net/image.6265595296.3184/ur,throw_pillow_couch_small,square,600x600.jpg" alt="" loading="lazy"><span>Korea</span></a><a href="/naehen.html" style="--wf:#C9A04A"><img src="https://ih1.redbubble.net/image.6236948892.8162/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="" loading="lazy"><span>Nähen</span></a><a href="/glutenfrei-vegan-shop.html" style="--wf:#7C8C5C"><img src="https://ih1.redbubble.net/image.5868380221.3362/ssrco,fitted_tee,flatlay_01,101010:01c5ca27c6,front,square_product,x600.jpg" alt="" loading="lazy"><span>Glutenfrei &amp; vegan</span></a></div>
+    </div>
+  </section>
+
 
   <!-- ===== FUSSZEILE ===== -->
   <footer class="jf-fuss">
@@ -146,6 +162,28 @@
 </div>
 </div>
 <style>
+/* Seiten-Leiste unter der Kopfzeile */
+html body #jf.jf .jf-unter{display:flex;flex-wrap:wrap;gap:8px 18px;padding:14px 0;border-bottom:1px solid #4A3F36;font-family:var(--jf-mono);font-size:12px;letter-spacing:.04em}
+html body #jf.jf .jf-unter a{text-decoration:none;color:#4A3F36}
+html body #jf.jf .jf-unter a:hover{text-decoration:underline}
+/* (07) Shop-Feld */
+html body #jf.jf .jf-shopblock{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;align-items:start;margin-top:40px;padding:clamp(18px,3vw,28px);border-radius:28px;background:#F2E6C8}
+html body #jf.jf a.jf-shoplogo{display:flex;flex-direction:column;align-items:center;gap:10px;padding:14px;border:1.5px solid #4A3F36;border-radius:22px;background:#F8E5DC;text-decoration:none;color:#4A3F36;font-weight:800;font-size:15px;transition:transform .2s}
+html body #jf.jf a.jf-shoplogo:hover{transform:translateY(-3px)}
+html body #jf.jf a.jf-shoplogo img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:14px;background:#FFFFFF}
+html body #jf.jf .jf-shoprechts{display:flex;flex-direction:column;gap:10px;min-width:0}
+html body #jf.jf .jf-shopkopf{display:block;margin-top:6px;font-weight:900;font-size:20px;letter-spacing:-.01em}
+html body #jf.jf .jf-shopwelten{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+html body #jf.jf .jf-shopthemen{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+html body #jf.jf .jf-shopwelten a,html body #jf.jf .jf-shopthemen a{display:flex;flex-direction:column;text-decoration:none;color:#4A3F36;background:#FFFFFF;border-radius:14px;overflow:hidden;box-shadow:0 4px 12px rgba(74,63,54,.10);transition:transform .2s}
+html body #jf.jf .jf-shopwelten a:hover,html body #jf.jf .jf-shopthemen a:hover{transform:translateY(-2px)}
+html body #jf.jf .jf-shopwelten img,html body #jf.jf .jf-shopthemen img{display:block;width:100%;aspect-ratio:2/1;object-fit:cover;background:#F8F8F8}
+html body #jf.jf .jf-shopthemen img{aspect-ratio:1}
+html body #jf.jf .jf-shopwelten span,html body #jf.jf .jf-shopthemen span{display:block;padding:6px 8px 8px;font-weight:800;font-size:12px;line-height:1.2}
+html body #jf.jf .jf-shopthemen span{border-top:4px solid var(--wf)}
+html body #jf.jf .jf-shopwelten i{font-style:normal;font-weight:500;color:#8A7F76}
+@media (max-width:1000px){html body #jf.jf .jf-shopthemen{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:760px){html body #jf.jf .jf-shopblock{grid-template-columns:minmax(0,1fr)}html body #jf.jf a.jf-shoplogo{max-width:180px}html body #jf.jf .jf-shopwelten{grid-template-columns:repeat(2,minmax(0,1fr))}html body #jf.jf .jf-shopthemen{grid-template-columns:repeat(2,minmax(0,1fr))}}
 /* Jasardpu-Logo auf Kachel (05): Größe hier bei --sl ändern */
 html body #jf.jf .jf-k5{position:relative;display:block;--sl:80px}
 html body #jf.jf .jf-kacheln a.jf-sl{position:absolute;top:-64px;left:calc(50% + 8px);margin-left:calc(var(--sl) / -2);z-index:3;display:block;width:var(--sl);height:var(--sl);padding:0;border-radius:16px;background:transparent;text-decoration:none;transform:rotate(-6deg);transition:none;box-shadow:none}
