@@ -199,6 +199,11 @@ html body #jfs .blasen img{position:absolute;aspect-ratio:1;height:auto;object-f
 html body #jfs .in{position:relative;z-index:1}
 @media (max-width:900px){html body #jfs .blasen{display:none}}
 @media (prefers-reduced-motion:reduce){html body #jfs .blasen img{animation:none}}
+html body #jfs .hero{align-items:flex-start}
+html body #jfs .hero-r{flex:0 1 520px;min-width:0}
+html body #jfs .hero-r .shopq{margin-top:0;grid-template-columns:repeat(3,minmax(0,1fr))}
+html body #jfs .hero-r .lead{text-align:right;margin:20px 0 0;max-width:none}
+@media (max-width:760px){html body #jfs .hero-r .lead{text-align:left}}
 html body #jfs .bsatz{margin:0;font-size:17px;color:var(--bl)}
 html body #jfs .bsatz a{color:var(--br);font-weight:800}
 html body #jfs .taschen{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px}
@@ -268,12 +273,14 @@ html body #jfs #ein-motiv>p:last-child{text-align:center}
       <span class="k">Shop · Designs von Jasmin Freiner · <span lang="ko">디자인</span></span>
       <h1 class="h1">Jasardpu.</h1>
       <span class="script">Muster mit Herz &amp; Haltung</span>
-      <p class="lead">Ich bin Architektin und gestalte Muster, Illustrationen und Sprüche – von koreanischer Palastmalerei bis zum Meerschweinchen im Weltall. Gedruckt auf Shirts, Kissen, Sticker, Taschen und vieles mehr.</p>
     </div>
-    <div class="shopq">
-      <a class="sq" href="https://www.redbubble.com/de/people/Jasardpu/shop" target="_blank" rel="noopener" style="--wf:#B0705A"><img src="https://ih1.redbubble.net/image.1432031886.1907/ur,throw_pillow_couch_small,square,600x600.u1.jpg" alt="Kissen mit Perser-Muster bei Redbubble" loading="lazy"><span><b>Redbubble →</b><small>Shirts, Kissen, Sticker &amp; mehr</small></span></a>
-      <a class="sq" href="https://www.etsy.com/de/shop/Jasardpu" target="_blank" rel="noopener" style="--wf:#E07A3F"><img src="https://i.etsystatic.com/22304935/r/il/0067ab/8814493530/il_800x800.8814493530_5c0h.jpg" alt="Kleid mit Allover-Muster bei Etsy" loading="lazy"><span><b>Etsy →</b><small>Kleider, Kissenbezüge, Tassen &amp; Karten</small></span></a>
-      <a class="sq" href="https://www.spoonflower.com/profiles/jasardpu" target="_blank" rel="noopener" style="--wf:#5B7DA8"><img src="https://garden.spoonflower.com/c/15463036/p/f/m/MLxuIHgt7KacqtfzFrbor98ZDUWvv2NOmWtAjLvocweBfEx-8W4K/pfau.jpg" alt="Stoffmuster Pfau bei Spoonflower" loading="lazy"><span><b>Spoonflower →</b><small>Stoffe &amp; Tapeten</small></span></a>
+    <div class="hero-r">
+      <div class="shopq">
+        <a class="sq" href="https://www.redbubble.com/de/people/Jasardpu/shop" target="_blank" rel="noopener" style="--wf:#B0705A"><img src="https://ih1.redbubble.net/image.1432031886.1907/ur,throw_pillow_couch_small,square,600x600.u1.jpg" alt="Kissen mit Perser-Muster bei Redbubble" loading="lazy"><span><b>Redbubble →</b><small>Shirts, Kissen, Sticker &amp; mehr</small></span></a>
+        <a class="sq" href="https://www.etsy.com/de/shop/Jasardpu" target="_blank" rel="noopener" style="--wf:#E07A3F"><img src="https://i.etsystatic.com/22304935/r/il/0067ab/8814493530/il_800x800.8814493530_5c0h.jpg" alt="Kleid mit Allover-Muster bei Etsy" loading="lazy"><span><b>Etsy →</b><small>Kleider, Kissenbezüge, Tassen &amp; Karten</small></span></a>
+        <a class="sq" href="https://www.spoonflower.com/profiles/jasardpu" target="_blank" rel="noopener" style="--wf:#5B7DA8"><img src="https://garden.spoonflower.com/c/15463036/p/f/m/MLxuIHgt7KacqtfzFrbor98ZDUWvv2NOmWtAjLvocweBfEx-8W4K/pfau.jpg" alt="Stoffmuster Pfau bei Spoonflower" loading="lazy"><span><b>Spoonflower →</b><small>Stoffe &amp; Tapeten</small></span></a>
+      </div>
+  <p class="lead">Ich bin Architektin und gestalte Muster, Illustrationen und Sprüche – von koreanischer Palastmalerei bis zum Meerschweinchen im Weltall. Gedruckt auf Shirts, Kissen, Sticker, Taschen und vieles mehr.</p>
     </div>
   </div>
 
