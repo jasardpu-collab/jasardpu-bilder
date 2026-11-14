@@ -1,0 +1,201 @@
+<!--
+  ============================================================
+  STARTSEITE · Seitenadresse: / (Startseite / Home)
+  Stand 09.11.2026 (abends): Jasardpu-Logo auf der Oberkante von Kachel (05) mit Offset,
+  ragt nicht mehr in die Fotos, verdeckt keine Schrift,
+  zittert am Computer zweimal, am Handy ruhig.
+  ============================================================
+  Wohin: Weebly → Seite öffnen → alten Inhalt löschen →
+         Element „Code einbetten“ hineinziehen → diesen ganzen Text einfügen
+  Texte ändern: einfach zwischen den Zeichen > und < tippen.
+  Neuer Absatz: <p class="jf-p">Text</p> · Zeilenumbruch: <br> · fett: <strong>Text</strong>
+  Bilder liegen im Theme unter /files/theme/... (Dateiname muss genau stimmen).
+  ============================================================
+-->
+<div id="jf" class="jf" lang="de">
+<svg class="jf-deko" aria-hidden="true" width="90" height="90" viewBox="-20 -20 40 40" style="left:-18px;top:520px;opacity:.8"><g fill="#F6D5D0"><ellipse cx="0" cy="-9" rx="6" ry="9"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(72)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(144)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(216)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(288)"/></g><circle r="3" fill="#E8A99B"/></svg>
+<svg class="jf-deko" aria-hidden="true" width="40" height="40" viewBox="-20 -20 40 40" style="left:46%;top:560px;opacity:.8"><g fill="#F6D5D0"><ellipse cx="0" cy="-9" rx="6" ry="9"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(72)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(144)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(216)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(288)"/></g><circle r="3" fill="#E8A99B"/></svg>
+<svg class="jf-deko" aria-hidden="true" width="70" height="70" viewBox="-20 -20 40 40" style="right:120px;top:700px;opacity:.8"><g fill="#F6D5D0"><ellipse cx="0" cy="-9" rx="6" ry="9"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(72)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(144)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(216)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(288)"/></g><circle r="3" fill="#E8A99B"/></svg>
+<div class="jf-inhalt">
+  <!-- ===== KOPFZEILE ===== -->
+  <header class="jf-kopf">
+    <a class="jf-logo" href="/">JASMIN FREINER</a>
+    <span lang="ko">야스민 프라이너</span>
+    <nav class="jf-sprachen" aria-label="Sprache"><span class="jf-aktiv">DE</span></nav>
+  </header>
+
+
+  <!-- ===== BEGRÜSSUNG + WER ===== -->
+  <div class="jf-start">
+    <div class="jf-gruss" id="jf-gruss">
+      <span class="jf-deko jf-kreis" aria-hidden="true" style="left:clamp(40px,10vw,150px);top:0;width:clamp(200px,24vw,330px);height:clamp(200px,24vw,330px);background:#F2C4B0"></span>
+      <span class="jf-deko jf-kreis" aria-hidden="true" style="left:0;top:clamp(160px,15vw,220px);width:120px;height:120px;background:#B8CCE0"></span>
+      <span class="jf-g jf-g-ko" lang="ko">안녕</span>
+      <span class="jf-g jf-g-de">Hallo.</span>
+      <span class="jf-g jf-g-en" lang="en">Hello.</span>
+      <span class="jf-g jf-g-es" lang="es">Hola.</span>
+    </div>
+
+    <div class="jf-rechts">
+      <div class="jf-sticker" aria-hidden="true">1 Kopf.<br>Zu viele<br>Ideen.</div>
+      <div class="jf-wer">
+        <span class="jf-seclabel" style="margin:0">(00) WER · WHO · <span lang="ko">누구</span> · QUIÉN</span>
+        <!-- TAGLINE DEUTSCH -->
+        <p class="jf-p">Architektin von Beruf, neugierig aus Prinzip. Ich baue Häuser und manchmal auch Sätze.</p>
+        <!-- TAGLINE KOREANISCH -->
+        <p class="jf-p jf-ko" lang="ko">직업은 건축가, 성격은 호기심쟁이. 집도 짓고, 가끔은 글도 짓습니다.</p>
+        <!-- TAGLINE ENGLISCH -->
+        <p class="jf-p" lang="en" style="font-size:.92em;color:var(--jf-grau)">Architect by trade, curious by nature. I build houses – and sometimes sentences.</p>
+      </div>
+
+      <!-- ===== ROLLEN + FOTOS ===== -->
+      <div class="jf-buehne">
+        <div class="jf-rollen jf-rollen-l" role="group" aria-label="Such dir eine Jasmin aus">
+          <span class="jf-aussuchen" aria-hidden="true">↘ Such dir eine Jasmin aus.</span>
+        <div class="jf-rolle"><button type="button" data-rolle="0" data-figur="k1" aria-pressed="false"><span class="jf-rn"><i style="background:#B8CCE0"></i>Korea-Liebhaberin</span><span class="jf-rs">Korea lover · <span lang="ko">한국 덕후</span> · Enamorada de Corea</span></button><span class="jf-strich" aria-hidden="true"></span><span class="jf-punkt" aria-hidden="true"></span></div>
+        <div class="jf-rolle"><button type="button" data-rolle="2" data-figur="k2" aria-pressed="false"><span class="jf-rn"><i style="background:#D8C6AE"></i>Autorin</span><span class="jf-rs">Author · <span lang="ko">작가</span> · Autora</span></button><span class="jf-strich" aria-hidden="true"></span><span class="jf-punkt" aria-hidden="true"></span></div>
+        <div class="jf-rolle"><button type="button" data-rolle="4" data-figur="k5" aria-pressed="false"><span class="jf-rn"><i style="background:#E6CFAF"></i>Architektin</span><span class="jf-rs">Architect · <span lang="ko">건축가</span> · Arquitecta</span></button><span class="jf-strich" aria-hidden="true"></span><span class="jf-punkt" aria-hidden="true"></span></div>
+        </div>
+        <div class="jf-fotos" aria-live="polite">
+        <img src="/files/theme/jf-rolle-korea.png" alt="" data-foto="0">
+        <img src="/files/theme/jf-rolle-designerin.png" alt="" data-foto="1">
+        <img src="/files/theme/jf-rolle-autorin.png" alt="" data-foto="2">
+        <img src="/files/theme/jf-rolle-vegan.png" alt="" data-foto="3">
+        <img src="/files/theme/jf-rolle-architektin.png" alt="" data-foto="4">
+        <img src="/files/theme/jf-rolle-podcast.png" alt="" data-foto="5">
+        </div>
+        <div class="jf-rollen jf-rollen-r" role="group" aria-label="Noch mehr Jasmins">
+        <div class="jf-rolle"><span class="jf-punkt" aria-hidden="true"></span><span class="jf-strich" aria-hidden="true" style="width:16px"></span><button type="button" data-rolle="1" data-figur="k5b" aria-pressed="false"><span class="jf-rn"><i style="background:#F2C4B0"></i>Designerin</span><span class="jf-rs">Designer · <span lang="ko">디자이너</span> · Diseñadora</span></button></div>
+        <div class="jf-rolle"><span class="jf-punkt" aria-hidden="true"></span><span class="jf-strich" aria-hidden="true" style="width:16px"></span><button type="button" data-rolle="3" data-figur="k4" aria-pressed="false"><span class="jf-rn"><i style="background:#A9B8A2"></i>Vegan &amp; glutenfrei</span><span class="jf-rs">Vegan &amp; gluten-free · <span lang="ko">비건 &amp; 글루텐프리</span> · Vegana y sin gluten</span></button></div>
+        <div class="jf-rolle"><span class="jf-punkt" aria-hidden="true"></span><span class="jf-strich" aria-hidden="true" style="width:16px"></span><button type="button" data-rolle="5" data-figur="k3" aria-pressed="false"><span class="jf-rn"><i style="background:#F6D5D0"></i>Tandem-Podcast</span><span class="jf-rs">Language exchange podcast · <span lang="ko">언어 교환 팟캐스트</span> · Pódcast de intercambio</span></button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== EASTER EGG: Meerschweinchen ===== -->
+  <a class="jf-schwein" href="/meerschweinchen.html" data-jf-ei="quiek" aria-label="Psst ... zu den Meerschweinchen">
+    <span class="jf-psst" aria-hidden="true">psst…</span>
+    <svg aria-hidden="true" data-jf-figur width="80" height="60" viewBox="0 0 120 90" class="" style=""><ellipse cx="60" cy="58" rx="44" ry="28" fill="#E6CFAF" stroke="#4A3F36" stroke-width="2.5"/><path d="M60 31 Q84 30 98 46 Q104 58 100 70 Q80 60 62 66 Z" fill="#FFFFFF"/><ellipse cx="60" cy="58" rx="44" ry="28" fill="none" stroke="#4A3F36" stroke-width="2.5"/><ellipse cx="30" cy="34" rx="7" ry="5" fill="#F2C4B0" stroke="#4A3F36" stroke-width="2"/><ellipse cx="52" cy="31" rx="7" ry="5" fill="#F2C4B0" stroke="#4A3F36" stroke-width="2"/><circle cx="30" cy="54" r="3.5" fill="#4A3F36"/><circle cx="48" cy="54" r="3.5" fill="#4A3F36"/><ellipse cx="24" cy="62" rx="5" ry="3" fill="#E58C74" opacity=".6"/><ellipse cx="54" cy="62" rx="5" ry="3" fill="#E58C74" opacity=".6"/><path d="M36 61 Q39 64 42 61" stroke="#4A3F36" stroke-width="2" fill="none" stroke-linecap="round"/><g transform="translate(41 22)"><g fill="#F6D5D0" stroke="#E8A99B" stroke-width=".8"><ellipse cx="0" cy="-6" rx="4" ry="6"/><ellipse cx="0" cy="-6" rx="4" ry="6" transform="rotate(72)"/><ellipse cx="0" cy="-6" rx="4" ry="6" transform="rotate(144)"/><ellipse cx="0" cy="-6" rx="4" ry="6" transform="rotate(216)"/><ellipse cx="0" cy="-6" rx="4" ry="6" transform="rotate(288)"/></g><circle r="2.2" fill="#E8A99B"/></g></svg>
+  </a>
+
+  <!-- ===== KACHELN =====
+       Koreanisch steht jeweils senkrecht rechts in der Kachel (<span class="jf-senkrecht">…</span>). -->
+  <nav class="jf-kacheln" aria-label="Übersicht">
+    <a href="/korea-vegan-glutenfrei.html" style="background:#E4ECF4">
+      <span class="jf-nr">(01)</span>
+      <span class="jf-senkrecht" aria-hidden="true" lang="ko">비건 · 글루텐프리 · 여행</span>
+      <img class="jf-fig" id="k1" src="/files/theme/jf-fig-gimbap.png" alt="" width="118" style="width:118px;height:auto">
+      <span class="jf-kt">Korea vegan &amp; glutenfrei →</span>
+    </a>
+    <a href="/buecher.html" style="background:#F1E8DC">
+      <span class="jf-nr">(02)</span>
+      <span class="jf-senkrecht" aria-hidden="true" lang="ko">모든 책</span>
+      <svg aria-hidden="true" id="k2" width="140" height="112" viewBox="0 0 150 120" class="jf-fig" style=""><rect x="30" y="80" width="90" height="16" rx="3" fill="#B8CCE0" stroke="#4A3F36" stroke-width="3"/><rect x="38" y="64" width="78" height="16" rx="3" fill="#A9B8A2" stroke="#4A3F36" stroke-width="3"/><rect x="34" y="28" width="82" height="36" rx="4" fill="#F2C4B0" stroke="#4A3F36" stroke-width="3"/><circle cx="65" cy="44" r="4" fill="#4A3F36"/><circle cx="85" cy="44" r="4" fill="#4A3F36"/><ellipse cx="57" cy="51" rx="5" ry="3" fill="#E58C74" opacity=".6"/><ellipse cx="93" cy="51" rx="5" ry="3" fill="#E58C74" opacity=".6"/><path d="M70 50 Q75 55 80 50" stroke="#4A3F36" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+      <span><span class="jf-kt">Alle Bücher</span><span class="jf-ks">Amazon →</span></span>
+    </a>
+    <a href="/podcast-youtube.html" style="background:#E9EEE6">
+      <span class="jf-nr">(03)</span>
+      <span class="jf-senkrecht" aria-hidden="true" lang="ko">팟캐스트 · 유튜브</span>
+      <svg aria-hidden="true" id="k3" width="140" height="112" viewBox="0 0 150 120" class="jf-fig" style=""><rect x="56" y="18" width="38" height="56" rx="19" fill="#B8CCE0" stroke="#4A3F36" stroke-width="3"/><path d="M44 52 Q44 86 75 86 Q106 86 106 52" stroke="#4A3F36" stroke-width="3" fill="none"/><path d="M75 86 V102 M60 102 H90" stroke="#4A3F36" stroke-width="3" stroke-linecap="round"/><circle cx="67" cy="44" r="4" fill="#4A3F36"/><circle cx="83" cy="44" r="4" fill="#4A3F36"/><ellipse cx="61" cy="52" rx="4" ry="2.5" fill="#E58C74" opacity=".6"/><ellipse cx="89" cy="52" rx="4" ry="2.5" fill="#E58C74" opacity=".6"/><path d="M71 52 Q75 57 79 52" stroke="#4A3F36" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+      <span><span class="jf-kt">Podcast &amp; YouTube</span><span class="jf-ks">AnnyeongHalloSeyo →</span></span>
+    </a>
+    <a href="/glutenfrei-vegan.html" style="background:#F8E5DC">
+      <span class="jf-nr">(04)</span>
+      <span class="jf-senkrecht" aria-hidden="true" lang="ko">글루텐프리 · 비건</span>
+      <svg aria-hidden="true" id="k4" width="140" height="112" viewBox="0 0 150 120" class="jf-fig" style=""><path d="M28 70 Q24 30 75 28 Q126 30 122 70 L120 92 Q120 96 116 96 L34 96 Q30 96 30 92 Z" fill="#E6CFAF" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round"/><path d="M52 40 L60 50 M72 36 L80 46 M92 40 L100 50" stroke="#B5916B" stroke-width="3" stroke-linecap="round"/><circle cx="65" cy="70" r="4" fill="#4A3F36"/><circle cx="85" cy="70" r="4" fill="#4A3F36"/><ellipse cx="57" cy="77" rx="4" ry="2.5" fill="#E58C74" opacity=".6"/><ellipse cx="93" cy="77" rx="4" ry="2.5" fill="#E58C74" opacity=".6"/><path d="M70 76 Q75 81 80 76" stroke="#4A3F36" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+      <span class="jf-kt">Glutenfrei &amp; vegan →</span>
+    </a>
+    <!-- (05) Shop & Design. Das Jasardpu-Logo sitzt auf der Oberkante der Kachel und führt direkt zum Shop.
+         Effekt: zwei versetzte Farbflächen (Pfirsich, Hellblau).
+         Am Computer zittert es zweimal, sobald die Kachel ins Bild kommt, danach ist Ruhe. Am Handy bleibt es ruhig.
+         Größe und Höhe ändern: unten im Stil bei „--sl“ und „top“ (Minuszahl = höher). -->
+    <div class="jf-k5">
+      <a href="/shop-design.html" style="background:#EDE7E0">
+        <span class="jf-nr">(05)</span>
+        <span class="jf-senkrecht" aria-hidden="true" lang="ko">숍 · 디자인</span>
+        <span style="display:flex;align-items:flex-end;gap:8px">
+          <svg aria-hidden="true" id="k5" width="84" height="112" viewBox="30 0 90 120" class="jf-fig" style=""><path d="M38 58 L75 30 L112 58 V98 H38 Z" fill="#FFFFFF" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round"/><path d="M50 30 Q75 0 100 30 Z" fill="#F2C4B0" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round"/><circle cx="65" cy="68" r="4" fill="#4A3F36"/><circle cx="85" cy="68" r="4" fill="#4A3F36"/><path d="M70 74 Q75 79 80 74" stroke="#4A3F36" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+          <svg aria-hidden="true" id="k5b" width="56" height="104" viewBox="0 0 60 112" class="jf-fig" style=""><rect x="23" y="4" width="14" height="50" rx="7" fill="#E6CFAF" stroke="#4A3F36" stroke-width="3"/><rect x="18" y="52" width="24" height="16" rx="3" fill="#B8CCE0" stroke="#4A3F36" stroke-width="3"/><path d="M18 68 Q14 92 30 106 Q46 92 42 68 Z" fill="#F2C4B0" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round"/><circle cx="25" cy="80" r="2.8" fill="#4A3F36"/><circle cx="35" cy="80" r="2.8" fill="#4A3F36"/><path d="M27.5 86 Q30 89 32.5 86" stroke="#4A3F36" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        </span>
+        <span><span class="jf-kt">Shop &amp; Design</span><span class="jf-ks">jasardpu →</span></span>
+      </a>
+      <a class="jf-sl" href="/jasardpu.html" data-jf-ei="boing" aria-label="Direkt zum Shop Jasardpu">
+        <span class="jf-sl-echo jf-sl-e1" aria-hidden="true"></span>
+        <span class="jf-sl-echo jf-sl-e2" aria-hidden="true"></span>
+        <img class="jf-sl-bild" data-jf-figur src="/files/theme/jasardpu-logo.webp" alt="" width="100" height="100">
+        <span class="jf-sl-schild" aria-hidden="true">zum Shop</span>
+      </a>
+    </div>
+    <a href="/folge-mir.html" class="jf-dunkel">
+      <span class="jf-nr">(06)</span>
+      <span class="jf-senkrecht" aria-hidden="true" lang="ko" style="color:#B8CCE0">팔로우</span>
+      <svg aria-hidden="true" id="k6" width="140" height="112" viewBox="0 0 150 120" class="jf-fig" style=""><rect x="52" y="12" width="46" height="84" rx="10" fill="#FBF8F2" stroke="#FBF8F2" stroke-width="3"/><path d="M75 46 C66 36 56 46 64 54 L75 64 L86 54 C94 46 84 36 75 46 Z" fill="#F2C4B0" stroke="#4A3F36" stroke-width="2.5"/><circle cx="69" cy="80" r="3" fill="#4A3F36"/><circle cx="81" cy="80" r="3" fill="#4A3F36"/></svg>
+      <span><span class="jf-kt">Folge mir</span><span class="jf-ks">Instagram · YouTube →</span></span>
+    </a>
+  </nav>
+
+
+  <!-- ===== FUSSZEILE ===== -->
+  <footer class="jf-fuss">
+    <span class="jf-fett">© 2026 JASMIN FREINER</span>
+    <span lang="ko">야스민 프라이너</span>
+    <span>Alle Cookies auf dieser Seite sind glutenfrei &amp; vegan</span>
+    <span class="jf-links"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></span>
+  </footer>
+</div>
+</div>
+<style>
+/* Jasardpu-Logo auf Kachel (05): Größe hier bei --sl ändern */
+html body #jf.jf .jf-k5{position:relative;display:block;--sl:80px}
+html body #jf.jf .jf-kacheln a.jf-sl{position:absolute;top:-64px;left:calc(50% + 8px);margin-left:calc(var(--sl) / -2);z-index:3;display:block;width:var(--sl);height:var(--sl);padding:0;border-radius:16px;background:transparent;text-decoration:none;transform:rotate(-6deg);transition:none;box-shadow:none}
+html body #jf.jf .jf-kacheln a.jf-sl:hover{transform:rotate(-6deg) scale(1.04);box-shadow:none}
+html body #jf.jf .jf-sl .jf-sl-bild{position:relative;z-index:2;display:block;width:100%;height:100%;border-radius:16px;background:#FFFFFF;box-shadow:0 10px 22px rgba(74,63,54,.18);transform-origin:50% 100%}
+html body #jf.jf .jf-sl .jf-sl-echo{position:absolute;inset:0;z-index:1;display:block;border-radius:16px}
+html body #jf.jf .jf-sl .jf-sl-e1{background:#F2C4B0;transform:translate(-9px,-7px)}
+html body #jf.jf .jf-sl .jf-sl-e2{background:#B8CCE0;transform:translate(9px,8px)}
+html body #jf.jf .jf-sl .jf-sl-schild{position:absolute;left:50%;bottom:-14px;z-index:3;display:block;transform:translateX(-50%) rotate(4deg);white-space:nowrap;padding:3px 9px;border-radius:999px;background:#4A3F36;color:#FBF8F2;font-family:var(--jf-mono);font-size:10px;font-weight:600;letter-spacing:.06em}
+/* Zittern: zweimal kurz, dann Ruhe (nur am Computer, per Skript ausgelöst) */
+html body #jf.jf .jf-sl.jf-sl-los .jf-sl-bild{animation:jfSlBild 1.1s ease-in-out 2}
+html body #jf.jf .jf-sl.jf-sl-los .jf-sl-e1{animation:jfSlE1 1.1s ease-in-out 2}
+html body #jf.jf .jf-sl.jf-sl-los .jf-sl-e2{animation:jfSlE2 1.1s ease-in-out 2}
+@keyframes jfSlBild{0%,45%,100%{transform:translate(0,0)}6%{transform:translate(-3px,2px) rotate(-2deg)}12%{transform:translate(3px,-2px) rotate(2deg)}18%{transform:translate(-3px,-1px) rotate(-1deg)}24%{transform:translate(3px,1px) rotate(1deg)}30%{transform:translate(-2px,1px)}36%{transform:translate(1px,-1px)}}
+@keyframes jfSlE1{0%,45%,100%{transform:translate(-9px,-7px)}6%{transform:translate(-15px,-4px)}12%{transform:translate(-5px,-11px)}18%{transform:translate(-14px,-9px)}24%{transform:translate(-6px,-5px)}30%{transform:translate(-12px,-8px)}}
+@keyframes jfSlE2{0%,45%,100%{transform:translate(9px,8px)}6%{transform:translate(14px,4px)}12%{transform:translate(5px,12px)}18%{transform:translate(13px,10px)}24%{transform:translate(6px,5px)}30%{transform:translate(11px,9px)}}
+/* Kleinere Computer-Bildschirme: Logo etwas kleiner, damit es weder Fotos noch Schrift berührt */
+@media (min-width:1101px) and (max-width:1299px){html body #jf.jf .jf-k5{--sl:66px}html body #jf.jf .jf-kacheln a.jf-sl{top:-67px;left:calc(50% + 2px)}}
+/* Schmalere Bildschirme: Logo sitzt oben rechts in der Kachel */
+@media (max-width:1100px){html body #jf.jf .jf-k5{--sl:80px}html body #jf.jf .jf-kacheln a.jf-sl{top:14px;right:14px;left:auto;margin-left:0}html body #jf.jf .jf-k5 .jf-senkrecht{display:none}}
+@media (max-width:760px){html body #jf.jf .jf-k5{--sl:62px}html body #jf.jf .jf-kacheln a.jf-sl{top:12px;right:12px}html body #jf.jf .jf-sl .jf-sl-schild{font-size:9px;bottom:-12px}}
+@media (prefers-reduced-motion:reduce){html body #jf.jf .jf-sl *{animation:none!important}}
+</style>
+<script>
+/* Startseite: Rollen-Auswahl, Fotos, wackelnde Kachel-Figuren */
+(function(){
+  var r=document.querySelector('#jf.jf .jf-buehne');if(!r)return;
+  var knoepfe=r.querySelectorAll('button[data-rolle]'),fotos=r.querySelectorAll('img[data-foto]');
+  var namen=[];knoepfe.forEach(function(b){namen[+b.getAttribute('data-rolle')]=b.querySelector('.jf-rn').textContent});
+  var aktiv=-1;
+  function waehle(i,wackeln){
+    if(i===aktiv)return;aktiv=i;
+    knoepfe.forEach(function(b){b.setAttribute('aria-pressed',+b.getAttribute('data-rolle')===i?'true':'false')});
+    fotos.forEach(function(f){var an=+f.getAttribute('data-foto')===i;f.classList.toggle('jf-an',an);f.alt=an?'Jasmin als '+namen[i]:''});
+    if(wackeln&&window.jf){var b=r.querySelector('button[data-rolle="'+i+'"]');window.jf.wackel(document.getElementById(b.getAttribute('data-figur')))}
+  }
+  knoepfe.forEach(function(b){var i=+b.getAttribute('data-rolle');['mouseenter','focus','click'].forEach(function(ev){b.addEventListener(ev,function(){waehle(i,true)})})});
+  waehle(Math.floor(Math.random()*knoepfe.length),false);
+  var g=document.getElementById('jf-gruss');
+  if(g){g.querySelectorAll('.jf-g').forEach(function(s){s.addEventListener('mouseenter',function(){if(window.jf)window.jf.wackel(document.getElementById('k6'))})})}
+})();
+/* Jasardpu-Logo: am Computer zweimal zittern, sobald die Kachel zu sehen ist. Am Handy ruhig. */
+(function(){
+  var l=document.querySelector('#jf.jf .jf-sl');if(!l)return;
+  var computer=window.matchMedia&&matchMedia('(hover:hover) and (pointer:fine) and (min-width:761px)').matches;
+  var ruhig=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(!computer||ruhig||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(e){
+    if(e[0].isIntersecting){io.disconnect();setTimeout(function(){l.classList.add('jf-sl-los')},350)}
+  },{threshold:.8});
+  io.observe(l);
+})();
+</script>
