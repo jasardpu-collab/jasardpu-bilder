@@ -13,9 +13,9 @@
 <style>
 #jf .jf-hero{margin-bottom:0!important;padding-bottom:0!important}
 #jf .jf-kv-fig{display:flex!important;flex-direction:column!important;align-items:flex-end!important;gap:6px!important}
-#jf .jf-kv-zahlen{display:flex!important;flex-wrap:wrap!important;justify-content:flex-end!important;gap:2px 16px!important;margin:0!important;font-size:15px!important;color:var(--jf-grau)!important;text-align:right!important;max-width:300px!important}
+#jf .jf-kv-zahlen{display:flex!important;flex-wrap:nowrap!important;white-space:nowrap!important;justify-content:flex-end!important;gap:14px!important;margin:0!important;font-size:14px!important;color:var(--jf-grau)!important;text-align:right!important}
+@media (max-width:700px){#jf .jf-kv-zahlen{flex-wrap:wrap!important;white-space:normal!important}}
 #jf .jf-kv-zahlen b{color:#4A3F36!important;font-weight:900!important}
-#jf .jf-kv-staedte{flex-basis:100%!important;font-size:13px!important}
 #jf .jf-kv-sprung{margin-left:0!important;width:100%!important;justify-content:flex-start!important}
 #jf #mehr{margin-top:40px!important;padding-top:0!important}
 #jf .jf-kv-rahmen{border:1px solid #000!important;border-radius:24px!important;padding:22px!important;margin-top:20px!important}
@@ -62,7 +62,7 @@
     </div>
     <div class="jf-kv-fig">
     <svg role="img" aria-label="Figur: Gimbap-Scheibe mit Koffer" width="260" height="208" viewBox="0 0 150 120" class="jf-figur jf-kv-figur" style="transform:rotate(6deg)"><circle cx="64" cy="58" r="40" fill="#55634F" stroke="#4A3F36" stroke-width="3"/><circle cx="64" cy="58" r="33" fill="#FFFFFF"/><circle cx="56" cy="45" r="5.5" fill="#F2C4B0"/><circle cx="68" cy="42" r="5.5" fill="#A9B8A2"/><circle cx="74" cy="51" r="5" fill="#E6CFAF"/><rect x="57" y="49" width="10" height="6" rx="2" fill="#F2D58A"/><circle cx="54" cy="66" r="4" fill="#4A3F36"/><circle cx="74" cy="66" r="4" fill="#4A3F36"/><ellipse cx="46" cy="73" rx="5" ry="3" fill="#F2A68F" opacity=".7"/><ellipse cx="82" cy="73" rx="5" ry="3" fill="#F2A68F" opacity=".7"/><path d="M59 72 Q64 77 69 72" stroke="#4A3F36" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="108" y="70" width="32" height="28" rx="5" fill="#B8CCE0" stroke="#4A3F36" stroke-width="3"/><path d="M117 70 V63 H131 V70" stroke="#4A3F36" stroke-width="3" fill="none"/></svg>
-      <p class="jf-kv-zahlen"><span><b>5</b> Reisen</span><span><b data-jf-anzahl=".jf-ort" data-jf-alle></b> Lieblingsorte</span><span class="jf-kv-staedte">Seoul · Jeju · Daegu · Gwangju · Sokcho …</span></p>
+      <p class="jf-kv-zahlen"><span><b>5</b> Reisen</span><span><b data-jf-anzahl=".jf-ort" data-jf-alle></b> Lieblingsorte</span><span>Seoul · Jeju · Daegu · Gwangju · Sokcho …</span></p>
     </div>
   </div>
 
