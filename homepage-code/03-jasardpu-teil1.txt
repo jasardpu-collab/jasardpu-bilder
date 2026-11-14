@@ -1,7 +1,7 @@
 <!--
   ============================================================
   JASARDPU SHOP · Seite /jasardpu.html auf jasminfreiner.de
-  14.11.2026: Umbau. Shop-Farbe Sand, Kopfzeile mit Welten, 3 Shop-Quadrate, Welten als Felder (Teil 2), ohne Etsy-Block und ohne Rücklinks.
+  14.11.2026 Runde 4: kleines JASMIN FREINER oben links, ohne Buchstaben, Instagram und Pinterest nebeneinander, Nach-oben-Knopf. 14.11.2026: Umbau. Shop-Farbe Sand, Kopfzeile mit Welten, 3 Shop-Quadrate, Welten als Felder (Teil 2), ohne Etsy-Block und ohne Rücklinks.
   TEIL 1 VON 3 (Aussehen und Inhalt). Stand 09.11.2026: Idee 3 "Kollektion zuerst, alle Shops".
   09.11.2026: Weihnachten und Welten zuerst, Bestseller kleiner weiter unten,
   "Weitere Shops" aufgelöst, Links zeigen jetzt auf die Übersicht Shop & Design
@@ -258,6 +258,17 @@ html body #jfs #ein-motiv>p:last-child{text-align:center}
 @media (max-width:1000px){html body #jfs #weihnachten .xraster{grid-template-columns:repeat(4,minmax(0,1fr))}html body #jfs #trauer .xraster{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:600px){html body #jfs #weihnachten .xraster,html body #jfs #trauer .xraster{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (prefers-reduced-motion:reduce){html body #jfs *{transition:none!important}}
+
+/* 14.11.2026 Runde 4 */
+html body #jfs a.sjf{display:inline-block;margin:14px 0 -8px;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--br);text-decoration:none}
+html body #jfs a.sjf:hover{color:var(--ak)}
+html body #jfs .knopf.sozial{display:inline-flex;align-items:center;gap:10px}
+html body #jfs .knopf.sozial .sk{display:block;width:26px;height:26px}
+html body #jfs .knopf.sozial .sk svg{display:block;width:100%;height:100%}
+@media (min-width:1000px){html body #jfs #w-anlaesse .xr p{white-space:nowrap}}
+html body #jfs a.jf-hoch{position:fixed;right:20px;bottom:20px;z-index:50;display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#4A3F36;color:#FBF8F2;text-decoration:none;font-size:22px;font-weight:700;box-shadow:0 8px 20px rgba(74,63,54,.25);opacity:0;pointer-events:none;transition:opacity .3s,transform .2s}
+html body #jfs a.jf-hoch.jf-zeigen{opacity:1;pointer-events:auto}
+html body #jfs a.jf-hoch:hover{background:#B0705A;color:#FFFFFF;transform:translateY(-3px)}
 </style>
 
 <div id="jfs" lang="de">
@@ -267,6 +278,7 @@ html body #jfs #ein-motiv>p:last-child{text-align:center}
 <div class="in">
 
   <!-- ===== KOPFZEILE: nur Shop-Links (Welten) ===== -->
+  <a class="sjf" href="/">JASMIN FREINER</a>
   <header class="skopf"><a class="slogo" href="/jasardpu.html">JASARDPU</a><span class="ssub">Shop von Jasmin Freiner · <span lang="ko">디자인 샵</span></span></header>
   <nav class="snav" aria-label="Welten"><a href="#weihnachten">Weihnachten</a><a href="#w-korea">Korea</a><a href="#w-travel">Travel &amp; Architektur</a><a href="#w-tiere">Tiere &amp; Natur</a><a href="#w-muster">Teppich &amp; Muster</a><a href="#w-haltung">Haltung &amp; Herz</a><a href="#w-vegan">Glutenfrei &amp; vegan</a><a href="#w-spass">Spaß &amp; Alltag</a><a href="#w-anlaesse">Anlässe &amp; Karten</a><a href="#bestseller">Bestseller</a></nav>
 
@@ -282,7 +294,7 @@ html body #jfs #ein-motiv>p:last-child{text-align:center}
       <div class="shopq">
         <a class="sq" href="https://www.redbubble.com/de/people/Jasardpu/shop" target="_blank" rel="noopener" style="--wf:#B0705A"><img src="https://ih1.redbubble.net/image.1432031886.1907/ur,throw_pillow_couch_small,square,600x600.u1.jpg" alt="Kissen mit Perser-Muster bei Redbubble" loading="lazy"><span><b>Redbubble →</b><small>Shirts, Kissen, Sticker &amp; mehr</small></span></a>
         <a class="sq" href="https://www.etsy.com/de/shop/Jasardpu" target="_blank" rel="noopener" style="--wf:#E07A3F"><img src="https://i.etsystatic.com/22304935/r/il/0067ab/8814493530/il_800x800.8814493530_5c0h.jpg" alt="Kleid mit Allover-Muster bei Etsy" loading="lazy"><span><b>Etsy →</b><small>Kleider, Kissenbezüge, Tassen &amp; Karten</small></span></a>
-        <a class="sq" href="https://www.spoonflower.com/profiles/jasardpu" target="_blank" rel="noopener" style="--wf:#5B7DA8"><img src="https://garden.spoonflower.com/c/15463036/p/f/m/MLxuIHgt7KacqtfzFrbor98ZDUWvv2NOmWtAjLvocweBfEx-8W4K/pfau.jpg" alt="Stoffmuster Pfau bei Spoonflower" loading="lazy"><span><b>Spoonflower →</b><small>Stoffe &amp; Tapeten</small></span></a>
+        <a class="sq" href="https://www.spoonflower.com/profiles/jasardpu" target="_blank" rel="noopener" style="--wf:#5B7DA8"><img src="https://garden.spoonflower.com/c/15463036/p/f/m/MLxuIHgt7KacqtfzFrbor98ZDUWvv2NOmWtAjLvocweBfEx-8W4K/pfau.jpg" alt="Stoffmuster Pfau bei Spoonflower" loading="eager"><span><b>Spoonflower →</b><small>Stoffe &amp; Tapeten</small></span></a>
       </div>
   <p class="lead">Ich bin Architektin und gestalte Muster, Illustrationen und Sprüche – von koreanischer Palastmalerei bis zum Meerschweinchen im Weltall. Gedruckt auf Shirts, Kissen, Sticker, Taschen und vieles mehr.</p>
     </div>
@@ -329,15 +341,15 @@ html body #jfs #ein-motiv>p:last-child{text-align:center}
   </section>
   <!-- ===== ENDE WEIHNACHTEN ===== -->
 
-  <!-- ===== (A) WELTEN: die Felder baut Teil 2 (Skript) aus den Daten dort ===== -->
+  <!-- ===== WELTEN: die Felder baut Teil 2 (Skript) aus den Daten dort ===== -->
   <section class="sec" id="welten">
-    <p class="lbl">(A) MEINE WELTEN · REDBUBBLE · <span lang="ko">세계</span></p>
+    <p class="lbl">MEINE WELTEN · REDBUBBLE · <span lang="ko">세계</span></p>
     <div id="welten-liste"></div>
   </section>
 
   <!-- ===== ECHTE FOTOS (Bilder liegen auf dieser Weebly-Seite unter /uploads/…) ===== -->
   <section class="sec">
-    <p class="lbl">(B) ECHT GEDRUCKT · <span lang="ko">실제 사진</span></p>
+    <p class="lbl">ECHT GEDRUCKT · <span lang="ko">실제 사진</span></p>
     <h2 class="h2">Alles nur KI? Nein – so sieht’s in echt aus.</h2>
     <p style="display:block;margin:0 0 22px;max-width:640px;font-size:16px">Im Shop zeige ich digitale Mockups, weil jedes Stück erst bei Bestellung gedruckt wird. Hier sind echte Fotos – von Kundinnen und von mir beim selbstlosen Testen der Sportkleidung.</p>
     <div class="foto">
@@ -357,7 +369,7 @@ html body #jfs #ein-motiv>p:last-child{text-align:center}
 
   <!-- ===== SO FUNKTIONIERT'S ===== -->
   <section class="sec" id="so">
-    <p class="lbl">(C) SO FUNKTIONIERT’S · <span lang="ko">안내</span></p>
+    <p class="lbl">SO FUNKTIONIERT’S · <span lang="ko">안내</span></p>
     <div class="info">
       <div class="card"><span class="k" style="color:var(--ak)">01</span><span class="ct">Bestellen beim jeweiligen Shop</span><p>Du bestellst sicher direkt bei Redbubble, Etsy oder Spoonflower – dort laufen Bezahlung, Versand und Rückgabe. Ein Motiv gibt es meist auf vielen Produkten.</p></div>
       <div class="card"><span class="k" style="color:var(--ak)">02</span><span class="ct">Gedruckt auf Bestellung</span><p>Jedes Stück wird erst gedruckt, wenn du es bestellst. So entsteht keine Überproduktion.</p></div>
@@ -390,15 +402,14 @@ html body #jfs #ein-motiv>p:last-child{text-align:center}
 
   <!-- ===== FOLGEN ===== -->
   <section class="sec">
-    <a class="best" href="https://www.instagram.com/jasardpu/" target="_blank" rel="noopener" style="background:#A9B8A2;color:#2F3A2C">
+    <div class="best" style="background:#A9B8A2;color:#2F3A2C">
       <span class="bt">
         <span class="k">Neue Designs zuerst sehen</span>
         <span class="bh">Folge Jasardpu.</span>
         <span class="bp" style="color:#2F3A2C">Neuheiten und Einblicke in meine Arbeit auf Instagram und Pinterest.</span>
-        <span style="display:flex;flex-wrap:wrap;gap:10px"><span class="knopf">Instagram →</span></span>
+        <span style="display:flex;flex-wrap:wrap;gap:10px"><a class="knopf sozial" href="https://www.instagram.com/jasardpu/" target="_blank" rel="noopener"><span class="sk"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><defs><linearGradient id="jfIg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#F9CE34"/><stop offset=".5" stop-color="#EE2A7B"/><stop offset="1" stop-color="#6228D7"/></linearGradient></defs><rect x="6" y="6" width="48" height="48" rx="14" fill="url(#jfIg)"/><rect x="15" y="15" width="30" height="30" rx="9" fill="none" stroke="#FFFFFF" stroke-width="3.5"/><circle cx="30" cy="30" r="7" fill="none" stroke="#FFFFFF" stroke-width="3.5"/><circle cx="39.5" cy="20.5" r="2.4" fill="#FFFFFF"/></svg></span>Instagram →</a><a class="knopf sozial" href="https://www.pinterest.de/jasminfreiner/jasardpu-shop/" target="_blank" rel="noopener"><span class="sk"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><circle cx="30" cy="30" r="26" fill="#E60023"/><path d="M31 12 C20 12 15 19 15 26 C15 30 17 34 20 35 C21 35 21 35 21 34 L22 31 C22 30 22 30 21 29 C20 27 20 26 20 24 C20 19 24 16 30 16 C36 16 39 19 39 24 C39 31 36 36 32 36 C30 36 28 34 29 32 C30 29 31 26 31 24 C31 22 30 21 28 21 C26 21 24 23 24 26 C24 28 25 29 25 29 L22 41 C21 45 22 49 22 50 C23 50 26 46 27 43 L28 39 C29 41 31 42 34 42 C41 42 45 35 45 27 C45 19 39 12 31 12 Z" fill="#FFFFFF"/></svg></span>Pinterest →</a></span>
       </span>
-    </a>
-    <p style="margin:12px 0 0;font-size:14px">Oder auf <a href="https://www.pinterest.de/jasminfreiner/jasardpu-shop/" target="_blank" rel="noopener">Pinterest</a></p>
+    </div>
   </section>
 
   <footer class="fuss">
@@ -408,5 +419,16 @@ html body #jfs #ein-motiv>p:last-child{text-align:center}
     <span class="re"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></span>
   </footer>
 </div>
+  <a class="jf-hoch" href="#" aria-label="Nach oben">↑</a>
 </div>
 
+
+<script>
+/* Nach-oben-Knopf: erscheint nach etwas Scrollen, scrollt ganz nach oben */
+(function(){
+  var h=document.querySelector('#jfs .jf-hoch');if(!h)return;
+  function pruefe(){h.classList.toggle('jf-zeigen',window.scrollY>400)}
+  window.addEventListener('scroll',pruefe,{passive:true});pruefe();
+  h.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})});
+})();
+</script>
