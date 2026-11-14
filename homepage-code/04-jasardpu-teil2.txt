@@ -162,7 +162,7 @@
     FOLGE.forEach(function(k){
       var f=felder[k]; if(!f) return;
       var l=daten().W[k]||[];
-      f.det.hidden=!l.length;
+      f.det.hidden=!l.length; f.det.style.display=l.length?'':'none';
       if(l.length) f.sum.textContent='Alle '+l.length+' Redbubble-Designs aus '+D[k].t+' ansehen';
     });
   }

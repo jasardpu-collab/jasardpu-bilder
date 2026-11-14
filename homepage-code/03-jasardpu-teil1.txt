@@ -192,6 +192,13 @@ html body #jfs a.designerin b{display:block;font-family:var(--sans);font-size:13
 html body #jfs a.designerin small{display:block;font-size:10px}
 @media (max-width:1000px){html body #jfs .wreihe{grid-template-columns:repeat(4,minmax(0,1fr))}html body #jfs .wreihe>.xk:nth-child(n+4){display:none}html body #jfs .wreihe.ohne>.xk:nth-child(4){display:flex}}
 @media (max-width:600px){html body #jfs .shopq{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}html body #jfs a.sq small{display:none}html body #jfs .wreihe{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}html body #jfs .wreihe>*{flex:0 0 42%;scroll-snap-align:start}html body #jfs .wreihe>.xk:nth-child(n+4){display:flex}html body #jfs .snav{gap:6px 14px;font-size:11px}}
+html body #jfs .hero>.shopq{flex:0 1 520px;margin-top:0;grid-template-columns:repeat(3,minmax(0,1fr))}
+html body #jfs .blasen{position:fixed;inset:0;pointer-events:none;z-index:0}
+html body #jfs .blasen img{position:absolute;aspect-ratio:1;height:auto;object-fit:cover;border-radius:50%;opacity:.55;box-shadow:0 4px 12px rgba(74,63,54,.15);animation:jfsblase 12s ease-in-out infinite}
+@keyframes jfsblase{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+html body #jfs .in{position:relative;z-index:1}
+@media (max-width:900px){html body #jfs .blasen{display:none}}
+@media (prefers-reduced-motion:reduce){html body #jfs .blasen img{animation:none}}
 html body #jfs .bsatz{margin:0;font-size:17px;color:var(--bl)}
 html body #jfs .bsatz a{color:var(--br);font-weight:800}
 html body #jfs .taschen{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px}
@@ -247,6 +254,7 @@ html body #jfs #ein-motiv>p:last-child{text-align:center}
 <div id="jfs" lang="de">
 <span class="deko" aria-hidden="true" style="right:-90px;top:80px;width:clamp(220px,30vw,420px);height:clamp(220px,30vw,420px);background:#EDE7E0"></span>
 <span class="deko" aria-hidden="true" style="left:-120px;top:620px;width:240px;height:240px;background:#F6D5D0;opacity:.6"></span>
+  <div class="blasen" aria-hidden="true"><img src="/files/theme/jasardpu-logo.webp" alt="" style="top:22%;right:2.2%;width:46px;animation-delay:0s"><img src="/files/theme/jasardpu-logo.webp" alt="" style="top:48%;right:4.6%;width:30px;animation-delay:-3s"><img src="/files/theme/jasardpu-logo.webp" alt="" style="top:70%;right:1.6%;width:38px;animation-delay:-6s"><img src="/files/theme/jasardpu-logo.webp" alt="" style="top:86%;right:5.4%;width:22px;animation-delay:-9s"></div>
 <div class="in">
 
   <!-- ===== KOPFZEILE: nur Shop-Links (Welten) ===== -->
@@ -261,16 +269,11 @@ html body #jfs #ein-motiv>p:last-child{text-align:center}
       <h1 class="h1">Jasardpu.</h1>
       <span class="script">Muster mit Herz &amp; Haltung</span>
       <p class="lead">Ich bin Architektin und gestalte Muster, Illustrationen und Sprüche – von koreanischer Palastmalerei bis zum Meerschweinchen im Weltall. Gedruckt auf Shirts, Kissen, Sticker, Taschen und vieles mehr.</p>
-      <div class="shopq">
-        <a class="sq" href="https://www.redbubble.com/de/people/Jasardpu/shop" target="_blank" rel="noopener" style="--wf:#B0705A"><img src="https://ih1.redbubble.net/image.1432031886.1907/ur,throw_pillow_couch_small,square,600x600.u1.jpg" alt="Kissen mit Perser-Muster bei Redbubble" loading="lazy"><span><b>Redbubble →</b><small>Shirts, Kissen, Sticker &amp; mehr</small></span></a>
-        <a class="sq" href="https://www.etsy.com/de/shop/Jasardpu" target="_blank" rel="noopener" style="--wf:#E07A3F"><img src="https://i.etsystatic.com/22304935/r/il/0067ab/8814493530/il_800x800.8814493530_5c0h.jpg" alt="Kleid mit Allover-Muster bei Etsy" loading="lazy"><span><b>Etsy →</b><small>Kleider, Kissenbezüge, Tassen &amp; Karten</small></span></a>
-        <a class="sq" href="https://www.spoonflower.com/profiles/jasardpu" target="_blank" rel="noopener" style="--wf:#5B7DA8"><img src="https://garden.spoonflower.com/c/15463036/p/f/m/MLxuIHgt7KacqtfzFrbor98ZDUWvv2NOmWtAjLvocweBfEx-8W4K/pfau.jpg" alt="Stoffmuster Pfau bei Spoonflower" loading="lazy"><span><b>Spoonflower →</b><small>Stoffe &amp; Tapeten</small></span></a>
-      </div>
     </div>
-    <div class="stapel" aria-hidden="true">
-      <img src="https://ih1.redbubble.net/image.6265595295.3184/flat,550x550,075,f.jpg" alt="" loading="lazy">
-      <img src="https://ih1.redbubble.net/image.448627301.1513/flat,550x550,075,f.jpg" alt="" loading="lazy">
-      <img src="https://ih1.redbubble.net/image.591284672.1907/flat,550x550,075,f.jpg" alt="" loading="lazy">
+    <div class="shopq">
+      <a class="sq" href="https://www.redbubble.com/de/people/Jasardpu/shop" target="_blank" rel="noopener" style="--wf:#B0705A"><img src="https://ih1.redbubble.net/image.1432031886.1907/ur,throw_pillow_couch_small,square,600x600.u1.jpg" alt="Kissen mit Perser-Muster bei Redbubble" loading="lazy"><span><b>Redbubble →</b><small>Shirts, Kissen, Sticker &amp; mehr</small></span></a>
+      <a class="sq" href="https://www.etsy.com/de/shop/Jasardpu" target="_blank" rel="noopener" style="--wf:#E07A3F"><img src="https://i.etsystatic.com/22304935/r/il/0067ab/8814493530/il_800x800.8814493530_5c0h.jpg" alt="Kleid mit Allover-Muster bei Etsy" loading="lazy"><span><b>Etsy →</b><small>Kleider, Kissenbezüge, Tassen &amp; Karten</small></span></a>
+      <a class="sq" href="https://www.spoonflower.com/profiles/jasardpu" target="_blank" rel="noopener" style="--wf:#5B7DA8"><img src="https://garden.spoonflower.com/c/15463036/p/f/m/MLxuIHgt7KacqtfzFrbor98ZDUWvv2NOmWtAjLvocweBfEx-8W4K/pfau.jpg" alt="Stoffmuster Pfau bei Spoonflower" loading="lazy"><span><b>Spoonflower →</b><small>Stoffe &amp; Tapeten</small></span></a>
     </div>
   </div>
 
