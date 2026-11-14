@@ -1,0 +1,20 @@
+/* Menüzeile mit Ausklapp-Menüs */
+html body #jf.jf .jf-menue{position:relative;z-index:20;display:flex;flex-wrap:wrap;gap:0 4px;padding:6px 0;border-bottom:1px solid #4A3F36;font-family:var(--jf-mono);font-size:12px;letter-spacing:.04em}
+html body #jf.jf .jf-mp{position:relative;display:block}
+html body #jf.jf .jf-mh,html body #jf.jf .jf-hier{display:block;padding:8px 10px;border-radius:10px;text-decoration:none;color:#4A3F36}
+html body #jf.jf .jf-mp:first-child .jf-mh,html body #jf.jf .jf-mp:first-child .jf-hier{padding-left:0}
+html body #jf.jf .jf-mh::after{content:" ▾";font-size:10px;opacity:.55}
+html body #jf.jf .jf-hier{font-weight:600;cursor:default}
+html body #jf.jf .jf-mp:hover .jf-mh,html body #jf.jf .jf-mp:focus-within .jf-mh{color:#B0705A}
+html body #jf.jf .jf-mk{position:absolute;left:0;top:100%;display:none;flex-direction:column;min-width:210px;padding:8px;border-radius:16px;background:#FFFFFF;box-shadow:0 14px 30px rgba(74,63,54,.18);font-family:var(--jf-sans);font-size:14px;letter-spacing:0}
+html body #jf.jf .jf-mp:hover .jf-mk,html body #jf.jf .jf-mp:focus-within .jf-mk{display:flex}
+html body #jf.jf .jf-mk a,html body #jf.jf .jf-mk .jf-bald{display:block;padding:7px 12px;border-radius:10px;text-decoration:none;color:#4A3F36;white-space:nowrap}
+html body #jf.jf .jf-mk a:hover{background:#F8E5DC;color:#4A3F36}
+html body #jf.jf .jf-mk .jf-bald{color:#8A7F76}
+html body #jf.jf .jf-mk .jf-mk-fett{font-weight:800}
+html body #jf.jf .jf-mp:last-child .jf-mk{left:auto;right:0}
+@media (hover:none),(max-width:760px){html body #jf.jf .jf-mh::after{content:""}html body #jf.jf .jf-mp:hover .jf-mk{display:none}}
+/* Nach-oben-Knopf */
+html body #jf.jf a.jf-hoch{position:fixed;right:20px;bottom:20px;z-index:50;display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#4A3F36;color:#FBF8F2;text-decoration:none;font-size:22px;font-weight:700;box-shadow:0 8px 20px rgba(74,63,54,.25);opacity:0;pointer-events:none;transition:opacity .3s,transform .2s}
+html body #jf.jf a.jf-hoch.jf-zeigen{opacity:1;pointer-events:auto}
+html body #jf.jf a.jf-hoch:hover{background:#B0705A;color:#FFFFFF;transform:translateY(-3px)}
