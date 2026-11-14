@@ -1,0 +1,124 @@
+<!--
+  ============================================================
+  (03) PODCAST & YOUTUBE · Seitenadresse: /podcast-youtube.html
+  Stand 13.11.2026: Neueste Videos über die Upload-Liste des Kanals, Folge 2 mit neuer Videoadresse, Daten entfernt
+  ============================================================
+  Wohin: Weebly → Seite öffnen → alten Inhalt löschen →
+         Element „Code einbetten“ hineinziehen → diesen ganzen Text einfügen
+  Texte ändern: einfach zwischen den Zeichen > und < tippen.
+  Neuer Absatz: <p class="jf-p">Text</p> · Zeilenumbruch: <br> · fett: <strong>Text</strong>
+  Bilder liegen im Theme unter /files/theme/… (Dateiname muss genau stimmen).
+  ============================================================
+-->
+<div id="jf" class="jf" lang="de">
+<span class="jf-deko jf-kreis" aria-hidden="true" style="right:-80px;top:110px;width:clamp(220px,32vw,460px);height:clamp(220px,32vw,460px);background:#E9EEE6"></span>
+<span class="jf-deko jf-kreis" aria-hidden="true" style="right:clamp(120px,23vw,330px);top:300px;width:86px;height:86px;background:#F2C4B0"></span>
+<svg class="jf-deko" aria-hidden="true" width="70" height="70" viewBox="-20 -20 40 40" style="left:-16px;top:640px;opacity:.8"><g fill="#F6D5D0"><ellipse cx="0" cy="-9" rx="6" ry="9"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(72)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(144)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(216)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(288)"/></g><circle r="3" fill="#E8A99B"/></svg>
+<div class="jf-inhalt">
+  <!-- ===== KOPFZEILE ===== -->
+  <header class="jf-kopf">
+    <a class="jf-logo" href="/">JASMIN FREINER</a>
+    <span lang="ko">야스민 프라이너</span>
+    <nav class="jf-sprachen" aria-label="Sprache"><span class="jf-aktiv">DE</span></nav>
+  </header>
+
+  <!-- ===== SEITEN-LEISTE: zu den anderen Unterseiten ===== -->
+  <nav class="jf-stats" aria-label="Weitere Seiten" style="margin-top:0;border-top:0;gap:8px 18px">
+    <a href="/korea-vegan-glutenfrei.html">Korea vegan &amp; glutenfrei</a><a href="/buecher.html">Alle Bücher</a><a href="/glutenfrei-vegan.html">Glutenfrei &amp; vegan</a><a href="/shop-design.html">Shop &amp; Design</a><a href="/folge-mir.html">Folge mir</a>
+  </nav>
+
+  <a class="jf-zurueck" href="/">← Zurück zu Hallo. <span lang="ko">안녕</span></a>
+  <div class="jf-hero">
+    <div class="jf-hero-text">
+      <span class="jf-eyebrow">(03) PODCAST · YOUTUBE · <span lang="ko">팟캐스트 · 유튜브</span></span>
+      <h1 class="jf-h1 jf-gross">Podcast<br>&amp; YouTube.</h1>
+      <p class="jf-lead">Ein deutsch-koreanischer Tandem-Podcast, Reisevideos aus Korea, Architektur unterwegs – und natürlich Meerschweinchen. Die meisten Videos haben Untertitel auf Deutsch, Englisch, Spanisch und Koreanisch.</p>
+    </div>
+    <svg role="img" aria-label="Figur: Mikrofon" width="220" height="176" viewBox="0 0 150 120" class="jf-figur" id="jf-mikro" style="transform-origin:50% 90%"><rect x="56" y="18" width="38" height="56" rx="19" fill="#B8CCE0" stroke="#4A3F36" stroke-width="3"/><path d="M44 52 Q44 86 75 86 Q106 86 106 52" stroke="#4A3F36" stroke-width="3" fill="none"/><path d="M75 86 V102 M60 102 H90" stroke="#4A3F36" stroke-width="3" stroke-linecap="round"/><circle cx="67" cy="44" r="4" fill="#4A3F36"/><circle cx="83" cy="44" r="4" fill="#4A3F36"/><ellipse cx="61" cy="52" rx="4" ry="2.5" fill="#E58C74" opacity=".6"/><ellipse cx="89" cy="52" rx="4" ry="2.5" fill="#E58C74" opacity=".6"/><path d="M71 52 Q75 57 79 52" stroke="#4A3F36" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+  </div>
+
+  <!-- ===== (A) NEUESTES VIDEO ===== -->
+  <section class="jf-sec">
+    <p class="jf-seclabel">(A) NEUESTES VIDEO · <span lang="ko">최신 영상</span></p>
+    <div class="jf-grid jf-grid-fit" style="--jf-min:360px;gap:24px;align-items:center">
+      <!-- Das Video lädt erst nach Klick (Datenschutz). Liste UU… = automatisch alle neuesten Uploads des Kanals. -->
+      <div class="jf-yt" data-jf-yt="https://www.youtube-nocookie.com/embed/videoseries?list=UUQ16gumZVXEkkOBgNVMONeQ" data-titel="Neueste Videos von Jasmin Freiner">
+        <button type="button"><span class="jf-play"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26"><path d="M8 5 L21 13 L8 21 Z" fill="#FBF8F2"/></svg></span><span style="font-weight:800;font-size:16px">Video abspielen</span><span class="jf-yt-hinweis">Mit dem Klick lädst du das Video von YouTube. Dabei werden Daten an YouTube (Google) übertragen – mehr dazu im <a href="/datenschutz.html">Datenschutz</a>.</span></button>
+      </div>
+      <div>
+        <h2 class="jf-h2">Frisch hochgeladen.</h2>
+        <p class="jf-p" style="font-size:17px;margin-bottom:20px">Korea, Sprachen, Bücher, vegan-glutenfreies Essen, 3D-Druck und Meerschweinchen – mein Kanal ist so bunt wie diese Seite.</p>
+        <a class="jf-knopf" href="https://www.youtube.com/@jasminfreiner" target="_blank" rel="noopener">Kanal abonnieren →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== (B) PODCAST ===== -->
+  <section class="jf-sec">
+    <p class="jf-seclabel">(B) PODCAST · <span lang="ko">팟캐스트</span></p>
+    <div class="jf-grid jf-grid-fit" style="--jf-min:360px">
+      <div class="jf-card jf-dunkel" style="border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:16px">
+        <img src="/files/theme/jf-podcast-cover.jpg" alt="Podcast-Cover AnnyeongHaLLOseyo" style="width:100%;max-width:420px;aspect-ratio:1/1;border-radius:18px;object-fit:cover">
+        <span lang="ko" style="font-size:22px;font-weight:700;color:#F2C4B0">안녕 + Hallo + 세요</span>
+        <span class="jf-k" style="letter-spacing:.1em;color:var(--jf-neutral)">DEUTSCH-KOREANISCHER TANDEM-PODCAST</span>
+        <p class="jf-p" style="font-size:16px;color:var(--jf-neutral)">Zwei Sprachen, zwei Länder, ein Gespräch: Wir lernen voneinander – auf Deutsch und auf Koreanisch.</p>
+        <a class="jf-knopf jf-hell" href="https://www.youtube.com/playlist?list=PLEsbvIrm7cxk" target="_blank" rel="noopener" style="align-self:flex-start">▶ Alle Folgen auf YouTube →</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <p class="jf-k" style="margin:0;font-size:12px;font-weight:600">FOLGEN</p>
+        <!-- Neue Folge: diesen <a>-Block kopieren, Nummer, Titel, Text, Bild und Link ändern -->
+        <a class="jf-card" href="https://www.youtube.com/watch?v=65L_4ke7-eQ" target="_blank" rel="noopener" style="text-decoration:none;display:flex;flex-direction:column;gap:14px;padding:16px">
+          <img src="/files/theme/jf-podcast-folge-01.jpg" alt="Thumbnail Folge 1: Vorstellungsrunde" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px">
+          <span style="display:flex;gap:18px;align-items:flex-start">
+            <span class="jf-mono" style="flex:none;width:48px;height:48px;border-radius:50%;background:#E4ECF4;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px">01</span>
+            <span style="display:flex;flex-direction:column;gap:6px"><span style="font-weight:800;font-size:19px">Vorstellungsrunde</span><span style="font-size:14px;line-height:1.5">Wie wir uns kennengelernt haben, was wir studiert haben, wie wir zusammengearbeitet haben – und wann und warum ich zum ersten Mal nach Korea kam.</span></span>
+          </span>
+        </a>
+        <a class="jf-card" href="https://www.youtube.com/watch?v=Ph670gvEOqs" target="_blank" rel="noopener" style="text-decoration:none;display:flex;flex-direction:column;gap:14px;padding:16px">
+          <img src="https://i.ytimg.com/vi/Ph670gvEOqs/hqdefault.jpg" alt="Thumbnail Folge 2: Alltagsgeschichten &amp; 대박" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px" loading="lazy">
+          <span style="display:flex;gap:18px;align-items:flex-start">
+            <span class="jf-mono" style="flex:none;width:48px;height:48px;border-radius:50%;background:#E4ECF4;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px">02</span>
+            <span style="display:flex;flex-direction:column;gap:6px"><span style="font-weight:800;font-size:19px">Alltagsgeschichten &amp; <span lang="ko">대박</span></span><span style="font-size:14px;line-height:1.5">Alltagsgeschichten aus Deutschland und Korea – und ein Wort, das man in Korea ständig hört: <span lang="ko">대박</span>.</span></span>
+          </span>
+        </a>
+        <a class="jf-tile" href="https://www.amazon.de/shop/glutenfree_follow_me/list/2OLCV5HRF2SMR?ref_=aipsflist&amp;tag=jasminfreiner-21" target="_blank" rel="noopener sponsored" style="background:#E4ECF4;min-height:0;border-radius:20px"><span class="jf-k">AMAZON · EMPFEHLUNGEN</span><span class="jf-t" style="font-size:19px;font-weight:800">Koreanisch lernen</span><span class="jf-d">Bücher und Material, mit denen ich Koreanisch lerne.</span><span class="jf-werbung">Werbung · Partnerlink*</span></a>
+      </div>
+    </div>
+    <p class="jf-pflicht">* Partnerlink: Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich am Preis nichts.</p>
+  </section>
+
+  <!-- ===== (C) PLAYLISTS ===== -->
+  <section class="jf-sec">
+    <p class="jf-seclabel">(C) PLAYLISTS · <span lang="ko">재생목록</span></p>
+    <h2 class="jf-h2">Such dir ein Thema aus.</h2>
+    <div class="jf-grid" style="--jf-min:260px">
+      <a class="jf-tile" href="https://www.youtube.com/watch?v=1zgSfIZXh-c&amp;list=PLIa1PqeCDvBr-GGZRGFkPtUQ8yf2batHM" target="_blank" rel="noopener" style="background:#F1E8DC"><span class="jf-k">PLAYLIST</span><span class="jf-t">Travelling Architect</span><span class="jf-d">Architektur und Reisen – von Seoul bis Singapur.</span><span class="jf-go">Ansehen →</span></a>
+      <a class="jf-tile" href="https://www.youtube.com/watch?v=JTzQyziN0ds&amp;list=PLIa1PqeCDvBqk8RcNpTOUDHZBETKdmrjy" target="_blank" rel="noopener" style="background:#F8E5DC"><span class="jf-k">PLAYLIST</span><span class="jf-t">Meerschweinchen</span><span class="jf-d">Die eigentlichen Stars dieses Kanals.</span><span class="jf-go">Ansehen →</span></a>
+      <a class="jf-tile" href="https://www.youtube.com/shorts/dgB8WnKC_eQ" target="_blank" rel="noopener" style="background:#A9B8A2"><span class="jf-k">SHORT · TRAILER</span><span class="jf-t">Hongdae Soy ermittelt</span><span class="jf-d">Die Reel-Serie zu meinen Korea-Büchern – mit Soy und Sally.</span><span class="jf-go">Ansehen →</span></a>
+      <a class="jf-tile" href="https://www.youtube.com/playlist?list=PLIa1PqeCDvBqOpJAAra1ZxODSlQPsaDZU" target="_blank" rel="noopener" style="background:#E4ECF4"><span class="jf-k">PLAYLIST</span><span class="jf-t">Korea-Reisevideos</span><span class="jf-d">Reisevideos, Highlights und vegan-glutenfreies Essen in Südkorea.</span><span class="jf-go">Ansehen →</span></a>
+      <a class="jf-tile" href="https://www.youtube.com/watch?v=w0RKL9m-O1g&amp;list=PLIa1PqeCDvBoqsUYrPFvNqjz0VybjfaBH" target="_blank" rel="noopener" style="background:#E9EEE6"><span class="jf-k">PLAYLIST</span><span class="jf-t">Vegan &amp; glutenfrei</span><span class="jf-d">Kochen, Backen und Alltag – ganz ohne Korea.</span><span class="jf-go">Ansehen →</span></a>
+      <a class="jf-tile" href="https://www.youtube.com/watch?v=PxDbNspUe8k&amp;list=PLIa1PqeCDvBo3nPoVwt3zIm2XeYjriu84" target="_blank" rel="noopener" style="background:#EDE7E0"><span class="jf-k">PLAYLIST</span><span class="jf-t">3D-Druck</span><span class="jf-d">Vom Drucker-Umbau bis zum fertigen Objekt.</span><span class="jf-go">Ansehen →</span></a>
+    </div>
+  </section>
+
+  <!-- ===== (D) BALD ===== -->
+  <section class="jf-sec">
+    <p class="jf-seclabel">(D) BALD · <span lang="ko">곧</span></p>
+    <div class="jf-grid jf-grid-fit" style="--jf-min:300px">
+      <div class="jf-card" style="background:#F8E5DC;display:flex;flex-direction:column;gap:8px"><span class="jf-k">BALD</span><span style="font-weight:800;font-size:21px">A-cappella in 6 Sprachen</span><span style="font-size:14px;line-height:1.5">Cover auf Deutsch, Englisch, Farsi, Spanisch, Portugiesisch und Koreanisch – die Aufnahmen sind fertig, der Schnitt läuft.</span></div>
+    </div>
+  </section>
+
+
+  <!-- ===== FUSSZEILE ===== -->
+  <footer class="jf-fuss">
+    <span class="jf-fett">© 2026 JASMIN FREINER</span>
+    <span lang="ko">야스민 프라이너</span>
+    <span>Alle Cookies auf dieser Seite sind glutenfrei &amp; vegan</span>
+    <span class="jf-links"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></span>
+  </footer>
+</div>
+</div>
+<script>
+(function(){var m=document.getElementById('jf-mikro');if(m)m.addEventListener('mouseenter',function(){if(window.jf)window.jf.wackel(m)})})();
+</script>
