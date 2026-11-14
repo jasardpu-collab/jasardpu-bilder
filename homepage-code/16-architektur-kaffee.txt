@@ -1,0 +1,393 @@
+<!--
+  ============================================================
+  THEMENSEITE ARCHITEKTUR & KAFFEE · Seite /architektur-kaffee.html auf jasminfreiner.de
+  Stand 12.11.2026, von Claude erstellt (gleiche Vorlage wie die anderen Themenseiten).
+  ============================================================
+  Wohin: Weebly → neue Seite „Architektur & Kaffee“ (Adresse architektur-kaffee) → ein Element
+         „Code einbetten“ → diesen ganzen Code einfügen. Seite im Menü ausblenden.
+  Texte ändern: einfach zwischen den Zeichen > und < tippen.
+  Kollektionen auf Redbubble: Baustelle und Büro 4601753 · Kaffee und Getränke 4601764 · Orte und Gebäude 4601752
+  ============================================================
+-->
+<style>
+#jfa{--iv:#F2E6C8;--br:#4A3F36;--gr:#6B5E52;--ne:#E8E1DA;--bl:#F6D5D0;--ak:#B0705A;--sd:#B59A7E;--lav:#DCE6F0;
+  --sans:'Inter Tight','Inter','Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+  --script:'Pinyon Script','Snell Roundhand','Segoe Script',cursive}
+html body #jfa,html body #jfa :where(*:not(svg,svg *)){all:revert;box-sizing:border-box}
+html body #jfa{display:block;position:relative;overflow:hidden;background:var(--iv);color:var(--br);font-family:var(--sans);font-size:16px;line-height:1.55;padding:0 clamp(16px,3vw,40px);margin:0;-webkit-font-smoothing:antialiased}
+body:has(#jfa){background:#F2E6C8}
+body:has(#jfa) #jf-seite{background:#F2E6C8}
+body:has(#jfa) #jf-weebly-kopf{display:none}
+html body #jfa a{color:var(--br)}
+html body #jfa a:focus-visible{outline:2px solid var(--ak);outline-offset:3px;border-radius:6px}
+html body #jfa img{display:block;max-width:100%}
+html body #jfa .in{position:relative;z-index:1;max-width:1180px;margin:0 auto}
+html body #jfa .deko{position:absolute;border-radius:50%;pointer-events:none;z-index:0}
+html body #jfa .k{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+html body #jfa .lbl{display:block;margin:0 0 22px;padding-bottom:8px;border-bottom:2px solid var(--br);font-family:var(--mono);font-size:11px;letter-spacing:.1em}
+html body #jfa .h2{display:block;margin:0 0 20px;font-weight:900;font-size:clamp(30px,4.5vw,46px);line-height:1;letter-spacing:-.04em}
+html body #jfa .sec{display:block;margin-top:80px}
+html body #jfa .knopf{display:inline-block;background:var(--br);color:var(--iv);text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:800;font-size:15px;line-height:1.2}
+html body #jfa .knopf:hover{background:var(--ak);color:#fff}
+html body #jfa .knopf.hell{background:var(--iv);color:var(--br);border:1.5px solid var(--br)}
+html body #jfa .knopf.hell:hover{background:#fff;color:var(--ak)}
+html body #jfa .skopf{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;padding:22px 0 12px;border-bottom:1px solid var(--br)}
+html body #jfa .slogo{font-family:var(--mono);font-weight:800;font-size:13px;letter-spacing:.14em;text-decoration:none;color:var(--br)}
+html body #jfa .ssub{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--gr)}
+html body #jfa .snav{display:flex;flex-wrap:wrap;gap:8px 18px;padding:14px 0;border-bottom:1px solid var(--br);font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+html body #jfa .snav a{text-decoration:none;color:var(--br)}
+html body #jfa .snav a:hover{text-decoration:underline}
+html body #jfa .snav a[aria-current]{font-weight:800;text-decoration:underline;text-underline-offset:4px}
+@media (max-width:600px){html body #jfa .snav{gap:6px 14px;font-size:11px}}
+html body #jfa .zurueck{display:flex;flex-wrap:wrap;gap:6px 18px;padding-top:22px;font-family:var(--mono);font-size:12px}
+html body #jfa .zurueck a{text-decoration:none}
+html body #jfa .zurueck a:hover{color:var(--ak)}
+/* Hero */
+html body #jfa .hero{display:flex;flex-wrap:wrap;align-items:center;gap:32px;padding-top:28px}
+html body #jfa .hero-t{flex:1 1 460px;min-width:0}
+html body #jfa .h1{display:block;margin:12px 0 0;font-weight:900;font-size:clamp(50px,9vw,100px);line-height:.92;letter-spacing:-.05em}
+html body #jfa .script{display:block;font-family:var(--script);font-size:clamp(34px,5vw,56px);line-height:1;color:var(--sd);margin-top:8px}
+html body #jfa .lead{display:block;margin:24px 0 0;max-width:580px;font-size:clamp(17px,1.6vw,19px);font-weight:500}
+html body #jfa .hero-k{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+html body #jfa .stapel{flex:0 1 380px;position:relative;height:340px;min-width:260px}
+html body #jfa .stapel a{position:absolute;display:block;width:190px;background:#fff;padding:8px 8px 26px;border-radius:3px;box-shadow:0 14px 26px rgba(74,63,54,.16);transition:transform .3s}
+html body #jfa .stapel a:hover{transform:rotate(0) scale(1.05)!important;z-index:5}
+html body #jfa .stapel img{width:100%;aspect-ratio:1;object-fit:cover;background:#F8F8F8}
+html body #jfa .stapel a:nth-child(1){left:0;top:30px;transform:rotate(-7deg)}
+html body #jfa .stapel a:nth-child(2){left:150px;top:0;transform:rotate(5deg)}
+html body #jfa .stapel a:nth-child(3){left:80px;top:140px;transform:rotate(-2deg)}
+html body #jfa .vort{display:flex;flex-wrap:wrap;gap:10px 34px;margin-top:44px;padding:14px 0;border-top:1px solid var(--br);border-bottom:1px solid var(--br);font-family:var(--mono);font-size:12px;letter-spacing:.03em}
+html body #jfa .vort span::before{content:'✿ ';color:var(--ak)}
+/* Motive */
+html body #jfa .motive{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+html body #jfa .mk{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:18px;padding:16px;border-radius:26px;background:#fff;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jfa .mk:nth-child(4n+1),html body #jfa .mk:nth-child(4n+4){background:#F8EDE8}
+html body #jfa .mk-bild{position:relative;display:block;align-self:start;border-radius:18px;overflow:hidden;background:#F8F8F8}
+html body #jfa .mk-bild img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .3s}
+html body #jfa .mk-bild:hover img{transform:scale(1.04)}
+html body #jfa .mk-nr{position:absolute;left:10px;top:10px;background:var(--br);color:var(--iv);font-family:var(--mono);font-size:11px;padding:2px 9px;border-radius:999px}
+html body #jfa .mk-t{display:flex;flex-direction:column;gap:10px;min-width:0}
+html body #jfa .mk h3{display:block;margin:0;font-weight:900;font-size:24px;line-height:1.05;letter-spacing:-.02em}
+html body #jfa .mk p{display:block;margin:0;font-size:15px;line-height:1.5}
+html body #jfa .mk-mini{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+html body #jfa .mk-mini a{display:flex;flex-direction:column;gap:3px;text-decoration:none}
+html body #jfa .mk-mini img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;background:#F8F8F8;transition:transform .2s}
+html body #jfa .mk-mini a:hover img{transform:scale(1.05)}
+html body #jfa .mk-mini span{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--gr)}
+html body #jfa .slink{align-self:flex-start;margin-top:auto;font-family:var(--mono);font-weight:600;font-size:12px;text-underline-offset:3px}
+html body #jfa .slink:hover{color:var(--ak)}
+/* Bald neu */
+/* Info */
+html body #jfa .info{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+html body #jfa .card{display:block;background:#fff;border-radius:20px;padding:22px;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jfa .card .ct{display:block;font-weight:800;font-size:19px;margin:6px 0 8px}
+html body #jfa .card p{display:block;margin:0;font-size:15px;line-height:1.55}
+html body #jfa .folgen{display:flex;flex-wrap:wrap;align-items:center;gap:20px 30px;padding:clamp(22px,4vw,36px);border-radius:28px;background:#A9B8A2;color:#2F3A2C}
+html body #jfa .folgen .bh{display:block;font-weight:900;font-size:clamp(30px,4vw,44px);line-height:.95;letter-spacing:-.04em;margin-top:6px}
+html body #jfa .folgen p{display:block;margin:10px 0 0;font-size:16px;max-width:520px}
+html body #jfa .folgen .kn{display:flex;flex-wrap:wrap;gap:10px}
+html body #jfa .hinweis{display:block;margin:18px 0 0;font-size:13px;color:var(--gr);max-width:720px}
+html body #jfa .fuss{display:flex;flex-wrap:wrap;gap:8px 26px;align-items:center;margin-top:72px;padding:12px 0 26px;border-top:1px solid var(--br);font-family:var(--mono);font-size:11px;letter-spacing:.04em}
+html body #jfa .fuss a{text-decoration:none}
+html body #jfa .fuss .re{margin-left:auto;display:flex;flex-wrap:wrap;gap:18px}
+@media (max-width:980px){html body #jfa .motive{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){
+  html body #jfa .mk{grid-template-columns:minmax(0,1fr)}
+  html body #jfa .stapel{height:250px;flex-basis:100%}
+  html body #jfa .stapel a{width:140px;padding:6px 6px 18px}
+  html body #jfa .stapel a:nth-child(2){left:120px}
+  html body #jfa .stapel a:nth-child(3){left:55px;top:95px}
+  html body #jfa .fuss .re{margin-left:0}
+  html body #jfa .deko{display:none}
+}
+@media (prefers-reduced-motion:reduce){html body #jfa *{transition:none!important}}
+</style>
+<style>
+html body #jfa .raster{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,160px),1fr));gap:16px;margin-top:24px}
+html body #jfa .pk{display:flex;flex-direction:column;gap:4px;text-decoration:none;color:var(--br)}
+html body #jfa .pk img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;background:#F8F8F8;transition:transform .2s}
+html body #jfa .pk:hover img{transform:scale(1.03)}
+html body #jfa .pk b{display:block;font-size:14px;line-height:1.25;font-weight:700}
+html body #jfa .pk small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--gr)}
+</style>
+<div id="jfa" lang="de">
+<span class="deko" aria-hidden="true" style="right:-90px;top:60px;width:clamp(220px,30vw,420px);height:clamp(220px,30vw,420px);background:#DCE6F0"></span>
+<span class="deko" aria-hidden="true" style="left:-120px;top:640px;width:240px;height:240px;background:#F1E8DC;opacity:.7"></span>
+<div class="in">
+  <!-- ===== KOPFZEILE: nur Shop-Links (Themenseiten) ===== -->
+  <header class="skopf"><a class="slogo" href="/jasardpu.html">← JASARDPU</a><span class="ssub">Shop von Jasmin Freiner · Themenseiten · <span lang="ko">테마</span></span></header>
+  <nav class="snav" aria-label="Themenseiten"><a href="/korea-shop.html">Korea</a><a href="/architektur-kaffee.html" aria-current="page">Architektur &amp; Kaffee</a><a href="/meerschweinchen-shop.html">Meerschweinchen</a><a href="/teppich.html">Teppich &amp; Muster</a><a href="/lipoedem.html">Lipödem &amp; Lymphe</a><a href="/glutenfrei-vegan-shop.html">Glutenfrei &amp; vegan</a><a href="/naehen.html">Nähen</a></nav>
+<div class="hero">
+<div class="hero-t">
+<span class="k">Themenseite · Jasardpu · Baustelle, Büro &amp; Kaffee</span>
+<h1 class="h1">Architektur &amp; Kaffee.</h1>
+<span class="script">Kaffee ist mein Tragwerk</span>
+<p class="lead">Ich bin Architektin, und mein Alltag besteht aus Plänen, Baustellen und sehr viel Kaffee. Daraus sind Sprüche für Bauherrinnen, Bauleiter und alle im Planungsbüro entstanden, dazu Kaffee- und Getränkemotive und meine liebsten Gebäude als Poster.</p>
+<div class="hero-k">
+<a class="knopf" href="#baustelle">Baustelle &amp; Büro ↓</a>
+<a class="knopf hell" href="#kaffee">Kaffee &amp; Getränke ↓</a>
+</div>
+</div>
+<div class="stapel" aria-hidden="true">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/181809339/7yqg" target="_blank" rel="noopener" tabindex="-1"><img src="https://ih1.redbubble.net/image.6171029460.9339/ur,classic_mug_right,full,600x600.jpg" alt="" loading="lazy"></a>
+<a href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/171804316/lrcw" target="_blank" rel="noopener" tabindex="-1"><img src="https://ih1.redbubble.net/image.5868411006.4316/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="" loading="lazy"></a>
+<a href="https://www.redbubble.com/de/i/poster/Jasardpu/28342334/flk2" target="_blank" rel="noopener" tabindex="-1"><img src="https://ih1.redbubble.net/image.440247834.2334/fposter,small,wall_texture,square_product,600x600.u4.jpg" alt="" loading="lazy"></a>
+</div>
+</div>
+<div class="vort">
+<span>Von einer echten Architektin</span>
+<span>Shirts, Tassen, Taschen, Sticker &amp; Poster</span>
+<span>Geschenke fürs Büro und zum Richtfest</span>
+<span>Gedruckt erst bei Bestellung</span>
+</div>
+<section class="sec" id="baustelle">
+<p class="lbl">(A) BAUSTELLE &amp; BÜRO · 15 DESIGNS</p>
+<h2 class="h2">Für alle, die bauen.</h2>
+<div class="motive">
+<!-- Motiv 1: Architektin & Kaffee -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/181809339/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6171029473.9339/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Architektin &amp; Kaffee, T-Shirt" loading="lazy"><span class="mk-nr">01</span></a>
+<div class="mk-t">
+<h3>Architektin &amp; Kaffee</h3>
+<p>Mein Lieblingsmotiv fürs Büro. Ohne Kaffee keine Entwürfe, ohne Entwürfe kein Kaffee.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/181809339/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6171029460.9339/ur,classic_mug_right,full,600x600.jpg" alt="Architektin &amp; Kaffee, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/181809339/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6171029474.9339/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Architektin &amp; Kaffee, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/181809339/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6171029501.9339/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Architektin &amp; Kaffee, Sticker" loading="lazy"><span>Sticker</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/181809339/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 2: Architekten & Kaffee -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/181809095/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6171022854.9095/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Architekten &amp; Kaffee, T-Shirt" loading="lazy"><span class="mk-nr">02</span></a>
+<div class="mk-t">
+<h3>Architekten &amp; Kaffee</h3>
+<p>Das Gegenstück für die Kollegen. Passt in jedes Planungsbüro und auf jede Baubesprechung.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/181809095/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6171022831.9095/ur,classic_mug_right,full,600x600.jpg" alt="Architekten &amp; Kaffee, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/181809095/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6171022857.9095/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Architekten &amp; Kaffee, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/181809095/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6171022889.9095/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Architekten &amp; Kaffee, Sticker" loading="lazy"><span>Sticker</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/181809095/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 3: Bauherrin 2.0 -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/171804316/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5868411006.4316/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Bauherrin 2.0, T-Shirt" loading="lazy"><span class="mk-nr">03</span></a>
+<div class="mk-t">
+<h3>Bauherrin 2.0</h3>
+<p>Für alle, die gerade bauen und dabei die Nerven behalten. Ein gutes Geschenk zum Richtfest.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/171804316/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5868410987.4316/ur,classic_mug_right,full,600x600.jpg" alt="Bauherrin 2.0, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/171804316/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5868411002.4316/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Bauherrin 2.0, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/171804316/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5868410991.4316/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Bauherrin 2.0, Sticker" loading="lazy"><span>Sticker</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/171804316/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 4: Bauherr 2.0 -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/171804168/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5868405979.4168/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Bauherr 2.0, T-Shirt" loading="lazy"><span class="mk-nr">04</span></a>
+<div class="mk-t">
+<h3>Bauherr 2.0</h3>
+<p>Das passende Shirt für den Bauherrn. Zusammen mit der Bauherrin ein Duo für Paare im Hausbau.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/171804168/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5868405959.4168/ur,classic_mug_right,full,600x600.jpg" alt="Bauherr 2.0, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/171804168/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5868405978.4168/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Bauherr 2.0, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/171804168/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5868405969.4168/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Bauherr 2.0, Sticker" loading="lazy"><span>Sticker</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/171804168/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 5: Baufrau hat das letzte Wort -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/172437928/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5887701491.7928/ssrco,classic_tee,flatlay_01,heather_light_grey,front,product_square,x600.1.jpg" alt="Baufrau hat das letzte Wort, T-Shirt" loading="lazy"><span class="mk-nr">05</span></a>
+<div class="mk-t">
+<h3>Baufrau hat das letzte Wort</h3>
+<p>Für Frauen auf der Baustelle, die wissen, wie es läuft. Mit Augenzwinkern und Bauhelm.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/172437928/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5887701454.7928/ur,classic_mug_right,full,600x600.jpg" alt="Baufrau hat das letzte Wort, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/172437928/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5887701486.7928/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Baufrau hat das letzte Wort, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/172437928/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5887701583.7928/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Baufrau hat das letzte Wort, Sticker" loading="lazy"><span>Sticker</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/172437928/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 6: Nicht die Praktikantin -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/172438009/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5887704523.8009/ssrco,classic_tee,flatlay_01,heather_light_grey,front,product_square,x600.1.jpg" alt="Nicht die Praktikantin, T-Shirt" loading="lazy"><span class="mk-nr">06</span></a>
+<div class="mk-t">
+<h3>Nicht die Praktikantin</h3>
+<p>Für alle Frauen, die auf der Baustelle schon mal für die Praktikantin gehalten wurden.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/172438009/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5887704491.8009/ur,classic_mug_right,full,600x600.jpg" alt="Nicht die Praktikantin, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/172438009/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5887704520.8009/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Nicht die Praktikantin, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/172438009/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5887704548.8009/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Nicht die Praktikantin, Sticker" loading="lazy"><span>Sticker</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/172438009/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 7: Ich koche hier nicht den Kaffee -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/172438058/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5887706833.8058/ssrco,classic_tee,flatlay_01,heather_light_grey,front,product_square,x600.1.jpg" alt="Ich koche hier nicht den Kaffee, T-Shirt" loading="lazy"><span class="mk-nr">07</span></a>
+<div class="mk-t">
+<h3>Ich koche hier nicht den Kaffee</h3>
+<p>Ein klarer Satz für die nächste Besprechung. Wer Kaffee will, weiß, wo die Maschine steht.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/172438058/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5887706819.8058/ur,classic_mug_right,full,600x600.jpg" alt="Ich koche hier nicht den Kaffee, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/172438058/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5887706832.8058/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Ich koche hier nicht den Kaffee, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/172438058/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5887706850.8058/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Ich koche hier nicht den Kaffee, Sticker" loading="lazy"><span>Sticker</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/172438058/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 8: Architekt der Träume -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/159818994/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6282069012.8994/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Architekt der Träume, T-Shirt" loading="lazy"><span class="mk-nr">08</span></a>
+<div class="mk-t">
+<h3>Architekt der Träume</h3>
+<p>Für alle, die Häuser im Kopf schon fertig gebaut haben, bevor der erste Strich auf dem Plan ist.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/poster/Jasardpu/159818994/flk2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6282069002.8994/fposter,small,wall_texture,square_product,600x600.jpg" alt="Architekt der Träume, Poster" loading="lazy"><span>Poster</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/159818994/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6282069009.8994/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Architekt der Träume, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/159818994/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6282069010.8994/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Architekt der Träume, Sticker" loading="lazy"><span>Sticker</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/159818994/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 8b: Blaue Decke -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/42222333/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1773214504.2333/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Blaue Decke, Kissen" loading="lazy"><span class="mk-nr">09</span></a>
+<div class="mk-t">
+<h3>Blaue Decke</h3>
+<p>Ein ruhiges Muster in Blau. Für alle, die es lieber kühl und klar mögen.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/untersetzer/Jasardpu/42222333/43wr" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.957696280.2333/ur,coaster_pack_4_flatlay,square,600x600.2.jpg" alt="Blaue Decke, Untersetzer" loading="lazy"><span>Untersetzer</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/42222333/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.957696315.2333/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="Blaue Decke, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/notizbuch/Jasardpu/42222333/qhru" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.1773214466.2333/ur,spiral_notebook_front,full,600x600.jpg" alt="Blaue Decke, Spiralblock" loading="lazy"><span>Spiralblock</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/42222333/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+</div>
+<div class="raster">
+<a class="pk" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/147739672/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5075221153.9672/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Bauleiter, T-Shirt" loading="lazy"><b>Bauleiter</b><small>T-Shirt &amp; mehr</small></a>
+<a class="pk" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/172437840/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5887699429.7840/ssrco,classic_tee,flatlay_01,heather_light_grey,front,product_square,x600.1.jpg" alt="Bauherrin, T-Shirt" loading="lazy"><b>Bauherrin</b><small>T-Shirt &amp; mehr</small></a>
+<a class="pk" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/171808492/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5868546003.8492/ssrco,classic_tee,flatlay_01,bed4e8:ce5f86edd7,front,product_square,x600.1.jpg" alt="Chefin, T-Shirt" loading="lazy"><b>Chefin</b><small>T-Shirt &amp; mehr</small></a>
+<a class="pk" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/171826619/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5869099830.6619/ssrco,classic_tee,flatlay_01,4a4440:cc103efb7a,front,product_square,x600.1.jpg" alt="Projektleiter und Zitronenfalter, T-Shirt" loading="lazy"><b>Projektleiter und Zitronenfalter</b><small>T-Shirt &amp; mehr</small></a>
+<a class="pk" href="https://www.redbubble.com/de/i/sticker/Jasardpu/29762480/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.492806705.2480/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Kran, Sticker" loading="lazy"><b>Kran</b><small>Sticker &amp; mehr</small></a>
+<a class="pk" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/157217503/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5407592889.7503/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="P.I.G. Architects, T-Shirt" loading="lazy"><b>P.I.G. Architects</b><small>T-Shirt &amp; mehr</small></a>
+</div>
+</section>
+<section class="sec" id="kaffee">
+<p class="lbl">(B) KAFFEE &amp; GETRÄNKE · 9 DESIGNS</p>
+<h2 class="h2">Erst Kaffee, dann Statik.</h2>
+<div class="motive">
+<!-- Motiv 9: Mahlgrad statt Smalltalk -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/171808719/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874436686.8719/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Mahlgrad statt Smalltalk, T-Shirt" loading="lazy"><span class="mk-nr">10</span></a>
+<div class="mk-t">
+<h3>Mahlgrad statt Smalltalk</h3>
+<p>Für alle, die morgens erst nach dem ersten Kaffee sprechen. Und dann am liebsten über Bohnen.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/171808719/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874436647.8719/ur,classic_mug_right,full,600x600.jpg" alt="Mahlgrad statt Smalltalk, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/171808719/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874436677.8719/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Mahlgrad statt Smalltalk, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/171808719/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5874436675.8719/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Mahlgrad statt Smalltalk, Sticker" loading="lazy"><span>Sticker</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/171808719/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 10: Eiskaffee für immer -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/182841566/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6200853159.1566/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Eiskaffee für immer, T-Shirt" loading="lazy"><span class="mk-nr">11</span></a>
+<div class="mk-t">
+<h3>Eiskaffee für immer</h3>
+<p>Auch im Winter. Iced Americano ist keine Jahreszeit, sondern eine Lebenseinstellung.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/182841566/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6200853111.1566/ur,classic_mug_right,full,600x600.jpg" alt="Eiskaffee für immer, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/182841566/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6200853164.1566/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Eiskaffee für immer, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/182841566/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6200853196.1566/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Eiskaffee für immer, Sticker" loading="lazy"><span>Sticker</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/182841566/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 11: Erdbeer Matcha und schlechte Entscheidungen -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/182537577/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6191974208.7577/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Erdbeer Matcha und schlechte Entscheidungen, Tasche" loading="lazy"><span class="mk-nr">12</span></a>
+<div class="mk-t">
+<h3>Erdbeer Matcha und schlechte Entscheidungen</h3>
+<p>Für alle, die nach dem dritten Matcha plötzlich spontan werden.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/182537577/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6191974185.7577/ur,classic_mug_right,full,600x600.jpg" alt="Erdbeer Matcha und schlechte Entscheidungen, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/182537577/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6191974207.7577/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Erdbeer Matcha und schlechte Entscheidungen, Sticker" loading="lazy"><span>Sticker</span></a>
+<a href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/182537577/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6191974194.7577/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Erdbeer Matcha und schlechte Entscheidungen, Kissen" loading="lazy"><span>Kissen</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/182537577/7prg" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 12: Jindo-Hund Barista -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/sticker/Jasardpu/184231071/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6242759733.1071/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Jindo-Hund Barista, Sticker" loading="lazy"><span class="mk-nr">13</span></a>
+<div class="mk-t">
+<h3>Jindo-Hund Barista</h3>
+<p>Ein koreanischer Jindo hinter der Theke, mit Eiskaffee und viel Charme.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/184231071/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6242759647.1071/ur,classic_mug_right,full,600x600.jpg" alt="Jindo-Hund Barista, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/184231071/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6242759692.1071/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Jindo-Hund Barista, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/poster/Jasardpu/184231071/flk2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6242759676.1071/fposter,small,wall_texture,square_product,600x600.jpg" alt="Jindo-Hund Barista, Poster" loading="lazy"><span>Poster</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/sticker/Jasardpu/184231071/7sgk" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+</div>
+<div class="raster">
+<a class="pk" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/171808865/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5868557373.8865/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Koffein-Tour, T-Shirt" loading="lazy"><b>Koffein-Tour</b><small>T-Shirt &amp; mehr</small></a>
+<a class="pk" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/184037948/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6236942531.7948/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Kaffeeliebe, T-Shirt" loading="lazy"><b>Kaffeeliebe</b><small>T-Shirt &amp; mehr</small></a>
+<a class="pk" href="https://www.redbubble.com/de/i/sticker/Jasardpu/182842213/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6200858965.2213/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Eiskaffee für immer, koreanisch, Sticker" loading="lazy"><b>Eiskaffee für immer, koreanisch</b><small>Sticker &amp; mehr</small></a>
+<a class="pk" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/184037717/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6236936026.7717/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Koreanisches Essen und Eiskaffee, T-Shirt" loading="lazy"><b>Koreanisches Essen und Eiskaffee</b><small>T-Shirt &amp; mehr</small></a>
+<a class="pk" href="https://www.redbubble.com/de/i/tasse/Jasardpu/184037764/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6236937152.7764/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="Koreanisches Essen und Eiskaffee, minimalistisch, Tasse" loading="lazy"><b>Koreanisches Essen und Eiskaffee, minimalistisch</b><small>Tasse &amp; mehr</small></a>
+</div>
+</section>
+<section class="sec">
+<p class="lbl">(C) ARCHITEKTUR ZUM AUFHÄNGEN</p>
+<h2 class="h2">Meine Lieblingsgebäude.</h2>
+<div class="raster">
+<a class="pk" href="https://www.redbubble.com/de/i/poster/Jasardpu/28342334/flk2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.440247834.2334/fposter,small,wall_texture,square_product,600x600.u4.jpg" alt="Marina Bay Sands, Poster" loading="lazy"><b>Marina Bay Sands</b><small>Poster &amp; mehr</small></a>
+<a class="pk" href="https://www.redbubble.com/de/i/poster/Jasardpu/28326535/flk2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.439672163.6535/fposter,small,wall_texture,square_product,600x600.u1.jpg" alt="Pantheon, Poster" loading="lazy"><b>Pantheon</b><small>Poster &amp; mehr</small></a>
+<a class="pk" href="https://www.redbubble.com/de/i/poster/Jasardpu/32010217/flk2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.573806076.0217/fposter,small,wall_texture,square_product,600x600.u1.jpg" alt="Vitra Design Museum, Poster" loading="lazy"><b>Vitra Design Museum</b><small>Poster &amp; mehr</small></a>
+<a class="pk" href="https://www.redbubble.com/de/i/poster/Jasardpu/35963597/flk2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.712013708.3597/fposter,small,wall_texture,square_product,600x600.u5.jpg" alt="Bosco Verticale, Poster" loading="lazy"><b>Bosco Verticale</b><small>Poster &amp; mehr</small></a>
+</div>
+<p class="hinweis">Alle Fotos habe ich auf meinen Reisen selbst gemacht. Mehr Orte und Gebäude gibt es in der <a href="https://www.redbubble.com/de/people/Jasardpu/shop?collections=4601752" target="_blank" rel="noopener">Kollektion Orte und Gebäude</a>.</p>
+</section>
+<section class="sec">
+<p class="lbl">(D) SO FUNKTIONIERT’S</p>
+<div class="info">
+<div class="card"><span class="k" style="color:var(--ak)">01</span><span class="ct">Motiv aussuchen</span><p>Klick auf ein Produkt. Bei Redbubble siehst du das Motiv auf allen Produkten, von der Tasse bis zum Hoodie, in vielen Farben und Größen.</p></div>
+<div class="card"><span class="k" style="color:var(--ak)">02</span><span class="ct">Bestellen bei Redbubble</span><p>Bezahlung, Versand und Rückgabe laufen sicher über Redbubble. Jedes Stück wird erst gedruckt, wenn du es bestellst.</p></div>
+<div class="card"><span class="k" style="color:var(--ak)">03</span><span class="ct">Von mir gestaltet</span><p>Ich bin Architektin und kenne Baustelle, Büro und Kaffeemaschine aus eigener Erfahrung. Alle Sprüche und Motive habe ich selbst entworfen.</p></div>
+</div>
+</section>
+<section class="sec">
+<div class="folgen">
+<div>
+<span class="k">Neue Motive zuerst sehen</span>
+<span class="bh">Folge Jasardpu.</span>
+<p>Neuheiten auf Instagram und Pinterest. Gern teilen mit Kolleginnen und Kollegen.</p>
+</div>
+<div class="kn">
+<a class="knopf" href="https://www.instagram.com/jasardpu/" target="_blank" rel="noopener">Instagram →</a>
+<a class="knopf hell" href="https://www.instagram.com/travelling_architectgirl/" target="_blank" rel="noopener">Travelling Architect →</a>
+</div>
+</div>
+<p class="hinweis">Mehr Designs von mir findest du im <a href="/jasardpu.html">Shop Jasardpu</a> in der Welt „Travel &amp; Architecture“.</p>
+</section>
+<footer class="fuss">
+<img src="/files/theme/jasardpu-logo.webp" alt="Logo: made by jasardpu" width="44" height="44" style="border-radius:8px;background:#fff">
+<span style="font-weight:600">© 2026 JASARDPU · JASMIN FREINER</span>
+<span class="re"><a href="/jasardpu.html">Shop Jasardpu</a><a href="/">jasminfreiner.de</a><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></span>
+</footer>
+</div>
+</div>
+<script>(function(){function m(){var b=document.getElementById('jfb'),v=document.querySelector('#jfa .vort');if(b&&v&&v.nextSibling!==b){v.parentNode.insertBefore(b,v.nextSibling);b.style.width='auto';b.style.maxWidth='none';b.style.margin='40px 0 0';b.style.borderRadius='22px'}}if(document.readyState!=='loading')m();document.addEventListener('DOMContentLoaded',m);window.addEventListener('load',m)})();</script>
