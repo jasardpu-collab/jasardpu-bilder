@@ -1,0 +1,412 @@
+<!--
+  ============================================================
+  JASARDPU SHOP · Seite /jasardpu.html auf jasminfreiner.de
+  14.11.2026: Umbau. Shop-Farbe Sand, Kopfzeile mit Welten, 3 Shop-Quadrate, Welten als Felder (Teil 2), ohne Etsy-Block und ohne Rücklinks.
+  TEIL 1 VON 3 (Aussehen und Inhalt). Stand 09.11.2026: Idee 3 "Kollektion zuerst, alle Shops".
+  09.11.2026: Weihnachten und Welten zuerst, Bestseller kleiner weiter unten,
+  "Weitere Shops" aufgelöst, Links zeigen jetzt auf die Übersicht Shop & Design
+  Welt oben wählen, darunter die Shops nebeneinander:
+  Redbubble (Fotostapel wie bisher + alle Designs der Welt),
+  Mode & Accessoires (Printful über Etsy, kommt bald),
+  Papier & Wand (Gelato über Etsy, kommt bald),
+  Stoffe & Tapeten (Spoonflower).
+  ============================================================
+  Wohin: Weebly → Seite „Jasardpu“ → drei Elemente „Code einbetten“ direkt untereinander:
+         Teil 1 (diese Datei) oben, darunter Teil 2 (Skript), darunter Teil 3 (Produktliste).
+         Das alte Element mit dem bisherigen Code löschen.
+  Alles steckt in dieser einen Datei (Farben, Schrift, Bilder-Links, Fotostapel).
+  Texte ändern: einfach zwischen den Zeichen > und < tippen.
+  Links zu den Kollektionen: …/shop?collections=NUMMER (Nummern siehe unten).
+  Bilder kommen direkt von Redbubble (deine Design-Vorschauen).
+  ============================================================
+  Kollektions-Nummern auf Redbubble:
+  Korea 4601750 · Orte und Gebäude 4601752 · Baustelle und Büro 4601753
+  Meerschweinchen 4601754 · Vögel und Wildtiere 4601755 · Unterwasserwelt 4601756
+  Pflanzen, Blüten und Schmetterlinge 4601757 · Teppich und Orient 4601758
+  Mandalas und Farbwirbel 4601759 · Zeitlose Muster 4601760
+  Vielfalt und Haltung 4601761 · Lymph und Support 4601762
+  Vegan und glutenfrei 4601763 · Kaffee und Getränke 4601764
+  Freche Sprüche 4601765 · Weltall und Fantasy 4601766 · Kids 4601767
+  Nähen und Handarbeit 4601768 · Weihnachten und Neujahr 4601769
+  Hochzeit 4601770 · Trauer und Erinnerung 4601771
+  ============================================================
+  WEIHNACHTEN (saisonal):
+  Neues Design dazu: einen <a class="xk">…</a>-Block kopieren, Link, Bild und Namen ändern.
+  Nach der Saison: den Abschnitt von „WEIHNACHTEN“ bis „ENDE WEIHNACHTEN“ löschen,
+  im Hero den Knopf „❄ Neu: Weihnachten“ entfernen und bei den Welten den Knopf
+  „Weihnachten 2026“ löschen.
+  ============================================================
+  WELTEN UND SHOPS (Abschnitt B):
+  Fotostapel: die Lieblingsprodukte pro Welt stehen im Skript bei „PRODUKTE PRO WELT“.
+     Eine Zeile = [Name, Produktart, Link ab /de/i/, Bild ab image.]
+     Echte Fotos von dieser Seite beginnen mit /files/theme/...
+  Alle Designs einer Welt: ganz unten bei „ALLE REDBUBBLE-DESIGNS“ (Stand 08.11.2026,
+     585 Designs). Diesen Block lässt du am besten von Claude neu erzeugen.
+  Mode & Accessoires / Papier & Wand: sobald die Produkte auf Etsy sind,
+     im Skript bei „ETSY-PRODUKTE“ eintragen. Dann erscheinen sie statt „kommt bald“.
+     Eine Zeile = [Welt, Name, Produktart, Etsy-Link, Bild-Link]
+  ============================================================
+--><style>
+#jfs{--iv:#F2E6C8;--br:#4A3F36;--gr:#6B5E52;--ch:#D8C6AE;--pf:#F2C4B0;--hb:#B8CCE0;--sb:#A9B8A2;--ne:#E8E1DA;--bl:#F6D5D0;--ak:#B0705A;--sd:#B59A7E;
+  --sans:'Inter Tight','Inter','Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+  --script:'Pinyon Script','Snell Roundhand','Segoe Script',cursive}
+html body #jfs,html body #jfs :where(*:not(svg,svg *)){all:revert;box-sizing:border-box}
+html body #jfs{display:block;position:relative;overflow:hidden;background:var(--iv);color:var(--br);font-family:var(--sans);font-size:16px;line-height:1.55;padding:0 clamp(16px,3vw,40px);margin:0;-webkit-font-smoothing:antialiased}
+body:has(#jfs){background:#F2E6C8}
+html body #jfs a{color:var(--br)}
+html body #jfs a:focus-visible,html body #jfs button:focus-visible,html body #jfs summary:focus-visible{outline:2px solid var(--ak);outline-offset:3px;border-radius:6px}
+html body #jfs img{display:block;max-width:100%}
+html body #jfs .in{position:relative;z-index:1;max-width:1240px;margin:0 auto}
+html body #jfs .deko{position:absolute;border-radius:50%;pointer-events:none;z-index:0}
+html body #jfs .k{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+html body #jfs .lbl{display:block;margin:0 0 22px;padding-bottom:8px;border-bottom:2px solid var(--br);font-family:var(--mono);font-size:11px;letter-spacing:.1em}
+html body #jfs .h2{display:block;margin:0 0 20px;font-weight:900;font-size:clamp(30px,4.5vw,46px);line-height:1;letter-spacing:-.04em}
+html body #jfs .sec{display:block;margin-top:80px}
+html body #jfs .knopf{display:inline-block;background:var(--br);color:var(--iv);text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:800;font-size:15px;line-height:1.2}
+html body #jfs .knopf:hover{background:var(--ak);color:#fff}
+html body #jfs .knopf.hell{background:var(--iv);color:var(--br)}
+html body #jfs .knopf.hell:hover{background:#fff;color:var(--ak)}
+/* Hero */
+html body #jfs .hero{display:flex;flex-wrap:wrap;align-items:center;gap:32px;padding-top:44px}
+html body #jfs .hero-t{flex:1 1 460px;min-width:0}
+html body #jfs .logo{display:block;width:100px;height:100px;margin:0 0 18px;border-radius:18px;background:#fff;box-shadow:0 8px 18px rgba(74,63,54,.12)}
+html body #jfs .h1{display:block;margin:12px 0 0;font-weight:900;font-size:clamp(56px,10vw,112px);line-height:.9;letter-spacing:-.05em}
+html body #jfs .script{display:block;font-family:var(--script);font-size:clamp(34px,5vw,56px);line-height:1;color:var(--sd);margin-top:6px}
+html body #jfs .lead{display:block;margin:24px 0 0;max-width:560px;font-size:clamp(17px,1.6vw,19px);font-weight:500}
+html body #jfs .hero-k{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+html body #jfs .stapel{flex:0 1 380px;position:relative;height:340px;min-width:260px}
+html body #jfs .stapel img{position:absolute;width:190px;height:190px;object-fit:cover;border-radius:22px;background:#fff;box-shadow:0 14px 26px rgba(74,63,54,.16);border:6px solid #fff}
+html body #jfs .stapel img:nth-child(1){left:0;top:30px;transform:rotate(-7deg)}
+html body #jfs .stapel img:nth-child(2){left:120px;top:0;transform:rotate(5deg)}
+html body #jfs .stapel img:nth-child(3){left:70px;top:140px;transform:rotate(-2deg)}
+/* Vorteile */
+html body #jfs .vort{display:flex;flex-wrap:wrap;gap:10px 34px;margin-top:44px;padding:14px 0;border-top:1px solid var(--br);border-bottom:1px solid var(--br);font-family:var(--mono);font-size:12px;letter-spacing:.03em}
+html body #jfs .vort span::before{content:'✿ ';color:var(--ak)}
+/* Weihnachten (saisonal) */
+html body #jfs .xmas{display:block;position:relative;overflow:hidden;border-radius:28px;background:#DDE5D8;padding:clamp(22px,4vw,40px)}
+html body #jfs .xmas .flocke{position:absolute;color:#FFFFFF;pointer-events:none;line-height:1;opacity:.9}
+html body #jfs .xkopf{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px 28px;margin-bottom:24px;position:relative}
+html body #jfs .xkopf .h2{margin:6px 0 0}
+html body #jfs .xkopf p{display:block;margin:10px 0 0;max-width:520px;font-size:16px}
+html body #jfs .xraster{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));gap:16px;position:relative}
+html body #jfs .xk{display:flex;flex-direction:column;gap:6px;padding:12px 12px 16px;border-radius:20px;background:#FFFFFF;text-decoration:none;box-shadow:0 8px 22px rgba(74,63,54,.08);transition:transform .2s}
+html body #jfs .xk:hover{transform:translateY(-3px) rotate(-.6deg)}
+html body #jfs .xk img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;background:#F8F8F8}
+html body #jfs .xk .xn{display:block;font-weight:800;font-size:16px;line-height:1.25;margin-top:4px}
+html body #jfs .xk .xp{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--gr)}
+/* Bestseller */
+html body #jfs .best{display:flex;flex-wrap:wrap;align-items:center;gap:28px;padding:clamp(22px,4vw,36px);border-radius:28px;background:#8B3A35;color:var(--iv);text-decoration:none}
+html body #jfs .best img{width:280px;max-width:100%;aspect-ratio:1;object-fit:cover;border-radius:18px;background:#fff}
+html body #jfs .best .bt{flex:1 1 300px;display:flex;flex-direction:column;gap:12px;min-width:0}
+html body #jfs .best .bh{font-weight:900;font-size:clamp(34px,4.5vw,50px);line-height:.95;letter-spacing:-.04em}
+html body #jfs .best .bp{font-size:17px;color:var(--bl)}
+/* Bestseller in klein */
+html body #jfs .best.klein{gap:20px;padding:18px 22px;border-radius:22px}
+html body #jfs .best.klein img{width:120px;border-radius:14px}
+html body #jfs .best.klein .bt{gap:6px}
+html body #jfs .best.klein .bh{font-size:clamp(22px,2.6vw,28px)}
+html body #jfs .best.klein .bp{font-size:14px}
+html body #jfs .best.klein .knopf{padding:9px 16px;font-size:13px}
+/* ===== Welten-Wahl (Idee 3) ===== */
+html body #jfs .wahl{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+html body #jfs .wk{display:flex;flex-direction:column;gap:0;padding:0;border:0;border-radius:18px;overflow:hidden;background:var(--ne);cursor:pointer;text-align:left;font:inherit;color:var(--br);transition:box-shadow .25s,transform .2s}
+html body #jfs .wk:hover{transform:translateY(-2px)}
+html body #jfs .wk img{width:100%;aspect-ratio:2/1;object-fit:cover;background:#fff}
+html body #jfs .wk span{display:block;padding:10px 12px 12px;font-weight:900;font-size:16px;line-height:1.1;letter-spacing:-.01em}
+html body #jfs .wk[aria-pressed="true"]{box-shadow:0 0 0 3px var(--br),0 12px 26px rgba(74,63,54,.16)}
+/* Bühne mit den Shops */
+html body #jfs .wtitel{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:40px 0 18px}
+html body #jfs .wtitel b{font-weight:900;font-size:clamp(28px,3.6vw,40px);line-height:1;letter-spacing:-.03em}
+html body #jfs .wtitel i{font-style:normal;font-family:var(--script);font-size:clamp(28px,3vw,38px);line-height:1;color:var(--sd)}
+html body #jfs .shops{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:18px;align-items:stretch}
+html body #jfs .neben{display:flex;flex-direction:column;gap:18px}
+html body #jfs .spalte{display:flex;flex-direction:column;gap:8px;border-radius:24px;padding:18px 18px 20px;min-width:0}
+html body #jfs .spalte .sk{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 12px}
+html body #jfs .spalte h3{display:block;margin:0;font-weight:900;font-size:22px;line-height:1.1;letter-spacing:-.02em}
+html body #jfs .spalte .von{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--gr)}
+html body #jfs .spalte p{display:block;margin:0;font-size:14px;line-height:1.5}
+html body #jfs .slink{align-self:flex-start;margin-top:auto;font-family:var(--mono);font-weight:600;font-size:12px;text-underline-offset:3px}
+html body #jfs .slink:hover{color:var(--ak)}
+html body #jfs .bald{display:inline-block;align-self:flex-start;background:var(--iv);border-radius:999px;padding:3px 10px;font-family:var(--mono);font-size:11px;letter-spacing:.06em}
+html body #jfs .mini{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:4px 0 6px}
+html body #jfs .mini a{display:block;background:#fff;padding:5px 5px 14px;border-radius:3px;box-shadow:0 6px 14px rgba(74,63,54,.14);text-decoration:none}
+html body #jfs .mini a:nth-child(1){transform:rotate(-4deg)}
+html body #jfs .mini a:nth-child(2){transform:rotate(3deg)}
+html body #jfs .mini a:nth-child(3){transform:rotate(-2deg)}
+html body #jfs .mini img{width:100%;aspect-ratio:1;object-fit:cover;background:#F8F8F8}
+html body #jfs .fs-tisch{position:relative;height:560px;margin-top:6px}
+/* Sofortbild-Rahmen (wie bisher) */
+html body #jfs .fs-pol{position:absolute;display:block;width:36%;background:#FFFFFF;padding:9px 9px 0;border-radius:3px;text-decoration:none;color:var(--br);box-shadow:0 1px 2px rgba(74,63,54,.18),0 10px 24px rgba(74,63,54,.16);transform:rotate(var(--r,0deg));transition:transform .3s cubic-bezier(.2,.8,.3,1),box-shadow .3s}
+html body #jfs .fs-pol:hover,html body #jfs .fs-pol:focus-visible{transform:rotate(0deg) scale(1.06);z-index:60!important;box-shadow:0 2px 4px rgba(74,63,54,.18),0 22px 40px rgba(74,63,54,.24)}
+html body #jfs .fs-pb{display:block;position:relative;aspect-ratio:1;overflow:hidden;background:#F8F8F8}
+html body #jfs .fs-pb img{width:100%;height:100%;object-fit:cover}
+html body #jfs .fs-pt{position:absolute;left:8px;bottom:8px;font-family:var(--mono);font-size:10px;line-height:1.4;background:rgba(255,255,255,.92);padding:1px 7px;border-radius:999px}
+html body #jfs .fs-pn{display:block;padding:8px 4px 12px;min-height:46px;font-family:var(--script);font-size:clamp(17px,1.6vw,22px);line-height:1.05;overflow-wrap:anywhere}
+html body #jfs .fs-pol.mehr .fs-pb{display:flex;align-items:center;justify-content:center;background:var(--ne);font-family:var(--mono);font-size:12px;text-align:center;padding:0 10px}
+/* Alle Designs einer Welt */
+html body #jfs .alle{display:block;margin-top:18px;border-radius:24px;background:#fff;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jfs .alle summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 22px;cursor:pointer;font-weight:800;font-size:17px;list-style:none}
+html body #jfs .alle summary::-webkit-details-marker{display:none}
+html body #jfs .alle summary::after{content:'+';font-family:var(--mono);font-size:22px;line-height:1}
+html body #jfs .alle[open] summary::after{content:'–'}
+html body #jfs .raster{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr));gap:14px;padding:4px 22px 22px}
+html body #jfs .pk{display:flex;flex-direction:column;gap:4px;text-decoration:none;color:var(--br)}
+html body #jfs .pk img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;background:#F8F8F8;transition:transform .2s}
+html body #jfs .pk:hover img{transform:scale(1.03)}
+html body #jfs .pk b{display:block;font-size:14px;line-height:1.25;font-weight:700}
+html body #jfs .pk small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--gr)}
+html body #jfs .mehrladen{display:block;margin:0 22px 22px;font-family:var(--mono);font-weight:600;font-size:12px;background:var(--iv);color:var(--br);border:1.5px solid var(--br);border-radius:999px;padding:10px 16px;cursor:pointer}
+/* Echte Fotos */
+html body #jfs .foto{columns:4 200px;column-gap:12px}
+html body #jfs .foto img{width:100%;height:auto;margin:0 0 12px;border-radius:16px;break-inside:avoid;background:var(--ne)}
+/* Taschen */
+html body #jfs .skopf{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;padding:22px 0 12px;border-bottom:1px solid var(--br)}
+html body #jfs .slogo{font-family:var(--mono);font-weight:800;font-size:13px;letter-spacing:.14em;text-decoration:none;color:var(--br)}
+html body #jfs .ssub{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--gr)}
+html body #jfs .snav{display:flex;flex-wrap:wrap;gap:8px 18px;padding:14px 0;border-bottom:1px solid var(--br);font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+html body #jfs .snav a{text-decoration:none;color:var(--br)}
+html body #jfs .snav a:hover{text-decoration:underline}
+html body #jfs .shopq{display:grid;grid-template-columns:repeat(3,minmax(0,170px));gap:12px;margin-top:26px}
+html body #jfs a.sq{display:flex;flex-direction:column;text-decoration:none;color:var(--br);background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 16px rgba(74,63,54,.12);transition:transform .2s}
+html body #jfs a.sq:hover{transform:translateY(-3px)}
+html body #jfs a.sq img{display:block;width:100%;aspect-ratio:1;object-fit:cover;background:#F8F8F8}
+html body #jfs a.sq>span{display:block;padding:8px 10px 10px;border-top:5px solid var(--wf)}
+html body #jfs a.sq b{display:block;font-weight:800;font-size:15px;line-height:1.15}
+html body #jfs a.sq small{display:block;margin-top:3px;font-family:var(--mono);font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--gr)}
+html body #jfs #welten-liste{display:flex;flex-direction:column;gap:28px}
+html body #jfs .wfeld{display:block;position:relative;border-radius:28px;padding:clamp(20px,3.5vw,34px);scroll-margin-top:20px}
+html body #jfs .wfeld .xkopf{margin-bottom:18px}
+html body #jfs .wreihe{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}
+html body #jfs .wreihe .xk{padding:10px 10px 12px}
+html body #jfs .wreihe .xk .xn{font-size:14px}
+html body #jfs a.wthema{display:flex;flex-direction:column;justify-content:space-between;gap:8px;padding:10px;border-radius:20px;background:var(--br);color:#fff;text-decoration:none;box-shadow:0 8px 22px rgba(74,63,54,.16);transition:transform .2s}
+html body #jfs a.wthema:hover{transform:translateY(-3px)}
+html body #jfs a.wthema img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;background:#F8F8F8}
+html body #jfs a.wthema .k{color:#F2E6C8}
+html body #jfs a.wthema b{display:block;font-weight:900;font-size:16px;line-height:1.1}
+html body #jfs .wfeld .alle{margin-top:16px}
+html body #jfs a.designerin{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--br);background:#fff;border-radius:14px;padding:6px 14px 6px 6px;box-shadow:0 4px 12px rgba(74,63,54,.10)}
+html body #jfs a.designerin img{width:44px;height:44px;object-fit:cover;border-radius:10px}
+html body #jfs a.designerin b{display:block;font-family:var(--sans);font-size:13px;letter-spacing:0}
+html body #jfs a.designerin small{display:block;font-size:10px}
+@media (max-width:1000px){html body #jfs .wreihe{grid-template-columns:repeat(4,minmax(0,1fr))}html body #jfs .wreihe>.xk:nth-child(n+4){display:none}html body #jfs .wreihe.ohne>.xk:nth-child(4){display:flex}}
+@media (max-width:600px){html body #jfs .shopq{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}html body #jfs a.sq small{display:none}html body #jfs .wreihe{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}html body #jfs .wreihe>*{flex:0 0 42%;scroll-snap-align:start}html body #jfs .wreihe>.xk:nth-child(n+4){display:flex}html body #jfs .snav{gap:6px 14px;font-size:11px}}
+html body #jfs .hero>.shopq{flex:0 1 520px;margin-top:0;grid-template-columns:repeat(3,minmax(0,1fr))}
+html body #jfs .blasen{position:fixed;inset:0;pointer-events:none;z-index:0}
+html body #jfs .blasen img{position:absolute;aspect-ratio:1;height:auto;object-fit:cover;border-radius:50%;opacity:.55;box-shadow:0 4px 12px rgba(74,63,54,.15);animation:jfsblase 12s ease-in-out infinite}
+@keyframes jfsblase{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+html body #jfs .in{position:relative;z-index:1}
+@media (max-width:900px){html body #jfs .blasen{display:none}}
+@media (prefers-reduced-motion:reduce){html body #jfs .blasen img{animation:none}}
+html body #jfs .hero{align-items:flex-start}
+html body #jfs .hero-r{flex:0 1 520px;min-width:0}
+html body #jfs .hero-r .shopq{margin-top:0;grid-template-columns:repeat(3,minmax(0,1fr))}
+html body #jfs .hero-r .lead{text-align:right;margin:20px 0 0;max-width:none}
+@media (max-width:760px){html body #jfs .hero-r .lead{text-align:left}}
+html body #jfs .xkopf{align-items:flex-start}
+html body #jfs .xkopf .xr{display:flex;flex-direction:column;align-items:flex-end;gap:12px;max-width:440px;text-align:right}
+html body #jfs .xkopf .xr p{margin:0;max-width:none}
+@media (max-width:760px){html body #jfs .xkopf .xr{align-items:flex-start;text-align:left}}
+html body #jfs .bsatz{margin:0;font-size:17px;color:var(--bl)}
+html body #jfs .bsatz a{color:var(--br);font-weight:800}
+html body #jfs .taschen{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px}
+html body #jfs .taschen a{display:flex;flex-direction:column;gap:6px;padding:16px;border-radius:22px;background:#fff;text-decoration:none;box-shadow:0 8px 22px rgba(74,63,54,.08);transition:transform .2s}
+html body #jfs .taschen a:hover{transform:translateY(-3px)}
+html body #jfs .taschen img{width:100%;aspect-ratio:3/4;object-fit:contain}
+html body #jfs .taschen .tn{display:block;font-weight:800;font-size:18px}
+html body #jfs .taschen .tg{display:block;font-size:14px;font-weight:700;color:var(--ak)}
+/* Info */
+html body #jfs .info{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+html body #jfs .card{display:block;background:#fff;border-radius:20px;padding:22px;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jfs .card .ct{display:block;font-weight:800;font-size:19px;margin:6px 0 8px}
+html body #jfs .card p{display:block;margin:0;font-size:15px;line-height:1.55}
+html body #jfs .fuss{display:flex;flex-wrap:wrap;gap:8px 26px;align-items:center;margin-top:72px;padding:12px 0 26px;border-top:1px solid var(--br);font-family:var(--mono);font-size:11px;letter-spacing:.04em}
+html body #jfs .fuss a{text-decoration:none}
+html body #jfs .fuss .re{margin-left:auto;display:flex;flex-wrap:wrap;gap:18px}
+@media (max-width:1000px){
+  html body #jfs .wahl{grid-template-columns:repeat(4,minmax(0,1fr))}
+  html body #jfs .shops{grid-template-columns:minmax(0,1fr)}
+  html body #jfs .neben{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  html body #jfs .wahl{display:flex;overflow-x:auto;gap:10px;margin:0 -16px;padding:4px 16px 10px;scroll-snap-type:x proximity}
+  html body #jfs .wk{flex:0 0 132px;scroll-snap-align:start}
+  html body #jfs .wk span{font-size:14px}
+  html body #jfs .neben{display:flex}
+  html body #jfs .fs-tisch{height:470px}
+  html body #jfs .raster{padding:4px 14px 18px;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}
+  html body #jfs .alle summary{padding:16px}
+}
+@media (max-width:700px){
+  html body #jfs .stapel{height:250px;flex-basis:100%}
+  html body #jfs .stapel img{width:140px;height:140px}
+  html body #jfs .stapel img:nth-child(2){left:110px}
+  html body #jfs .stapel img:nth-child(3){left:55px;top:100px}
+  html body #jfs .fuss .re{margin-left:0}
+  html body #jfs .deko{display:none}
+  html body #jfs .xmas .flocke{display:none}
+}
+html body #jfs .shops{grid-template-columns:minmax(0,1fr)}
+html body #jfs .neben{display:none!important}
+html body #jfs #welten .shops>.spalte{width:100%;max-width:820px;margin:0 auto}
+html body #jfs .wthema{display:inline-block;margin:0 0 18px}
+html body #jfs #weihnachten .xraster{grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}
+html body #jfs #trauer .xraster{grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+html body #jfs .taschen{grid-template-columns:repeat(3,minmax(0,1fr));max-width:560px;margin:0 auto;gap:14px}
+html body #jfs #ein-motiv>p:last-child{text-align:center}
+@media (max-width:1000px){html body #jfs #weihnachten .xraster{grid-template-columns:repeat(4,minmax(0,1fr))}html body #jfs #trauer .xraster{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:600px){html body #jfs #weihnachten .xraster,html body #jfs #trauer .xraster{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){html body #jfs *{transition:none!important}}
+</style>
+
+<div id="jfs" lang="de">
+<span class="deko" aria-hidden="true" style="right:-90px;top:80px;width:clamp(220px,30vw,420px);height:clamp(220px,30vw,420px);background:#EDE7E0"></span>
+<span class="deko" aria-hidden="true" style="left:-120px;top:620px;width:240px;height:240px;background:#F6D5D0;opacity:.6"></span>
+  <div class="blasen" aria-hidden="true"><img src="/files/theme/jasardpu-logo.webp" alt="" style="top:22%;right:2.2%;width:46px;animation-delay:0s"><img src="/files/theme/jasardpu-logo.webp" alt="" style="top:48%;right:4.6%;width:30px;animation-delay:-3s"><img src="/files/theme/jasardpu-logo.webp" alt="" style="top:70%;right:1.6%;width:38px;animation-delay:-6s"><img src="/files/theme/jasardpu-logo.webp" alt="" style="top:86%;right:5.4%;width:22px;animation-delay:-9s"></div>
+<div class="in">
+
+  <!-- ===== KOPFZEILE: nur Shop-Links (Welten) ===== -->
+  <header class="skopf"><a class="slogo" href="/jasardpu.html">JASARDPU</a><span class="ssub">Shop von Jasmin Freiner · <span lang="ko">디자인 샵</span></span></header>
+  <nav class="snav" aria-label="Welten"><a href="#weihnachten">Weihnachten</a><a href="#w-korea">Korea</a><a href="#w-travel">Travel &amp; Architektur</a><a href="#w-tiere">Tiere &amp; Natur</a><a href="#w-muster">Teppich &amp; Muster</a><a href="#w-haltung">Haltung &amp; Herz</a><a href="#w-vegan">Glutenfrei &amp; vegan</a><a href="#w-spass">Spaß &amp; Alltag</a><a href="#w-anlaesse">Anlässe &amp; Karten</a><a href="#bestseller">Bestseller</a></nav>
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <div class="hero-t">
+      <img class="logo" src="/files/theme/jasardpu-logo.webp" alt="Logo: made by jasardpu" width="100" height="100">
+      <span class="k">Shop · Designs von Jasmin Freiner · <span lang="ko">디자인</span></span>
+      <h1 class="h1">Jasardpu.</h1>
+      <span class="script">Muster mit Herz &amp; Haltung</span>
+    </div>
+    <div class="hero-r">
+      <div class="shopq">
+        <a class="sq" href="https://www.redbubble.com/de/people/Jasardpu/shop" target="_blank" rel="noopener" style="--wf:#B0705A"><img src="https://ih1.redbubble.net/image.1432031886.1907/ur,throw_pillow_couch_small,square,600x600.u1.jpg" alt="Kissen mit Perser-Muster bei Redbubble" loading="lazy"><span><b>Redbubble →</b><small>Shirts, Kissen, Sticker &amp; mehr</small></span></a>
+        <a class="sq" href="https://www.etsy.com/de/shop/Jasardpu" target="_blank" rel="noopener" style="--wf:#E07A3F"><img src="https://i.etsystatic.com/22304935/r/il/0067ab/8814493530/il_800x800.8814493530_5c0h.jpg" alt="Kleid mit Allover-Muster bei Etsy" loading="lazy"><span><b>Etsy →</b><small>Kleider, Kissenbezüge, Tassen &amp; Karten</small></span></a>
+        <a class="sq" href="https://www.spoonflower.com/profiles/jasardpu" target="_blank" rel="noopener" style="--wf:#5B7DA8"><img src="https://garden.spoonflower.com/c/15463036/p/f/m/MLxuIHgt7KacqtfzFrbor98ZDUWvv2NOmWtAjLvocweBfEx-8W4K/pfau.jpg" alt="Stoffmuster Pfau bei Spoonflower" loading="lazy"><span><b>Spoonflower →</b><small>Stoffe &amp; Tapeten</small></span></a>
+      </div>
+  <p class="lead">Ich bin Architektin und gestalte Muster, Illustrationen und Sprüche – von koreanischer Palastmalerei bis zum Meerschweinchen im Weltall. Gedruckt auf Shirts, Kissen, Sticker, Taschen und vieles mehr.</p>
+    </div>
+  </div>
+
+  <div class="vort">
+    <span>Über 490 eigene Designs</span>
+    <span>Auf Shirts, Kissen, Stickern &amp; mehr</span>
+    <span>Gedruckt erst bei Bestellung</span>
+    <span>Bestellung &amp; Versand über Redbubble</span>
+  </div>
+
+  <!-- ===== WEIHNACHTEN (saisonal) ===== -->
+  <section class="sec" id="weihnachten" style="margin-top:56px">
+    <p class="lbl">(❄) NEU: WEIHNACHTEN · <span lang="ko">크리스마스</span></p>
+    <div class="xmas">
+      <span class="flocke" aria-hidden="true" style="right:28px;top:18px;font-size:54px">❄</span>
+      <span class="flocke" aria-hidden="true" style="right:110px;top:70px;font-size:24px">❄</span>
+      <span class="flocke" aria-hidden="true" style="left:46%;top:14px;font-size:30px">❄</span>
+      <div class="xkopf">
+        <div>
+          <span class="k">Weihnachtskollektion 2026 · 14 Designs</span>
+          <h2 class="h2">Lebkuchen, Hanok &amp;<br>Kimchi im Schnee.</h2>
+        </div>
+        <div class="xr"><p>Weihnachten auf meine Art: ein Lebkuchen-Architekt, ein verschneites Hanok und koreanisches Essen mit Weihnachtsmützen. Mit Honig-Pfannkuchen, Meerschweinchen und K-Drama.</p><a class="knopf" href="https://www.redbubble.com/de/people/Jasardpu/shop?collections=4601769&amp;sortOrder=recent" target="_blank" rel="noopener">Ganze Kollektion →</a></div>
+      </div>
+      <div class="xraster">
+        <a class="xk" href="https://www.redbubble.com/de/i/gru%C3%9Fkarte/Auf-das-neue-Jahr-Silvester-Motiv-von-Jasardpu/36088316/qjsu" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.716331442.8316/papergc,300x,w,f8f8f8-pad,600x600,f8f8f8.u2.jpg" alt="Auf das neue Jahr – Silvester Motiv, Grußkarte" loading="lazy"><span class="xn">Auf das neue Jahr</span><span class="xp">Grußkarte →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/t-shirt/Weihnachtshaus-Winter-Motiv-von-Jasardpu/149366022/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5133831232.6022/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Weihnachtshaus – Winter Motiv, T-Shirt" loading="lazy"><span class="xn">Weihnachtshaus</span><span class="xp">T-Shirt &amp; mehr →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/t-shirt/Unartiger-veganer-Weihnachtsmann-Weihnachten-Humor-von-Jasardpu/176212570/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6006024167.2570/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Unartiger veganer Weihnachtsmann, T-Shirt" loading="lazy"><span class="xn">Unartiger veganer Weihnachtsmann</span><span class="xp">T-Shirt &amp; mehr →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/t-shirt/Weihnachten-Festliches-Motiv-von-Jasardpu/174557125/xtkm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5953440303.7125/ssrco,boxy_tee,flatlay,ffffff:affd82b53f,front,product_square,x600.1.jpg" alt="Weihnachten – Festliches Motiv, Boxy T-Shirt" loading="lazy"><span class="xn">Weihnachten – Festlich</span><span class="xp">Boxy T-Shirt &amp; mehr →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/notizbuch/Fr%C3%B6hliche-Weihnacht-Winter-Motiv-Kawaii-von-Jasardpu/174737807/qhru" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5959151282.7807/ur,spiral_notebook_front,full,600x600.jpg" alt="Fröhliche Weihnacht – Winter Motiv, Kawaii Spiralblock" loading="lazy"><span class="xn">Fröhliche Weihnacht</span><span class="xp">Spiralblock →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/sticker/Fr%C3%B6hliche-Weihnacht-Festliches-Motiv-von-Jasardpu/174737837/r3lj" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5959152317.7837/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Fröhliche Weihnacht – Festliches Motiv, Sticker" loading="lazy"><span class="xn">Fröhliche Weihnacht – Festlich</span><span class="xp">Sticker →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/t-shirt/Kimchi-Schneemann-und-Gimbap-mit-Weihnachtsm%C3%BCtzen-Koreanisches-Essen-Weihnachten-von-Jasardpu/185127821/rh5j" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6270057998.7821/ssrco,oversize_tee,flatlay,ffffff:affd82b53f,front,product_square,x600.jpg" alt="Kimchi, Schneemann und Gimbap mit Weihnachtsmützen, Oversized T-Shirt" loading="lazy"><span class="xn">Kimchi, Schneemann &amp; Gimbap</span><span class="xp">Oversized T-Shirt →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/dekokissen/Heulender-Weihnachtswolf-unter-Polarlichtern-Winter-Wolf-Emblem-mit-Stern-von-Jasardpu/185127891/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6270367446.7891/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Heulender Weihnachtswolf unter Polarlichtern, Dekokissen" loading="lazy"><span class="xn">Heulender Weihnachtswolf</span><span class="xp">Dekokissen →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/sticker/Koreanisches-Haus-im-Schnee-mit-Schneemann-Winter-Weihnachten-in-Korea-von-Jasardpu/185128154/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6270056957.8154/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Koreanisches Haus im Schnee mit Schneemann, Sticker" loading="lazy"><span class="xn">Koreanisches Haus im Schnee</span><span class="xp">Sticker →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/tank-top/Alles-was-ich-zu-Weihnachten-will-ist-K-Drama-und-scharfer-Reiskuchen-Kawaii-Weihnachten-Korea-von-Jasardpu/185128164/5xql" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6270368509.8164/ssrco,tank_top,flatlay,fafafa:ca443f4786,front,square_product,x600.jpg" alt="Alles, was ich zu Weihnachten will, ist K-Drama und scharfer Reiskuchen, Tank Top" loading="lazy"><span class="xn">Alles, was ich zu Weihnachten will</span><span class="xp">Tank Top →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/kunstdruck/Lebkuchen-Architekt-mit-Bauhelm-und-Bauplan-Weihnachten-f%C3%BCr-Architekten-von-Jasardpu/185128175/wqnt" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6270056230.8175/aps,504x498,small,transparent-pad,600x600,f8f8f8.jpg" alt="Lebkuchen-Architekt mit Bauhelm und Bauplan, Kunstdruck" loading="lazy"><span class="xn">Lebkuchen-Architekt</span><span class="xp">Kunstdruck &amp; mehr →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/t-shirt/Meerschweinchen-zu-Weihnachten-Winter-Illustration-von-Jasardpu/185140869/e22z" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271545203.0869/ssrco,premium_tee,flatlay_01,171716:c5d52111d6,front,square_product,x600.1.jpg" alt="Meerschweinchen zu Weihnachten, Premium T-Shirt" loading="lazy"><span class="xn">Meerschweinchen zu Weihnachten</span><span class="xp">T-Shirt &amp; mehr →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/hoodie/Winter-Honig-Pfannkuchen-Koreanisches-Essen-Kawaii-von-Jasardpu/185140924/2j5j" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271541490.0924/ssrco,pullover_hoodie,flatlay_01,2445a6:c81b382e98,front,product_square,x600.jpg" alt="Winter Honig-Pfannkuchen, Kawaii Hoodie" loading="lazy"><span class="xn">Winter Honig-Pfannkuchen</span><span class="xp">Hoodie &amp; mehr →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/t-shirt/K-Drama-mit-koreanischem-Essen-Kawaii-Motiv-von-Jasardpu/185141007/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271534280.1007/ssrco,classic_tee,flatlay_01,4a4440:cc103efb7a,front,product_square,x600.1.jpg" alt="K-Drama mit koreanischem Essen, T-Shirt" loading="lazy"><span class="xn">K-Drama mit koreanischem Essen</span><span class="xp">T-Shirt &amp; mehr →</span></a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== ENDE WEIHNACHTEN ===== -->
+
+  <!-- ===== (A) WELTEN: die Felder baut Teil 2 (Skript) aus den Daten dort ===== -->
+  <section class="sec" id="welten">
+    <p class="lbl">(A) MEINE WELTEN · REDBUBBLE · <span lang="ko">세계</span></p>
+    <div id="welten-liste"></div>
+  </section>
+
+  <!-- ===== ECHTE FOTOS (Bilder liegen auf dieser Weebly-Seite unter /uploads/…) ===== -->
+  <section class="sec">
+    <p class="lbl">(B) ECHT GEDRUCKT · <span lang="ko">실제 사진</span></p>
+    <h2 class="h2">Alles nur KI? Nein – so sieht’s in echt aus.</h2>
+    <p style="display:block;margin:0 0 22px;max-width:640px;font-size:16px">Im Shop zeige ich digitale Mockups, weil jedes Stück erst bei Bestellung gedruckt wird. Hier sind echte Fotos – von Kundinnen und von mir beim selbstlosen Testen der Sportkleidung.</p>
+    <div class="foto">
+      <img src="/files/theme/jasardpu-echt-shirt.jpg" alt="Jasmin im Shirt mit eigenem Design" loading="lazy">
+      <img src="/files/theme/jasardpu-echt-leggings-1.jpg" alt="Leggings mit Muster im Wald getragen" loading="lazy">
+      <img src="/files/theme/jasardpu-echt-kissen-persisch-1.png" alt="Zwei Kissen mit persischem Teppichmuster auf dem Sofa" loading="lazy">
+      <img src="/files/theme/jasardpu-echt-schal.png" alt="Schal mit Vogelmotiv getragen" loading="lazy">
+      <img src="/files/theme/jasardpu-echt-handyhuelle.jpg" alt="Handyhülle mit eigenem Design" loading="lazy">
+      <img src="/files/theme/jasardpu-echt-kissen-pfau.png" alt="Kissen mit Pfauenfedern" loading="lazy">
+      <img src="/files/theme/jasardpu-echt-leggings-2.jpg" alt="Leggings mit Muster, zweite Ansicht" loading="lazy">
+      <img src="/files/theme/jasardpu-echt-kissen-persisch-2.png" alt="Kissen mit Orient-Muster" loading="lazy">
+      <img src="/files/theme/jasardpu-echt-kunstdruck.jpg" alt="Gerahmter Kunstdruck an der Wand" loading="lazy">
+      <img src="/files/theme/jasardpu-echt-kissen-karo.png" alt="Kissen mit blauem Karomuster" loading="lazy">
+      <img src="/files/theme/jasardpu-echt-kissen-fenster.png" alt="Kissen mit Fenster-Muster" loading="lazy">
+    </div>
+  </section>
+
+  <!-- ===== SO FUNKTIONIERT'S ===== -->
+  <section class="sec" id="so">
+    <p class="lbl">(C) SO FUNKTIONIERT’S · <span lang="ko">안내</span></p>
+    <div class="info">
+      <div class="card"><span class="k" style="color:var(--ak)">01</span><span class="ct">Bestellen beim jeweiligen Shop</span><p>Du bestellst sicher direkt bei Redbubble, Etsy oder Spoonflower – dort laufen Bezahlung, Versand und Rückgabe. Ein Motiv gibt es meist auf vielen Produkten.</p></div>
+      <div class="card"><span class="k" style="color:var(--ak)">02</span><span class="ct">Gedruckt auf Bestellung</span><p>Jedes Stück wird erst gedruckt, wenn du es bestellst. So entsteht keine Überproduktion.</p></div>
+      <div class="card"><span class="k" style="color:var(--ak)">03</span><span class="ct">Von mir gestaltet</span><p>Alle Designs entwerfe ich selbst – als Architektin mit Liebe zu Mustern, Reisen, Korea und Meerschweinchen.</p></div>
+    </div>
+  </section>
+
+ <!-- ===== TRAUER UND ERINNERUNG ===== -->
+  <section class="sec" id="trauer">
+    <p class="lbl">(✿) TRAUER UND ERINNERUNG · <span lang="ko">추모</span></p>
+    <div class="xmas" style="background:#E6E9EE">
+      <div class="xkopf">
+        <div>
+          <span class="k">Beileids- und Gedenkkarten · Klappkarte mit Umschlag</span>
+          <h2 class="h2">Wenn Worte fehlen.</h2>
+        </div>
+        <div class="xr"><p>Stille Blumen und warmes Kerzenlicht für Momente, in denen man Anteilnahme zeigen möchte. Calla, Chrysantheme und Vergissmeinnicht, innen frei für deine eigenen Worte. Auch einzeln bestellbar.</p><a class="knopf" href="https://www.redbubble.com/de/people/Jasardpu/shop?collections=4601771&amp;sortOrder=recent" target="_blank" rel="noopener">Ganze Kollektion →</a></div>
+      </div>
+      <div class="xraster">
+        <a class="xk" href="https://www.redbubble.com/de/i/gru%C3%9Fkarte/Calla-Blumen-Illustration-von-Jasardpu/172025659/qjsu" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5875196657.5659/papergc,300x,w,f8f8f8-pad,600x600,f8f8f8.jpg" alt="Calla – Blumen Illustration, Grußkarte" loading="lazy"><span class="xn">Calla</span><span class="xp">Grußkarte →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/gru%C3%9Fkarte/Chrysantheme-Blumen-Illustration-von-Jasardpu/172025506/qjsu" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5875192324.5506/papergc,300x,w,f8f8f8-pad,600x600,f8f8f8.jpg" alt="Chrysantheme – Blumen Illustration, Grußkarte" loading="lazy"><span class="xn">Chrysantheme</span><span class="xp">Grußkarte →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/gru%C3%9Fkarte/Vergissmeinnicht-Gedenkkarte-Trauer-von-Jasardpu/172025631/qjsu" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5875195790.5631/papergc,300x,w,f8f8f8-pad,600x600,f8f8f8.jpg" alt="Vergissmeinnicht – Gedenkkarte Trauer, Grußkarte" loading="lazy"><span class="xn">Vergissmeinnicht mit Rahmen</span><span class="xp">Grußkarte →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/gru%C3%9Fkarte/Vergissmeinnicht-I-von-Jasardpu/172022967/qjsu" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5875115598.2967/papergc,300x,w,f8f8f8-pad,600x600,f8f8f8.jpg" alt="Vergissmeinnicht, Grußkarte" loading="lazy"><span class="xn">Vergissmeinnicht</span><span class="xp">Grußkarte →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/gru%C3%9Fkarte/Kerze-in-der-Dunkelheit-Trost-Kondolenzkarte-von-Jasardpu/36088223/qjsu" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6262786027.8223/papergc,300x,w,f8f8f8-pad,600x600,f8f8f8.jpg" alt="Kerze in der Dunkelheit – Trost Kondolenzkarte, Grußkarte" loading="lazy"><span class="xn">Kerze in der Dunkelheit</span><span class="xp">Grußkarte →</span></a>
+        <a class="xk" href="https://www.redbubble.com/de/i/gru%C3%9Fkarte/Zur-Erinnerung-Gedenkkarte-von-Jasardpu/147741060/qjsu" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.5080332550.1060/papergc,300x,w,f8f8f8-pad,600x600,f8f8f8.jpg" alt="Zur Erinnerung – Gedenkkarte mit Regenbogen, Grußkarte" loading="lazy"><span class="xn">Zur Erinnerung</span><span class="xp">Grußkarte →</span></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FOLGEN ===== -->
+  <section class="sec">
+    <a class="best" href="https://www.instagram.com/jasardpu/" target="_blank" rel="noopener" style="background:#A9B8A2;color:#2F3A2C">
+      <span class="bt">
+        <span class="k">Neue Designs zuerst sehen</span>
+        <span class="bh">Folge Jasardpu.</span>
+        <span class="bp" style="color:#2F3A2C">Neuheiten und Einblicke in meine Arbeit auf Instagram und Pinterest.</span>
+        <span style="display:flex;flex-wrap:wrap;gap:10px"><span class="knopf">Instagram →</span></span>
+      </span>
+    </a>
+    <p style="margin:12px 0 0;font-size:14px">Oder auf <a href="https://www.pinterest.de/jasminfreiner/jasardpu-shop/" target="_blank" rel="noopener">Pinterest</a></p>
+  </section>
+
+  <footer class="fuss">
+    <img src="/files/theme/jasardpu-logo.webp" alt="Logo: made by jasardpu" width="44" height="44" style="border-radius:8px;background:#fff">
+    <span style="font-weight:600">© 2026 JASARDPU · JASMIN FREINER</span>
+    <a class="designerin" href="/shop-design.html"><img src="/files/theme/jasardpu-echt-shirt.jpg" alt="Jasmin Freiner, die Designerin hinter Jasardpu" loading="lazy"><span><b>Die Designerin</b><small>Jasmin Freiner · jasminfreiner.de →</small></span></a>
+    <span class="re"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></span>
+  </footer>
+</div>
+</div>
+

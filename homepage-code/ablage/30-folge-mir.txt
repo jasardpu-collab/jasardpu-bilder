@@ -1,0 +1,71 @@
+<!--
+  ============================================================
+  (06) FOLGE MIR · Seitenadresse: /folge-mir.html
+  ============================================================
+  Wohin: Weebly → Seite öffnen → alten Inhalt löschen →
+         Element „Code einbetten“ hineinziehen → diesen ganzen Text einfügen
+  Texte ändern: einfach zwischen den Zeichen > und < tippen.
+  Neuer Absatz: <p class="jf-p">Text</p> · Zeilenumbruch: <br> · fett: <strong>Text</strong>
+  Bilder liegen im Theme unter /files/theme/… (Dateiname muss genau stimmen).
+  ============================================================
+-->
+<div id="jf" class="jf" lang="de">
+<span class="jf-deko jf-kreis" aria-hidden="true" style="right:-80px;top:110px;width:clamp(220px,32vw,460px);height:clamp(220px,32vw,460px);background:#F2C4B0"></span>
+<span class="jf-deko jf-kreis" aria-hidden="true" style="right:clamp(120px,23vw,330px);top:300px;width:86px;height:86px;background:#B8CCE0"></span>
+<svg class="jf-deko" aria-hidden="true" width="70" height="70" viewBox="-20 -20 40 40" style="left:-16px;top:640px;opacity:.8"><g fill="#F6D5D0"><ellipse cx="0" cy="-9" rx="6" ry="9"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(72)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(144)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(216)"/><ellipse cx="0" cy="-9" rx="6" ry="9" transform="rotate(288)"/></g><circle r="3" fill="#E8A99B"/></svg>
+<div class="jf-inhalt">
+  <!-- ===== KOPFZEILE (ausgeblendet, bis alle Seiten neu sind) ===== -->
+  <header class="jf-kopf">
+    <a class="jf-logo" href="/">JASMIN FREINER</a>
+    <span lang="ko">야스민 프라이너</span>
+    <nav class="jf-sprachen" aria-label="Sprache"><span class="jf-aktiv">DE</span></nav>
+  </header>
+
+  <a class="jf-zurueck" href="/">← Zurück zu <span lang="ko">안녕</span></a>
+  <div class="jf-hero">
+    <div class="jf-hero-text">
+      <span class="jf-eyebrow">(06) FOLGE MIR · FOLLOW · <span lang="ko">팔로우</span> · SÍGUEME</span>
+      <h1 class="jf-h1 jf-gross">Folge mir.</h1>
+      <p class="jf-lead">Ein Kopf, viele Kanäle: Jeder Account hat sein eigenes Thema – such dir aus, was dich interessiert.</p>
+    </div>
+    <svg role="img" aria-label="Figur: Handy mit Herz" width="200" height="160" viewBox="0 0 150 120" class="jf-figur" style="transform:rotate(5deg)"><rect x="52" y="12" width="46" height="84" rx="10" fill="#FFFFFF" stroke="#4A3F36" stroke-width="3"/><path d="M75 46 C66 36 56 46 64 54 L75 64 L86 54 C94 46 84 36 75 46 Z" fill="#F2C4B0" stroke="#4A3F36" stroke-width="2.5"/><circle cx="69" cy="80" r="3" fill="#4A3F36"/><circle cx="81" cy="80" r="3" fill="#4A3F36"/></svg>
+  </div>
+
+  <!-- ===== (A) KANÄLE · <span lang="ko">채널</span> ===== -->
+  <section class="jf-sec">
+    <p class="jf-seclabel">(A) KANÄLE · <span lang="ko">채널</span></p>
+    <h2 class="jf-h2">Wo du mich findest.</h2>
+    <div class="jf-grid" style="--jf-min:260px">
+      <a class="jf-tile" href="https://www.instagram.com/korea.vegan.travel/" target="_blank" rel="noopener" style="background:#E4ECF4"><span class="jf-k">INSTAGRAM</span><span class="jf-t">@korea.vegan.travel</span><span class="jf-d">Vegan &amp; glutenfrei durch Südkorea.</span><span class="jf-go">Folgen →</span></a>
+      <a class="jf-tile" href="https://www.instagram.com/glutenfree_follow_me/" target="_blank" rel="noopener" style="background:#F8E5DC"><span class="jf-k">INSTAGRAM</span><span class="jf-t">@glutenfree_follow_me</span><span class="jf-d">Glutenfrei-vegane Küche im Alltag.</span><span class="jf-go">Folgen →</span></a>
+      <a class="jf-tile" href="https://instagram.com/travelling_architectgirl" target="_blank" rel="noopener" style="background:#B8CCE0"><span class="jf-k">INSTAGRAM</span><span class="jf-t">@travelling_architectgirl</span><span class="jf-d">Architektur und Reisen.</span><span class="jf-go">Folgen →</span></a>
+      <!-- Ab 6.11.: Adresse auf https://www.instagram.com/jasardpu/ ändern, Name auf @jasardpu und den Hinweis in Klammern löschen -->
+      <a class="jf-tile" href="https://www.instagram.com/jasardpu/" target="_blank" rel="noopener" style="background:#EDE7E0"><span class="jf-k">INSTAGRAM</span><span class="jf-t">@jasardpu</span><span class="jf-d">Neue Designs aus dem Shop.</span><span class="jf-go">Folgen →</span></a>
+      <a class="jf-tile jf-dunkel" href="https://www.youtube.com/@jasminfreiner" target="_blank" rel="noopener"><span class="jf-k">YOUTUBE</span><span class="jf-t">@jasminfreiner</span><span class="jf-d">Korea, Sprachen, Bücher, 3D-Druck und Meerschweinchen.</span><span class="jf-go">Folgen →</span></a>
+      <a class="jf-tile" href="https://www.linkedin.com/in/jasmin-freiner-5ab4b9150/" target="_blank" rel="noopener" style="background:#FFFFFF"><span class="jf-k">LINKEDIN</span><span class="jf-t">Jasmin Freiner</span><span class="jf-d">Beruflich: Architektur.</span><span class="jf-go">Öffnen →</span></a>
+      <a class="jf-tile" href="https://www.flickr.com/people/161068629@N03/" target="_blank" rel="noopener" style="background:#FFFFFF"><span class="jf-k">FLICKR</span><span class="jf-t">Fotogalerie</span><span class="jf-d">Fotos von Reisen und aus der Natur.</span><span class="jf-go">Öffnen →</span></a>
+      <a class="jf-tile" href="https://linktr.ee/korea.vegan.travel" target="_blank" rel="noopener" style="background:#E9EEE6"><span class="jf-k">LINKTREE</span><span class="jf-t">korea.vegan.travel</span><span class="jf-d">Alle Korea-Links auf einen Blick.</span><span class="jf-go">Öffnen →</span></a>
+      <a class="jf-tile" href="https://ko-fi.com/jasminfreiner" target="_blank" rel="noopener" style="background:#F1E8DC"><span class="jf-k">KO-FI</span><span class="jf-t">Kaffee spendieren</span><span class="jf-d">Wenn dir etwas geholfen hat. ☕</span><span class="jf-go">Öffnen →</span></a>
+    </div>
+  </section>
+
+  <!-- ===== (B) KONTAKT · <span lang="ko">연락</span> ===== -->
+  <section class="jf-sec">
+    <p class="jf-seclabel">(B) KONTAKT · <span lang="ko">연락</span></p>
+    <div class="jf-card" style="display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center">
+      <span style="font-weight:900;font-size:24px;letter-spacing:-.02em">Lieber direkt?</span>
+      <a href="mailto:jasardpu@gmail.com" style="font-weight:800;font-size:18px">jasardpu@gmail.com</a>
+      <span style="font-size:14px;color:var(--jf-grau)">Für Kooperationen, Fragen zu Büchern oder einfach Hallo.</span>
+    </div>
+  </section>
+
+
+  <!-- ===== FUSSZEILE (ausgeblendet, bis alle Seiten neu sind) ===== -->
+  <footer class="jf-fuss">
+    <span class="jf-fett">© 2026 JASMIN FREINER</span>
+    <span lang="ko">야스민 프라이너</span>
+    <span>Alle Cookies auf dieser Seite sind glutenfrei &amp; vegan</span>
+    <span class="jf-links"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></span>
+  </footer>
+</div>
+</div>

@@ -1,0 +1,176 @@
+<!-- JASARDPU SHOP · TEIL 2 (Skript: Welten als Felder). Stand 14.11.2026: Polaroid-Tisch und Etsy-Spalten entfernt, jede Welt ist ein eigenes farbiges Feld.
+  Direkt unter Teil 1 einfügen.
+  Welt ändern: Produkte in D (unten), Farbe, Koreanisch, Text und Themenseite in META.
+  Reihenfolge der Felder: Liste FOLGE. -->
+<script>
+(function(){
+  var J=document.getElementById('jfs'); if(!J) return;
+  var ziel=J.querySelector('#welten-liste'); if(!ziel) return;
+  var IMG='https://ih1.redbubble.net/image.', RB='https://www.redbubble.com/de/i/', COL='https://www.redbubble.com/de/people/Jasardpu/shop?collections=';
+
+  /* ===== PRODUKTE PRO WELT =====
+     [Name, Produktart, Link ab /de/i/, Bild ab image.]  Echte Fotos: Link leer lassen (''), Bild mit /files/theme/… */
+  var D={
+    korea:{t:'Korea',col:'4601750',p:[
+      ['Vegan & K-Drama süchtig','T-Shirt','t-shirt/Vegan-and-K-Drama-s%C3%BCchtig-Kawaii-Motiv-von-Jasardpu/181738025/rfjh','6169088568.8025/ssrco,graphic_tee,flatlay_01,101010:01c5ca27c6,front,product_square,x600.jpg'],
+      ['Koreanische Kirschblüte','Poster','poster/Koreanische-Kirschbl%C3%BCte-Botanisches-Motiv-von-Jasardpu/158705787/flk2','5456370246.5787/fposter,small,wall_texture,square_product,600x600.jpg'],
+      ['Fabelhafter Fuchs','T-Shirt','t-shirt/Fabelhafter-Fuchs-Koreanische-Sage-Motiv-von-Jasardpu/158695380/z5wf','5456035656.5380/ssrco,essential_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.jpg'],
+      ['Winter Honig-Pfannkuchen','Fotodruck','fotodruck/Winter-Honig-Pfannkuchen-Koreanisches-Essen-Kawaii-von-Jasardpu/185140924/zltf','6271541450.0924/pp,504x498-pad,600x600,f8f8f8.jpg'],
+      ['Shiba-Barista mit Erdbeer-Matcha','Sticker','sticker/Schwarzer-Shiba-Inu-Barista-Erdbeer-Matcha-Latte-Retro-Illustration-von-Jasardpu/184231115/7sgk','6242761686.1115/st,small,507x507-pad,600x600,f8f8f8.jpg'],
+      ['Spielteppich Koreanisches Dorf','Hoodie','hoodie/Spielteppich-mit-Stadtplan-Koreanisches-Dorf-f%C3%BCr-Kinder-von-Jasardpu/184330956/2j5j','6262793872.0956/ssrco,pullover_hoodie,flatlay_01,fafafa:ca443f4786,front,product_square,x600.jpg'],
+      ['Neunschwänziger Fuchs mit Lotus','T-Shirt','t-shirt/Neunschw%C3%A4nziger-Fuchs-mit-Maske-and-Lotus-Koreanische-Sage-Aquarell-von-Jasardpu/184971671/e22z','6265550049.1671/ssrco,premium_tee,flatlay_01,fafafa:ca443f4786,front,square_product,x600.1.jpg'],
+      ['Lotus & Blätter','T-Shirt','t-shirt/Lotus-and-Bl%C3%A4tter-Koreanisches-Aquarell-Motiv-von-Jasardpu/184971703/4d7w','6265551078.1703/ssrco,triblend_tee,flatlay,triblend_fleck_white,front,square_product,x600.1.jpg']]},
+    travel:{t:'Travel & Architektur',col:'4601752',p:[
+      ['Marina Bay Sands','Sticker','sticker/Singapur-Marina-Bay-Sands-Hotel-Architektur-Motiv-von-Jasardpu/28342334/7sgk','440247862.2334/st,small,507x507-pad,600x600,f8f8f8.u4.jpg'],
+      ['Bauherr 2.0','T-Shirt','t-shirt/Bauherr-2-0-Architektur-Humor-Motiv-von-Jasardpu/171804168/wsjt8g','5868405979.4168/ssrco,raglan_tee,flatlay_01,ffffff~101010:47bff64ad1,front,product_square,x600.jpg'],
+      ['Vitra Design Museum','Sticker','sticker/Vitra-Design-Museum-Architektur-Motiv-von-Jasardpu/32010217/7sgk','573806030.0217/st,small,507x507-pad,600x600,f8f8f8.jpg'],
+      ['Bauleiter','T-Shirt','t-shirt/Bauleiter-Architektur-Humor-Motiv-von-Jasardpu/147739672/4d7w','5075221153.9672/ssrco,triblend_tee,flatlay,triblend_fleck_white,front,square_product,x600.1.jpg'],
+      ['Fenster-Muster','Kissen','','/files/theme/jasardpu-echt-kissen-fenster.png'],
+      ['Pantheon','Sticker','sticker/Pantheon-Architektur-Motiv-von-Jasardpu/28326535/7sgk','439672217.6535/st,small,507x507-pad,600x600,f8f8f8.u4.jpg'],
+      ['Kran','Sticker','sticker/Kran-Baustelle-Motiv-von-Jasardpu/29762480/7sgk','492806705.2480/st,small,507x507-pad,600x600,f8f8f8.jpg']]},
+    tiere:{t:'Tiere & Natur',col:'4601755',p:[
+      ['Meerschweinchen Paula','Sticker','sticker/Meerschweinchen-Paula-Motiv-von-Jasardpu/28561513/7sgk','448627327.1513/st,small,507x507-pad,600x600,f8f8f8.u2.jpg'],
+      ['Shoebill Portrait','Sticker','sticker/Shoebill-Portrait-Schuhschnabel-Motiv-von-Jasardpu/45011681/7sgk','1072215094.1681/st,small,507x507-pad,600x600,f8f8f8.jpg'],
+      ['Pfauenfedern','Kissen','','/files/theme/jasardpu-echt-kissen-pfau.png'],
+      ['Wal im Himmel','Kinder-Shirt','kinder-t-shirt/Wal-im-Himmel-Meerestier-Motiv-von-Jasardpu/147893560/97eh','5873679378.3560/ssrco,kids_tee,flatlay_01,FFFFFF:97ab1c12de,front,product_square,x600.jpg'],
+      ['Monstera Party','Kissen','dekokissen/Monstera-Party-Pflanzen-Motiv-von-Jasardpu/39858608/xwxm','858095279.8608/ur,throw_pillow_couch_small,square,600x600.u3.jpg'],
+      ['Meerschwein','T-Shirt','t-shirt/Meerschwein-Tier-Motiv-von-Jasardpu/148353617/lrcw','5096792085.3617/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg'],
+      ['Delphin im Himmel','Kunstdruck','kunstdruck/Delphin-im-Himmel-Meerestier-Motiv-von-Jasardpu/147893810/wqnt','5080441775.3810/aps,504x498,small,transparent-pad,600x600,f8f8f8.jpg'],
+      ['Vergissmeinnicht','Kissen','dekokissen/Vergissmeinnicht-II-Blumen-Motiv-von-Jasardpu/31771322/xwxm','565317334.1322/ur,throw_pillow_couch_small,square,600x600.u5.jpg']]},
+    muster:{t:'Teppich & Muster',col:'4601758',p:[
+      ['Persischer Teppich','Kissen','dekokissen/Persischer-Teppich-Vintage-Orientteppich-Boho-Deko-Muster-von-Jasardpu/32481907/xwxm','1432031886.1907/ur,throw_pillow_couch_small,square,600x600.u1.jpg'],
+      ['Blaues Karo','Kissen','','/files/theme/jasardpu-echt-kissen-karo.png'],
+      ['Türkis','T-Shirt','t-shirt/T%C3%BCrkis-Abstraktes-Motiv-von-Jasardpu/147271634/lrcw','5059161415.1634/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg'],
+      ['Rost-Muster','Kissen','dekokissen/Rost-Muster-Textur-Motiv-von-Jasardpu/29079457/xwxm','1652058925.9457/ur,throw_pillow_couch_small,square,600x600.u3.jpg'],
+      ['Teppichliebe','Kissen','dekokissen/Teppichliebe-Persischer-Teppich-Motiv-von-Jasardpu/45013129/xwxm','1244606262.3129/ur,throw_pillow_couch_small,square,600x600.jpg'],
+      ['Orient-Muster','Kissen','','/files/theme/jasardpu-echt-kissen-persisch-2.png'],
+      ['Wirbel in Türkis','Sticker','sticker/Wirbel-in-T%C3%BCrkis-Abstraktes-Muster-von-Jasardpu/183168681/7sgk','6210601970.8681/st,small,507x507-pad,600x600,f8f8f8.jpg'],
+      ['Lila Mandala','Sticker','sticker/Lila-Mandala-Ornament-Muster-von-Jasardpu/183168640/7sgk','6210600820.8640/st,small,507x507-pad,600x600,f8f8f8.jpg']]},
+    haltung:{t:'Haltung & Herz',col:'4601761',p:[
+      ['Solidarität','Poster','poster/Solidarit%C3%A4t-Motiv-von-Jasardpu/159529231/flk2','5483739849.9231/fposter,small,wall_texture,square_product,600x600.jpg'],
+      ['Göttin','T-Shirt','t-shirt/G%C3%B6ttin-Mythologie-Motiv-von-Jasardpu/159819215/rh5j','5493203749.9215/ssrco,oversize_tee,flatlay,ffffff:affd82b53f,front,product_square,x600.jpg'],
+      ['Frieden','Sticker','sticker/Frieden-Friedensmotiv-von-Jasardpu/172437397/djes','5887683122.7397/tst,small,507x507-pad,600x600,f8f8f8.jpg'],
+      ['Göttin Lymphia','Kissen','dekokissen/G%C3%B6ttin-Lymphia-Mythologie-Illustration-von-Jasardpu/172003586/xwxm','5874527114.3586/ur,throw_pillow_couch_small,square,600x600.jpg'],
+      ['Empathie','T-Shirt','t-shirt/Empathie-Motiv-f%C3%BCr-Mitgef%C3%BChl-von-Jasardpu/172437304/rh5j','5887681781.7304/ssrco,oversize_tee,flatlay,c9ab81:b45db13379,front,product_square,x600.jpg'],
+      ['Dame im Licht','Sticker','sticker/Dame-im-Licht-Motiv-von-Jasardpu/159819708/7sgk','5493221519.9708/st,small,507x507-pad,600x600,f8f8f8.jpg'],
+      ['Freundlichkeit','T-Shirt','t-shirt/Freundlichkeit-Motiv-f%C3%BCr-Mitgef%C3%BChl-von-Jasardpu/172434310/xmcg','5887583714.4310/ssrco,relaxed_tshirt,flatlay_01,ebe3d1:09f0675ce6,front,product_square,x600.jpg'],
+      ['Fabelhaft','Sticker','sticker/Fabelhaft-Motivation-Motiv-von-Jasardpu/172003694/7sgk','5874530628.3694/st,small,507x507-pad,600x600,f8f8f8.jpg']]},
+    vegan:{t:'Glutenfrei & vegan',col:'4601763',p:[
+      ['Vegan & K-Drama süchtig','Pullover','pullover/Vegan-and-K-Drama-s%C3%BCchtig-Kawaii-Motiv-von-Jasardpu/181738025/du6s','6169088581.8025/ssrco,pullover_sweatshirt,flatlay,fcfcfa:e7fde99dd4,front,square_product,x600.jpg'],
+      ['Ich bin vegan, aber ich sag’s dir nicht','Decke','fleecedecke/Ich-bin-vegan-aber-ich-sag-s-dir-nicht-Humor-Motiv-von-Jasardpu/182841357/vzy2','6200836608.1357/ur,blanket_medium_bed,square,x600.1.jpg'],
+      ['Glutenfreies Meerschwein','Sticker','sticker/Glutenfreies-Meerschwein-Motiv-von-Jasardpu/171803260/7sgk','5868377077.3260/st,small,507x507-pad,600x600,f8f8f8.jpg'],
+      ['Pflanzen-Bibimbap','Grußkarte','gru%C3%9Fkarte/Pflanzen-Bibimbap-Botanisches-Essen-Kawaii-Motiv-von-Jasardpu/185140880/qjsu','6271542648.0880/papergc,300x,w,f8f8f8-pad,600x600,f8f8f8.jpg'],
+      ['Vegane Gelüste','Mauspad','mauspad/Vegane-Gel%C3%BCste-Essen-Motiv-von-Jasardpu/182016533/4qvw','6176854281.6533/ur,desk_mat_flatlay,square,600x600.jpg'],
+      ['Vegan denken mit Hafer','Kissen','dekokissen/Vegan-denken-mit-Hafer-Veganer-Humor-Motiv-von-Jasardpu/177315028/xwxm','6040787605.5028/ur,throw_pillow_couch_small,square,600x600.jpg'],
+      ['Veganer mit Fairphone','T-Shirt','t-shirt/Veganer-mit-Fairphone-Nachhaltigkeit-Humor-Motiv-von-Jasardpu/177271157/2cn5','6039444928.1157/ssrco,v_neck_tee,flatlay,fafafa:ca443f4786,front,square_product,x600.jpg'],
+      ['Der Veganer','Sticker','sticker/Der-Veganer-Humor-Motiv-von-Jasardpu/177270758/7sgk','6039435671.0758/st,small,507x507-pad,600x600,f8f8f8.jpg']]},
+    spass:{t:'Spaß & Alltag',col:'4601764',p:[
+      ['Mahlgrad statt Smalltalk','T-Shirt','t-shirt/Mahlgrad-statt-Smalltalk-Kaffee-Humor-Motiv-von-Jasardpu/171808719/lrcw','5874436686.8719/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg'],
+      ['Hamster gegen Corona','Untersetzer','untersetzer/Hamster-gegen-Corona-Humor-Motiv-von-Jasardpu/46503403/43wr','1135028761.3403/ur,coaster_pack_4_flatlay,square,600x600.2.jpg'],
+      ['Drache mit Kirschblüten','Handyhülle','iphone-h%C3%BClle/Niedlicher-Drache-mit-Kirschbl%C3%BCten-Fantasy-Motiv-von-Jasardpu/158703057/2x65','5456284637.3057/icr,iphone_18_pro_soft,back,a,x600-pad,600x600,f8f8f8.jpg'],
+      ['Vermessen','T-Shirt','t-shirt/Vermessen-Architektur-Motiv-von-Jasardpu/149363827/lrcw','5133749081.3827/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg'],
+      ['Koffein-Tour','Sticker','sticker/Koffein-Tour-Kaffee-Humor-Motiv-von-Jasardpu/171808865/7sgk','5868557347.8865/st,small,507x507-pad,600x600,f8f8f8.jpg'],
+      ['Verrückte Party','T-Shirt','t-shirt/Verr%C3%BCckte-Party-Humor-Motiv-von-Jasardpu/171822438/4d7w','5868971554.2438/ssrco,triblend_tee,flatlay,triblend_fleck_white,front,square_product,x600.1.jpg'],
+      ['Bagger mit Dino','Stofftasche','stofftasche/Bagger-mit-Dino-Baustelle-Motiv-von-Jasardpu/157382561/xd4m','5874534115.2561/ur,tote_bag_context_medium,product_square,600x600.jpg']]},
+    anlaesse:{t:'Anlässe & Karten',col:'4601769',p:[
+      ['Heulender Weihnachtswolf','T-Shirt','t-shirt/Heulender-Weihnachtswolf-unter-Polarlichtern-Winter-Wolf-Emblem-mit-Stern-von-Jasardpu/185127891/xmcg','6270367454.7891/ssrco,relaxed_tshirt,flatlay_01,ebe3d1:09f0675ce6,front,product_square,x600.jpg'],
+      ['Liebe','Sticker','sticker/Liebe-Motiv-von-Jasardpu/28904540/7sgk','461612101.4540/st,small,507x507-pad,600x600,f8f8f8.u1.jpg'],
+      ['Hangeul an Weihnachten','Poster','poster/Hangeul-an-Weihnachten-von-Jasardpu/185272140/flk2','6273580629.2140/fposter,small,wall_texture,square_product,600x600.jpg'],
+      ['Küss mich','Kissen','dekokissen/K%C3%BCss-mich-Liebe-Motiv-von-Jasardpu/117441486/xwxm','4721966871.1486/ur,throw_pillow_couch_small,square,600x600.jpg'],
+      ['Beileid','Leinwand','leinwandbild/Beileid-Kondolenzkarte-von-Jasardpu/147740853/5mul','6262782691.0853/mp,504x498,matte,f8f8f8,t-pad,600x600,f8f8f8.jpg'],
+      ['Horangi an Weihnachten','Sticker','sticker/Horangi-an-Weihnachten-von-Jasardpu/185242190/7sgk','6273382392.2190/st,small,507x507-pad,600x600,f8f8f8.jpg'],
+      ['Ich will','T-Shirt','t-shirt/Ich-will-Motiv-von-Jasardpu/147704503/lrcw','5073994309.4503/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg'],
+      ['Vergissmeinnicht','Kissen','dekokissen/Vergissmeinnicht-II-Blumen-Motiv-von-Jasardpu/31771322/xwxm','565317334.1322/ur,throw_pillow_couch_small,square,600x600.u5.jpg']]},
+    weihnachten:{t:'Weihnachten 2026',col:'4601769&sortOrder=recent',p:[
+      ['Kimchi, Schneemann & Gimbap','Oversized T-Shirt','t-shirt/Kimchi-Schneemann-und-Gimbap-mit-Weihnachtsm%C3%BCtzen-Koreanisches-Essen-Weihnachten-von-Jasardpu/185127821/rh5j','6270057998.7821/ssrco,oversize_tee,flatlay,ffffff:affd82b53f,front,product_square,x600.jpg'],
+      ['Heulender Weihnachtswolf','Kissen','dekokissen/Heulender-Weihnachtswolf-unter-Polarlichtern-Winter-Wolf-Emblem-mit-Stern-von-Jasardpu/185127891/xwxm','6270367446.7891/ur,throw_pillow_couch_small,square,600x600.jpg'],
+      ['Koreanisches Haus im Schnee','Sticker','sticker/Koreanisches-Haus-im-Schnee-mit-Schneemann-Winter-Weihnachten-in-Korea-von-Jasardpu/185128154/7sgk','6270056957.8154/st,small,507x507-pad,600x600,f8f8f8.jpg'],
+      ['Lebkuchen-Architekt','Kunstdruck','kunstdruck/Lebkuchen-Architekt-mit-Bauhelm-und-Bauplan-Weihnachten-f%C3%BCr-Architekten-von-Jasardpu/185128175/wqnt','6270056230.8175/aps,504x498,small,transparent-pad,600x600,f8f8f8.jpg'],
+      ['Meerschweinchen zu Weihnachten','T-Shirt','t-shirt/Meerschweinchen-zu-Weihnachten-Winter-Illustration-von-Jasardpu/185140869/e22z','6271545203.0869/ssrco,premium_tee,flatlay_01,171716:c5d52111d6,front,square_product,x600.1.jpg'],
+      ['Winter Honig-Pfannkuchen','Hoodie','hoodie/Winter-Honig-Pfannkuchen-Koreanisches-Essen-Kawaii-von-Jasardpu/185140924/2j5j','6271541490.0924/ssrco,pullover_hoodie,flatlay_01,2445a6:c81b382e98,front,product_square,x600.jpg'],
+      ['K-Drama und scharfer Reiskuchen','Tank Top','tank-top/Alles-was-ich-zu-Weihnachten-will-ist-K-Drama-und-scharfer-Reiskuchen-Kawaii-Weihnachten-Korea-von-Jasardpu/185128164/5xql','6270368509.8164/ssrco,tank_top,flatlay,fafafa:ca443f4786,front,square_product,x600.jpg'],
+      ['Unartiger veganer Weihnachtsmann','T-Shirt','t-shirt/Unartiger-veganer-Weihnachtsmann-Weihnachten-Humor-von-Jasardpu/176212570/lrcw','6006024167.2570/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg']]},
+    bestseller:{t:'Bestseller',col:'4601758',p:[
+      ['Persisches Teppichmuster','Design','','591284672.1907/flat,550x550,075,f.jpg'],
+      ['Persischer Teppich','Kissen','dekokissen/Persischer-Teppich-Vintage-Orientteppich-Boho-Deko-Muster-von-Jasardpu/32481907/xwxm','1432031886.1907/ur,throw_pillow_couch_small,square,600x600.u1.jpg'],
+      ['Persisch, echt fotografiert','Kissen','','/files/theme/jasardpu-echt-kissen-persisch-1.png'],
+      ['Teppichliebe','Kissen','dekokissen/Teppichliebe-Persischer-Teppich-Motiv-von-Jasardpu/45013129/xwxm','1244606262.3129/ur,throw_pillow_couch_small,square,600x600.jpg'],
+      ['Orient-Muster','Kissen','','/files/theme/jasardpu-echt-kissen-persisch-2.png']]}
+  };
+
+  /* ===== FELDER: Farbe, Koreanisch, Text, Themenseite [Adresse, Name, Bild] ===== */
+  var META={
+    korea:{f:'#F6D5D0',ko:'한국',x:'Palastmalerei, Hanok, K-Food und K-Drama: alles, was ich an Korea liebe.',th:['/korea-shop.html','Korea','https://ih1.redbubble.net/image.6265595296.3184/ur,throw_pillow_couch_small,square,600x600.jpg']},
+    travel:{f:'#DCE6F0',ko:'여행과 건축',x:'Gebäude, Orte und Baustellen-Humor aus meinem Leben als Architektin.',th:['/architektur-kaffee.html','Architektur & Kaffee','https://ih1.redbubble.net/image.6171029473.9339/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg']},
+    tiere:{f:'#DDE5D8',ko:'동물과 자연',x:'Vögel, Pflanzen, Unterwasserwelt und natürlich die Meerschweinchen-Bande.',th:['/meerschweinchen-shop.html','Meerschweinchen','https://ih1.redbubble.net/image.5080388156.2217/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg']},
+    muster:{f:'#F1E8DC',ko:'패턴',x:'Persische Teppiche, Mandalas und zeitlose Muster für Kissen, Decken und Mode.',th:['/teppich.html','Teppich & Muster','https://ih1.redbubble.net/image.1432031886.1907/ur,throw_pillow_couch_small,square,600x600.u1.jpg']},
+    haltung:{f:'#F8E0D5',ko:'마음',x:'Motive für Mitgefühl, Vielfalt und Mut, mit Göttin Lymphia für alle mit Lipödem.',th:['/lipoedem.html','Lipödem & Lymphe','https://ih1.redbubble.net/image.5874527114.3586/ur,throw_pillow_couch_small,square,600x600.jpg']},
+    vegan:{f:'#E9EFD9',ko:'비건',x:'Für alle, die glutenfrei und vegan leben und dabei Spaß haben.',th:['/glutenfrei-vegan-shop.html','Glutenfrei & vegan','https://ih1.redbubble.net/image.5868380221.3362/ssrco,fitted_tee,flatlay_01,101010:01c5ca27c6,front,square_product,x600.jpg']},
+    spass:{f:'#E4ECF4',ko:'일상',x:'Freche Sprüche, Kaffee und kleine Alltagsmomente.',th:null},
+    anlaesse:{f:'#E8E1DA',ko:'카드',x:'Karten und Motive für Hochzeit, Feiertage und besondere Tage.',th:null},
+    bestseller:{f:'#EBC9BE',ko:'인기',x:'Mein meistverkauftes Design ist das persische Teppichmuster in Rot und Gold. Hier sind die Lieblinge.',th:null,id:'bestseller'}
+  };
+  var FOLGE=['korea','travel','tiere','muster','haltung','vegan','spass','anlaesse','bestseller'];
+
+  /* Alle Redbubble-Designs kommen aus Teil 3 (eigenes Element darunter) */
+  function daten(){return window.JASARDPU_ALLE||{S:[],T:[],W:{}}}
+
+  var ARTEN={'t-shirt':'T-Shirt','fotodruck':'Fotodruck','stofftasche':'Stofftasche','sticker':'Sticker','holografischer-aufkleber':'Holo-Sticker','dekokissen':'Kissen','grußkarte':'Grußkarte','notizbuch':'Notizbuch','cap':'Cap','pullover':'Pullover','poster':'Poster','tasse':'Tasse','iphone-hülle':'iPhone-Hülle','acrylblock':'Acrylblock','täschchen':'Täschchen','fleecedecke':'Decke','mauspad':'Mauspad','wandtuch':'Wandtuch','hoodie':'Hoodie','leinwandbild':'Leinwand','samsung-hülle':'Samsung-Hülle','kinder-t-shirt':'Kinder-Shirt','button':'Button','kunstdruck':'Kunstdruck','magnet':'Magnet','langarmshirt':'Langarmshirt','postkarte':'Postkarte','gerahmtes-bild':'Gerahmtes Bild','untersetzer':'Untersetzer','socken':'Socken','tank-top':'Tank Top','kleid':'Kleid','baby-body':'Baby-Body'};
+
+  function bild(s){return s.charAt(0)==='/'?s:IMG+s}
+  function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
+  function art(slug){var s=decodeURIComponent(slug);return ARTEN[s]||s.charAt(0).toUpperCase()+s.slice(1)}
+
+  var felder={};
+  function feld(key){
+    var w=D[key], m=META[key]; if(!w||!m) return;
+    var n=m.th?6:7;
+    var karten=w.p.slice(0,n).map(function(p){
+      var h=p[2]?RB+p[2]:COL+w.col;
+      return '<a class="xk" href="'+esc(h)+'" target="_blank" rel="noopener"><img src="'+esc(bild(p[3]))+'" alt="'+esc(p[0]+', '+p[1])+'" loading="lazy"><span class="xn">'+esc(p[0])+'</span><span class="xp">'+esc(p[1])+'</span></a>';
+    }).join('');
+    var thema=m.th?'<a class="wthema" href="'+m.th[0]+'"><img src="'+esc(m.th[2])+'" alt="" loading="lazy"><span><span class="k">Themenseite</span><b>Zur Themenseite '+esc(m.th[1])+' →</b></span></a>':'';
+    var sec=document.createElement('section');
+    sec.className='wfeld'; sec.id=m.id||('w-'+key); sec.style.background=m.f;
+    sec.innerHTML='<div class="xkopf"><div><span class="k">Welt · Redbubble</span><h2 class="h2">'+esc(w.t)+' <span lang="ko" style="font-weight:700">'+m.ko+'</span></h2></div>'
+      +'<div class="xr"><p>'+esc(m.x)+'</p><a class="knopf" href="'+COL+w.col+'" target="_blank" rel="noopener">Ganze Kollektion →</a></div></div>'
+      +'<div class="wreihe'+(m.th?'':' ohne')+'">'+karten+thema+'</div>'
+      +'<details class="alle"><summary>Alle Redbubble-Designs aus '+esc(w.t)+' ansehen</summary><div class="raster"></div><button class="mehrladen" type="button" hidden>Mehr anzeigen</button></details>';
+    ziel.appendChild(sec);
+    var f={key:key,el:sec,det:sec.querySelector('details'),sum:sec.querySelector('summary'),ras:sec.querySelector('.raster'),btn:sec.querySelector('.mehrladen'),liste:[],gezeigt:0};
+    f.det.addEventListener('toggle',function(){if(f.det.open&&!f.gezeigt) mehr(f)});
+    f.btn.addEventListener('click',function(){mehr(f)});
+    felder[key]=f;
+  }
+
+  var SCHRITT=24;
+  function mehr(f){
+    f.liste=daten().W[f.key]||[];
+    var teil=f.liste.slice(f.gezeigt,f.gezeigt+SCHRITT);
+    f.ras.insertAdjacentHTML('beforeend',teil.map(function(z){
+      var g=z.split('|'), t=daten().T[+g[1]], b=g[4].split('/'), kopf=b[0], rest=b.slice(1).join('/');
+      if(/^\d+$/.test(rest)) rest=daten().S[+rest];
+      var src=(kopf.indexOf('0:')===0?'https://ih0.redbubble.net/image.'+kopf.slice(2):IMG+kopf)+'/'+rest;
+      return '<a class="pk" href="'+RB+t+'/Jasardpu/'+g[2]+'/'+g[3]+'" target="_blank" rel="noopener"><img src="'+esc(src)+'" alt="'+esc(g[0]+', '+art(t))+'" loading="lazy"><b>'+esc(g[0])+'</b><small>'+esc(art(t))+'</small></a>';
+    }).join(''));
+    f.gezeigt+=teil.length;
+    f.btn.hidden=f.gezeigt>=f.liste.length;
+    if(!f.btn.hidden) f.btn.textContent='Mehr anzeigen ('+(f.liste.length-f.gezeigt)+' weitere)';
+  }
+
+  function zahlen(){
+    FOLGE.forEach(function(k){
+      var f=felder[k]; if(!f) return;
+      var l=daten().W[k]||[];
+      f.det.hidden=!l.length; f.det.style.display=l.length?'':'none';
+      if(l.length) f.sum.textContent='Alle '+l.length+' Redbubble-Designs aus '+D[k].t+' ansehen';
+    });
+  }
+
+  FOLGE.forEach(feld);
+  zahlen();
+  window.jasardpuDatenDa=zahlen;
+})();
+</script>
+
+<style>body:has(#jfs) #jf-seite{background:#F2E6C8}body:has(#jfs) #jf-weebly-kopf{display:none}</style>
