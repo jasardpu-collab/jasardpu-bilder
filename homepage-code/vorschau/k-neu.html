@@ -11,13 +11,29 @@
 -->
 <div id="jf" class="jf" lang="de">
 <style>
-#jf .jf-kv-zahlen{display:flex!important;flex-wrap:wrap!important;gap:6px 22px!important;margin:18px 0 0!important;font-size:15px!important;color:var(--jf-grau)!important}
-#jf .jf-kv-zahlen b{color:var(--jf-text,#4A3F36)!important;font-weight:900!important}
+#jf .jf-hero{margin-bottom:0!important;padding-bottom:0!important}
+#jf .jf-kv-fig{display:flex!important;flex-direction:column!important;align-items:flex-end!important;gap:6px!important}
+#jf .jf-kv-zahlen{display:flex!important;flex-wrap:wrap!important;justify-content:flex-end!important;gap:2px 16px!important;margin:0!important;font-size:15px!important;color:var(--jf-grau)!important;text-align:right!important;max-width:300px!important}
+#jf .jf-kv-zahlen b{color:#4A3F36!important;font-weight:900!important}
+#jf .jf-kv-staedte{flex-basis:100%!important;font-size:13px!important}
 #jf .jf-kv-sprung{margin-left:0!important;width:100%!important;justify-content:flex-start!important}
-#jf .jf-kv-rahmen{border:1px solid #000!important;border-radius:24px!important;padding:22px 22px 24px!important;margin-top:20px!important}
-#jf .jf-kv-rahmen+.jf-kv-rahmen{margin-top:20px!important}
+#jf #mehr{margin-top:40px!important;padding-top:0!important}
+#jf .jf-kv-rahmen{border:1px solid #000!important;border-radius:24px!important;padding:22px!important;margin-top:20px!important}
+#jf .jf-kv-rahmen.jf-kv-farbe{border:0!important;background:#E4ECF4!important}
 #jf .jf-kv-rk{margin:0 0 14px!important}
-#jf .jf-kv-hinweis{margin:-6px 0 22px!important;max-width:760px!important;font-size:15px!important}
+#jf .jf-kv-vier{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:16px!important}
+@media (max-width:980px){#jf .jf-kv-vier{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media (max-width:560px){#jf .jf-kv-vier{grid-template-columns:1fr!important}}
+#jf .jf-kv-buch{display:flex!important;flex-direction:column!important;gap:6px!important;padding:18px!important;min-height:0!important}
+#jf .jf-kv-buch .jf-t{font-size:18px!important;line-height:1.15!important}
+#jf .jf-kv-buch .jf-d{font-size:13px!important}
+#jf .jf-kv-cover{width:92px!important;height:auto!important;border-radius:6px!important;box-shadow:0 6px 14px rgba(0,0,0,.18)!important;margin-bottom:8px!important}
+#jf .jf-kv-playlist{background:#B8CCE0!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:16px!important;padding:22px 26px!important;min-height:0!important}
+#jf .jf-kv-pl-text{display:flex!important;flex-direction:column!important;gap:6px!important}
+#jf .jf-kv-pl-bild{height:130px!important;width:auto!important;flex:none!important}
+#jf .jf-kv-ig{background:#FFFFFF!important;display:flex!important;flex-direction:row!important;align-items:center!important;gap:20px!important;padding:22px 26px!important;min-height:0!important}
+#jf .jf-kv-ig-logo{width:96px!important;height:96px!important;border-radius:50%!important;object-fit:cover!important;object-position:top!important;flex:none!important;border:3px solid #E4ECF4!important}
+#jf .jf-kv-hinweis{margin:-6px 0 22px!important;max-width:none!important;font-size:15px!important;padding:16px 20px!important;border-radius:16px!important;background:#F8E5DC!important}
 #jf .jf-kv-hinweis a{font-weight:700!important}
 </style>
 <span class="jf-deko jf-kreis" aria-hidden="true" style="right:-80px;top:110px;width:clamp(220px,32vw,460px);height:clamp(220px,32vw,460px);background:#B8CCE0"></span>
@@ -42,10 +58,12 @@
       <span class="jf-eyebrow">(01) KOREA · VEGAN · GLUTENFREI</span>
       <h1 class="jf-h1 jf-gross">Korea vegan<br>&amp; glutenfrei.</h1>
       <span class="jf-untertitel" lang="ko">비건 · 글루텐프리 · 여행</span>
-      <p class="jf-lead">Ich esse aus gesundheitlichen Gründen glutenfrei und aus Überzeugung vegan – und war 2013, 2023, 2024 und 2025 in Südkorea. Hier sammle ich alles, was mir unterwegs geholfen hat: Lieblingsorte, Fallen, Sätze für die Bestellung und meine Flug-Erfahrungen.</p>
-      <p class="jf-kv-zahlen"><span><b>4</b> Reisen</span><span><b data-jf-anzahl=".jf-ort" data-jf-alle></b> Lieblingsorte</span><span>Seoul · Jeju · Daegu · Gwangju · Sokcho …</span></p>
+      <p class="jf-lead">Ich esse aus gesundheitlichen Gründen glutenfrei und aus Überzeugung vegan – und war 2013, 2023, 2024, 2025 und 2026 in Südkorea. Hier sammle ich alles, was mir unterwegs geholfen hat: Lieblingsorte, Fallen, Sätze für die Bestellung und meine Flug-Erfahrungen.</p>
     </div>
-    <svg role="img" aria-label="Figur: Gimbap-Scheibe mit Koffer" width="260" height="208" viewBox="0 0 150 120" class="jf-figur" style="transform:rotate(6deg)"><circle cx="64" cy="58" r="40" fill="#55634F" stroke="#4A3F36" stroke-width="3"/><circle cx="64" cy="58" r="33" fill="#FFFFFF"/><circle cx="56" cy="45" r="5.5" fill="#F2C4B0"/><circle cx="68" cy="42" r="5.5" fill="#A9B8A2"/><circle cx="74" cy="51" r="5" fill="#E6CFAF"/><rect x="57" y="49" width="10" height="6" rx="2" fill="#F2D58A"/><circle cx="54" cy="66" r="4" fill="#4A3F36"/><circle cx="74" cy="66" r="4" fill="#4A3F36"/><ellipse cx="46" cy="73" rx="5" ry="3" fill="#F2A68F" opacity=".7"/><ellipse cx="82" cy="73" rx="5" ry="3" fill="#F2A68F" opacity=".7"/><path d="M59 72 Q64 77 69 72" stroke="#4A3F36" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="108" y="70" width="32" height="28" rx="5" fill="#B8CCE0" stroke="#4A3F36" stroke-width="3"/><path d="M117 70 V63 H131 V70" stroke="#4A3F36" stroke-width="3" fill="none"/></svg>
+    <div class="jf-kv-fig">
+    <svg role="img" aria-label="Figur: Gimbap-Scheibe mit Koffer" width="260" height="208" viewBox="0 0 150 120" class="jf-figur jf-kv-figur" style="transform:rotate(6deg)"><circle cx="64" cy="58" r="40" fill="#55634F" stroke="#4A3F36" stroke-width="3"/><circle cx="64" cy="58" r="33" fill="#FFFFFF"/><circle cx="56" cy="45" r="5.5" fill="#F2C4B0"/><circle cx="68" cy="42" r="5.5" fill="#A9B8A2"/><circle cx="74" cy="51" r="5" fill="#E6CFAF"/><rect x="57" y="49" width="10" height="6" rx="2" fill="#F2D58A"/><circle cx="54" cy="66" r="4" fill="#4A3F36"/><circle cx="74" cy="66" r="4" fill="#4A3F36"/><ellipse cx="46" cy="73" rx="5" ry="3" fill="#F2A68F" opacity=".7"/><ellipse cx="82" cy="73" rx="5" ry="3" fill="#F2A68F" opacity=".7"/><path d="M59 72 Q64 77 69 72" stroke="#4A3F36" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="108" y="70" width="32" height="28" rx="5" fill="#B8CCE0" stroke="#4A3F36" stroke-width="3"/><path d="M117 70 V63 H131 V70" stroke="#4A3F36" stroke-width="3" fill="none"/></svg>
+      <p class="jf-kv-zahlen"><span><b>5</b> Reisen</span><span><b data-jf-anzahl=".jf-ort" data-jf-alle></b> Lieblingsorte</span><span class="jf-kv-staedte">Seoul · Jeju · Daegu · Gwangju · Sokcho …</span></p>
+    </div>
   </div>
 
   <div class="jf-stats">
@@ -57,17 +75,18 @@
     <p class="jf-seclabel">(A) MEINE ANGEBOTE · <span lang="ko">책 &amp; 영상</span></p>
     <h2 class="jf-h2" style="margin-bottom:72px">Zum Mitnehmen.</h2>
     <div class="jf-kv-rahmen">
-      <p class="jf-k jf-kv-rk">BÜCHER · <span lang="ko">책</span></p>
-      <div class="jf-grid jf-grid-fit" style="--jf-min:320px">
-      <a class="jf-tile jf-quer jf-dunkel" href="https://link.amazon/B03q01eIH" target="_blank" rel="noopener sponsored"><img class="jf-cover" src="/files/theme/jf-buch-glutenfrei-de.jpg" alt="Cover: Glutenfrei reisen durch Südkorea"><span><span class="jf-k">BUCH · AUCH AUF ENGLISCH</span><span class="jf-t">Glutenfrei reisen durch Südkorea</span><span class="jf-d">Alle Glutenfrei-Tipps aus dieser Seite – ausführlich, zum Mitnehmen. Bei Amazon →</span><span class="jf-werbung">Werbung · Partnerlink*</span></span></a>
+      <p class="jf-k jf-kv-rk">BÜCHER &amp; E-BOOKS · <span lang="ko">책</span></p>
+      <div class="jf-kv-vier">
+      <div><a class="jf-tile jf-dunkel jf-kv-buch" href="https://link.amazon/B03q01eIH" target="_blank" rel="noopener sponsored" style="background:#4A3F36;color:#FFFFFF;position:relative;z-index:1;height:100%"><img class="jf-kv-cover" src="/files/theme/jf-buch-glutenfrei-de.jpg" alt="Cover: Glutenfrei reisen durch Südkorea"><span class="jf-k">TASCHENBUCH · AMAZON</span><span class="jf-t">Glutenfrei reisen durch Südkorea</span><span class="jf-d">Alle Glutenfrei-Tipps dieser Seite, ausführlich zum Mitnehmen.</span><span class="jf-go">Bei Amazon →</span><span class="jf-werbung" style="color:#FFFFFF">Werbung · Partnerlink*</span></a></div>
       <div class="jf-soy-platz" style="position:relative">
-        <!-- Easter Egg: Soy & Sally schauen über die Kachel -->
         <a href="https://www.youtube.com/shorts/dgB8WnKC_eQ" target="_blank" rel="noopener" data-jf-ei="boing" aria-label="Psst ... Trailer der Reel-Serie mit Hongdae Soy und Sally auf YouTube" style="position:absolute;right:22px;top:-78px;width:120px;z-index:0;display:block"><img data-jf-figur src="/files/theme/jf-soy-sally.png" alt="" style="display:block;width:100%;height:auto;transform-origin:50% 100%"></a>
-        <a class="jf-tile jf-quer" href="https://link.amazon/B0gYiclIB" target="_blank" rel="noopener sponsored" style="background:#A9B8A2;color:#2F3A2C;position:relative;z-index:1;height:100%"><img class="jf-cover" src="/files/theme/jf-buch-vegan-guide.jpg" alt="Cover: Korea Vegan Travel Guide"><span><span class="jf-k">BUCH · DE &amp; EN</span><span class="jf-t">Korea Vegan Travel Guide</span><span class="jf-d">Mit Hongdae Soy durch Koreas vegane Küche. Bei Amazon →</span><span class="jf-werbung" style="color:#2F3A2C">Werbung · Partnerlink*</span></span></a>
+        <a class="jf-tile jf-kv-buch" href="https://link.amazon/B0gYiclIB" target="_blank" rel="noopener sponsored" style="background:#A9B8A2;color:#2F3A2C;position:relative;z-index:1;height:100%"><img class="jf-kv-cover" src="/files/theme/jf-buch-vegan-guide.jpg" alt="Cover: Korea Vegan Travel Guide"><span class="jf-k">TASCHENBUCH · AMAZON</span><span class="jf-t">Korea Vegan Travel Guide</span><span class="jf-d">Mit Hongdae Soy durch Koreas vegane Küche.</span><span class="jf-go">Bei Amazon →</span><span class="jf-werbung" style="color:#2F3A2C">Werbung · Partnerlink*</span></a>
       </div>
+      <div><a class="jf-tile jf-kv-buch" href="https://jasard.gumroad.com/l/glutenfrei-suedkorea" target="_blank" rel="noopener" style="background:#F8E5DC;position:relative;z-index:1;height:100%"><img class="jf-kv-cover" src="/files/theme/jf-buch-glutenfrei-de.jpg" alt="Cover: Glutenfrei reisen durch Südkorea, E-Book"><span class="jf-k">E-BOOK · GUMROAD</span><span class="jf-t">Glutenfrei reisen durch Südkorea</span><span class="jf-d">Das Buch als PDF, sofort auf dem Handy dabei.</span><span class="jf-go">Bei Gumroad →</span></a></div>
+      <div><a class="jf-tile jf-kv-buch" href="https://jasard.gumroad.com/l/vegan-suedkorea" target="_blank" rel="noopener" style="background:#E9EEE6;position:relative;z-index:1;height:100%"><img class="jf-kv-cover" src="/files/theme/jf-buch-vegan-guide.jpg" alt="Cover: Korea Vegan Travel Guide, E-Book"><span class="jf-k">E-BOOK · GUMROAD</span><span class="jf-t">Korea Vegan Travel Guide</span><span class="jf-d">Der vegane Reiseführer als PDF zum Mitnehmen.</span><span class="jf-go">Bei Gumroad →</span></a></div>
       </div>
     </div>
-    <div class="jf-kv-rahmen">
+    <div class="jf-kv-rahmen jf-kv-farbe">
       <p class="jf-k jf-kv-rk">KARTEN ZUM IMPORTIEREN · <span lang="ko">지도</span></p>
       <div class="jf-grid jf-grid-fit" style="--jf-min:320px">
       <a class="jf-tile jf-quer" href="https://jasard.gumroad.com/l/sfyuvf" target="_blank" rel="noopener" style="background:#F1E8DC"><svg aria-hidden="true" width="80" height="80" viewBox="0 0 80 80" style="flex:none"><path d="M12 18 L30 10 L50 18 L68 10 V62 L50 70 L30 62 L12 70 Z" fill="#FFFFFF" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round"/><path d="M30 10 V62 M50 18 V70" stroke="#4A3F36" stroke-width="2"/><path d="M40 26 C33 26 30 31 30 35 C30 42 40 50 40 50 C40 50 50 42 50 35 C50 31 47 26 40 26 Z" fill="#F2C4B0" stroke="#4A3F36" stroke-width="2.5"/><circle cx="40" cy="35" r="3.5" fill="#4A3F36"/></svg><span><span class="jf-k">KARTE · KML/KMZ</span><span class="jf-t" style="font-size:22px">Südkorea glutenfrei &amp; vegan</span><span class="jf-d">Alle meine Orte als Karte zum Importieren – in Google Maps, Organic Maps &amp; Co. →</span></span></a>
@@ -75,15 +94,14 @@
       </div>
     </div>
     <div class="jf-grid jf-grid-fit" style="--jf-min:320px;margin-top:24px">
-      <a class="jf-tile" href="https://www.youtube.com/watch?v=kDIWy6Ls3YU&amp;list=PLIa1PqeCDvBqOpJAAra1ZxODSlQPsaDZU" target="_blank" rel="noopener" style="background:#E4ECF4">
-        <!-- Titelbild der Playlist: später <span class="jf-platzhalter">…</span> durch <img src="/files/theme/jf-korea-playlist.jpg" alt="" style="width:100%;border-radius:14px"> ersetzen -->
-        <span class="jf-platzhalter" style="aspect-ratio:16/9;background:#B8CCE0"><img src="/files/theme/jf-fig-namsan.png" alt="" style="height:80%;width:auto"></span>
-        <span class="jf-k">YOUTUBE · PLAYLIST</span><span class="jf-t">Korea Travel – alle Videos</span><span class="jf-go">Ansehen →</span></a>
-      <div class="jf-card" style="display:flex;flex-direction:column;gap:12px;justify-content:space-between">
-        <div><p class="jf-k" style="margin:0 0 10px">MEHR AUF INSTAGRAM</p><p class="jf-p">Neue Funde, Reels und Updates von unterwegs.</p></div>
-        <a href="https://www.instagram.com/korea.vegan.travel/" target="_blank" rel="noopener" style="font-weight:800;font-size:20px;text-decoration:none">@korea.vegan.travel →</a>
-        <a href="https://ko-fi.com/jasminfreiner" target="_blank" rel="noopener" class="jf-mono" style="font-size:12px">☕ Hat dir das geholfen? Spendier mir einen Kaffee</a>
-      </div>
+      <a class="jf-tile jf-kv-playlist" href="https://www.youtube.com/watch?v=kDIWy6Ls3YU&amp;list=PLIa1PqeCDvBqOpJAAra1ZxODSlQPsaDZU" target="_blank" rel="noopener">
+        <span class="jf-kv-pl-text"><span class="jf-k">YOUTUBE · PLAYLIST</span><span class="jf-t">Korea Travel – alle Videos</span><span class="jf-go">Ansehen →</span></span>
+        <img src="/files/theme/jf-fig-namsan.png" alt="" class="jf-kv-pl-bild">
+      </a>
+      <a class="jf-tile jf-kv-ig" href="https://www.instagram.com/korea.vegan.travel/" target="_blank" rel="noopener">
+        <img src="/files/theme/jf-buch-vegan-guide.jpg" alt="Profilbild korea.vegan.travel" class="jf-kv-ig-logo">
+        <span class="jf-kv-pl-text"><span class="jf-k">MEHR AUF INSTAGRAM</span><span class="jf-d">Neue Funde, Reels und Updates von unterwegs.</span><span class="jf-t" style="font-size:20px">@korea.vegan.travel →</span></span>
+      </a>
     </div>
     <p style="margin:16px 0 0;font-size:15px"><a href="https://www.amazon.de/stores/Jasmin-Freiner/author/B0FRZNZZ9Q" target="_blank" rel="noopener" style="font-weight:700">Alle meine Bücher auf meiner Amazon-Autorenseite →</a></p>
     <p class="jf-pflicht">* Partnerlink: Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich am Preis nichts.</p>
@@ -107,7 +125,7 @@
   <section class="jf-sec" id="orte">
     <p class="jf-seclabel">(C) LIEBLINGSORTE · <span lang="ko">추천 맛집</span></p>
     <h2 class="jf-h2">Wo ich gegessen habe.</h2>
-    <p class="jf-p jf-kv-hinweis">Alle Orte findest du auch gesammelt: im Buch <a href="https://link.amazon/B03q01eIH" target="_blank" rel="noopener sponsored">bei Amazon</a> (Werbung · Partnerlink*), im <a href="https://jasard.gumroad.com/?section=ZlEGK9JoyHFsR2Cbfgxv8Q%3D%3D" target="_blank" rel="noopener">E-Book bei Gumroad</a> oder als <a href="https://jasard.gumroad.com/?section=Z03aGd3LbJw5INKw7KFCvw%3D%3D" target="_blank" rel="noopener">Karte bei Gumroad</a> (siehe oben bei <a href="#mehr">Zum Mitnehmen</a>).</p>
+    <p class="jf-p jf-kv-hinweis jf-kv-farbe">Alle Orte findest du auch gesammelt: im Buch <a href="https://link.amazon/B03q01eIH" target="_blank" rel="noopener sponsored">bei Amazon</a> (Werbung · Partnerlink*), im <a href="https://jasard.gumroad.com/?section=ZlEGK9JoyHFsR2Cbfgxv8Q%3D%3D" target="_blank" rel="noopener">E-Book bei Gumroad</a> oder als <a href="https://jasard.gumroad.com/?section=Z03aGd3LbJw5INKw7KFCvw%3D%3D" target="_blank" rel="noopener">Karte bei Gumroad</a> (siehe oben bei <a href="#mehr">Zum Mitnehmen</a>).</p>
     <div style="display:flex;flex-wrap:wrap;align-items:flex-end;gap:16px 24px;margin:-8px 0 24px">
       <p class="jf-p" style="margin:0;font-size:13px;color:var(--jf-grau)">V = vegan · GF = glutenfrei möglich. Alles vor Ort nachfragen – Rezepte und Läden ändern sich.</p>
       <div class="jf-filter" role="group" aria-label="Filter" data-jf-filter=".jf-ort" style="margin-left:auto">
