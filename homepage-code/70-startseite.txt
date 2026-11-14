@@ -159,7 +159,8 @@ html body #jf.jf .jf-shopblock .jf-shopkopf{margin-top:0}
 html body #jf.jf .jf-start.jf-start-neu{grid-template-columns:auto minmax(0,1fr)}
 html body #jf.jf .jf-start-neu .jf-wer{justify-self:end;text-align:right;align-items:flex-end}
 html body #jf.jf .jf-fotos{position:relative}
-html body #jf.jf .jf-rollen-r .jf-sticker{position:relative;top:auto;right:auto;left:auto;bottom:auto;z-index:2;width:124px;height:124px;font-size:12px;margin:14px 0 0 60px;transform:rotate(8deg)}
+html body #jf.jf .jf-rollen-r{position:relative}
+html body #jf.jf .jf-rollen-r .jf-sticker{position:absolute;top:calc(100% - 10px);right:auto;left:70px;bottom:auto;z-index:2;width:124px;height:124px;font-size:12px;margin:0;transform:rotate(8deg)}
 @media (max-width:760px){html body #jf.jf .jf-rollen-r .jf-sticker{display:none}html body #jf.jf .jf-start-neu .jf-wer{text-align:left;align-items:flex-start;justify-self:start}}
 /* Neue Titelzeile: Gruss klein links, Wer in der Mitte, Sticker rechts, darunter die Rollen mittig */
 html body #jf.jf .jf-start.jf-start-neu{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:28px 40px;min-height:0;margin-top:28px}
