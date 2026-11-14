@@ -1,0 +1,89 @@
+<!--
+  ============================================================
+  JASARDPU SHOP · TEIL 5: NEU BEI ETSY (Stand 14.11.2026 Runde 4: Etsy und Spoonflower als zwei Felder, Bildchen, Bilder sofort laden)
+  ============================================================
+  Wohin: Weebly → Seite „Jasardpu“ → ein neues Element „Code einbetten“
+         ganz unten unter Teil 4 einfügen, diesen ganzen Text hinein.
+         Teil 1, 3 und 4 bleiben unverändert, Teil 2 wird ersetzt.
+  Was passiert: Das Skript unten setzt den Abschnitt „Neu bei Etsy“ automatisch
+    direkt unter Weihnachten (vor die acht Welten), legt im Hero den Knopf
+    „✦ Neu bei Etsy“ an, bei Weihnachten den Knopf „Tassen & Karten bei Etsy“
+    und benennt die Etsy-Spalten in „Mode & Wohnen“ und „Karten & Tassen“ um.
+  Texte ändern: einfach zwischen den Zeichen > und < tippen.
+  Neues Produkt dazu: einen <a class="xk">…</a>-Block kopieren, Etsy-Link, Bild und Namen ändern.
+     Bild-Link: auf Etsy Rechtsklick aufs Produktbild, „Bildadresse kopieren“.
+  Abschnitt wieder entfernen: dieses ganze Element löschen.
+  ============================================================
+-->
+<style>
+html body #jfs .xk .xb{position:relative;display:block}
+html body #jfs .xk .xe{position:absolute;right:8px;bottom:8px;background:#F1641E;color:#FFFFFF;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.08em;padding:3px 9px;border-radius:999px}
+html body #jfs .xk .xm{display:block;font-size:13px;line-height:1.3;color:var(--gr)}
+html body #jfs #neu-etsy .xraster{grid-template-columns:repeat(4,minmax(0,1fr))}
+html body #jfs #neu-etsy .xk .xn{overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:860px){html body #jfs #neu-etsy .xraster{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}html body #jfs #neu-etsy .xk{padding:8px 8px 12px}html body #jfs #neu-etsy .xk .xn{font-size:14px}}
+html body #jfs .xmas .flocke.ecke{display:block;width:58px;height:58px;opacity:1;transform:rotate(6deg);filter:drop-shadow(0 4px 8px rgba(74,63,54,.15))}
+html body #jfs .xmas .flocke.ecke svg{display:block;width:100%;height:100%}
+html body #jfs .spoonfeld .spoon{padding-right:70px}
+@media (max-width:600px){html body #jfs .spoonfeld .spoon{padding-right:0}html body #jfs .xmas .flocke.ecke{width:44px;height:44px;right:14px!important;top:14px!important}}
+</style>
+
+<div id="jfs-neu" hidden>
+  <!-- ===== NEU BEI ETSY (Printful und Gelato, Stand 11.11.2026) ===== -->
+  <section class="sec" id="neu-etsy">
+    <p class="lbl">AUCH BEI ETSY &amp; SPOONFLOWER · <span lang="ko">다른 샵</span></p>
+    <div class="xmas" style="background:#F8E5DC">
+      <span class="flocke ecke" aria-hidden="true" style="right:26px;top:22px"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><path d="M22 20 V15 Q22 8 30 8 Q38 8 38 15 V20" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/><path d="M10 20 H50 L47 52 H13 Z" fill="#F2A877" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="25" cy="33" r="2.6" fill="#4A3F36"/><circle cx="35" cy="33" r="2.6" fill="#4A3F36"/><path d="M27 39 Q30 42 33 39" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2.2"/></svg></span>
+      <div class="xkopf">
+        <div>
+          <span class="k">Gedruckt von Printful &amp; Gelato · bestellt über Etsy</span>
+          <h2 class="h2">Kleider, Kissen &amp;<br>Weihnachtspost.</h2>
+          <p>Meine Muster gibt es jetzt auch auf Kleidern, Kissenbezügen, Tassen und Karten. Jedes Stück wird erst bei deiner Bestellung gedruckt und direkt zu dir geschickt. Das Motiv suchst du dir auf Etsy aus.</p>
+        </div>
+        <a class="knopf" href="https://www.etsy.com/de/shop/Jasardpu" target="_blank" rel="noopener">Zum Etsy-Shop →</a>
+      </div>
+      <div class="xraster">
+        <a class="xk" href="https://www.etsy.com/de/listing/4611991441" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/7953e0/8830955980/il_800x800.8830955980_an16.jpg" alt="Weihnachtstasse, Tasse bei Etsy" loading="eager"><span class="xe">ETSY</span></span><span class="xn">Weihnachtstasse</span><span class="xm">9 Motive</span><span class="xp">Tasse →</span></a>
+        <a class="xk" href="https://www.etsy.com/de/listing/4612016126" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/2d5b24/8862674733/il_800x800.8862674733_o2ab.jpg" alt="Weihnachtskarten Korea, Klappkarten 10er-Set bei Etsy" loading="eager"><span class="xe">ETSY</span></span><span class="xn">Weihnachtskarten Korea</span><span class="xm">17 Motive</span><span class="xp">Klappkarten 10er-Set →</span></a>
+        <a class="xk" href="https://www.etsy.com/de/listing/1399788383" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/a94186/8831647204/il_800x800.8831647204_kzb0.jpg" alt="Weihnachtspostkarten, Postkarten 10er-Set bei Etsy" loading="eager"><span class="xe">ETSY</span></span><span class="xn">Weihnachtspostkarten</span><span class="xm">Motive zur Wahl</span><span class="xp">Postkarten 10er-Set →</span></a>
+        <a class="xk" href="https://www.etsy.com/de/listing/823980832" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/598e61/8827930154/il_800x800.8827930154_q29j.jpg" alt="Frohe Schweinachten, Kissenbezug bei Etsy" loading="eager"><span class="xe">ETSY</span></span><span class="xn">Frohe Schweinachten</span><span class="xm">9 Motive</span><span class="xp">Kissenbezug →</span></a>
+        <a class="xk" href="https://www.etsy.com/de/listing/4611954067" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/0067ab/8814493530/il_800x800.8814493530_5c0h.jpg" alt="Kleid mit Allover-Muster, Kleid bei Etsy" loading="eager"><span class="xe">ETSY</span></span><span class="xn">Kleid mit Allover-Muster</span><span class="xm">5 Muster</span><span class="xp">Kleid →</span></a>
+        <a class="xk" href="https://www.etsy.com/de/listing/823994980" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/4a7b98/8879143901/il_800x800.8879143901_9jcp.jpg" alt="Kissenbezug Korea, Kissenbezug bei Etsy" loading="eager"><span class="xe">ETSY</span></span><span class="xn">Kissenbezug Korea</span><span class="xm">9 Motive</span><span class="xp">Kissenbezug →</span></a>
+        <a class="xk" href="https://www.etsy.com/de/listing/1379438804" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/40f680/8878910953/il_800x800.8878910953_sglq.jpg" alt="Kissenbezug Tiere, Kissenbezug bei Etsy" loading="eager"><span class="xe">ETSY</span></span><span class="xn">Kissenbezug Tiere</span><span class="xm">9 Motive</span><span class="xp">Kissenbezug →</span></a>
+        <a class="xk" href="https://www.etsy.com/de/listing/823982718" target="_blank" rel="noopener"><span class="xb"><img src="https://i.etsystatic.com/22304935/r/il/06547c/8821019294/il_800x800.8821019294_mzzg.jpg" alt="Kissenbezug Architektur, Kissenbezug bei Etsy" loading="eager"><span class="xe">ETSY</span></span><span class="xn">Kissenbezug Architektur</span><span class="xm">3 Motive</span><span class="xp">Kissenbezug →</span></a>
+      </div>
+    </div>
+    <div class="xmas spoonfeld" style="background:#DCE6F0;margin-top:16px">
+      <span class="flocke ecke" aria-hidden="true" style="right:26px;top:22px"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><rect x="14" y="6" width="32" height="8" rx="3" fill="#D8C6AE" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="14" y="46" width="32" height="8" rx="3" fill="#D8C6AE" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="18" y="14" width="24" height="32" fill="#E58C74" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 20 L42 24 M18 27 L42 31 M18 34 L42 38 M18 41 L42 45" stroke="#B5543F" stroke-width="2" stroke-linecap="round"/><path d="M42 34 Q52 38 50 48 Q48 56 56 56" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke="#E58C74" stroke-width="2.6"/></svg></span>
+      <div class="spoon" style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px">
+        <div style="flex:1 1 260px;min-width:0"><span class="k">Bei Spoonflower</span><b style="display:block;font-size:20px;margin:4px 0 6px">Stoffe &amp; Tapeten</b><span style="font-size:15px">Meine Muster als Meterware zum Nähen, als Tapete und Deko.</span></div>
+        <div style="display:flex;gap:10px">
+          <a href="https://www.spoonflower.com/profiles/jasardpu" target="_blank" rel="noopener"><img src="https://garden.spoonflower.com/c/15463036/p/f/m/MLxuIHgt7KacqtfzFrbor98ZDUWvv2NOmWtAjLvocweBfEx-8W4K/pfau.jpg" alt="Stoffmuster Pfau" loading="eager" style="width:84px;height:84px;object-fit:cover;border-radius:10px;display:block"></a>
+          <a href="https://www.spoonflower.com/profiles/jasardpu" target="_blank" rel="noopener"><img src="https://garden.spoonflower.com/c/15439793/p/f/m/E6pnYzZ-0RIyqjlgAcE_3b4pw5NjLg9EQex-EwuTwBHX-QdhT7N9-Ac/Wassermelone.jpg" alt="Stoffmuster Wassermelone" loading="eager" style="width:84px;height:84px;object-fit:cover;border-radius:10px;display:block"></a>
+          <a href="https://www.spoonflower.com/profiles/jasardpu" target="_blank" rel="noopener"><img src="https://garden.spoonflower.com/c/15439726/p/f/m/4bbZViQSMvkedKPQMMpAEsPnMGE4-9NimBt-YG-WJs5Zc3tQpJnEukQ/Kn%C3%B6pfe.jpg" alt="Stoffmuster Knöpfe" loading="eager" style="width:84px;height:84px;object-fit:cover;border-radius:10px;display:block"></a>
+        </div>
+        <a class="knopf hell" href="https://www.spoonflower.com/profiles/jasardpu" target="_blank" rel="noopener" style="border:1.5px solid var(--br)">Alle Stoffe →</a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== ENDE NEU BEI ETSY ===== -->
+</div>
+
+<script>
+/* Setzt den Block "Auch bei Etsy & Spoonflower" über "So funktioniert's" und passt den Knopf oben an */
+(function(){
+  var J=document.getElementById('jfs'), box=document.getElementById('jfs-neu'); if(!J||!box) return;
+  var sec=box.querySelector('#neu-etsy'), so=J.querySelector('#so');
+  if(sec&&so) so.parentNode.insertBefore(sec,so);
+  box.remove();
+  function knopf(text,ziel){var a=document.createElement('a');a.className='knopf hell';a.href=ziel;a.style.border='1.5px solid var(--br)';a.textContent=text;return a}
+  /* Hero: Knopf nach "Neu: Weihnachten" */
+  /* Leiste unter dem Hero */
+  J.querySelectorAll('.vort span').forEach(function(s){if(/Versand über Redbubble/.test(s.textContent)) s.textContent='Bestellung über Redbubble, Etsy & Spoonflower'});
+  /* Etsy-Spalten bei den Welten */
+  function spalte(id,titel,text){var b=J.querySelector('#'+id); if(!b) return; var s=b.closest('.spalte'); if(!s) return;
+    var h=s.querySelector('h3'); if(h) h.textContent=titel; var p=s.querySelector('p'); if(p) p.textContent=text}
+  spalte('etsy-mode','Mode & Wohnen','Kleider und Kissenbezüge mit meinen Mustern, gedruckt von Printful.');
+  spalte('etsy-papier','Karten & Tassen','Weihnachtskarten, Postkarten und Tassen, gedruckt von Gelato.');
+})();
+</script>
