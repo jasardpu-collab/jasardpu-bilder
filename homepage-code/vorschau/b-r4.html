@@ -218,13 +218,19 @@ html body #jf.jf a.jf-hoch:hover{background:#B0705A;color:#FFFFFF;transform:tran
 })();
 </script>
 <script>
-/* Bücher: Cover antippen dreht das Buch (wie ein Klick auf den Titel) */
+/* Bücher: Cover antippen dreht das Buch (am Handy; am Computer reicht Drüberfahren) */
 (function(){
   document.querySelectorAll('#jf.jf .jf-buch').forEach(function(b){
     var bild=b.querySelector('.jf-buch-bild'),titel=b.querySelector('button.jf-titel');
-    if(!bild||!titel||!b.querySelector('.jf-rueck'))return;
+    if(!bild||!b.querySelector('.jf-rueck'))return;
+    var vorher=false,touch=false;
     bild.style.cursor='pointer';
-    bild.addEventListener('click',function(){titel.click()});
+    bild.addEventListener('pointerdown',function(e){touch=e.pointerType!=='mouse';vorher=b.classList.contains('jf-gedreht')});
+    bild.addEventListener('click',function(){
+      if(!touch)return;
+      var an=!vorher;
+      setTimeout(function(){b.classList.toggle('jf-gedreht',an);if(titel)titel.setAttribute('aria-pressed',an?'true':'false')},0);
+    });
   });
 })();
 /* Sprungmarken aus dem Menü: #suedkorea, #malbuecher, #notizbuecher, #english filtern die Reihe */
