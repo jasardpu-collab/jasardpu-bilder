@@ -3,6 +3,7 @@
   (02) ALLE BÜCHER · Seitenadresse: /buecher.html
   Stand 01.11.2026: Rückseiten für Vegan Guide (DE/EN), Malbuch Vol. 1 und 2, Frau am Bau, Sinnfrei ergänzt
   14.11.2026 (Runde 4): Menüzeile, ohne (02), Cover antippen zum Drehen, Sprungmarken für das Menü, Nach-oben-Knopf.
+  15.11.2026 (Runde 5): Versaute Bilder mit Kurzlink link.amazon/B0cWA9DDo, Menü-Tags repariert, Menü-Link Bald raus.
   ============================================================
   Wohin: Weebly → Seite öffnen → alten Inhalt löschen →
          Element „Code einbetten“ hineinziehen → diesen ganzen Text einfügen
@@ -28,12 +29,12 @@
        Auf der Seite, auf der man gerade ist, wird der Hauptlink zu <span class="jf-hier">.
        Kapitel ohne Link (noch nicht fertig): <span class="jf-bald">Name</span> -->
   <nav class="jf-menue" aria-label="Seiten">
-    <div class="jf-mp"><a class="jf-mh" href="/korea-vegan-glutenfrei.html">Korea vegan &amp; glutenfrei</span>
+    <div class="jf-mp"><a class="jf-mh" href="/korea-vegan-glutenfrei.html">Korea vegan &amp; glutenfrei</a>
       <div class="jf-mk"><a href="/korea-vegan-glutenfrei.html#mehr">Buch &amp; Videos</a><a href="/korea-vegan-glutenfrei.html#vorbereitung">Vorbereitung</a><a href="/korea-vegan-glutenfrei.html#orte">Lieblingsorte</a><a href="/korea-vegan-glutenfrei.html#saetze">Sätze</a><a href="/korea-vegan-glutenfrei.html#zutaten">Zutaten</a><a href="/korea-vegan-glutenfrei.html#fallen">Fallen</a><a href="/korea-vegan-glutenfrei.html#einkaufen">Einkaufen</a></div></div>
-    <div class="jf-mp"><span class="jf-hier" aria-current="page">Bücher</a>
+    <div class="jf-mp"><span class="jf-hier" aria-current="page">Bücher</span>
       <div class="jf-mk"><a href="/buecher.html#suedkorea">Südkorea-Reihe</a><a href="/buecher.html#malbuecher">Malbücher</a><a href="/buecher.html#notizbuecher">Notizbücher</a><a href="/buecher.html#english">English</a><a href="/buecher.html#hinter">Hinter den Büchern</a></div></div>
     <div class="jf-mp"><a class="jf-mh" href="/podcast-youtube.html">Podcast &amp; YouTube</a>
-      <div class="jf-mk"><a href="/podcast-youtube.html#neu">Neuestes Video</a><a href="/podcast-youtube.html#podcast">Podcast</a><a href="/podcast-youtube.html#travel">Travel-Videos</a><a href="/podcast-youtube.html#playlists">Playlists</a><a href="/podcast-youtube.html#bald">Bald</a></div></div>
+      <div class="jf-mk"><a href="/podcast-youtube.html#neu">Neuestes Video</a><a href="/podcast-youtube.html#podcast">Podcast</a><a href="/podcast-youtube.html#travel">Travel-Videos</a><a href="/podcast-youtube.html#playlists">Playlists</a></div></div>
     <div class="jf-mp"><a class="jf-mh" href="/glutenfrei-vegan.html">Glutenfrei &amp; vegan</a>
       <div class="jf-mk"><a href="/glutenfrei-vegan.html#instagram">Instagram</a><a href="/glutenfrei-vegan.html#unterwegs">Glutenfrei unterwegs</a><a href="/glutenfrei-vegan.html#mehr">Mehr</a></div></div>
     <div class="jf-mp"><a class="jf-mh" href="/shop-design.html">Shop &amp; Design</a>
@@ -143,7 +144,7 @@
         <button type="button" class="jf-titel" aria-pressed="false">Versaute Bilder</button>
         <span class="jf-p" style="margin:0">Ein Malbuch voller Schweinereien für Erwachsene: 24 Malvorlagen, bei denen man garantiert nichts sieht. Außer Meerschweinchen.</span>
         <span class="jf-tags"><span class="jf-tag">Malbuch</span><span class="jf-tag">Meerschweinchen</span></span>
-        <span class="jf-unten"><a class="jf-knopf" href="https://www.amazon.de/dp/B0HRDYVYG7?tag=jasminfreiner-21" target="_blank" rel="noopener sponsored">Bei Amazon ansehen →</a><span class="jf-werbung">Werbung · Partnerlink*</span></span>
+        <span class="jf-unten"><a class="jf-knopf" href="https://link.amazon/B0cWA9DDo" target="_blank" rel="noopener sponsored">Bei Amazon ansehen →</a><span class="jf-werbung">Werbung · Partnerlink*</span></span>
       </article>
       <article class="jf-buch" data-merkmale="notiz">
         <div class="jf-buch-bild"><img class="jf-vorn" src="/files/theme/jf-buch-bauherrin.jpg" alt="Cover: Notizbuch der Bauherrin"></div>
