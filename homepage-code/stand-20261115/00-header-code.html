@@ -1,0 +1,369 @@
+<meta name="google-site-verification" content="U0v1SipfioXfKqtyCGj0lXEgOMNG3grrnJdmOSG4hL0" /> <!--
+  ============================================================
+  JASMIN FREINER · GRUNDGERÜST (Header-Code für die ganze Seite)
+  ============================================================
+  Wohin: Weebly → Einstellungen → SEO → „Header Code“ (gilt für alle Seiten)
+  Was es tut:
+   - lädt die Schriften von DEINER Seite (nicht von Google → kein Datenschutz-Problem)
+   - enthält alle Farben und Stile für die neuen Bausteine
+   - wirkt NUR auf Blöcke mit id="jf" → alte Seiten bleiben unverändert
+
+  Farben ändern: unten bei „FARBEN“ den Hex-Wert tauschen, gilt dann überall.
+  ============================================================
+-->
+<style>
+/* ---------- SCHRIFTEN (Dateien im Theme hochladen, siehe Anleitung) ---------- */
+@font-face{font-family:'JF Inter Tight';src:url('/files/theme/InterTight-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'JF Inter Tight';src:url('/files/theme/InterTight-Medium.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'JF Inter Tight';src:url('/files/theme/InterTight-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'JF Inter Tight';src:url('/files/theme/InterTight-ExtraBold.ttf') format('truetype');font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:'JF Inter Tight';src:url('/files/theme/InterTight-Black.ttf') format('truetype');font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:'JF Mono';src:url('/files/theme/JetBrainsMono-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'JF Mono';src:url('/files/theme/JetBrainsMono-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'JF Script';src:url('/files/theme/PinyonScript-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+
+/* ---------- FARBEN „Soft Coastal“ ---------- */
+#jf.jf{
+  --jf-ivory:#FBF8F2;      /* Hintergrund */
+  --jf-braun:#4A3F36;      /* Schrift */
+  --jf-grau:#6B5E52;       /* Nebentext */
+  --jf-champagner:#D8C6AE;
+  --jf-pfirsich:#F2C4B0;
+  --jf-hellblau:#B8CCE0;
+  --jf-salbei:#A9B8A2;
+  --jf-neutral:#E8E1DA;
+  --jf-bluete:#F6D5D0;
+  --jf-akzent:#B0705A;     /* Hover, Nummern */
+  --jf-sand:#B59A7E;       /* Schreibschrift */
+  --jf-sans:'JF Inter Tight','Inter Tight','Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --jf-mono:'JF Mono','JetBrains Mono','Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',ui-monospace,Menlo,Consolas,monospace;
+  --jf-script:'JF Script','Pinyon Script','Snell Roundhand',cursive;
+}
+
+/* ---------- SCHUTZ VOR DEM WEEBLY-THEME ----------
+   Setzt alles in unseren Blöcken auf Browser-Standard zurück,
+   damit das Theme nichts verstellt. Nicht ändern. */
+html body #jf.jf,html body #jf.jf :where(*:not(svg,svg *)){all:revert;box-sizing:border-box}
+html body #jf.jf svg{box-sizing:content-box}
+html body #jf.jf{display:block;position:relative;overflow:hidden;background:var(--jf-ivory);color:var(--jf-braun);font-family:var(--jf-sans);font-size:16px;line-height:1.55;font-weight:400;text-align:left;-webkit-font-smoothing:antialiased;padding:0 clamp(16px,3vw,40px);margin:0}
+html body #jf.jf *::before,html body #jf.jf *::after{box-sizing:border-box}
+html body #jf.jf a{color:var(--jf-braun);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--jf-champagner)}
+html body #jf.jf a:hover{color:var(--jf-akzent);text-decoration-color:currentColor}
+html body #jf.jf a:focus-visible,html body #jf.jf summary:focus-visible{outline:2px solid var(--jf-akzent);outline-offset:3px;border-radius:4px}
+html body #jf.jf img,html body #jf.jf svg{max-width:100%}
+html body #jf.jf [hidden]{display:none!important}
+
+/* Hintergrund der ganzen Seite ivory, sobald ein neuer Baustein drauf ist */
+body:has(#jf.jf){background:#FBF8F2}
+
+/* ---------- DEKO (Kreise, Blüte) ---------- */
+html body #jf.jf .jf-deko{position:absolute;pointer-events:none;z-index:0}
+html body #jf.jf .jf-kreis{border-radius:50%}
+html body #jf.jf .jf-kreis-rand{left:-210px;top:40px;width:300px;height:300px}
+html body #jf.jf .jf-inhalt{position:relative;z-index:1;max-width:1360px;margin:0 auto}
+
+/* ---------- KOPFZEILE ---------- */
+html body #jf.jf .jf-kopf{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;padding:24px 0 10px;border-bottom:1px solid var(--jf-braun);font-family:var(--jf-mono);font-size:11px;letter-spacing:.04em}
+html body #jf.jf .jf-kopf .jf-logo{font-weight:600;text-decoration:none}
+html body #jf.jf .jf-sprachen{margin-left:auto;display:flex;gap:10px;align-items:center}
+html body #jf.jf .jf-sprachen a{text-decoration:none}
+html body #jf.jf .jf-sprachen .jf-aktiv{background:var(--jf-braun);color:var(--jf-ivory);padding:2px 6px;border-radius:999px}
+
+/* ---------- FUSSZEILE ---------- */
+html body #jf.jf .jf-fuss{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;margin-top:72px;padding:10px 0 24px;border-top:1px solid var(--jf-braun);font-family:var(--jf-mono);font-size:11px;letter-spacing:.04em}
+html body #jf.jf .jf-fuss .jf-fett{font-weight:600}
+html body #jf.jf .jf-fuss .jf-links{margin-left:auto;display:flex;gap:20px}
+
+/* ---------- SEITENKOPF (Titel in drei Sprachen) ---------- */
+html body #jf.jf .jf-zurueck{display:inline-block;margin-top:48px;font-family:var(--jf-mono);font-size:11px;letter-spacing:.06em;text-decoration:none}
+html body #jf.jf .jf-titelzeile{display:flex;flex-wrap:wrap;align-items:flex-end;gap:4px 28px;margin:28px 0 12px}
+html body #jf.jf .jf-h1{margin:0;font-family:var(--jf-sans);font-weight:900;font-size:clamp(48px,8vw,88px);line-height:.95;letter-spacing:-.05em;color:var(--jf-braun)}
+html body #jf.jf .jf-schreibschrift{font-family:var(--jf-script);font-size:clamp(40px,6vw,72px);line-height:1;color:var(--jf-sand)}
+html body #jf.jf .jf-kontur{font-weight:900;font-size:clamp(36px,5.5vw,64px);line-height:.95;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px var(--jf-braun)}
+html body #jf.jf .jf-label{margin:0 0 48px;padding-bottom:8px;border-bottom:2px solid var(--jf-braun);font-family:var(--jf-mono);font-size:11px;letter-spacing:.1em}
+
+/* ---------- RECHTSTEXTE (Impressum, Datenschutz) ---------- */
+html body #jf.jf .jf-recht{font-size:15px;line-height:1.65}
+html body #jf.jf .jf-spalten{columns:2 420px;column-gap:64px}
+html body #jf.jf .jf-recht h2{display:block;margin:26px 0 8px;font-family:var(--jf-sans);font-weight:800;font-size:19px;line-height:1.3;letter-spacing:-.01em;break-after:avoid}
+html body #jf.jf .jf-recht h2:first-child{margin-top:0}
+html body #jf.jf .jf-recht h3{display:block;margin:16px 0 4px;font-family:var(--jf-sans);font-weight:800;font-size:15px;line-height:1.35;break-after:avoid}
+html body #jf.jf .jf-recht p{display:block;margin:0 0 12px}
+html body #jf.jf .jf-recht ul{display:block;margin:0 0 12px;padding-left:18px;list-style:disc}
+html body #jf.jf .jf-recht li{display:list-item;margin:0 0 6px}
+html body #jf.jf .jf-recht strong{font-weight:700}
+html body #jf.jf .jf-recht a{overflow-wrap:anywhere}
+html body #jf.jf .jf-recht .jf-n{font-family:var(--jf-mono);font-size:11px;font-weight:600;color:var(--jf-akzent);letter-spacing:.04em;margin-right:8px;min-width:20px}
+html body #jf.jf .jf-klein{font-size:12px;color:var(--jf-grau)}
+/* Aufklappbare Abschnitte (Datenschutz) */
+html body #jf.jf .jf-akkordeon{border-top:1px solid var(--jf-braun);font-size:14px;line-height:1.6}
+html body #jf.jf .jf-akkordeon details{display:block;border-bottom:1px solid var(--jf-champagner)}
+html body #jf.jf .jf-akkordeon summary{display:flex;align-items:baseline;gap:12px;padding:16px 4px;cursor:pointer;list-style:none;font-family:var(--jf-sans);font-weight:800;font-size:clamp(16px,2.2vw,19px);letter-spacing:-.01em}
+html body #jf.jf .jf-akkordeon summary::-webkit-details-marker{display:none}
+html body #jf.jf .jf-akkordeon summary::after{content:'+';margin-left:auto;font-family:var(--jf-mono);font-weight:600;font-size:18px}
+html body #jf.jf .jf-akkordeon details[open]>summary::after{content:'–'}
+html body #jf.jf .jf-akkordeon summary:hover{color:var(--jf-akzent)}
+html body #jf.jf .jf-akkordeon .jf-koerper{columns:2 420px;column-gap:64px;padding:0 4px 24px}
+html body #jf.jf .jf-akkordeon .jf-koerper p,html body #jf.jf .jf-akkordeon .jf-koerper li{font-size:14px}
+
+/* ---------- SEITEN-BAUSTEINE (alle Unterseiten) ---------- */
+html body #jf.jf .jf-hero{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-end;margin-top:28px}
+html body #jf.jf .jf-hero-text{flex:1 1 520px;min-width:0}
+html body #jf.jf .jf-eyebrow{display:block;margin:0 0 14px;font-family:var(--jf-mono);font-size:11px;letter-spacing:.1em}
+html body #jf.jf .jf-h1.jf-gross{font-size:clamp(52px,9vw,96px);line-height:.92}
+html body #jf.jf .jf-untertitel{display:block;margin:14px 0 0;font-weight:900;font-size:clamp(20px,3vw,30px);letter-spacing:.04em;color:#8EA6BF}
+html body #jf.jf .jf-lead{display:block;margin:28px 0 0;max-width:640px;font-size:clamp(17px,1.6vw,19px);line-height:1.55;font-weight:500}
+html body #jf.jf .jf-figur{flex:none;display:block;max-width:40vw;height:auto}
+html body #jf.jf .jf-sec{display:block;margin-top:88px;scroll-margin-top:24px}
+html body #jf.jf .jf-seclabel{display:block;margin:0 0 24px;padding-bottom:8px;border-bottom:2px solid var(--jf-braun);font-family:var(--jf-mono);font-size:11px;letter-spacing:.1em}
+html body #jf.jf .jf-h2{display:block;margin:0 0 24px;font-family:var(--jf-sans);font-weight:900;font-size:clamp(32px,4.5vw,48px);line-height:1;letter-spacing:-.04em;color:var(--jf-braun)}
+html body #jf.jf .jf-h3{display:block;margin:0 0 8px;font-family:var(--jf-sans);font-weight:800;font-size:clamp(18px,1.8vw,21px);line-height:1.2}
+html body #jf.jf .jf-mono{font-family:var(--jf-mono)}
+html body #jf.jf .jf-k{display:block;font-family:var(--jf-mono);font-size:11px;letter-spacing:.08em}
+html body #jf.jf .jf-p{display:block;margin:0 0 12px;font-size:15px;line-height:1.55}
+html body #jf.jf .jf-p:last-child{margin-bottom:0}
+html body #jf.jf .jf-ul{display:block;margin:0;padding-left:18px;font-size:15px;line-height:1.6;list-style:disc}
+html body #jf.jf .jf-ul li{display:list-item}
+html body #jf.jf .jf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,var(--jf-min,280px)),1fr));gap:16px}
+html body #jf.jf .jf-grid-fit{grid-template-columns:repeat(auto-fit,minmax(min(100%,var(--jf-min,320px)),1fr))}
+html body #jf.jf .jf-stats{display:flex;flex-wrap:wrap;gap:12px 40px;align-items:center;margin-top:40px;padding:14px 0;border-top:1px solid var(--jf-braun);border-bottom:1px solid var(--jf-braun);font-family:var(--jf-mono);font-size:12px;letter-spacing:.04em}
+html body #jf.jf .jf-stats b{font-weight:600}
+html body #jf.jf .jf-stats nav{margin-left:auto;display:flex;flex-wrap:wrap;gap:8px 18px}
+/* Kachel (ganze Fläche ist ein Link) */
+html body #jf.jf a.jf-tile,html body #jf.jf .jf-tile{display:flex;flex-direction:column;gap:8px;min-height:190px;padding:22px;border-radius:22px;text-decoration:none;color:var(--jf-braun);background:var(--jf-neutral);transition:transform .2s ease,box-shadow .2s ease}
+html body #jf.jf a.jf-tile:hover{color:inherit;transform:translateY(-3px);box-shadow:0 12px 26px rgba(74,63,54,.12)}
+html body #jf.jf .jf-tile .jf-t{display:block;font-weight:900;font-size:24px;line-height:1.05;letter-spacing:-.02em}
+html body #jf.jf .jf-tile .jf-d{display:block;font-size:14px;line-height:1.5}
+html body #jf.jf .jf-tile .jf-go{display:block;margin-top:auto;font-weight:800;font-size:14px}
+html body #jf.jf .jf-tile.jf-quer{flex-direction:row;align-items:center;gap:20px}
+html body #jf.jf .jf-tile.jf-quer>span{display:flex;flex-direction:column;gap:6px;min-width:0}
+html body #jf.jf .jf-tile img.jf-cover{flex:none;width:92px;height:auto;border-radius:6px;box-shadow:0 8px 16px rgba(0,0,0,.2)}
+html body #jf.jf .jf-dunkel{background:var(--jf-braun)!important;color:var(--jf-ivory)!important}
+html body #jf.jf .jf-dunkel .jf-werbung{color:var(--jf-neutral)}
+html body #jf.jf .jf-card{display:block;background:#FFFFFF;border-radius:20px;padding:22px;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jf.jf .jf-card.jf-flach{background:transparent;box-shadow:none;border:1.5px solid var(--jf-neutral)}
+html body #jf.jf .jf-knopf{display:inline-block;background:var(--jf-braun);color:var(--jf-ivory);text-decoration:none;padding:12px 20px;border-radius:999px;font-weight:800;font-size:15px;line-height:1.2}
+html body #jf.jf a.jf-knopf:hover{background:var(--jf-akzent);color:#FFFFFF}
+html body #jf.jf .jf-knopf.jf-hell{background:var(--jf-ivory);color:var(--jf-braun)}
+html body #jf.jf .jf-werbung{display:block;font-family:var(--jf-mono);font-size:10px;color:var(--jf-grau)}
+html body #jf.jf .jf-pflicht{display:block;margin:10px 0 0;font-size:12px;color:var(--jf-grau)}
+html body #jf.jf .jf-tag{display:inline-block;font-family:var(--jf-mono);font-size:10px;font-weight:600;padding:3px 8px;border-radius:999px;background:#F1E8DC}
+html body #jf.jf .jf-tag.jf-v{background:#DDE5D8}
+html body #jf.jf .jf-tag.jf-gf{background:#F8E0D5}
+/* Filter-Knöpfe */
+html body #jf.jf .jf-filter{display:flex;flex-wrap:wrap;gap:8px}
+html body #jf.jf .jf-filter button{display:inline-block;min-height:44px;padding:10px 18px;border:1.5px solid var(--jf-braun);border-radius:999px;background:transparent;color:var(--jf-braun);font-family:var(--jf-sans);font-weight:700;font-size:14px;cursor:pointer}
+html body #jf.jf .jf-filter button[aria-pressed="true"]{background:var(--jf-braun);color:var(--jf-ivory)}
+html body #jf.jf .jf-filter button:focus-visible{outline:2px solid var(--jf-akzent);outline-offset:3px}
+/* Tabellen */
+html body #jf.jf .jf-tabelle{overflow-x:auto}
+html body #jf.jf .jf-tabelle table{display:table;width:100%;border-collapse:collapse;font-size:15px}
+html body #jf.jf .jf-tabelle th{display:table-cell;text-align:left;font-family:var(--jf-mono);font-size:11px;letter-spacing:.08em;font-weight:600;padding:0 8px 8px;border-bottom:1px solid var(--jf-braun)}
+html body #jf.jf .jf-tabelle td{display:table-cell;padding:9px 8px;border-bottom:1px solid var(--jf-neutral);vertical-align:top}
+html body #jf.jf .jf-tabelle td:nth-child(2){font-weight:700;font-size:16px}
+html body #jf.jf .jf-tabelle tr{display:table-row}
+html body #jf.jf .jf-tabelle thead{display:table-header-group}
+html body #jf.jf .jf-tabelle tbody{display:table-row-group}
+/* Platzhalter (Fotos folgen) */
+html body #jf.jf .jf-platzhalter{display:flex;align-items:center;justify-content:center;text-align:center;border-radius:18px;background:var(--jf-neutral);color:var(--jf-grau);font-family:var(--jf-mono);font-size:11px;letter-spacing:.06em;padding:16px}
+/* Figuren zum Wackeln / Quetschen */
+html body #jf.jf .jf-fuell{display:flex;align-items:center;justify-content:center;min-height:200px}
+html body #jf.jf .jf-fuell img{display:block;height:auto;transform-origin:50% 100%}
+html body #jf.jf .jf-fuell img:hover{animation:jfQuetsch .5s ease-out 1}
+html body #jf.jf .jf-quetsch{animation:jfQuetsch .5s ease-out 1}
+html body #jf.jf .jf-wackel{animation:jfWackel .75s ease-in-out 1}
+@keyframes jfQuetsch{0%{transform:scale(1,1)}22%{transform:scale(1.16,.8)}45%{transform:scale(.93,1.1) translateY(-6px)}68%{transform:scale(1.04,.96)}100%{transform:scale(1,1)}}
+@keyframes jfWackel{0%{transform:rotate(0)}18%{transform:rotate(-10deg) scale(1.08)}36%{transform:rotate(8deg) scale(1.05)}54%{transform:rotate(-5deg)}72%{transform:rotate(3deg)}100%{transform:rotate(0)}}
+/* Bücher mit Rückseite */
+html body #jf.jf .jf-buch{display:flex;flex-direction:column;gap:14px;background:#FFFFFF;border-radius:24px;padding:18px;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jf.jf .jf-buch[hidden]{display:none}
+html body #jf.jf .jf-buch-bild{position:relative;display:block;aspect-ratio:3/4;border-radius:14px;background:#F1E8DC;perspective:1200px}
+html body #jf.jf .jf-buch-bild img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:14px;backface-visibility:hidden;-webkit-backface-visibility:hidden;transition:transform .6s ease;filter:drop-shadow(0 8px 14px rgba(74,63,54,.18))}
+html body #jf.jf .jf-buch-bild .jf-rueck{transform:rotateY(-180deg)}
+html body #jf.jf .jf-buch.jf-gedreht .jf-buch-bild .jf-vorn{transform:rotateY(180deg)}
+html body #jf.jf .jf-buch.jf-gedreht .jf-buch-bild .jf-rueck{transform:rotateY(0)}
+html body #jf.jf .jf-buch .jf-titel{display:block;font-weight:800;font-size:20px;line-height:1.15}
+html body #jf.jf .jf-buch button.jf-titel{border:0;background:transparent;padding:0;text-align:left;cursor:pointer;font-family:var(--jf-sans);color:var(--jf-braun)}
+html body #jf.jf .jf-buch .jf-drehen{display:block;margin-top:4px;font-family:var(--jf-mono);font-size:11px;font-weight:400;color:var(--jf-akzent)}
+html body #jf.jf .jf-buch .jf-tags{display:flex;flex-wrap:wrap;gap:6px}
+html body #jf.jf .jf-buch .jf-unten{margin-top:auto;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+html body #jf.jf .jf-buch .jf-knopf{font-size:14px;font-weight:700;padding:11px 18px}
+/* Lieblingsorte */
+html body #jf.jf .jf-ort{display:flex;flex-direction:column;gap:6px;padding:16px 18px}
+html body #jf.jf .jf-ort[hidden]{display:none}
+html body #jf.jf .jf-ort .jf-ort-kopf{display:flex;align-items:baseline;gap:8px}
+html body #jf.jf .jf-ort .jf-ort-name{font-weight:800;font-size:17px;line-height:1.2}
+html body #jf.jf .jf-ort .jf-ort-tags{margin-left:auto;display:flex;gap:4px;flex:none}
+html body #jf.jf .jf-ort .jf-ort-wo{font-family:var(--jf-mono);font-size:11px;color:var(--jf-grau)}
+html body #jf.jf .jf-ort .jf-ort-text{font-size:14px;line-height:1.45}
+html body #jf.jf .jf-stadt{display:block;margin:0 0 14px;font-family:var(--jf-mono);font-size:12px;font-weight:600;letter-spacing:.1em}
+/* YouTube erst nach Klick (Datenschutz) */
+html body #jf.jf .jf-yt{position:relative;display:block;aspect-ratio:16/9;width:100%;border-radius:20px;overflow:hidden;background:var(--jf-neutral)}
+html body #jf.jf .jf-yt button{position:absolute;inset:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px;border:0;background:var(--jf-neutral);color:var(--jf-braun);cursor:pointer;text-align:center;font-family:var(--jf-sans)}
+html body #jf.jf .jf-yt button:hover .jf-play{background:var(--jf-akzent)}
+html body #jf.jf .jf-yt .jf-play{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:var(--jf-braun);transition:background .2s}
+html body #jf.jf .jf-yt .jf-yt-hinweis{display:block;max-width:400px;font-size:13px;line-height:1.45;color:var(--jf-grau)}
+html body #jf.jf .jf-yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* Easter Egg Soy & Sally */
+html body #jf.jf .jf-ei{display:flex;gap:16px;align-items:center;padding:20px 28px 20px 16px;border-radius:24px;background:var(--jf-salbei);color:#2F3A2C;text-decoration:none}
+html body #jf.jf a.jf-ei:hover{color:#2F3A2C}
+html body #jf.jf .jf-ei img{flex:none;width:150px;height:auto;transform-origin:50% 100%}
+html body #jf.jf .jf-ei .jf-psst{font-family:var(--jf-script);font-size:24px;line-height:1}
+html body #jf.jf .jf-ei>span{display:flex;flex-direction:column;gap:6px;min-width:0}
+
+/* ---------- STARTSEITE ---------- */
+html body #jf.jf .jf-start{position:relative;display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);gap:24px 48px;align-items:start;padding-top:40px}
+html body #jf.jf .jf-gruss{position:relative;display:flex;flex-direction:column;align-items:flex-start;padding:40px 0 0 0;min-height:420px}
+html body #jf.jf .jf-gruss .jf-g{display:block;cursor:default;font-weight:900;color:var(--jf-braun);line-height:.95;letter-spacing:-.05em;position:relative;z-index:1}
+html body #jf.jf .jf-gruss .jf-g-ko{margin-left:clamp(60px,10vw,150px);font-size:clamp(70px,9.5vw,134px);line-height:.86;letter-spacing:-.06em;font-family:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',var(--jf-sans)}
+html body #jf.jf .jf-gruss .jf-g-de{margin-top:22px;font-size:clamp(56px,7.4vw,104px)}
+html body #jf.jf .jf-gruss .jf-g-en{margin-left:40px;font-family:var(--jf-script);font-weight:400;letter-spacing:0;font-size:clamp(60px,8vw,112px);color:var(--jf-sand)}
+html body #jf.jf .jf-gruss .jf-g-es{font-size:clamp(56px,7.4vw,104px);color:transparent;-webkit-text-stroke:1.5px var(--jf-braun)}
+html body #jf.jf .jf-rechts{position:relative;min-width:0}
+html body #jf.jf .jf-wer{display:flex;flex-direction:column;gap:10px;max-width:min(560px,calc(100% - 190px))}
+html body #jf.jf .jf-wer .jf-p{font-size:19px;line-height:1.5;font-weight:500}
+html body #jf.jf .jf-wer .jf-ko{font-size:15px;line-height:1.6;color:var(--jf-grau)}
+html body #jf.jf .jf-buehne{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(200px,250px) minmax(0,1fr);gap:0 6px;align-items:center;margin-top:24px;min-height:540px}
+html body #jf.jf .jf-buehne .jf-fotos{position:relative;grid-column:2;grid-row:1/span 3;height:540px}
+html body #jf.jf .jf-buehne .jf-fotos::before{content:'';position:absolute;left:-40px;top:110px;width:380px;height:380px;max-width:140%;border-radius:50%;background:var(--jf-hellblau);z-index:0}
+html body #jf.jf .jf-buehne .jf-fotos img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center bottom;opacity:0;transform:translateY(18px) rotate(2deg);transition:opacity .45s,transform .45s;filter:drop-shadow(0 14px 22px rgba(74,63,54,.18));z-index:1}
+html body #jf.jf .jf-buehne .jf-fotos img.jf-an{opacity:1;transform:translateY(0) rotate(-1.5deg)}
+html body #jf.jf .jf-rollen{position:relative;z-index:3;display:flex;flex-direction:column;gap:48px;min-width:0}
+html body #jf.jf .jf-rollen-l{grid-column:1;grid-row:1/span 3;align-items:flex-end}
+html body #jf.jf .jf-rollen-r{grid-column:3;grid-row:1/span 3;align-items:flex-start;padding-top:80px}
+html body #jf.jf .jf-rolle{display:flex;align-items:center;max-width:100%}
+html body #jf.jf .jf-rolle .jf-strich{display:block;width:30px;height:1.5px;background:var(--jf-braun)}
+html body #jf.jf .jf-rolle .jf-punkt{display:block;flex:none;width:9px;height:9px;border-radius:50%;background:var(--jf-braun)}
+html body #jf.jf .jf-rolle button{display:flex;flex-direction:column;gap:3px;max-width:100%;min-width:0;border:0;border-radius:18px;padding:10px 14px;text-align:left;cursor:pointer;background:#FFFFFF;color:var(--jf-braun);box-shadow:0 10px 26px rgba(74,63,54,.12);transition:transform .25s,background .25s;font-family:var(--jf-sans)}
+html body #jf.jf .jf-rolle button .jf-rn{display:flex;align-items:center;gap:8px;font-weight:800;font-size:clamp(17px,1.5vw,21px);letter-spacing:-.02em}
+html body #jf.jf .jf-rolle button .jf-rn i{display:block;flex:none;width:12px;height:12px;border-radius:50%;font-style:normal}
+html body #jf.jf .jf-rolle button .jf-rs{display:block;font-size:11px;line-height:1.35;color:var(--jf-grau)}
+html body #jf.jf .jf-rolle button[aria-pressed="true"]{background:var(--jf-braun);color:var(--jf-ivory);transform:scale(1.06) rotate(-2deg);box-shadow:0 12px 28px rgba(74,63,54,.25)}
+html body #jf.jf .jf-rolle button[aria-pressed="true"] .jf-rs{color:var(--jf-neutral)}
+html body #jf.jf .jf-aussuchen{display:block;font-family:var(--jf-mono);font-size:11px;letter-spacing:.06em;color:var(--jf-grau)}
+html body #jf.jf .jf-sticker{position:absolute;right:0;top:-6px;z-index:4;display:flex;align-items:center;justify-content:center;width:170px;height:170px;border-radius:50%;background:var(--jf-salbei);color:#FFFFFF;text-align:center;transform:rotate(-12deg);box-shadow:6px 6px 0 var(--jf-braun);font-family:var(--jf-mono);font-size:14px;line-height:1.45;font-weight:600}
+html body #jf.jf .jf-schwein{display:inline-flex;align-items:flex-end;gap:6px;text-decoration:none;margin:8px 0 0 clamp(0px,38vw,560px)}
+html body #jf.jf .jf-schwein .jf-psst{font-family:var(--jf-script);font-size:22px;color:var(--jf-sand);padding-bottom:4px}
+html body #jf.jf .jf-schwein svg{display:block;transform-origin:50% 100%;overflow:visible}
+html body #jf.jf .jf-kacheln{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin-top:16px}
+html body #jf.jf .jf-kacheln a{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:12px;height:300px;padding:18px;border-radius:24px;text-decoration:none;color:var(--jf-braun);transition:transform .2s,box-shadow .2s}
+html body #jf.jf .jf-kacheln a:hover{color:inherit;transform:translateY(-4px);box-shadow:0 14px 28px rgba(74,63,54,.14)}
+html body #jf.jf .jf-kacheln a.jf-dunkel:hover{color:var(--jf-ivory)}
+html body #jf.jf .jf-kacheln .jf-nr{display:block;font-family:var(--jf-mono);font-size:11px}
+html body #jf.jf .jf-kacheln .jf-senkrecht{position:absolute;right:14px;top:16px;writing-mode:vertical-rl;font-weight:900;font-size:18px;letter-spacing:.06em;line-height:1;color:#8EA6BF;font-family:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',var(--jf-sans)}
+html body #jf.jf .jf-kacheln .jf-kt{display:block;font-weight:900;font-size:clamp(20px,1.8vw,24px);letter-spacing:-.02em;line-height:1.05}
+html body #jf.jf .jf-kacheln .jf-ks{display:block;margin-top:4px;font-size:14px;color:var(--jf-grau)}
+html body #jf.jf .jf-kacheln .jf-dunkel .jf-ks{color:var(--jf-neutral)}
+html body #jf.jf .jf-kacheln .jf-fig{display:block;transform-origin:50% 85%;max-width:100%}
+
+/* Startseite auf kleineren Bildschirmen */
+@media (max-width:1100px){
+  html body #jf.jf .jf-kacheln{grid-template-columns:repeat(3,minmax(0,1fr))}
+  html body #jf.jf .jf-start{grid-template-columns:minmax(0,1fr)}
+  html body #jf.jf .jf-gruss{min-height:0}
+  html body #jf.jf .jf-schwein{margin-left:0}
+}
+@media (max-width:760px){
+  html body #jf.jf .jf-buehne{display:flex;flex-direction:column;align-items:stretch;min-height:0}
+  html body #jf.jf .jf-buehne .jf-fotos{order:-1;height:380px;width:min(100%,300px);align-self:center}
+  html body #jf.jf .jf-buehne .jf-fotos::before{left:-20px;top:60px;width:300px;height:300px}
+  html body #jf.jf .jf-rollen,html body #jf.jf .jf-rollen-r{flex-direction:row;flex-wrap:wrap;gap:8px;padding-top:0;align-items:stretch}
+  html body #jf.jf .jf-rolle .jf-strich,html body #jf.jf .jf-rolle .jf-punkt{display:none}
+  html body #jf.jf .jf-rolle button{max-width:none}
+  html body #jf.jf .jf-rolle button .jf-rs{display:none}
+  html body #jf.jf .jf-sticker{width:104px;height:104px;font-size:10px;top:-10px}
+  html body #jf.jf .jf-kacheln{grid-template-columns:repeat(2,minmax(0,1fr))}
+  html body #jf.jf .jf-kacheln a{height:240px}
+  html body #jf.jf .jf-kacheln .jf-senkrecht{display:none}
+  html body #jf.jf svg.jf-deko{display:none}
+  html body #jf.jf>.jf-deko{display:none}
+  html body #jf.jf .jf-tile.jf-quer{flex-direction:column;align-items:flex-start}
+  html body #jf.jf .jf-soy-platz{margin-top:70px}
+  html body #jf.jf .jf-hero .jf-figur{max-width:55vw}
+  html body #jf.jf .jf-wer{max-width:calc(100% - 110px)}
+}
+
+/* ---------- SCHALTER UMSTELLUNG ----------
+   JETZT: Die alte Weebly-Navigation bleibt, darum sind unsere eigene
+   Kopf- und Fußzeile noch ausgeblendet.
+   SPÄTER (wenn alle Seiten neu sind): die nächste Zeile löschen
+   und stattdessen die Theme-Navigation ausblenden (bauen wir dann zusammen). */
+html body #jf.jf .jf-kopf,html body #jf.jf .jf-fuss{display:none}
+
+/* ---------- HANDY ---------- */
+@media (max-width:640px){
+  html body #jf.jf .jf-sprachen{margin-left:0}
+  html body #jf.jf .jf-kreis-rand{left:-130px;top:20px;width:170px;height:170px}
+  html body #jf.jf .jf-fuss .jf-links{margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){html body #jf.jf *{animation:none!important;transition:none!important}}
+</style>
+
+<!-- ---------- GEMEINSAMES SKRIPT (Easter Eggs, Filter, Bücher, YouTube) – nicht ändern ---------- -->
+<script>
+(function(){
+  var ac=null;
+  function ton(){try{var C=window.AudioContext||window.webkitAudioContext;if(!C)return null;ac=ac||new C();if(ac.state==='suspended')ac.resume();return ac}catch(e){return null}}
+  function boing(){var a=ton();if(!a)return;try{var t=a.currentTime,o=a.createOscillator(),g=a.createGain(),l=a.createOscillator(),lg=a.createGain();
+    o.type='sine';o.frequency.setValueAtTime(420,t);o.frequency.exponentialRampToValueAtTime(110,t+.45);
+    l.frequency.setValueAtTime(16,t);lg.gain.setValueAtTime(45,t);lg.gain.exponentialRampToValueAtTime(1,t+.45);l.connect(lg);lg.connect(o.frequency);
+    g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.22,t+.012);g.gain.exponentialRampToValueAtTime(.0001,t+.5);
+    o.connect(g);g.connect(a.destination);o.start(t);l.start(t);o.stop(t+.52);l.stop(t+.52)}catch(e){}}
+  function quiek(){var a=ton();if(!a)return;try{var t=a.currentTime;[0,.12].forEach(function(d,k){var o=a.createOscillator(),g=a.createGain();
+    o.type='triangle';o.frequency.setValueAtTime(1300+k*200,t+d);o.frequency.exponentialRampToValueAtTime(2700+k*300,t+d+.07);o.frequency.exponentialRampToValueAtTime(1900,t+d+.1);
+    g.gain.setValueAtTime(.0001,t+d);g.gain.exponentialRampToValueAtTime(.16,t+d+.015);g.gain.exponentialRampToValueAtTime(.0001,t+d+.1);
+    o.connect(g);g.connect(a.destination);o.start(t+d);o.stop(t+d+.12)})}catch(e){}}
+  function nochmal(el,k){if(!el)return;el.classList.remove(k);void el.getBoundingClientRect();el.classList.add(k)}
+  window.jf={wackel:function(el){nochmal(el,'jf-wackel')},quetsch:function(el){nochmal(el,'jf-quetsch')},boing:boing,quiek:quiek};
+  function los(){
+    var root=document.querySelectorAll('#jf.jf');
+    root.forEach(function(r){
+      /* Easter Eggs: data-jf-ei="boing" oder "quiek" */
+      r.querySelectorAll('[data-jf-ei]').forEach(function(a){
+        var fig=a.querySelector('[data-jf-figur]')||a,art=a.getAttribute('data-jf-ei'),zuletzt=0;
+        function los2(){var n=Date.now();if(n-zuletzt<400)return;zuletzt=n;nochmal(fig,'jf-quetsch');(art==='quiek'?quiek:boing)()}
+        a.addEventListener('mouseenter',los2);a.addEventListener('focus',los2);
+      });
+      /* Filter: <div class="jf-filter" data-jf-filter="#bereich .eintrag"> mit Knöpfen data-wert="alle|v|gf|…" */
+      r.querySelectorAll('[data-jf-filter]').forEach(function(f){
+        var ziel=f.getAttribute('data-jf-filter');
+        f.querySelectorAll('button').forEach(function(b){
+          b.addEventListener('click',function(){
+            var w=b.getAttribute('data-wert');
+            f.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+            r.querySelectorAll(ziel).forEach(function(e){var m=' '+(e.getAttribute('data-merkmale')||'')+' ';e.hidden=!(w==='alle'||m.indexOf(' '+w+' ')>-1)});
+            zaehlen(r);
+          });
+        });
+      });
+      /* Bücher umdrehen */
+      r.querySelectorAll('.jf-buch').forEach(function(b){
+        if(!b.querySelector('.jf-rueck'))return;
+        var knopf=b.querySelector('button.jf-titel'),bild=b.querySelector('.jf-buch-bild');
+        function setz(an){b.classList.toggle('jf-gedreht',an);if(knopf)knopf.setAttribute('aria-pressed',an?'true':'false')}
+        if(bild){bild.addEventListener('mouseenter',function(){setz(true)});bild.addEventListener('mouseleave',function(){setz(false)})}
+        if(knopf){knopf.addEventListener('click',function(){setz(!b.classList.contains('jf-gedreht'))})}
+      });
+      /* YouTube erst nach Klick */
+      r.querySelectorAll('.jf-yt[data-jf-yt]').forEach(function(y){
+        var k=y.querySelector('button');if(!k)return;
+        k.addEventListener('click',function(){
+          var f=document.createElement('iframe');
+          f.src=y.getAttribute('data-jf-yt')+(y.getAttribute('data-jf-yt').indexOf('?')>-1?'&':'?')+'autoplay=1';
+          f.title=y.getAttribute('data-titel')||'YouTube-Video';
+          f.setAttribute('allow','autoplay; encrypted-media; picture-in-picture; fullscreen');f.setAttribute('allowfullscreen','');
+          y.innerHTML='';y.appendChild(f);
+        });
+      });
+      zaehlen(r);
+    });
+  }
+  /* Zahlen: <b data-jf-anzahl="#orte .jf-ort"></b> zählt sichtbare Einträge */
+  function zaehlen(r){r.querySelectorAll('[data-jf-anzahl]').forEach(function(z){var n=0;r.querySelectorAll(z.getAttribute('data-jf-anzahl')).forEach(function(e){if(!e.hidden||z.hasAttribute('data-jf-alle'))n++});z.textContent=n})}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',los);else los();
+})();
+</script>
+
+<!-- Favicon: grüner Stempel (ganze Website; Shopseiten haben eigenen Eintrag in den Seiten-Einstellungen) -->
+<link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/jasardpu-collab/jasardpu-bilder/main/2026-11/homepage/jf-favicon-stempel-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/jasardpu-collab/jasardpu-bilder/main/2026-11/homepage/jf-favicon-stempel-180.png">

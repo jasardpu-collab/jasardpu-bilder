@@ -1,0 +1,352 @@
+<!--
+    14.11.2026 Runde 4: kleines JASMIN FREINER oben links, ohne Buchstaben, ohne Pfeil vor JASARDPU, Nach-oben-Knopf.
+============================================================
+  THEMENSEITE KOREA · Seite /korea-shop.html auf jasminfreiner.de
+  Stand 12.11.2026, von Claude erstellt (gleiche Vorlage wie die anderen Themenseiten).
+  ============================================================
+  Wohin: Weebly → neue Seite „Korea-Shop“ (Adresse korea-shop) → ein Element
+         „Code einbetten“ → diesen ganzen Code einfügen. Seite im Menü ausblenden.
+  Texte ändern: einfach zwischen den Zeichen > und < tippen.
+  Kleine Raster: stehen als Liste im Attribut data-r, ein Eintrag = Name|Work-ID|Produktcode|Bild-ID,
+         getrennt mit Semikolon. Produktcodes: lrcw T-Shirt, 7sgk Sticker, 7yqg Tasse, xwxm Kissen,
+         7prg Tasche, flk2 Poster. Das Skript ganz unten baut daraus die Kacheln.
+  Kollektion auf Redbubble: Korea 4601750
+  ============================================================
+-->
+<style>
+#jfk{--iv:#F2E6C8;--br:#4A3F36;--gr:#6B5E52;--ne:#E8E1DA;--bl:#F6D5D0;--ak:#B0705A;--sd:#B59A7E;--lav:#F6D5D0;
+  --sans:'Inter Tight','Inter','Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+  --script:'Pinyon Script','Snell Roundhand','Segoe Script',cursive}
+html body #jfk,html body #jfk :where(*:not(svg,svg *)){all:revert;box-sizing:border-box}
+html body #jfk{display:block;position:relative;overflow:hidden;background:var(--iv);color:var(--br);font-family:var(--sans);font-size:16px;line-height:1.55;padding:0 clamp(16px,3vw,40px);margin:0;-webkit-font-smoothing:antialiased}
+body:has(#jfk){background:#F2E6C8}
+body:has(#jfk) #jf-seite{background:#F2E6C8}
+body:has(#jfk) #jf-weebly-kopf{display:none}
+html body #jfk a{color:var(--br)}
+html body #jfk a:focus-visible{outline:2px solid var(--ak);outline-offset:3px;border-radius:6px}
+html body #jfk img{display:block;max-width:100%}
+html body #jfk .in{position:relative;z-index:1;max-width:1180px;margin:0 auto}
+html body #jfk .deko{position:absolute;border-radius:50%;pointer-events:none;z-index:0}
+html body #jfk .k{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+html body #jfk .lbl{display:block;margin:0 0 22px;padding-bottom:8px;border-bottom:2px solid var(--br);font-family:var(--mono);font-size:11px;letter-spacing:.1em}
+html body #jfk .h2{display:block;margin:0 0 20px;font-weight:900;font-size:clamp(30px,4.5vw,46px);line-height:1;letter-spacing:-.04em}
+html body #jfk .sec{display:block;margin-top:80px}
+html body #jfk .knopf{display:inline-block;background:var(--br);color:var(--iv);text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:800;font-size:15px;line-height:1.2}
+html body #jfk .knopf:hover{background:var(--ak);color:#fff}
+html body #jfk .knopf.hell{background:var(--iv);color:var(--br);border:1.5px solid var(--br)}
+html body #jfk .knopf.hell:hover{background:#fff;color:var(--ak)}
+html body #jfk .skopf{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;padding:22px 0 12px;border-bottom:1px solid var(--br)}
+html body #jfk .slogo{font-family:var(--mono);font-weight:800;font-size:13px;letter-spacing:.14em;text-decoration:none;color:var(--br)}
+html body #jfk .ssub{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--gr)}
+html body #jfk .snav{display:flex;flex-wrap:wrap;gap:8px 18px;padding:14px 0;border-bottom:1px solid var(--br);font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+html body #jfk .snav a{text-decoration:none;color:var(--br)}
+html body #jfk .snav a:hover{text-decoration:underline}
+html body #jfk .snav a[aria-current]{font-weight:800;text-decoration:underline;text-underline-offset:4px}
+@media (max-width:600px){html body #jfk .snav{gap:6px 14px;font-size:11px}}
+html body #jfk .zurueck{display:flex;flex-wrap:wrap;gap:6px 18px;padding-top:22px;font-family:var(--mono);font-size:12px}
+html body #jfk .zurueck a{text-decoration:none}
+html body #jfk .zurueck a:hover{color:var(--ak)}
+/* Hero */
+html body #jfk .hero{display:flex;flex-wrap:wrap;align-items:center;gap:32px;padding-top:28px}
+html body #jfk .hero-t{flex:1 1 460px;min-width:0}
+html body #jfk .h1{display:block;margin:12px 0 0;font-weight:900;font-size:clamp(50px,9vw,100px);line-height:.92;letter-spacing:-.05em}
+html body #jfk .script{display:block;font-family:var(--script);font-size:clamp(34px,5vw,56px);line-height:1;color:var(--sd);margin-top:8px}
+html body #jfk .lead{display:block;margin:24px 0 0;max-width:580px;font-size:clamp(17px,1.6vw,19px);font-weight:500}
+html body #jfk .hero-k{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+html body #jfk .stapel{flex:0 1 380px;position:relative;height:340px;min-width:260px}
+html body #jfk .stapel a{position:absolute;display:block;width:190px;background:#fff;padding:8px 8px 26px;border-radius:3px;box-shadow:0 14px 26px rgba(74,63,54,.16);transition:transform .3s}
+html body #jfk .stapel a:hover{transform:rotate(0) scale(1.05)!important;z-index:5}
+html body #jfk .stapel img{width:100%;aspect-ratio:1;object-fit:cover;background:#F8F8F8}
+html body #jfk .stapel a:nth-child(1){left:0;top:30px;transform:rotate(-7deg)}
+html body #jfk .stapel a:nth-child(2){left:150px;top:0;transform:rotate(5deg)}
+html body #jfk .stapel a:nth-child(3){left:80px;top:140px;transform:rotate(-2deg)}
+html body #jfk .vort{display:flex;flex-wrap:wrap;gap:10px 34px;margin-top:44px;padding:14px 0;border-top:1px solid var(--br);border-bottom:1px solid var(--br);font-family:var(--mono);font-size:12px;letter-spacing:.03em}
+html body #jfk .vort span::before{content:'✿ ';color:var(--ak)}
+/* Motive */
+html body #jfk .motive{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+html body #jfk .mk{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:18px;padding:16px;border-radius:26px;background:#fff;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jfk .mk:nth-child(4n+1),html body #jfk .mk:nth-child(4n+4){background:#F8EDE8}
+html body #jfk .mk-bild{position:relative;display:block;align-self:start;border-radius:18px;overflow:hidden;background:#F8F8F8}
+html body #jfk .mk-bild img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .3s}
+html body #jfk .mk-bild:hover img{transform:scale(1.04)}
+html body #jfk .mk-nr{position:absolute;left:10px;top:10px;background:var(--br);color:var(--iv);font-family:var(--mono);font-size:11px;padding:2px 9px;border-radius:999px}
+html body #jfk .mk-t{display:flex;flex-direction:column;gap:10px;min-width:0}
+html body #jfk .mk h3{display:block;margin:0;font-weight:900;font-size:24px;line-height:1.05;letter-spacing:-.02em}
+html body #jfk .mk p{display:block;margin:0;font-size:15px;line-height:1.5}
+html body #jfk .mk-mini{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+html body #jfk .mk-mini a{display:flex;flex-direction:column;gap:3px;text-decoration:none}
+html body #jfk .mk-mini img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;background:#F8F8F8;transition:transform .2s}
+html body #jfk .mk-mini a:hover img{transform:scale(1.05)}
+html body #jfk .mk-mini span{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--gr)}
+html body #jfk .slink{align-self:flex-start;margin-top:auto;font-family:var(--mono);font-weight:600;font-size:12px;text-underline-offset:3px}
+html body #jfk .slink:hover{color:var(--ak)}
+/* Bald neu */
+/* Info */
+html body #jfk .info{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+html body #jfk .card{display:block;background:#fff;border-radius:20px;padding:22px;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jfk .card .ct{display:block;font-weight:800;font-size:19px;margin:6px 0 8px}
+html body #jfk .card p{display:block;margin:0;font-size:15px;line-height:1.55}
+html body #jfk .folgen{display:flex;flex-wrap:wrap;align-items:center;gap:20px 30px;padding:clamp(22px,4vw,36px);border-radius:28px;background:#A9B8A2;color:#2F3A2C}
+html body #jfk .folgen .bh{display:block;font-weight:900;font-size:clamp(30px,4vw,44px);line-height:.95;letter-spacing:-.04em;margin-top:6px}
+html body #jfk .folgen p{display:block;margin:10px 0 0;font-size:16px;max-width:520px}
+html body #jfk .folgen .kn{display:flex;flex-wrap:wrap;gap:10px}
+html body #jfk .hinweis{display:block;margin:18px 0 0;font-size:13px;color:var(--gr);max-width:720px}
+html body #jfk .fuss{display:flex;flex-wrap:wrap;gap:8px 26px;align-items:center;margin-top:72px;padding:12px 0 26px;border-top:1px solid var(--br);font-family:var(--mono);font-size:11px;letter-spacing:.04em}
+html body #jfk .fuss a{text-decoration:none}
+html body #jfk .fuss .re{margin-left:auto;display:flex;flex-wrap:wrap;gap:18px}
+@media (max-width:980px){html body #jfk .motive{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){
+  html body #jfk .mk{grid-template-columns:minmax(0,1fr)}
+  html body #jfk .stapel{height:250px;flex-basis:100%}
+  html body #jfk .stapel a{width:140px;padding:6px 6px 18px}
+  html body #jfk .stapel a:nth-child(2){left:120px}
+  html body #jfk .stapel a:nth-child(3){left:55px;top:95px}
+  html body #jfk .fuss .re{margin-left:0}
+  html body #jfk .deko{display:none}
+}
+@media (prefers-reduced-motion:reduce){html body #jfk *{transition:none!important}}
+
+/* 14.11.2026 Runde 4 */
+html body #jfk a.sjf{display:inline-block;margin:14px 0 -8px;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--br);text-decoration:none}
+html body #jfk a.sjf:hover{color:var(--ak)}
+html body #jfk a.jf-hoch{position:fixed;right:20px;bottom:20px;z-index:50;display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#4A3F36;color:#FBF8F2;text-decoration:none;font-size:22px;font-weight:700;box-shadow:0 8px 20px rgba(74,63,54,.25);opacity:0;pointer-events:none;transition:opacity .3s,transform .2s}
+html body #jfk a.jf-hoch.jf-zeigen{opacity:1;pointer-events:auto}
+html body #jfk a.jf-hoch:hover{background:#B0705A;color:#FFFFFF;transform:translateY(-3px)}
+</style>
+<style>
+html body #jfk .raster{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,160px),1fr));gap:16px;margin-top:24px}
+html body #jfk .pk{display:flex;flex-direction:column;gap:4px;text-decoration:none;color:var(--br)}
+html body #jfk .pk img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;background:#F8F8F8;transition:transform .2s}
+html body #jfk .pk:hover img{transform:scale(1.03)}
+html body #jfk .pk b{display:block;font-size:14px;line-height:1.25;font-weight:700}
+html body #jfk .pk small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--gr)}
+html body #jfk .buch{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}
+html body #jfk .buch a{display:flex;flex-direction:column;gap:8px;padding:22px;border-radius:22px;background:#fff;text-decoration:none;box-shadow:0 8px 22px rgba(74,63,54,.08)}
+html body #jfk .buch b{font-weight:900;font-size:22px;line-height:1.1}
+html body #jfk .buch small{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ak)}
+</style>
+<div id="jfk" lang="de">
+<span class="deko" aria-hidden="true" style="right:-90px;top:60px;width:clamp(220px,30vw,420px);height:clamp(220px,30vw,420px);background:#F6D5D0"></span>
+<span class="deko" aria-hidden="true" style="left:-120px;top:640px;width:240px;height:240px;background:#DCE6F0;opacity:.7"></span>
+<div class="in">
+  <!-- ===== KOPFZEILE: nur Shop-Links (Themenseiten) ===== -->
+  <a class="sjf" href="/">JASMIN FREINER</a>
+  <header class="skopf"><a class="slogo" href="/jasardpu.html">JASARDPU</a><span class="ssub">Shop von Jasmin Freiner · Themenseiten · <span lang="ko">테마</span></span></header>
+  <nav class="snav" aria-label="Themenseiten"><a href="/korea-shop.html" aria-current="page">Korea</a><a href="/architektur-kaffee.html">Architektur &amp; Kaffee</a><a href="/meerschweinchen-shop.html">Meerschweinchen</a><a href="/teppich.html">Teppich &amp; Muster</a><a href="/lipoedem.html">Lipödem &amp; Lymphe</a><a href="/glutenfrei-vegan-shop.html">Glutenfrei &amp; vegan</a><a href="/naehen.html">Nähen</a></nav>
+<div class="hero">
+<div class="hero-t">
+<span class="k">Themenseite · Jasardpu · <span lang="ko">한국</span></span>
+<h1 class="h1">Korea.</h1>
+<span class="script">ein bisschen Seoul für zu Hause</span>
+<p class="lead">Seit meinen Reisen nach Südkorea lässt mich das Land nicht mehr los. Daraus sind über 50 Motive entstanden: Palastmalerei und Fenstergitter, Gumiho und Tiger, Hangeul als Muster, K-Food und K-Drama-Abende und meine liebsten Orte von Jeonju bis Jeju.</p>
+<div class="hero-k">
+<a class="knopf" href="#kultur">Kultur &amp; Ornamente ↓</a>
+<a class="knopf hell" href="#food">K-Food &amp; K-Drama ↓</a>
+<a class="knopf hell" href="#orte">Orte ↓</a>
+</div>
+</div>
+<div class="stapel" aria-hidden="true">
+<a href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/184973184/xwxm" target="_blank" rel="noopener" tabindex="-1"><img src="https://ih1.redbubble.net/image.6265595296.3184/ur,throw_pillow_couch_small,square,600x600.jpg" alt="" loading="lazy"></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/185141071/7sgk" target="_blank" rel="noopener" tabindex="-1"><span style="display:block;overflow:hidden;line-height:0;border-radius:inherit"><img src="https://ih1.redbubble.net/image.6271530065.1071/st,small,507x507-pad,600x600,f8f8f8.webp" alt="" loading="lazy" style="transform:scale(1.3);transform-origin:50% 50%"></span></a>
+<a href="https://www.redbubble.com/de/i/poster/Jasardpu/185402313/flk2" target="_blank" rel="noopener" tabindex="-1"><img src="https://ih1.redbubble.net/image.6279014729.2313/fposter,small,wall_texture,square_product,600x600.jpg" alt="" loading="lazy"></a>
+</div>
+</div>
+<div class="vort">
+<span>Über 50 eigene Korea-Designs</span>
+<span>Shirts, Kissen, Tassen, Sticker &amp; Poster</span>
+<span>Gezeichnet nach meinen Reisen</span>
+<span>Gedruckt erst bei Bestellung</span>
+</div>
+<section class="sec" id="kultur">
+<p class="lbl">KULTUR &amp; ORNAMENTE · <span lang="ko">전통</span></p>
+<h2 class="h2">Palastmalerei, Gumiho &amp; Hangeul.</h2>
+<div class="motive">
+<!-- Motiv 1: Koreanische Blüte mit Gittermuster -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/184973184/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6265595296.3184/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Koreanische Blüte mit Gittermuster, Kissen" loading="lazy"><span class="mk-nr">01</span></a>
+<div class="mk-t">
+<h3>Koreanische Blüte mit Gittermuster</h3>
+<p>Eine Blüte vor dem traditionellen Fenstergitter eines Hanok, gemalt in Aquarell.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/184973184/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6265595330.3184/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Koreanische Blüte mit Gittermuster, T-Shirt" loading="lazy"><span>T-Shirt</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/184973184/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6265595294.3184/ur,classic_mug_right,full,600x600.jpg" alt="Koreanische Blüte mit Gittermuster, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/poster/Jasardpu/184973184/flk2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6265595295.3184/fposter,small,wall_texture,square_product,600x600.jpg" alt="Koreanische Blüte mit Gittermuster, Poster" loading="lazy"><span>Poster</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/184973184/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 2: Tiger unter Kiefer mit Elster -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/poster/Jasardpu/185402313/flk2" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6279014729.2313/fposter,small,wall_texture,square_product,600x600.jpg" alt="Tiger unter Kiefer mit Elster, Poster" loading="lazy"><span class="mk-nr">02</span></a>
+<div class="mk-t">
+<h3>Tiger unter Kiefer mit Elster</h3>
+<p>Ein Klassiker der koreanischen Volksmalerei, neu gezeichnet. Der Tiger ist hier eher freundlich als furchteinflößend.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/185402313/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6279014706.2313/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Tiger unter Kiefer mit Elster, T-Shirt" loading="lazy"><span>T-Shirt</span></a>
+<a href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/185402313/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6279014703.2313/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Tiger unter Kiefer mit Elster, Kissen" loading="lazy"><span>Kissen</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/185402313/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6279014682.2313/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="Tiger unter Kiefer mit Elster, Tasse" loading="lazy"><span>Tasse</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/poster/Jasardpu/185402313/flk2" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 3: Neunschwänziger Fuchs mit Maske -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/184971671/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6265550051.1671/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Neunschwänziger Fuchs mit Maske, T-Shirt" loading="lazy"><span class="mk-nr">03</span></a>
+<div class="mk-t">
+<h3>Neunschwänziger Fuchs mit Maske</h3>
+<p>Der Gumiho aus der koreanischen Sage, mit Maske und Lotus, in weichen Aquarellfarben.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/184971671/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6265550047.1671/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Neunschwänziger Fuchs mit Maske, Sticker" loading="lazy"><span>Sticker</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/184971671/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6265550048.1671/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Neunschwänziger Fuchs mit Maske, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/184971671/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6265550037.1671/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Neunschwänziger Fuchs mit Maske, Kissen" loading="lazy"><span>Kissen</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/184971671/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 4: Koreanisches Alphabet in Pastell -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/185269890/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6273520048.9890/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Koreanisches Alphabet in Pastell, Kissen" loading="lazy"><span class="mk-nr">04</span></a>
+<div class="mk-t">
+<h3>Koreanisches Alphabet in Pastell</h3>
+<p>Hangeul als nahtloses Muster. Schön für alle, die gerade Koreanisch lernen.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/185269890/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6273520055.9890/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Koreanisches Alphabet in Pastell, T-Shirt" loading="lazy"><span>T-Shirt</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/185269890/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6273520066.9890/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Koreanisches Alphabet in Pastell, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/185269890/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6273520039.9890/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="Koreanisches Alphabet in Pastell, Tasse" loading="lazy"><span>Tasse</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/185269890/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+</div>
+<div class="raster" data-r="Koreanische Palastmalerei|181737946|xwxm|6169086037.7946;Palastmalerei|181737448|7sgk|6169071401.7448;Koreanisches Ornament Emblem|184972425|lrcw|6265572143.2425;Ornament mit Lotusblume|184972501|7sgk|6265574331.2501;Lotus &amp; Blätter|184971703|lrcw|6265551078.1703;Fabelhafter Fuchs|158695380|lrcw|5456035656.5380;Koreanischer Traum|156926716|flk2|5398068256.6716;Koreanische Kirschblüte|158705787|flk2|5456370246.5787;Koreanisches Dinomädchen|158696122|lrcw|5456060338.6122;Spielteppich Koreanisches Dorf|184330956|xwxm|6262793844.0956;Spielteppich mit asiatischen Motiven|156915015|xwxm|5397695127.5015"></div>
+</section>
+<section class="sec" id="food">
+<p class="lbl">K-FOOD &amp; K-DRAMA · <span lang="ko">음식</span></p>
+<h2 class="h2">Tteokbokki und noch eine Folge.</h2>
+<div class="motive">
+<!-- Motiv 5: K-Drama mit koreanischem Essen -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/185141007/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271534280.1007/ssrco,classic_tee,flatlay_01,4a4440:cc103efb7a,front,product_square,x600.1.jpg" alt="K-Drama mit koreanischem Essen, T-Shirt" loading="lazy"><span class="mk-nr">05</span></a>
+<div class="mk-t">
+<h3>K-Drama mit koreanischem Essen</h3>
+<p>Der perfekte Abend: Serie an, Tteokbokki und Kimbap auf dem Tisch.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/185141007/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271534281.1007/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="K-Drama mit koreanischem Essen, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/185141007/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271534272.1007/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="K-Drama mit koreanischem Essen, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/185141007/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271534277.1007/st,small,507x507-pad,600x600,f8f8f8.webp" alt="K-Drama mit koreanischem Essen, Sticker" loading="lazy"><span>Sticker</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/185141007/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 6: Kimchi machen mit Oma -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/185128059/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6270365361.8059/ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg" alt="Kimchi machen mit Oma, T-Shirt" loading="lazy"><span class="mk-nr">06</span></a>
+<div class="mk-t">
+<h3>Kimchi machen mit Oma</h3>
+<p>Kimjang, das gemeinsame Kimchi-Machen im Herbst, als warme Familienszene.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/185128059/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6270365328.8059/mug,standard,x334,center-pad,600x600,f8f8f8.jpg" alt="Kimchi machen mit Oma, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/185128059/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6270365363.8059/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Kimchi machen mit Oma, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/185128059/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6270365318.8059/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Kimchi machen mit Oma, Kissen" loading="lazy"><span>Kissen</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/185128059/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 7: Reiskuchen-Königin -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/185141071/lrcw" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271530067.1071/ssrco,classic_tee,flatlay_01,bed4e8:ce5f86edd7,front,product_square,x600.1.jpg" alt="Reiskuchen-Königin, T-Shirt" loading="lazy"><span class="mk-nr">07</span></a>
+<div class="mk-t">
+<h3>Reiskuchen-Königin</h3>
+<p>Für alle, die bei scharfem Tteokbokki nie Nein sagen.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/185141071/7sgk" target="_blank" rel="noopener"><span style="display:block;overflow:hidden;line-height:0;border-radius:inherit"><img src="https://ih1.redbubble.net/image.6271530065.1071/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Reiskuchen-Königin, Sticker" loading="lazy" style="transform:scale(1.3);transform-origin:50% 50%"></span><span>Sticker</span></a>
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/185141071/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271530048.1071/ur,classic_mug_right,full,600x600.jpg" alt="Reiskuchen-Königin, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/185141071/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271530068.1071/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Reiskuchen-Königin, Tasche" loading="lazy"><span>Tasche</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/t-shirt/Jasardpu/185141071/lrcw" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+<!-- Motiv 8: Pflanzen-Bibimbap -->
+<article class="mk">
+<a class="mk-bild" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/185140880/xwxm" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271542649.0880/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Pflanzen-Bibimbap, Kissen" loading="lazy"><span class="mk-nr">08</span></a>
+<div class="mk-t">
+<h3>Pflanzen-Bibimbap</h3>
+<p>Eine Bibimbap-Schüssel, ganz aus Gemüse. Vegan und bunt, wie ich es in Korea am liebsten esse.</p>
+<div class="mk-mini">
+<a href="https://www.redbubble.com/de/i/tasse/Jasardpu/185140880/7yqg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271542653.0880/ur,classic_mug_right,full,600x600.jpg" alt="Pflanzen-Bibimbap, Tasse" loading="lazy"><span>Tasse</span></a>
+<a href="https://www.redbubble.com/de/i/stofftasche/Jasardpu/185140880/7prg" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271542663.0880/ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg" alt="Pflanzen-Bibimbap, Tasche" loading="lazy"><span>Tasche</span></a>
+<a href="https://www.redbubble.com/de/i/sticker/Jasardpu/185140880/7sgk" target="_blank" rel="noopener"><img src="https://ih1.redbubble.net/image.6271542662.0880/st,small,507x507-pad,600x600,f8f8f8.webp" alt="Pflanzen-Bibimbap, Sticker" loading="lazy"><span>Sticker</span></a>
+</div>
+<a class="slink" href="https://www.redbubble.com/de/i/dekokissen/Jasardpu/185140880/xwxm" target="_blank" rel="noopener">Alle Produkte mit diesem Motiv →</a>
+</div>
+</article>
+</div>
+<div class="raster" data-r="Crying over fictional people|185419050|lrcw|6277179824.9050/ssrco,classic_tee,flatlay_01,bed4e8:ce5f86edd7,front,product_square,x600.1.jpg;Nudelsuppe und Fernbedienung|185418992|lrcw|6277178658.8992/ssrco,classic_tee,flatlay_01,heather_oatmeal,front,product_square,x600.1.jpg;Serienabend mit K-Drama|185140966|7sgk|6271540709.0966;Scharfer Reiskuchen und trauriger Serienabend|185141033|7sgk|6271530981.1033;Ramen am Abend|185140983|7sgk|6271535482.0983;Fischgebäck und K-Drama-Abend|185141018|7sgk|6271533122.1018;Koreanisches BBQ mit Freunden|185141083|7sgk|6271528798.1083;Winter Honig-Pfannkuchen|185140924|7yqg|6271541455.0924;K-Drama Vibes Sticker Set|185128088|7sgk|6270366860.8088;Vegan &amp; K-Drama süchtig|181738025|lrcw|6169088581.8025;Koreanisches Essen und Eiskaffee|184037717|lrcw|6236936026.7717;Koreanisches Essen und Eiskaffee, minimalistisch|184037764|7yqg|6236937152.7764;Eiskaffee für immer|182841566|lrcw|6200853159.1566;Eiskaffee für immer, koreanisch|182842213|7sgk|6200858965.2213;Schisandra-Limonade Liebhaberin|182774395|lrcw|6198872634.4395;Erdbeer Matcha Latte|185155734|7sgk|6271527541.5734;Jindo-Hund Barista|184231071|7sgk|6242759733.1071"></div>
+</section>
+<section class="sec" id="orte">
+<p class="lbl">ORTE IN KOREA · <span lang="ko">여행</span></p>
+<h2 class="h2">Von Jeonju bis Jeju.</h2>
+<p style="display:block;margin:0;max-width:640px;font-size:16px">Meine Reisefotos und Illustrationen als Poster, Kissen und Sticker.</p>
+<div class="raster" data-r="Jeonju Altstadt|173623227|flk2|5924350888.3227;Jeju-Pavillon am Meer|173623461|flk2|5924364591.3461;Gamcheon Kulturdorf|174557364|7sgk|5953448045.7364;Traditionelle koreanische Architektur|174557447|xwxm|5953451099.7447;Boseong|168759320|flk2|5774523034.9320;Bambuswald Damyang|168759429|flk2|5774526405.9429;Boot auf Udo Island|168784491|flk2|5775337064.4491;Haenyo auf Udo Island|168784829|flk2|5775341257.4829;Sonnenuntergang auf Jeju|168785007|flk2|5775347163.5007;Romantischer Sonnenuntergang auf Jeju|168784757|flk2|5775339065.4757;Zukunft Seoul Grüße|171822301|flk2|5868967651.2301"></div>
+</section>
+<section class="sec">
+<p class="lbl">WEIHNACHTEN IN KOREA · <span lang="ko">크리스마스</span></p>
+<div class="raster" data-r="Kimchi, Schneemann und Gimbap|185127821|lrcw|6270057998.7821;Alles, was ich zu Weihnachten will|185128164|lrcw|6270368509.8164;Lebkuchen-Buchstaben auf Koreanisch|185272140|xwxm|6273580593.2140;Weihnachten in Korea|185401820|xwxm|6279012776.1820"></div>
+</section>
+<section class="sec">
+<p class="lbl">SO FUNKTIONIERT’S</p>
+<div class="info">
+<div class="card"><span class="k" style="color:var(--ak)">01</span><span class="ct">Motiv aussuchen</span><p>Klick auf ein Produkt. Bei Redbubble siehst du das Motiv auf allen Produkten, von der Tasse bis zum Hoodie, in vielen Farben und Größen.</p></div>
+<div class="card"><span class="k" style="color:var(--ak)">02</span><span class="ct">Bestellen bei Redbubble</span><p>Bezahlung, Versand und Rückgabe laufen sicher über Redbubble. Jedes Stück wird erst gedruckt, wenn du es bestellst.</p></div>
+<div class="card"><span class="k" style="color:var(--ak)">03</span><span class="ct">Von mir gestaltet</span><p>Ich lerne Koreanisch und reise immer wieder nach Südkorea. Alle Motive habe ich selbst entworfen.</p></div>
+</div>
+</section>
+<section class="sec">
+<div class="folgen">
+<div>
+<span class="k">Neue Motive zuerst sehen</span>
+<span class="bh">Folge Jasardpu.</span>
+<p>Neuheiten auf Instagram und Pinterest. Gern teilen mit allen, die Korea lieben.</p>
+</div>
+<div class="kn">
+<a class="knopf" href="https://www.instagram.com/jasardpu/" target="_blank" rel="noopener">Instagram →</a>
+<a class="knopf hell" href="https://www.pinterest.de/jasminfreiner/jasardpu-shop/" target="_blank" rel="noopener">Pinterest →</a>
+</div>
+</div>
+<p class="hinweis">Mehr Designs von mir findest du im <a href="/jasardpu.html">Shop Jasardpu</a> in der Welt „Korea“.</p>
+</section>
+<!-- ===== REISEN (Partnerlink-Block: nur mit Hinweis lassen oder ganz löschen) ===== -->
+<section class="sec">
+<p class="lbl">SELBST HINFAHREN</p>
+<div class="buch">
+<a href="https://link.amazon/B0hcgFSRy" target="_blank" rel="noopener sponsored"><small>Bücher bei Amazon · Partnerlink</small><b>Meine Südkorea-Reiseführer &amp; Korea-Malbücher</b><span>Glutenfrei und vegan durch Südkorea, dazu Malbücher mit koreanischen Motiven.</span></a>
+<a href="https://jasard.gumroad.com/l/sfyuvf" target="_blank" rel="noopener"><small>Karte bei Gumroad</small><b>Südkorea glutenfrei &amp; vegan</b><span>Alle meine Orte als Karte zum Importieren in Google Maps.</span></a>
+</div>
+<p class="hinweis">Partnerlink: Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich am Preis nichts.</p>
+</section>
+<footer class="fuss">
+<img src="/files/theme/jasardpu-logo.webp" alt="Logo: made by jasardpu" width="44" height="44" style="border-radius:8px;background:#fff">
+<span style="font-weight:600">© 2026 JASARDPU · JASMIN FREINER</span>
+<span class="re"><a href="/jasardpu.html">Shop Jasardpu</a><a href="/">jasminfreiner.de</a><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></span>
+</footer>
+</div>
+  <a class="jf-hoch" href="#" aria-label="Nach oben">↑</a>
+</div>
+<script>
+(function(){var R={"lrcw":["t-shirt","T-Shirt","ssrco,classic_tee,flatlay_01,fafafa:ca443f4786,front,product_square,x600.1.jpg"],"7prg":["stofftasche","Tasche","ssrco,tote,cotton,canvas_creme,flatlay,square,600x600-bg,f8f8f8.1.jpg"],"7yqg":["tasse","Tasse","mug,standard,x334,center-pad,600x600,f8f8f8.jpg"],"7sgk":["sticker","Sticker","st,small,507x507-pad,600x600,f8f8f8.webp"],"xwxm":["dekokissen","Kissen","ur,throw_pillow_couch_small,square,600x600.jpg"],"flk2":["poster","Poster","fposter,small,wall_texture,square_product,600x600.jpg"]};
+function e(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
+document.querySelectorAll('#jfk .raster[data-r]').forEach(function(box){box.innerHTML=box.getAttribute('data-r').split(';').map(function(z){var f=z.split('|'),t=R[f[2]],b=f[3].indexOf('/')>0?f[3]:f[3]+'/'+t[2];
+var z=f[2]==='lrcw';return '<a class="pk" href="https://www.redbubble.com/de/i/'+t[0]+'/Jasardpu/'+f[1]+'/'+f[2]+'" target="_blank" rel="noopener">'+(z?'<span style="display:block;overflow:hidden;line-height:0;border-radius:14px">':'')+'<img src="https://ih1.redbubble.net/image.'+e(b)+'" alt="'+e(f[0]+', '+t[1])+'" loading="lazy"'+(z?' style="transform:scale(1.9);transform-origin:50% 36%"':'')+'>'+(z?'</span>':'')+'<b>'+e(f[0])+'</b><small>'+t[1]+' &amp; mehr</small></a>'}).join('')})})();
+</script>
+<script>(function(){function m(){var b=document.getElementById('jfb'),v=document.querySelector('#jfk .vort');if(b&&v&&v.nextSibling!==b){v.parentNode.insertBefore(b,v.nextSibling);b.style.width='auto';b.style.maxWidth='none';b.style.margin='40px 0 0';b.style.borderRadius='22px'}}if(document.readyState!=='loading')m();document.addEventListener('DOMContentLoaded',m);window.addEventListener('load',m)})();</script>
+
+<script>
+/* Nach-oben-Knopf: erscheint nach etwas Scrollen, scrollt ganz nach oben */
+(function(){
+  var h=document.querySelector('#jfk .jf-hoch');if(!h)return;
+  function pruefe(){h.classList.toggle('jf-zeigen',window.scrollY>400)}
+  window.addEventListener('scroll',pruefe,{passive:true});pruefe();
+  h.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})});
+})();
+</script>
