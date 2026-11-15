@@ -8,7 +8,7 @@ JS=open(os.path.join(W,'hoch.js')).read()
 HOCH='  <!-- ===== NACH-OBEN-KNOPF (rechts unten) ===== -->\n  <a class="jf-hoch" href="#" aria-label="Nach oben">↑</a>\n'
 def menue(seite):
     m=MENU.replace(f'<a class="jf-mh" href="{seite}">','<span class="jf-hier" aria-current="page">',1)
-    i=m.find('<span class="jf-hier"'); j=m.find('</a>',i)
+    i=m.find('<span class="jf-hier" aria-current'); j=m.find('</a>',i)
     return m[:j]+'</span>'+m[j+4:]
 def umbau(t,seite):
     # alte Seitenleiste(n) nach dem Header entfernen

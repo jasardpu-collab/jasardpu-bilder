@@ -28,11 +28,11 @@
        Auf der Seite, auf der man gerade ist, wird der Hauptlink zu <span class="jf-hier">.
        Kapitel ohne Link (noch nicht fertig): <span class="jf-bald">Name</span> -->
   <nav class="jf-menue" aria-label="Seiten">
-    <div class="jf-mp"><a class="jf-mh" href="/korea-vegan-glutenfrei.html">Korea vegan &amp; glutenfrei</span>
+    <div class="jf-mp"><a class="jf-mh" href="/korea-vegan-glutenfrei.html">Korea vegan &amp; glutenfrei</a>
       <div class="jf-mk"><a href="/korea-vegan-glutenfrei.html#mehr">Buch &amp; Videos</a><a href="/korea-vegan-glutenfrei.html#vorbereitung">Vorbereitung</a><a href="/korea-vegan-glutenfrei.html#orte">Lieblingsorte</a><a href="/korea-vegan-glutenfrei.html#saetze">Sätze</a><a href="/korea-vegan-glutenfrei.html#zutaten">Zutaten</a><a href="/korea-vegan-glutenfrei.html#fallen">Fallen</a><a href="/korea-vegan-glutenfrei.html#einkaufen">Einkaufen</a></div></div>
     <div class="jf-mp"><a class="jf-mh" href="/buecher.html">Bücher</a>
       <div class="jf-mk"><a href="/buecher.html#suedkorea">Südkorea-Reihe</a><a href="/buecher.html#malbuecher">Malbücher</a><a href="/buecher.html#notizbuecher">Notizbücher</a><a href="/buecher.html#english">English</a><a href="/buecher.html#hinter">Hinter den Büchern</a></div></div>
-    <div class="jf-mp"><span class="jf-hier" aria-current="page">Podcast &amp; YouTube</a>
+    <div class="jf-mp"><span class="jf-hier" aria-current="page">Podcast &amp; YouTube</span>
       <div class="jf-mk"><a href="/podcast-youtube.html#neu">Neuestes Video</a><a href="/podcast-youtube.html#podcast">Podcast</a><a href="/podcast-youtube.html#travel">Travel-Videos</a><a href="/podcast-youtube.html#playlists">Playlists</a><a href="/podcast-youtube.html#bald">Bald</a></div></div>
     <div class="jf-mp"><a class="jf-mh" href="/glutenfrei-vegan.html">Glutenfrei &amp; vegan</a>
       <div class="jf-mk"><a href="/glutenfrei-vegan.html#instagram">Instagram</a><a href="/glutenfrei-vegan.html#unterwegs">Glutenfrei unterwegs</a><a href="/glutenfrei-vegan.html#mehr">Mehr</a></div></div>
@@ -71,15 +71,15 @@
   <!-- ===== PODCAST ===== -->
   <section class="jf-sec" id="podcast">
     <p class="jf-seclabel">PODCAST · <span lang="ko">팟캐스트</span></p>
-    <div class="jf-grid jf-grid-fit" style="--jf-min:360px">
-      <div class="jf-card jf-dunkel" style="border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:16px">
+    <div class="jf-pod">
+      <div class="jf-card jf-dunkel jf-pod-b" style="border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:16px">
         <img src="/files/theme/jf-podcast-cover.jpg" alt="Podcast-Cover AnnyeongHaLLOseyo" style="width:100%;max-width:420px;aspect-ratio:1/1;border-radius:18px;object-fit:cover">
         <span lang="ko" style="font-size:22px;font-weight:700;color:#F2C4B0">안녕 + Hallo + 세요</span>
         <span class="jf-k" style="letter-spacing:.1em;color:var(--jf-neutral)">DEUTSCH-KOREANISCHER TANDEM-PODCAST</span>
         <p class="jf-p" style="font-size:16px;color:var(--jf-neutral)">Zwei Sprachen, zwei Länder, ein Gespräch: Wir lernen voneinander – auf Deutsch und auf Koreanisch.</p>
         <a class="jf-knopf jf-hell" href="https://www.youtube.com/playlist?list=PLEsbvIrm7cxk" target="_blank" rel="noopener" style="align-self:flex-start">▶ Alle Folgen auf YouTube →</a>
       </div>
-      <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="jf-pod-f" style="display:flex;flex-direction:column;gap:12px">
         <p class="jf-k" style="margin:0;font-size:12px;font-weight:600">FOLGEN</p>
         <!-- Neue Folge: diesen <a>-Block kopieren, Nummer, Titel, Text, Bild und Link ändern -->
         <a class="jf-card" href="https://www.youtube.com/watch?v=65L_4ke7-eQ" target="_blank" rel="noopener" style="text-decoration:none;display:flex;flex-direction:column;gap:14px;padding:16px">
@@ -96,8 +96,8 @@
             <span style="display:flex;flex-direction:column;gap:6px"><span style="font-weight:800;font-size:19px">Alltagsgeschichten &amp; <span lang="ko">대박</span></span><span style="font-size:14px;line-height:1.5">Alltagsgeschichten aus Deutschland und Korea – und ein Wort, das man in Korea ständig hört: <span lang="ko">대박</span>.</span></span>
           </span>
         </a>
-        <a class="jf-tile" href="https://www.amazon.de/shop/glutenfree_follow_me/list/2OLCV5HRF2SMR?ref_=aipsflist&amp;tag=jasminfreiner-21" target="_blank" rel="noopener sponsored" style="background:#E4ECF4;min-height:0;border-radius:20px"><span class="jf-k">AMAZON · EMPFEHLUNGEN</span><span class="jf-t" style="font-size:19px;font-weight:800">Koreanisch lernen</span><span class="jf-d">Bücher und Material, mit denen ich Koreanisch lerne.</span><span class="jf-werbung">Werbung · Partnerlink*</span></a>
       </div>
+      <a class="jf-tile jf-mit-ecke jf-pod-t" href="https://www.amazon.de/shop/glutenfree_follow_me/list/2OLCV5HRF2SMR?ref_=aipsflist&amp;tag=jasminfreiner-21" target="_blank" rel="noopener sponsored" style="background:#E4ECF4;min-height:0;border-radius:20px"><span class="jf-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><rect x="12" y="8" width="36" height="44" rx="4" fill="#F2C4B0" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 8 V52" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/><path d="M48 46 H18" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/><circle cx="29" cy="26" r="2.6" fill="#4A3F36"/><circle cx="39" cy="26" r="2.6" fill="#4A3F36"/><path d="M31 31 Q34 34 37 31" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2.2"/></svg></span><span class="jf-k">AMAZON · EMPFEHLUNGEN</span><span class="jf-t" style="font-size:19px;font-weight:800">Koreanisch lernen</span><span class="jf-d">Bücher und Material, mit denen ich Koreanisch lerne.</span><span class="jf-werbung">Werbung · Partnerlink*</span></a>
     </div>
     <p class="jf-pflicht">* Partnerlink: Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich am Preis nichts.</p>
   </section>
@@ -137,12 +137,12 @@
     <p class="jf-seclabel">PLAYLISTS · <span lang="ko">재생목록</span></p>
     <h2 class="jf-h2">Such dir ein Thema aus.</h2>
     <div class="jf-grid" style="--jf-min:260px">
-      <a class="jf-tile" href="https://www.youtube.com/watch?v=1zgSfIZXh-c&amp;list=PLIa1PqeCDvBr-GGZRGFkPtUQ8yf2batHM" target="_blank" rel="noopener" style="background:#F1E8DC"><span class="jf-k">PLAYLIST</span><span class="jf-t">Travelling Architect</span><span class="jf-d">Architektur und Reisen – von Seoul bis Singapur.</span><span class="jf-go">Ansehen →</span></a>
-      <a class="jf-tile" href="https://www.youtube.com/watch?v=JTzQyziN0ds&amp;list=PLIa1PqeCDvBqk8RcNpTOUDHZBETKdmrjy" target="_blank" rel="noopener" style="background:#F8E5DC"><span class="jf-k">PLAYLIST</span><span class="jf-t">Meerschweinchen</span><span class="jf-d">Die eigentlichen Stars dieses Kanals.</span><span class="jf-go">Ansehen →</span></a>
-      <a class="jf-tile" href="https://www.youtube.com/shorts/dgB8WnKC_eQ" target="_blank" rel="noopener" style="background:#A9B8A2"><span class="jf-k">SHORT · TRAILER</span><span class="jf-t">Hongdae Soy ermittelt</span><span class="jf-d">Die Reel-Serie zu meinen Korea-Büchern – mit Soy und Sally.</span><span class="jf-go">Ansehen →</span></a>
-      <a class="jf-tile" href="https://www.youtube.com/playlist?list=PLIa1PqeCDvBqOpJAAra1ZxODSlQPsaDZU" target="_blank" rel="noopener" style="background:#E4ECF4"><span class="jf-k">PLAYLIST</span><span class="jf-t">Korea-Reisevideos</span><span class="jf-d">Reisevideos, Highlights und vegan-glutenfreies Essen in Südkorea.</span><span class="jf-go">Ansehen →</span></a>
-      <a class="jf-tile" href="https://www.youtube.com/watch?v=w0RKL9m-O1g&amp;list=PLIa1PqeCDvBoqsUYrPFvNqjz0VybjfaBH" target="_blank" rel="noopener" style="background:#E9EEE6"><span class="jf-k">PLAYLIST</span><span class="jf-t">Vegan &amp; glutenfrei</span><span class="jf-d">Kochen, Backen und Alltag – ganz ohne Korea.</span><span class="jf-go">Ansehen →</span></a>
-      <a class="jf-tile" href="https://www.youtube.com/watch?v=PxDbNspUe8k&amp;list=PLIa1PqeCDvBo3nPoVwt3zIm2XeYjriu84" target="_blank" rel="noopener" style="background:#EDE7E0"><span class="jf-k">PLAYLIST</span><span class="jf-t">3D-Druck</span><span class="jf-d">Vom Drucker-Umbau bis zum fertigen Objekt.</span><span class="jf-go">Ansehen →</span></a>
+      <a class="jf-tile jf-mit-ecke" href="https://www.youtube.com/watch?v=1zgSfIZXh-c&amp;list=PLIa1PqeCDvBr-GGZRGFkPtUQ8yf2batHM" target="_blank" rel="noopener" style="background:#F1E8DC"><span class="jf-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><path d="M10 28 L30 10 L50 28 V52 H10 Z" fill="#FFFFFF" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 18 Q30 2 42 18" fill="#F2C4B0" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="24" cy="34" r="2.6" fill="#4A3F36"/><circle cx="36" cy="34" r="2.6" fill="#4A3F36"/><path d="M27 40 Q30 43 33 40" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2.2"/></svg></span><span class="jf-k">PLAYLIST</span><span class="jf-t">Travelling Architect</span><span class="jf-d">Architektur und Reisen – von Seoul bis Singapur.</span><span class="jf-go">Ansehen →</span></a>
+      <a class="jf-tile jf-mit-ecke" href="https://www.youtube.com/watch?v=JTzQyziN0ds&amp;list=PLIa1PqeCDvBqk8RcNpTOUDHZBETKdmrjy" target="_blank" rel="noopener" style="background:#F8E5DC"><span class="jf-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><rect x="5" y="13" width="50" height="34" rx="10" fill="#E53935"/><path d="M25 22 L39 30 L25 38 Z" fill="#FFFFFF"/></svg></span><span class="jf-k">PLAYLIST</span><span class="jf-t">Meerschweinchen</span><span class="jf-d">Die eigentlichen Stars dieses Kanals.</span><span class="jf-go">Ansehen →</span></a>
+      <a class="jf-tile jf-mit-ecke" href="https://www.youtube.com/shorts/dgB8WnKC_eQ" target="_blank" rel="noopener" style="background:#A9B8A2"><span class="jf-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><rect x="5" y="13" width="50" height="34" rx="10" fill="#E53935"/><path d="M25 22 L39 30 L25 38 Z" fill="#FFFFFF"/></svg></span><span class="jf-k">SHORT · TRAILER</span><span class="jf-t">Hongdae Soy ermittelt</span><span class="jf-d">Die Reel-Serie zu meinen Korea-Büchern – mit Soy und Sally.</span><span class="jf-go">Ansehen →</span></a>
+      <a class="jf-tile jf-mit-ecke" href="https://www.youtube.com/playlist?list=PLIa1PqeCDvBqOpJAAra1ZxODSlQPsaDZU" target="_blank" rel="noopener" style="background:#E4ECF4"><span class="jf-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><path d="M6 14 L20 9 L40 15 L54 10 V46 L40 51 L20 45 L6 50 Z" fill="#B8CCE0" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M20 9 V45 M40 15 V51" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/><path d="M30 18 C24 18 22 23 24 27 L30 36 L36 27 C38 23 36 18 30 18 Z" fill="#E58C74" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4"/><circle cx="30" cy="24.5" r="2.4" fill="#FFFFFF"/></svg></span><span class="jf-k">PLAYLIST</span><span class="jf-t">Korea-Reisevideos</span><span class="jf-d">Reisevideos, Highlights und vegan-glutenfreies Essen in Südkorea.</span><span class="jf-go">Ansehen →</span></a>
+      <a class="jf-tile jf-mit-ecke" href="https://www.youtube.com/watch?v=w0RKL9m-O1g&amp;list=PLIa1PqeCDvBoqsUYrPFvNqjz0VybjfaBH" target="_blank" rel="noopener" style="background:#E9EEE6"><span class="jf-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><path d="M18 24 L26 8 M42 24 L34 8" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/><path d="M6 24 H54 L49 50 Q48 53 45 53 H15 Q12 53 11 50 Z" fill="#E6CFAF" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M20 32 V45 M30 32 V45 M40 32 V45" stroke="#4A3F36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2.4"/></svg></span><span class="jf-k">PLAYLIST</span><span class="jf-t">Vegan &amp; glutenfrei</span><span class="jf-d">Kochen, Backen und Alltag – ganz ohne Korea.</span><span class="jf-go">Ansehen →</span></a>
+      <a class="jf-tile jf-mit-ecke" href="https://www.youtube.com/watch?v=PxDbNspUe8k&amp;list=PLIa1PqeCDvBo3nPoVwt3zIm2XeYjriu84" target="_blank" rel="noopener" style="background:#EDE7E0"><span class="jf-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><rect x="5" y="13" width="50" height="34" rx="10" fill="#E53935"/><path d="M25 22 L39 30 L25 38 Z" fill="#FFFFFF"/></svg></span><span class="jf-k">PLAYLIST</span><span class="jf-t">3D-Druck</span><span class="jf-d">Vom Drucker-Umbau bis zum fertigen Objekt.</span><span class="jf-go">Ansehen →</span></a>
     </div>
   </section>
 
@@ -150,8 +150,7 @@
   <section class="jf-sec" id="bald">
     <p class="jf-seclabel">BALD · <span lang="ko">곧</span></p>
     <div class="jf-grid jf-grid-fit" style="--jf-min:300px">
-      <!-- DAEGU: ab 15.11. online. Dann aus dem div einen Link machen: <div ... wird zu <a href="https://www.youtube.com/watch?v=TkXzp6mjJLA" target="_blank" rel="noopener" ... und das schließende div zu a, "BALD · AB 15.11." wird zu "NEU · YOUTUBE". -->
-      <div class="jf-card" style="background:#F8E5DC;display:flex;flex-direction:row;gap:18px;align-items:center;text-decoration:none"><img src="https://i.ytimg.com/vi/TkXzp6mjJLA/mqdefault.jpg" alt="" style="flex:none;width:160px;aspect-ratio:16/9;object-fit:cover;border-radius:10px;filter:grayscale(.6)" loading="lazy"><span style="display:flex;flex-direction:column;gap:8px"><span class="jf-k">BALD · AB 15.11.</span><span style="font-weight:800;font-size:21px">Daegu</span><span style="font-size:14px;line-height:1.5">Tausende Laternen und ein 30 Meter großer Buddha im Tempel Donghwasa.</span></span></div>
+      <a class="jf-card jf-mit-ecke" href="https://www.youtube.com/watch?v=TkXzp6mjJLA" target="_blank" rel="noopener" style="background:#F8E5DC;display:flex;flex-direction:row;gap:18px;align-items:center;text-decoration:none;padding-right:76px"><span class="jf-ecke"><svg viewBox="0 0 60 60" width="54" height="54" aria-hidden="true"><rect x="5" y="13" width="50" height="34" rx="10" fill="#E53935"/><path d="M25 22 L39 30 L25 38 Z" fill="#FFFFFF"/></svg></span><img src="https://i.ytimg.com/vi/TkXzp6mjJLA/mqdefault.jpg" alt="Thumbnail: Daegu" style="flex:none;width:160px;aspect-ratio:16/9;object-fit:cover;border-radius:10px" loading="lazy"><span style="display:flex;flex-direction:column;gap:8px"><span class="jf-k">NEU · YOUTUBE</span><span style="font-weight:800;font-size:21px">Daegu</span><span style="font-size:14px;line-height:1.5">Tausende Laternen und ein 30 Meter großer Buddha im Tempel Donghwasa.</span></span></a>
     </div>
   </section>
 
@@ -192,6 +191,18 @@ html body #jf.jf .jf-mp:last-child .jf-mk{left:auto;right:0}
 html body #jf.jf a.jf-hoch{position:fixed;right:20px;bottom:20px;z-index:50;display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#4A3F36;color:#FBF8F2;text-decoration:none;font-size:22px;font-weight:700;box-shadow:0 8px 20px rgba(74,63,54,.25);opacity:0;pointer-events:none;transition:opacity .3s,transform .2s}
 html body #jf.jf a.jf-hoch.jf-zeigen{opacity:1;pointer-events:auto}
 html body #jf.jf a.jf-hoch:hover{background:#B0705A;color:#FFFFFF;transform:translateY(-3px)}
+/* Eck-Bildchen oben rechts in Kacheln */
+html body #jf.jf .jf-mit-ecke{position:relative}
+html body #jf.jf .jf-mit-ecke .jf-k,html body #jf.jf .jf-mit-ecke .jf-t{padding-right:62px}
+html body #jf.jf .jf-ecke{position:absolute;top:14px;right:14px;display:block;width:54px;height:54px;pointer-events:none;transform:rotate(6deg);filter:drop-shadow(0 4px 8px rgba(74,63,54,.15))}
+html body #jf.jf .jf-ecke svg{display:block;width:100%;height:100%}
+html body #jf.jf a.jf-mit-ecke:hover .jf-ecke{transform:rotate(-4deg) scale(1.08);transition:transform .2s}
+/* Podcast-Raster: braunes Feld nur so hoch wie die Folgen, Koreanisch lernen darunter links */
+html body #jf.jf .jf-pod{display:grid;grid-template-columns:1fr 1fr;grid-template-areas:"b f" "t .";gap:24px;align-items:stretch}
+html body #jf.jf .jf-pod-b{grid-area:b}
+html body #jf.jf .jf-pod-f{grid-area:f}
+html body #jf.jf .jf-pod-t{grid-area:t;align-self:start}
+@media (max-width:760px){html body #jf.jf .jf-pod{grid-template-columns:1fr;grid-template-areas:"b" "f" "t"}}
 </style>
 <script>
 /* Nach-oben-Knopf: erscheint nach etwas Scrollen, scrollt ganz nach oben */
