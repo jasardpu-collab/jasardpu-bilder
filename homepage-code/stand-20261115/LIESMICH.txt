@@ -1,5 +1,5 @@
 HOMEPAGE jasminfreiner.de · WEEBLY-BAUSTEINE
-Stand: 15.11.2026 (= Live-Stand der Homepage an diesem Tag)
+Stand: 15.11.2026, 18:30 (= Live-Stand der Homepage)
 Alte Fassungen: Ordner 20261115_alt (Stand Ende Oktober) und alt-2026-10-26
 
 SO GEHT EINFÜGEN
@@ -13,6 +13,9 @@ WELCHE DATEI GEHÖRT WOHIN
 10-impressum.html .............. Seite impressum
 11-datenschutz.html ............ Seite datenschutz
 20-startseite.html ............. Seite index (Startseite)
+20-startseite-en.html .......... Seite en (Startseite Englisch, im Menü verborgen, /en.html)
+20-startseite-es.html .......... Seite es (Startseite Spanisch, im Menü verborgen, /es.html)
+20-startseite-ko.html .......... Seite ko (Startseite Koreanisch, im Menü verborgen, /ko.html)
 21-korea-vegan-glutenfrei.html . Seite korea-vegan-glutenfrei
 22-buecher.html ................ Seite buecher
 23-podcast-youtube.html ........ Seite podcast-youtube
